@@ -173,7 +173,8 @@
         "settings": {
           "color_scheme": "accent-2",
           "text_color": "#ffffff",
-          "font_size": 15
+          "font_size": 15,
+          "font_weight": "bold"
         }
       },
       "header": {
