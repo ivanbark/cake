@@ -98,6 +98,7 @@
             <div style="color:{{ block.settings.description_color }};" class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
               <span>{{ block.settings.text | escape }}</span>
             </div>
+  ff
           {%- when 'buttons' -%}
             <div style="font-weight:{{ block.settings.button_font_weight }};" class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.button_label_1 != blank -%}
