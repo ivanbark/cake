@@ -20,12 +20,6 @@
     background-color: {{ settings.footer_color }};
   }
 
-  .footer__conetnt-top {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -45,7 +39,7 @@
 
 <footer class="footer gradient section-{{ section.id }}-padding">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
-    <div class="footer__content-top page-width">
+    <div class="footer__content-top page-width" style="display:flex;justify-content:space-around;align-items:center;">
       <div class="footer-block--newsletter">
         {%- if section.settings.newsletter_enable -%}
           <div class="footer-block__newsletter">
