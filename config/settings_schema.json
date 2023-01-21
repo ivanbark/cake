@@ -45,6 +45,12 @@
         "label": "t:settings_schema.colors.settings.gradient_accent_2.label"
       },
       {
+        "id": "footer_color",
+        "type": "color",
+        "label": "Footer",
+        "default": "#653f51"
+      },
+      {
         "type": "header",
         "content": "t:settings_schema.colors.settings.header__2.content"
       },
