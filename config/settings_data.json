@@ -136,7 +136,6 @@
             "settings": {
               "text": "Join the #RawMotherhoodMovement for your chance to WIN! — Learn More",
               "text_alignment": "center",
-              "color_scheme": "accent-2",
               "link": ""
             }
           },
@@ -145,7 +144,6 @@
             "settings": {
               "text": "Free gift with purchase valued at €19.90 — T&Cs Apply",
               "text_alignment": "center",
-              "color_scheme": "accent-2",
               "link": ""
             }
           },
@@ -154,7 +152,6 @@
             "settings": {
               "text": "THREE NEW SWIM SHADES AVAILABLE NOW — Check them out!",
               "text_alignment": "center",
-              "color_scheme": "accent-2",
               "link": ""
             }
           }
@@ -165,6 +162,7 @@
           "6142db4d-1c73-4cc1-a8a3-8c37b3f6c9bd"
         ],
         "settings": {
+          "color_scheme": "accent-2"
         }
       },
       "header": {
