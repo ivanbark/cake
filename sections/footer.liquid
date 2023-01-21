@@ -21,23 +21,23 @@
   }
 
   .footer__bottom-text {
-    font-size: {{ section.settings.font_size_bottom }}rem;
+    font-size: {{ section.settings.font_size_bottom | divided_by: 10 }}rem;
   }
 
   .footer__top-newsletter-text {
-    font-size: {{ section.settings.font_size_text_newsletter }}rem;
+    font-size: {{ section.settings.font_size_text_newsletter | divided_by: 10 }}rem;
   }
 
   .footer__top-newsletter-heading {
-    font-size: {{ section.settings.font_size_heading_newsletter }}rem;
+    font-size: {{ section.settings.font_size_heading_newsletter | divided_by: 10 }}rem;
   }
 
   .footer__top-block-heading {
-    font-size: {{ section.settings.font_size_heading_block }}rem;
+    font-size: {{ section.settings.font_size_heading_block | divided_by: 10 }}rem;
   }
 
   .footer__top-block-text {
-    font-size: {{ section.settings.font_size_text_block }}rem;
+    font-size: {{ section.settings.font_size_text_block | divided_by: 10 }}rem;
   }
 
   .footer svg {
@@ -724,21 +724,21 @@
       "type": "range",
       "id": "font_size_heading_newsletter",
       "min": 0,
-      "max": 5,
-      "step": 0.2,
+      "max": 50,
+      "step": 2,
       "unit": "rem",
       "label": "Font size heading",
-      "default": 1.5      
+      "default": 15      
     },
     {
       "type": "range",
       "id": "font_size_text_newsletter",
       "min": 0,
-      "max": 5,
-      "step": 0.2,
+      "max": 50,
+      "step": 2,
       "unit": "rem",
       "label": "Font size text",
-      "default": 1.5      
+      "default": 15      
     },
     {
       "type": "header",
@@ -748,21 +748,21 @@
       "type": "range",
       "id": "font_size_heading_block",
       "min": 0,
-      "max": 5,
-      "step": 0.2,
+      "max": 50,
+      "step": 2,
       "unit": "rem",
       "label": "Font size heading",
-      "default": 1.5      
+      "default": 15      
     },
     {
       "type": "range",
       "id": "font_size_text_block",
       "min": 0,
-      "max": 5,
-      "step": 0.2,
+      "max": 50,
+      "step": 02,
       "unit": "rem",
       "label": "Font size text",
-      "default": 1.5      
+      "default": 15      
     },
     {
       "type": "header",
@@ -772,11 +772,11 @@
       "type": "range",
       "id": "font_size_bottom",
       "min": 0,
-      "max": 5,
-      "step": 0.2,
+      "max": 50,
+      "step": 02,
       "unit": "rem",
       "label": "Font size bottom",
-      "default": 1.5      
+      "default": 15      
     }
   ],
   "default": {
