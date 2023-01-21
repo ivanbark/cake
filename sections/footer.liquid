@@ -372,14 +372,7 @@
       <div class="footer__column footer__column--info">
         {%- if section.settings.payment_enable -%}
           <div class="footer__payment">
-            <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
-            <ul class="list list-payment" role="list">
-              {%- for type in shop.enabled_payment_types -%}
-                <li class="list-payment__item">
-                  {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
-                </li>
-              {%- endfor -%}
-            </ul>
+            <img src="https://assets.cakematernity.com/themes/cakematernity/assets/img/footer/payments-global.svg?tr=w-320">
           </div>
         {%- endif -%}
         <div class="footer__bottom-info">
