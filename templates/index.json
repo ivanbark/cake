@@ -31,8 +31,7 @@
             "button_style_secondary_1": false,
             "button_label_2": "CLOTHING",
             "button_link_2": "shopify:\/\/collections\/maternity-clothing",
-            "button_style_secondary_2": false,
-            "button_font_weight": "bold"
+            "button_style_secondary_2": false
           }
         },
         "195bd3db-25c8-4c30-9cd2-63405cae7ddd": {
@@ -43,8 +42,7 @@
             "button_style_secondary_1": false,
             "button_label_2": "WELLBEING",
             "button_link_2": "shopify:\/\/collections",
-            "button_style_secondary_2": false,
-            "button_font_weight": "bold"
+            "button_style_secondary_2": false
           }
         }
       },
@@ -65,7 +63,8 @@
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
-        "show_text_below": false
+        "show_text_below": false,
+        "button_font_weight": "bold"
       }
     },
     "rich_text": {
