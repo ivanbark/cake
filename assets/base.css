@@ -2962,3 +2962,9 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
+
+/* custom css */
+
+  .content-for-layout{
+    padding-top: 128px;
+  }
