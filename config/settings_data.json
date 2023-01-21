@@ -136,7 +136,7 @@
             "settings": {
               "text": "Join the #RawMotherhoodMovement for your chance to WIN! — Learn More",
               "text_alignment": "center",
-              "link": ""
+              "link": "https:\/\/www.instagram.com\/p\/CnVRU-2PJEP\/"
             }
           },
           "b2a1383b-444e-467c-9720-7f2c41a28bd5": {
@@ -144,7 +144,7 @@
             "settings": {
               "text": "Free gift with purchase valued at €19.90 — T&Cs Apply",
               "text_alignment": "center",
-              "link": ""
+              "link": "shopify:\/\/collections"
             }
           },
           "6142db4d-1c73-4cc1-a8a3-8c37b3f6c9bd": {
@@ -152,7 +152,7 @@
             "settings": {
               "text": "THREE NEW SWIM SHADES AVAILABLE NOW — Check them out!",
               "text_alignment": "center",
-              "link": ""
+              "link": "shopify:\/\/collections\/wireless-bras"
             }
           },
           "605dd587-f13b-4f7b-a316-2223512dd90e": {
@@ -160,7 +160,7 @@
             "settings": {
               "text": "Join the #RawMotherhoodMovement for your chance to WIN! — Learn More",
               "text_alignment": "center",
-              "link": ""
+              "link": "https:\/\/www.instagram.com\/p\/CnVRU-2PJEP\/"
             }
           }
         },
@@ -180,7 +180,7 @@
           "color_scheme": "background-1",
           "logo": "{{ shop.brand.logo }}",
           "logo_width": 90,
-          "logo_position": "middle-left",
+          "logo_position": "middle-center",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
           "show_line_separator": true,

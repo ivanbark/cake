@@ -1,5 +1,4 @@
-<div class="marquee" style="display: flex;">
-<!-- <marquee width="100%" direction="left"> -->
+<div class="marquee" style="display: flex; background-color: #d6b069;">
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     
@@ -10,14 +9,12 @@
             <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
           {%- endif -%}
               <div class="page-width">
-<!--                <marquee width="100%" direction="left"> -->
                 <p class="announcement-bar__message {{ block.settings.text_alignment }} h5">
                   {{ block.settings.text | escape }}
                   {%- if block.settings.link != blank -%}
                     {% render 'icon-arrow' %}
                   {%- endif -%}
                 </p>
-<!--                 </marquee> -->
               </div>
           {%- if block.settings.link != blank -%}
             </a>
@@ -27,7 +24,6 @@
   {%- endcase -%}
 {%- endfor -%}
 </div>
-<!-- </marquee> -->
 </div>
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Corben:wght@700&display=swap");
@@ -52,6 +48,16 @@
   --duration: 50s;
   --gap: 200%;
 }
+  @media only screen and (max-width: 600px) {
+    .marquee__group {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      min-width: 150% !important;
+      animation: scroll var(--duration) linear infinite;
+    }
+  }
 
 .marquee__group {
   flex-shrink: 0;
