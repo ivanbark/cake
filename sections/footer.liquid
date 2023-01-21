@@ -278,7 +278,7 @@
   {%- endif -%}
 
   <div class="footer__content-bottom">
-    <div class="footer__content-bottom-wrapper page-width">
+    {% comment %} <div class="footer__content-bottom-wrapper page-width"> {% endcomment %}
       <div class="footer__column footer__localization isolate">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
           <noscript>
@@ -372,7 +372,7 @@
       <div class="footer__column footer__column--info">
         {%- if section.settings.payment_enable -%}
           <div class="footer__payment">
-            <img src="https://assets.cakematernity.com/themes/cakematernity/assets/img/footer/payments-global.svg?tr=w-320">
+            <img style="width:100px;" src="https://assets.cakematernity.com/themes/cakematernity/assets/img/footer/payments-global.svg?tr=w-320">
           </div>
         {%- endif -%}
         <div class="footer__bottom-info">
@@ -386,7 +386,7 @@
             <small class="copyright__content">{{ powered_by_link }}</small>
           </div>
         </div>
-      </div>
+      {% comment %} </div> {% endcomment %}
     </div>
   </div>
 </footer>
