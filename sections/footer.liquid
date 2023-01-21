@@ -20,10 +20,6 @@
     background-color: {{ settings.footer_color }};
   }
 
-  .footer__block-heading {
-    margin-bottom: 0 !important;
-  }
-
   .footer__bottom-text {
     font-size: {{ section.settings.font_size_bottom }}rem;
   }
@@ -175,7 +171,7 @@
           {%- for block in section.blocks -%}
             <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
-                <h2 class="footer-block__heading footer__top-block-heading">{{- block.settings.heading | escape -}}</h2>
+                <h2 style="margin-bottom: 0;" class="footer-block__heading footer__top-block-heading">{{- block.settings.heading | escape -}}</h2>
               {%- endif -%}
 
               {%- case block.type -%}
