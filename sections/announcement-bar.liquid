@@ -1,5 +1,6 @@
 {%- for block in section.blocks -%}
   {%- case block.type -%}
+    <div>ddd</div>
     {%- when 'announcement' -%}
       <div class="marquee__group announcement-bar color-{{ section.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
         {%- if block.settings.text != blank -%}
