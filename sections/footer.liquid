@@ -369,19 +369,18 @@
           </localization-form>
         {%- endif -%}
       </div>
-      <div class="footer__column footer__column--info" style="flex-direction: unset;">
+      <div class="footer__column footer__column--info" style="flex-direction: unset;justify-content:space-between">
         {%- if section.settings.payment_enable -%}
           <div class="footer__payment">
             <img style="width:200px;" src="https://assets.cakematernity.com/themes/cakematernity/assets/img/footer/payments-global.svg?tr=w-320">
           </div>
         {%- endif -%}
-        <div class="footer__bottom-info" style="display:flex;">
-          <div class="footer__terms">
+        <div class="footer__bottom-info" style="width:50%;">
+          <div class="footer__copyright caption">
             <small class="terms__content"><a href="">Terms + Conditions</a></small>
                •  
             <small class="terms__content"><a href="">Privacy Policiy</a></small>
-          </div>
-          <div class="footer__copyright caption">
+             
             <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
             <small class="copyright__content">{{ powered_by_link }}</small>
           </div>
