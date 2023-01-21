@@ -15,16 +15,28 @@
           "type": "text",
           "settings": {
             "text": "Supporting you through pregnancy, breastfeeding & pumping",
-            "text_style": "body"
+            "text_style": "body",
+            "description_color": "#eac383"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "BRAS",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": false,
-            "button_label_2": "",
+            "button_label_2": "CLOTHING",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "195bd3db-25c8-4c30-9cd2-63405cae7ddd": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "SWIM",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "WELLBEING",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
@@ -33,7 +45,8 @@
       "block_order": [
         "heading",
         "text",
-        "button"
+        "button",
+        "195bd3db-25c8-4c30-9cd2-63405cae7ddd"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/fuller-bust-category-banner.jpg",
