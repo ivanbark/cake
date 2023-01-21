@@ -20,6 +20,10 @@
     background-color: {{ settings.footer_color }};
   }
 
+  .footer, .footer h2, .footer a {
+    color: {{ settings.footer_text_color }};
+  }
+
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
