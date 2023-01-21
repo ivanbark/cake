@@ -33,7 +33,7 @@
   box-sizing: border-box;
 }
 
-body {
+.marquee {
   --space: 2rem;
 
   display: grid;
@@ -41,6 +41,7 @@ body {
   overflow: hidden;
   gap: var(--space);
   width: 100%;
+  font-family: "Corben", system-ui, sans-serif;
   font-size: 1.5rem;
   line-height: 1.5;
 }
@@ -52,6 +53,7 @@ body {
   display: flex;
   overflow: hidden;
   user-select: none;
+  gap: var(--gap);
 }
 
 .marquee__group {
