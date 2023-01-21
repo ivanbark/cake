@@ -29,6 +29,7 @@
   }
 
   .footer-block__btn {
+    margin-top: 30px;
     background: {{ section.settings.newsletter_btn_color }};
     color: {{ section.settings.newsletter_btn_text_color }};  
     width: 100%;
@@ -76,14 +77,14 @@
 <footer class="footer gradient section-{{ section.id }}-padding">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top" style="display:flex;justify-content:space-around;align-items:flex-start;">
-      <div style="width: 50%;margin:0 !importand;" class="footer-block--newsletter">
+      <div style="width: 50%;margin:0;" class="footer-block--newsletter">
         {%- if section.settings.newsletter_enable -%}
           <div class="footer-block__newsletter">
             {%- if section.settings.newsletter_heading != blank -%}
-              <h2 class="footer-block__heading">{{ section.settings.newsletter_heading | escape }}</h2>
+              <h2 style="margin-bottom:10px;" class="footer-block__heading">{{ section.settings.newsletter_heading | escape }}</h2>
             {%- endif -%}
             {%- if section.settings.newsletter_text != blank -%}
-              <p class="footer-block__details-content">{{ section.settings.newsletter_text | escape }}</p>
+              <p class="footer-block__details-content" style="width: 100%;max-width: 450px;">{{ section.settings.newsletter_text | escape }}</p>
             {%- endif -%}
             {%- if section.settings.newsletter_btn_text != blank -%}
               <button class="footer-block__btn">{{ section.settings.newsletter_btn_text | escape }}</button>
