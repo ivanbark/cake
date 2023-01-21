@@ -33,7 +33,7 @@
   box-sizing: border-box;
 }
 
-body {
+.marquee {
   --space: 2rem;
 
   display: grid;
@@ -47,7 +47,7 @@ body {
 }
 
 .marquee {
-  --duration: 60s;
+  --duration: 20s;
   --gap: var(--space);
 
   display: flex;
@@ -64,12 +64,6 @@ body {
   gap: var(--gap);
   min-width: 100%;
   animation: scroll var(--duration) linear infinite;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .marquee__group {
-    animation-play-state: paused;
-  }
 }
 
 .marquee__group img {
