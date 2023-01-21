@@ -436,3 +436,10 @@
 .banner__box > * + .banner__buttons {
   margin-top: 2rem;
 }
+
+/* custom CSS */
+
+  .image_button_alignment{
+    margin: 0px 1rem;
+    margin-top: 45px;
+  }
