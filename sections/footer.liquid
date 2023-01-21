@@ -67,7 +67,13 @@
             {%- if section.settings.newsletter_heading != blank -%}
               <h2 class="footer-block__heading">{{ section.settings.newsletter_heading | escape }}</h2>
             {%- endif -%}
-            {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
+            {%- if section.settings.newsletter_text != blank -%}
+              <p class="footer-block__details-content">{{ section.settings.newsletter_text | escape }}</p>
+            {%- endif -%}
+            {%- if section.settings.newsletter_btn_text != blank -%}
+              <p class="footer-block__btn">{{ section.settings.newsletter_btn_text | escape }}</p>
+            {%- endif -%}
+            {% comment %} {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div class="newsletter-form__field-wrapper">
                 <div class="field">
@@ -105,7 +111,7 @@
               {%- if form.posted_successfully? -%}
                 <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
               {%- endif -%}
-            {%- endform -%}
+            {%- endform -%} {% endcomment %}
           </div>
         {%- endif -%}
       </div>
@@ -549,6 +555,18 @@
       "id": "newsletter_heading",
       "default": "Subscribe to our emails",
       "label": "t:sections.footer.settings.newsletter_heading.label"
+    },
+    {
+      "type": "textarea",
+      "id": "newsletter_text",
+      "default": "Share information about your brand, products, and services with your customers.",
+      "label": "Newsletter text"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_btn_text",
+      "default": "Join",
+      "label": "Button text"
     },
     {
       "type": "header",
