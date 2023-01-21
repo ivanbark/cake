@@ -15,7 +15,8 @@
           "type": "text",
           "settings": {
             "text": "Supporting you through pregnancy, breastfeeding & pumping",
-            "text_style": "body"
+            "text_style": "body",
+            "title_color": "#eac383"
           }
         },
         "button": {
