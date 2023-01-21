@@ -20,8 +20,20 @@
     background-color: {{ settings.footer_color }};
   }
 
-  .footer, .footer div, .footer h2, .footer a {
-    color: {{ settings.footer_text_color }};
+  .footer-block__heading {
+    font-weight: 700;
+  }
+
+  .footer, .footer h2, .footer a {
+    color: {{ settings.footer_text_color }} !important;
+  }
+
+  .footer a {
+    text-decoration: none !important;
+  }
+
+  .footer__content-bottum {
+    border-top: .5px solid {{ settings.footer_text_color }} !important;
   }
 
   .footer svg {
@@ -606,7 +618,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
+      "label": "Side padding",
       "default": 36
     },
     {
