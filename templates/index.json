@@ -8,7 +8,9 @@
           "settings": {
             "heading": "We see you, Warrior",
             "heading_size": "h1",
-            "title_color": "#eac383"
+            "title_color": "#eac383",
+            "title_font_size": 78,
+            "title_font_weight": "normal"
           }
         },
         "text": {
@@ -16,7 +18,9 @@
           "settings": {
             "text": "Supporting you through pregnancy, breastfeeding & pumping",
             "text_style": "body",
-            "description_color": "#eac383"
+            "description_color": "#eac383",
+            "descrp_font_size": 10,
+            "descrp_font_weight": "normal"
           }
         },
         "button": {
