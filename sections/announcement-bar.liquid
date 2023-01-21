@@ -52,6 +52,16 @@
   --duration: 50s;
   --gap: 200%;
 }
+  @media only screen and (max-width: 600px) {
+    .marquee__group {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      min-width: 150%;
+      animation: scroll var(--duration) linear infinite;
+    }
+  }
 
 .marquee__group {
   flex-shrink: 0;
