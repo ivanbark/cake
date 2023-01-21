@@ -24,6 +24,10 @@
     font-weight: 700;
   }
 
+  .footer-block__newsletter {
+    text-align: left;
+  }
+
   .footer-block__btn {
     background: {{ section.settings.newsletter_btn_color }};
     color: {{ section.settings.newsletter_btn_text_color }};  
@@ -32,6 +36,7 @@
     padding: 8px 5px;
     border-radius: 5px;
     text-align: center;
+    font-weight: 700;
   }
 
   .footer, .footer h2, .footer a {
@@ -70,8 +75,8 @@
 
 <footer class="footer gradient section-{{ section.id }}-padding">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
-    <div class="footer__content-top" style="display:flex;justify-content:space-around;align-items:center;">
-      <div style="width: 50%;" class="footer-block--newsletter">
+    <div class="footer__content-top" style="display:flex;justify-content:space-around;align-items:flex-start;">
+      <div style="width: 50%;margin:0 !importand;" class="footer-block--newsletter">
         {%- if section.settings.newsletter_enable -%}
           <div class="footer-block__newsletter">
             {%- if section.settings.newsletter_heading != blank -%}
