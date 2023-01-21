@@ -66,12 +66,6 @@
   animation: scroll var(--duration) linear infinite;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .marquee__group {
-    animation-play-state: paused;
-  }
-}
-
 .marquee__group img {
   max-width: clamp(10rem, 1rem + 28vmin, 20rem);
   aspect-ratio: 1;
