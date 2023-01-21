@@ -7,12 +7,14 @@
             <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
           {%- endif -%}
               <div class="page-width">
+                <marquee width="100%" direction="left">
                 <p class="announcement-bar__message {{ block.settings.text_alignment }} h5">
                   {{ block.settings.text | escape }}
                   {%- if block.settings.link != blank -%}
                     {% render 'icon-arrow' %}
                   {%- endif -%}
                 </p>
+                </marquee>
               </div>
           {%- if block.settings.link != blank -%}
             </a>
