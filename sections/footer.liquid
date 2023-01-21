@@ -20,8 +20,12 @@
     background-color: {{ settings.footer_color }};
   }
 
-  .footer, .footer h2, .footer a {
+  .footer, .footer div, .footer h2, .footer a {
     color: {{ settings.footer_text_color }};
+  }
+
+  .footer svg {
+    fill: {{ settings.footer_text_color }};
   }
 
   .section-{{ section.id }}-padding {
