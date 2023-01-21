@@ -20,6 +20,26 @@
     background-color: {{ settings.footer_color }};
   }
 
+  .footer__bottom-text {
+    font-size: {{ section.settings.font_size_bottom }}rem;
+  }
+
+  .footer__top-newsletter-text {
+    font-size: {{ section.settings.font_size_text_newsletter }}rem;
+  }
+
+  .footer__top-newsletter-heading {
+    font-size: {{ section.settings.font_size_heading_newsletter }}rem;
+  }
+
+  .footer__top-block-heading {
+    font-size: {{ section.settings.font_size_heading_block }}rem;
+  }
+
+  .footer__top-block-text {
+    font-size: {{ section.settings.font_size_text_block }}rem;
+  }
+
   .footer svg {
     width: 2.5rem !important;
     height: 2.5rem !important;
@@ -86,10 +106,10 @@
         {%- if section.settings.newsletter_enable -%}
           <div class="footer-block__newsletter">
             {%- if section.settings.newsletter_heading != blank -%}
-              <h2 style="margin-bottom:10px;" class="footer-block__heading">{{ section.settings.newsletter_heading | escape }}</h2>
+              <h2 style="margin-bottom:10px;" class="footer-block__heading footer__top-newsletter-heading">{{ section.settings.newsletter_heading | escape }}</h2>
             {%- endif -%}
             {%- if section.settings.newsletter_text != blank -%}
-              <p class="footer-block__details-content" style="width: 100%;max-width: 450px;margin-top:0;line-height:21px;">{{ section.settings.newsletter_text | escape }}</p>
+              <p class="footer-block__details-content footer__top-newsletter-text" style="width: 100%;max-width: 450px;margin-top:0;line-height:21px;">{{ section.settings.newsletter_text | escape }}</p>
             {%- endif -%}
             {%- if section.settings.newsletter_btn_text != blank -%}
               <button class="footer-block__btn">{{ section.settings.newsletter_btn_text | escape }}</button>
@@ -151,7 +171,7 @@
           {%- for block in section.blocks -%}
             <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
-                <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
+                <h2 class="footer-block__heading footer__top-block-heading">{{- block.settings.heading | escape -}}</h2>
               {%- endif -%}
 
               {%- case block.type -%}
@@ -164,7 +184,7 @@
                     <ul class="footer-block__details-content list-unstyled">
                       {%- for link in block.settings.menu.links -%}
                         <li>
-                          <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                          <a href="{{ link.url }}" class="footer__top-block-text link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
                             {{ link.title }}
                           </a>
                         </li>
@@ -381,12 +401,12 @@
           </div>
         {%- endif -%}
         <div class="footer__bottom-info" style="display:flex;width:50%;">
-          <div class="footer__terms caption" style="width:50%">
+          <div class="footer__terms caption footer__bottom-text" style="width:50%">
             <small class="terms__content"><a href="">Terms + Conditions</a></small>
                •  
             <small class="terms__content"><a href="">Privacy Policiy</a></small>
           </div>
-          <div class="footer__copyright caption" style="margin-top:0;">
+          <div class="footer__copyright caption footer__bottom-text" style="margin-top:0;">
             <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
             <small class="copyright__content">{{ powered_by_link }}</small>
           </div>
@@ -691,6 +711,72 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Font"
+    },
+    {
+      "type": "header",
+      "content": "Signup Block"
+    },
+    {
+      "type": "range",
+      "id": "font_size_heading_newsletter",
+      "min": 0,
+      "max": 5,
+      "step": 0.2,
+      "unit": "rem",
+      "label": "Font size heading",
+      "default": 1.5      
+    },
+    {
+      "type": "range",
+      "id": "font_size_text_newsletter",
+      "min": 0,
+      "max": 5,
+      "step": 0.2,
+      "unit": "rem",
+      "label": "Font size text",
+      "default": 1.5      
+    },
+    {
+      "type": "header",
+      "content": "Link Blocks"
+    },
+    {
+      "type": "range",
+      "id": "font_size_heading_block",
+      "min": 0,
+      "max": 5,
+      "step": 0.2,
+      "unit": "rem",
+      "label": "Font size heading",
+      "default": 1.5      
+    },
+    {
+      "type": "range",
+      "id": "font_size_text_block",
+      "min": 0,
+      "max": 5,
+      "step": 0.2,
+      "unit": "rem",
+      "label": "Font size text",
+      "default": 1.5      
+    },
+    {
+      "type": "header",
+      "content": "Bottom Footer"
+    },
+    {
+      "type": "range",
+      "id": "font_size_bottom",
+      "min": 0,
+      "max": 5,
+      "step": 0.2,
+      "unit": "rem",
+      "label": "Font size bottom",
+      "default": 1.5      
     }
   ],
   "default": {
