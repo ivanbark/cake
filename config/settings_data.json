@@ -239,8 +239,8 @@
           "padding_bottom": 36,
           "font_size_heading_newsletter": 2.6,
           "font_size_text_newsletter": 1.4,
-          "font_size_heading_block": 1.4,
-          "font_size_text_block": 1.4,
+          "font_size_heading_block": 1.6,
+          "font_size_text_block": 1.6,
           "font_size_bottom": 1.6
         }
       },
