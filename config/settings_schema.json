@@ -51,6 +51,12 @@
         "default": "#653f51"
       },
       {
+        "id": "footer_text_color",
+        "type": "color",
+        "label": "Footer Text",
+        "default": "#FFFFFF"
+      },
+      {
         "type": "header",
         "content": "t:settings_schema.colors.settings.header__2.content"
       },
@@ -1358,6 +1364,11 @@
         "id": "social_twitter_link",
         "label": "t:settings_schema.social-media.settings.social_twitter_link.label",
         "info": "t:settings_schema.social-media.settings.social_twitter_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_spotify_link",
+        "label": "Spotify"
       },
       {
         "type": "text",
