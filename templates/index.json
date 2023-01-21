@@ -23,10 +23,10 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "BRAS",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify:\/\/collections\/active-bras",
             "button_style_secondary_1": false,
             "button_label_2": "CLOTHING",
-            "button_link_2": "",
+            "button_link_2": "shopify:\/\/collections\/maternity-clothing",
             "button_style_secondary_2": false
           }
         },
@@ -34,10 +34,10 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "SWIM",
-            "button_link_1": "",
+            "button_link_1": "shopify:\/\/collections\/maternity-nursing-swimwear",
             "button_style_secondary_1": false,
             "button_label_2": "WELLBEING",
-            "button_link_2": "",
+            "button_link_2": "shopify:\/\/collections",
             "button_style_secondary_2": false
           }
         }
