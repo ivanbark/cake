@@ -9,7 +9,7 @@
             <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
           {%- endif -%}
               <div class="page-width">
-                <p style="letter-spacing: .25px; font-size:{{ section.settings.font_size }}px; background-color:{{ section.settings.text_color }};" class="announcement-bar__message {{ block.settings.text_alignment }} h5">
+                <p style="letter-spacing: .25px; font-size:{{ section.settings.font_size }}px; background-color:{{ section.settings.text_color }};" class="announcement_bar_text announcement-bar__message {{ block.settings.text_alignment }} h5">
                   {{ block.settings.text | escape }}
                   {%- if block.settings.link != blank -%}
 <!--                     {% render 'icon-arrow' %} -->
@@ -42,11 +42,13 @@
   font-size: 1.5rem;
   line-height: 1.5;
   position: fixed;
-}
-
-.marquee {
   --duration: 50s;
   --gap: 200%;
+}
+
+.announcement_bar_text {
+  font-weight: {{ section.settigs.font_weight }};
+
 }
   @media only screen and (max-width: 600px) {
     .marquee__group {
