@@ -31,7 +31,8 @@
             "button_style_secondary_1": false,
             "button_label_2": "CLOTHING",
             "button_link_2": "shopify:\/\/collections\/maternity-clothing",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": false,
+            "button_font_weight": "bold"
           }
         },
         "195bd3db-25c8-4c30-9cd2-63405cae7ddd": {
@@ -42,7 +43,8 @@
             "button_style_secondary_1": false,
             "button_label_2": "WELLBEING",
             "button_link_2": "shopify:\/\/collections",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": false,
+            "button_font_weight": "bold"
           }
         }
       },
