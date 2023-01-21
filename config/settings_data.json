@@ -154,12 +154,21 @@
               "text_alignment": "center",
               "link": ""
             }
+          },
+          "db1d0395-8f02-4cd8-900c-1258e5af8745": {
+            "type": "announcement",
+            "settings": {
+              "text": "Join the #RawMotherhoodMovement for your chance to WIN! — Learn More",
+              "text_alignment": "center",
+              "link": ""
+            }
           }
         },
         "block_order": [
           "announcement-bar-0",
           "b2a1383b-444e-467c-9720-7f2c41a28bd5",
-          "6142db4d-1c73-4cc1-a8a3-8c37b3f6c9bd"
+          "6142db4d-1c73-4cc1-a8a3-8c37b3f6c9bd",
+          "db1d0395-8f02-4cd8-900c-1258e5af8745"
         ],
         "settings": {
           "color_scheme": "accent-2"
