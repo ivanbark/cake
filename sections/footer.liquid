@@ -24,6 +24,11 @@
     font-weight: 700;
   }
 
+  .footer-block__btn {
+    background: {{ section.settings.newsletter_btn_color }};
+    color: {{ section.settings.newsletter_btn_text_color }};
+  }
+
   .footer, .footer h2, .footer a {
     color: {{ settings.footer_text_color }} !important;
   }
@@ -71,7 +76,7 @@
               <p class="footer-block__details-content">{{ section.settings.newsletter_text | escape }}</p>
             {%- endif -%}
             {%- if section.settings.newsletter_btn_text != blank -%}
-              <p class="footer-block__btn">{{ section.settings.newsletter_btn_text | escape }}</p>
+              <button class="footer-block__btn">{{ section.settings.newsletter_btn_text | escape }}</button>
             {%- endif -%}
             {% comment %} {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
               <input type="hidden" name="contact[tags]" value="newsletter">
@@ -567,6 +572,18 @@
       "id": "newsletter_btn_text",
       "default": "Join",
       "label": "Button text"
+    },
+    {
+      "type": "color",
+      "id": "newsletter_btn_color",
+      "default": "#ffffff",
+      "label": "Button color"
+    },
+    {
+      "type": "color",
+      "id": "newsletter_btn_text_color",
+      "default": "#000000",
+      "label": "Button text color"
     },
     {
       "type": "header",
