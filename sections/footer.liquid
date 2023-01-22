@@ -45,6 +45,11 @@
     font-weight: {% if section.settings.font_weight_text_block == true %}bold{% else %}unset{% endif %};
   }
 
+  .footer__top-newsletter-btn {
+    font-size: {{ section.settings.font_size_button }}rem;
+    font-weight: {% if section.settings.font_weight_button == true %}bold{% else %}unset{% endif %};
+  }
+
   .footer svg {
     width: 2.5rem !important;
     height: 2.5rem !important;
@@ -112,7 +117,7 @@
               <p class="footer-block__details-content footer__top-newsletter-text" style="width: 100%;max-width: 450px;margin-top:0;line-height:21px;">{{ section.settings.newsletter_text | escape }}</p>
             {%- endif -%}
             {%- if section.settings.newsletter_btn_text != blank -%}
-              <button class="footer-block__btn">{{ section.settings.newsletter_btn_text | escape }}</button>
+              <button class="footer-block__btn footer__top-newsletter-btn">{{ section.settings.newsletter_btn_text | escape }}</button>
             {%- endif -%}
             {% comment %} {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
               <input type="hidden" name="contact[tags]" value="newsletter">
@@ -801,6 +806,26 @@
     {
       "type": "checkbox",
       "id": "font_weight_bottom",
+      "default": false,
+      "label": "Font weight"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "range",
+      "id": "font_size_button",
+      "min": 0,
+      "max": 5,
+      "step": 0.2,
+      "unit": "rem",
+      "label": "Font size",
+      "default": 1.4      
+    },
+    {
+      "type": "checkbox",
+      "id": "font_weight_button",
       "default": false,
       "label": "Font weight"
     }
