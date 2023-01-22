@@ -28,6 +28,7 @@
   .footer__top-newsletter-text {
     font-size: {{ section.settings.font_size_text_newsletter }}rem;
     font-weight: {% if section.settings.font_weight_text_newsletter == true %}bold{% else %}unset{% endif %};
+    margin-bottom: 0 !important;
   }
 
   .footer__top-newsletter-heading {
@@ -91,6 +92,10 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .mobile {
+    display: none;
+  }
+
   @media screen and (min-width: 750px) {
     .footer {
       margin-top: {{ section.settings.margin_top }}px;
@@ -102,12 +107,38 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  @media screen and (max-width: 750px) {
+    .footer-block--newsletter {
+      width: 100% !important;
+    }
+    .footer__blocks-wrapper {
+      width: 100% !important;
+      padding-top: 20px !important;
+      border-top: .5px solid {{ settings.footer_text_color }} !important;
+    }
+    .footer__content-top {
+      display: block !important;
+    }
+    .footer__list-social.list-social {
+      justify-content: flex-start !important;
+    }
+    .footer__content-bottom {
+      margin: 0 15px;
+    }
+    .footer__payment, .footer__list-social {
+      display: none;
+    }
+    .mobile {
+      display: block !important;
+    }
+  }
 {%- endstyle -%}
 
 <footer class="footer gradient section-{{ section.id }}-padding">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top" style="display:flex;justify-content:space-around;align-items:flex-start;">
-      <div style="width: 50%;margin:0;" class="footer-block--newsletter">
+      <div style="width: 50%;margin:0;padding:0 15px 20px 15px;" class="footer-block--newsletter">
         {%- if section.settings.newsletter_enable -%}
           <div class="footer-block__newsletter">
             {%- if section.settings.newsletter_heading != blank -%}
@@ -160,6 +191,90 @@
             {%- endform -%} {% endcomment %}
           </div>
         {%- endif -%}
+        {%- if section.settings.show_social -%}
+          <ul class="footer__list-social list-unstyled list-social mobile" role="list">
+            {%- if settings.social_facebook_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_facebook_link }}" class="link list-social__link" >
+                  {%- render 'icon-facebook' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if settings.social_instagram_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_instagram_link }}" class="link list-social__link" >
+                  {%- render 'icon-instagram' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if settings.social_youtube_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_youtube_link }}" class="link list-social__link" >
+                  {%- render 'icon-youtube' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if settings.social_pinterest_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_pinterest_link }}" class="link list-social__link" >
+                  {%- render 'icon-pinterest' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if settings.social_twitter_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_twitter_link }}" class="link list-social__link" >
+                  {%- render 'icon-twitter' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if settings.social_spotify_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_spotify_link }}" class="link list-social__link" >
+                  {%- render 'icon-spotify' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.spotify' | t }}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if settings.social_tiktok_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_tiktok_link }}" class="link list-social__link" >
+                  {%- render 'icon-tiktok' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if settings.social_tumblr_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_tumblr_link }}" class="link list-social__link" >
+                  {%- render 'icon-tumblr' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if settings.social_snapchat_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_snapchat_link }}" class="link list-social__link" >
+                  {%- render 'icon-snapchat' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.snapchat' | t }}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if settings.social_vimeo_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_vimeo_link }}" class="link list-social__link" >
+                  {%- render 'icon-vimeo' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
+                </a>
+              </li>
+            {%- endif -%}
+          </ul>
+        {%- endif -%}
       </div>
 
       {%- if section.blocks.size > 0 -%}
@@ -172,7 +287,7 @@
             assign footer_grid_class = 'grid--3-col-tablet'
           endif
         -%}
-        <div style="width: 50%;" class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
+        <div style="width: 50%; padding:0 15px 20px 15px;" class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
           {%- for block in section.blocks -%}
             <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
@@ -302,6 +417,11 @@
             {%- endif -%}
           </ul>
         {%- endif -%}
+        </div>
+      {%- endif -%}
+      {%- if section.settings.payment_enable -%}
+        <div class="footer__payment mobile">
+          <img style="width:200px;" src="https://assets.cakematernity.com/themes/cakematernity/assets/img/footer/payments-global.svg?tr=w-320">
         </div>
       {%- endif -%}
     </div>
