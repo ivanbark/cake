@@ -22,27 +22,23 @@
 
   .footer__bottom-text {
     font-size: {{ section.settings.font_size_bottom }}rem;
-    font-weight: {{ if section.settings.font_weight_bottom == true }}bold{{ else }}unset{{ endif }};
+    font-weight: {% if section.settings.font_weight_bottom == true %}bold{% else %}unset{% endif %};
   }
 
   .footer__top-newsletter-text {
     font-size: {{ section.settings.font_size_text_newsletter }}rem;
-    font-weight: {{ if section.settings.font_weight_text_newsletter == true }}bold{{ else }}unset{{ endif }};
   }
 
   .footer__top-newsletter-heading {
     font-size: {{ section.settings.font_size_heading_newsletter }}rem;
-    font-weight: {{ if section.settings.font_weight_heading_newsletter == true }}bold{{ else }}unset{{ endif }};
   }
 
   .footer__top-block-heading {
     font-size: {{ section.settings.font_size_heading_block }}rem;
-    font-weight: {{ if section.settings.font_weight_heading_block == true }}bold{{ else }}unset{{ endif }};
   }
 
   .footer__top-block-text {
     font-size: {{ section.settings.font_size_text_block }}rem !important;
-    font-weight: {{ if section.settings.font_weight_text_block == true }}bold{{ else }}unset{{ endif }};
   }
 
   .footer svg {
