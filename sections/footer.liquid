@@ -128,7 +128,7 @@
       justify-content: flex-start !important;
     }
     .footer__content-bottom {
-      margin: 0 15px;
+      margin: 0 {{ section.settings.padding_sides }}px;
     }
     .footer__payment, .footer__list-social {
       display: none;
@@ -140,7 +140,7 @@
     .mobile {
       display: block !important;
     }
-    .footer__list-social {
+    .footer__list-social.mobile {
       display: flex !important;
     }
     .footer__bottom-info {
@@ -148,6 +148,9 @@
     }
     .footer__bottom-info, .footer__bottom-info div {
       width: 100% !important;
+    }
+    .footer__terms {
+      text-align: center !important;
     }
   }
 {%- endstyle -%}
