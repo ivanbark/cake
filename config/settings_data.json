@@ -171,7 +171,10 @@
           "605dd587-f13b-4f7b-a316-2223512dd90e"
         ],
         "settings": {
-          "color_scheme": "accent-2"
+          "color_scheme": "accent-2",
+          "text_color": "#ffffff",
+          "font_size": 15,
+          "font_weight": "bold"
         }
       },
       "header": {

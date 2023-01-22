@@ -91,25 +91,27 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 style="color:{{ block.settings.title_color }};" class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+            <h2 style="font-size:{{ block.settings.title_font_size }}px; font-weight:{{ block.settings.title_font_weight }}; color:{{ block.settings.title_color }};" class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
               <span>{{ block.settings.heading | escape }}</span>
             </h2>
           {%- when 'text' -%}
             <div style="color:{{ block.settings.description_color }};" class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
               <span>{{ block.settings.text | escape }}</span>
             </div>
+  
+          <div style="display: inline; font-weight:{{ section.settings.button_font_weight }};" class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
           {%- when 'buttons' -%}
-            <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.button_label_1 != blank -%}
-                <a{% if block.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}</a>
+                <a{% if block.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="image_button_alignment button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}</a>
               {%- endif -%}
               {%- if block.settings.button_label_2 != blank -%}
-                <a{% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}</a>
+                <a{% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="image_button_alignment button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}</a>
               {%- endif -%}
 
-            </div>
+           
         {%- endcase -%}
       {%- endfor -%}
+       </div>
     </div>
   </div>
 </div>
@@ -302,7 +304,23 @@
       "id": "show_text_below",
       "default": true,
       "label": "t:sections.image-banner.settings.show_text_below.label"
-    }
+    },
+    {
+      "type": "select",
+      "id": "button_font_weight",
+      "options": [
+      {
+        "value": "normal",
+        "label": "normal"
+      },
+      {
+        "value": "bold",
+        "label": "bold"
+      }
+     ],
+      "default": "normal",
+      "label": "Button text thickness"
+   }
   ],
   "blocks": [
     {
@@ -341,13 +359,39 @@
           "id": "title_color",
           "label": "Title color",
           "default": "#ffffff"
+        },
+        {
+          "type": "range",
+          "id": "title_font_size",
+          "min": 10,
+          "max": 80,
+          "step": 2,
+          "unit": "px",
+          "label": "text size",
+          "default": 10
+        },
+        {
+        "type": "select",
+        "id": "title_font_weight",
+        "options": [
+        {
+          "value": "normal",
+          "label": "normal"
+        },
+        {
+          "value": "bold",
+          "label": "bold"
         }
-      ]
+       ],
+        "default": "normal",
+        "label": "Text thickness"
+       }
+     ]
     },
     {
       "type": "text",
       "name": "t:sections.image-banner.blocks.text.name",
-      "limit": 1,
+      "limit": 2,
       "settings": [
         {
           "type": "text",
@@ -380,7 +424,33 @@
           "id": "description_color",
           "label": "Description color",
           "default": "#ffffff"
+        },
+        {
+          "type": "range",
+          "id": "descrp_font_size",
+          "min": 10,
+          "max": 80,
+          "step": 2,
+          "unit": "px",
+          "label": "text size",
+          "default": 10
+        },
+        {
+        "type": "select",
+        "id": "descrp_font_weight",
+        "options": [
+        {
+          "value": "normal",
+          "label": "normal"
+        },
+        {
+          "value": "bold",
+          "label": "bold"
         }
+      ],
+      "default": "normal",
+      "label": "Text thickness"
+       }
       ]
     },
     {

@@ -30,7 +30,7 @@
   .banner--content-align-left.banner--desktop-transparent .banner__box,
   .banner--content-align-right.banner--desktop-transparent .banner__box,
   .banner--medium.banner--desktop-transparent .banner__box {
-    max-width: 68rem;
+    max-width: 74rem;
   }
 }
 
@@ -436,3 +436,10 @@
 .banner__box > * + .banner__buttons {
   margin-top: 2rem;
 }
+
+/* custom CSS */
+
+  .image_button_alignment{
+    margin: 0px 1.5rem;
+    margin-top: 45px;
+  }

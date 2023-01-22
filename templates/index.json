@@ -7,8 +7,10 @@
           "type": "heading",
           "settings": {
             "heading": "We see you, Warrior",
-            "heading_size": "h0",
-            "title_color": "#eac383"
+            "heading_size": "h1",
+            "title_color": "#eac383",
+            "title_font_size": 78,
+            "title_font_weight": "normal"
           }
         },
         "text": {
@@ -16,7 +18,9 @@
           "settings": {
             "text": "Supporting you through pregnancy, breastfeeding & pumping",
             "text_style": "body",
-            "description_color": "#eac383"
+            "description_color": "#eac383",
+            "descrp_font_size": 22,
+            "descrp_font_weight": "normal"
           }
         },
         "button": {
@@ -59,7 +63,8 @@
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
-        "show_text_below": false
+        "show_text_below": false,
+        "button_font_weight": "bold"
       }
     },
     "rich_text": {
