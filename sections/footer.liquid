@@ -111,10 +111,14 @@
   @media screen and (max-width: 750px) {
     .footer-block--newsletter {
       width: 100% !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
     }
     .footer__blocks-wrapper {
       width: 100% !important;
       padding-top: 20px !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
       border-top: .5px solid {{ settings.footer_text_color }} !important;
     }
     .footer__content-top {
@@ -129,8 +133,21 @@
     .footer__payment, .footer__list-social {
       display: none;
     }
+    .footer__payment {
+      width: fit-content;
+      margin: 0 auto;
+    }
     .mobile {
       display: block !important;
+    }
+    .footer__list-social {
+      display: flex !important;
+    }
+    .footer__bottom-info {
+      display: block !important;
+    }
+    .footer__bottom-info, .footer__bottom-info div {
+      width: 100% !important;
     }
   }
 {%- endstyle -%}
