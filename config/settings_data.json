@@ -230,8 +230,6 @@
           "newsletter_heading": "Get 10% OFF your first order",
           "newsletter_text": "Join CakeMama Club and you’ll receive 10% OFF your first order, earn CakeCoins every time you shop or leave a review, plus get member exclusive offers & more.",
           "newsletter_btn_text": "Join + Save",
-          "newsletter_btn_color": "#ffffff",
-          "newsletter_btn_text_color": "#653f51",
           "show_social": true,
           "enable_country_selector": false,
           "enable_language_selector": false,
@@ -244,7 +242,9 @@
           "font_size_text_newsletter": 1.4,
           "font_size_heading_block": 1.6,
           "font_size_text_block": 1.6,
-          "font_size_bottom": 1.6
+          "font_size_bottom": 1.6,
+          "newsletter_btn_color": "#ffffff",
+          "newsletter_btn_text_color": "#653f51"
         }
       },
       "main-password-header": {
