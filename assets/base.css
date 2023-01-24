@@ -2967,4 +2967,6 @@ details-disclosure > details {
 
   .content-for-layout{
     padding-top: 128px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
