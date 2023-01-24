@@ -445,6 +445,7 @@
     margin-top: 45px;
     padding: 0;
     --buttons-border-offset: 0;
+    border-radius: 3px;
   }
 }
 
@@ -454,5 +455,6 @@
     margin-top: 45px;
     padding: 0;
     --buttons-border-offset: 0;
+    border-radius: 3px;
   }
 }
