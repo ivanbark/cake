@@ -444,6 +444,7 @@
     margin: 0px 0.8rem;
     margin-top: 45px;
     padding: 0;
+    --buttons-border-offset: 0;
   }
 }
 
@@ -452,5 +453,6 @@
     margin: 0px 1.5rem;
     margin-top: 45px;
     padding: 0;
+    --buttons-border-offset: 0;
   }
 }
