@@ -17,11 +17,13 @@
 {%- style -%}
   .footer-block__details-content li {
     height: 2rem !important;
+    margin-bottom: 5px !important;
   }
 
   .footer-block__details-content li a {
     line-height: 2rem !important;
     padding: 0 !important;
+    vertical-align: top !important;
   }
 
   .footer {
@@ -46,6 +48,7 @@
   }
 
   .footer__top-block-heading {
+    margin-bottom: 5px !important;
     font-size: {{ section.settings.font_size_heading_block }}rem;
     font-weight: {% if section.settings.font_weight_heading_block == true %}bold{% else %}unset{% endif %};
   }
