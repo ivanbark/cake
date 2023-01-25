@@ -159,7 +159,7 @@
 <footer class="footer gradient section-{{ section.id }}-padding">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top" style="display:flex;justify-content:space-around;align-items:flex-start;">
-      <div style="width: 50%;margin:0;padding:0 15px 20px 15px;" class="footer-block--newsletter">
+      <div style="width: 50%;margin:0;padding:0 15px 20px 0;" class="footer-block--newsletter">
         {%- if section.settings.newsletter_enable -%}
           <div class="footer-block__newsletter">
             {%- if section.settings.newsletter_heading != blank -%}
@@ -553,7 +553,7 @@
             <small class="terms__content"><a href="">Privacy Policiy</a></small>
           </div>
           <div class="footer__copyright caption footer__bottom-text" style="margin-top:0;">
-            <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
+            <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }} {%- section.settings.footer_text -%}</small>
             <small class="copyright__content">{{ powered_by_link }}</small>
           </div>
         </div>
@@ -725,6 +725,16 @@
       ],
       "default": "background-1",
       "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "header",
+      "content": "Footer text"
+    },
+    {
+      "type": "text",
+      "id": "footer_text",
+      "default": "Cake Maternity. All Rights Reserved.",
+      "label": "Footer text"	
     },
     {
       "type": "header",
