@@ -553,7 +553,7 @@
             <small class="terms__content"><a href="">Privacy Policiy</a></small>
           </div>
           <div class="footer__copyright caption footer__bottom-text" style="margin-top:0;">
-            <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }} {%- section.settings.footer_text -%}</small>
+            <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }} {{ section.settings.footer_text }}</small>
             <small class="copyright__content">{{ powered_by_link }}</small>
           </div>
         </div>
@@ -725,10 +725,6 @@
       ],
       "default": "background-1",
       "label": "t:sections.all.colors.label"
-    },
-    {
-      "type": "header",
-      "content": "Footer text"
     },
     {
       "type": "text",
