@@ -15,6 +15,14 @@
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
+  .footer-block__details-content li {
+    height: 2rem !important;
+  }
+
+  .footer-block__details-content {
+    line-height: 2rem !important;
+  }
+
   .footer {
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
     background-color: {{ settings.footer_color }};
