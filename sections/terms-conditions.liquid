@@ -178,7 +178,7 @@
         {% case block.type %}
           {% when 'link_list' %}
             <div class="sidebar-menu">
-              {%- if block.settings.menu != blank -%}
+              {%- if block.settings.sidebar-menu != blank -%}
                 <ul class="menu-list">
                   {%- for link in block.settings.menu.links -%}
                     <li>
