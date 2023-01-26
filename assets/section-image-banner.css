@@ -379,6 +379,10 @@
   .banner--stacked .banner__box {
     width: 100%;
   }
+
+  .banner__heading {
+    font-size: 39px !important;
+  }
 }
 
 @media screen and (min-width: 750px) {
@@ -386,10 +390,6 @@
     width: auto;
     max-width: 71rem;
     min-width: 45rem;
-  }
-
-  .banner__heading {
-    font-size: 39px !important;
   }
 }
 
@@ -401,7 +401,6 @@
 
 .banner__heading {
   margin-bottom: 0;
-  font-size: 39px !important;
 }
 
 .banner__box .banner__heading + * {
