@@ -332,4 +332,5 @@
   list-style: none;
   width: 25px;
   height: 25px;
+  display: flex;
 }
