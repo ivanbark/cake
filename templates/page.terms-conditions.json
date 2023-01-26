@@ -17,7 +17,7 @@
             "heading": "Heading",
             "subtext": "Share contact information, store details, and brand content with your customers.",
             "font_size_heading": 1.4,
-            "font_weight_heading": false,
+            "font_weight_heading": true,
             "font_size_text": 1.4,
             "font_weight_text": false
           }
