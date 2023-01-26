@@ -41,26 +41,42 @@
           "label": "t:sections.footer.blocks.text.settings.heading.label"
         },
         {
-          "type": "richtext",
+          "type": "textarea",
           "id": "subtext",
           "default": "<p>Share contact information, store details, and brand content with your customers.</p>",
           "label": "t:sections.footer.blocks.text.settings.subtext.label"
         },
         {
           "type": "range",
-          "id": "font_size",
+          "id": "font_size_heading",
           "min": 0,
           "max": 5,
           "step": 0.2,
           "unit": "rem",
-          "label": "Font size",
+          "label": "Font size heading",
           "default": 1.4      
         },
         {
           "type": "checkbox",
-          "id": "font_weight",
+          "id": "font_weight_heading",
           "default": false,
-          "label": "Font weight bold"
+          "label": "Font weight bold heading"
+        },
+        {
+          "type": "range",
+          "id": "font_size_text",
+          "min": 0,
+          "max": 5,
+          "step": 0.2,
+          "unit": "rem",
+          "label": "Font size text",
+          "default": 1.4      
+        },
+        {
+          "type": "checkbox",
+          "id": "font_weight_text",
+          "default": false,
+          "label": "Font weight bold text"
         }
       ]
     }
@@ -156,18 +172,44 @@
 
 <div class="page-wrapper">
 
-  <div class="side-bar">
-    
-  </div>
-
-  <div class="page-width page-width--narrow section-{{ section.id }}-padding">
-    <h1 class="main-page-title page-title h0">
-      {{ page.title | escape }}
-    </h1>
-    <div class="rte">
-      {{ page.content }}
+  {% if section.blocks.size > 0 %}
+    <div class="side-bar">
+      {% for block in sec.blocks %}
+        {% case block.type %}
+          {% when "link_list" %}
+            <div class="side-bar-menu">
+              {%- if block.settings.menu != blank -%}
+                <ul class="menu-list">
+                  {%- for link in block.settings.menu.links -%}
+                    <li>
+                      <a href="{{ link.url }}" class="" style="font-size: {{ block.settings.font_size }}rem; font-weight:{% if block.settings.font_weight == true %}bold{% else %}unset{% endif %};">
+                        {{ link.title }}
+                      </a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+            </div>
+          {% when "text" %}
+            <div class="side-bar-text">
+              <h2 style="font-size: {{ block.settings.font_size_heading }}rem; font-weight: {% if block.settings.font_weight_heading == true %}bold{% else %}unset{% endif %};">{{ block.settings.heading }}</h2>
+              <p style="font-size: {{ block.settings.font_size_text }}rem; font-weight: {% if block.settings.font_weight_text == true %}bold{% else %}unset{% endif %};">
+                {{ block.settings.subtext }}
+              </p>
+            </div>          
+        {% endcase %}
+      {% endfor %}
     </div>
-  </div>
+  
+    <div class="page-width page-width--narrow section-{{ section.id }}-padding">
+      <h1 class="main-page-title page-title h0">
+        {{ page.title | escape }}
+      </h1>
+      <div class="rte">
+        {{ page.content }}
+      </div>
+    </div>
+  {% endif %}
   
 </div>
 
