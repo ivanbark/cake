@@ -15,7 +15,7 @@
           "type": "text",
           "settings": {
             "heading": "Heading",
-            "subtext": "<p>Our support team is on hand&lt;br&gt;                                                            9am - 5pm AEST                                                            <a href=\"mailto:support@cakematernity.com\">support@cakematernity.com<\/a><\/p>",
+            "subtext": "Our support team is on\n9am - 5pm AEST\n<a href=\"mailto:support@cakematernity.com\">support@cakematernity.com<\/a>",
             "font_size_heading": 1.4,
             "font_weight_heading": true,
             "font_size_text": 1.4,
