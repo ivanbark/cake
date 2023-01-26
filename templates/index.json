@@ -87,8 +87,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Icon-banner-2-support.webp",
             "title": "Support for every mama.",
-            "title_font_weight": "normal",
-            "title_font_size": 10,
+            "title_font_weight": "bold",
+            "title_font_size": 16,
             "text": "<p>Fitting 6 — 22, A — JJ cup.<\/p>",
             "link_label": "",
             "link": ""
