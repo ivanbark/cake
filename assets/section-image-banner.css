@@ -445,7 +445,7 @@
 
 /* custom CSS */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .image_button_alignment{
     margin: 0px 0.8rem;
     margin-top: 30px;
@@ -456,7 +456,7 @@
   }
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 801px) {
   .image_button_alignment {
     margin: 0px 3.5rem;
     margin-top: 45px;
