@@ -2,9 +2,36 @@
   "sections": {
     "main": {
       "type": "terms-conditions",
+      "blocks": {
+        "43c677d4-91fe-4ab7-8e16-098b27c910d9": {
+          "type": "side-bar-menu",
+          "settings": {
+            "side-bar-menu": "footer",
+            "font_size": 1.4,
+            "font_weight": false
+          }
+        },
+        "c169b02e-2ff0-4f11-a039-4fe634d94621": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading",
+            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>",
+            "font_size": 1.4,
+            "font_weight": false
+          }
+        }
+      },
+      "block_order": [
+        "43c677d4-91fe-4ab7-8e16-098b27c910d9",
+        "c169b02e-2ff0-4f11-a039-4fe634d94621"
+      ],
       "settings": {
         "padding_top": 28,
-        "padding_bottom": 28
+        "padding_bottom": 28,
+        "font_size_heading": 1.4,
+        "font_weight_heading": false,
+        "font_size_text": 1.4,
+        "font_weight_text": false
       }
     }
   },
