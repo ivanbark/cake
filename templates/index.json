@@ -145,7 +145,7 @@
           "type": "caption",
           "settings": {
             "caption": "OVER 60,000 sold",
-            "text_style": "caption-with-letter-spacing",
+            "text_style": "subtitle",
             "text_size": "medium"
           }
         },
