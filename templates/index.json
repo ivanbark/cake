@@ -67,6 +67,59 @@
         "button_font_weight": "bold"
       }
     },
+    "82a23ee6-c19a-4ea7-b39b-462089d3ee3a": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17629010854182__82a23ee6-c19a-4ea7-b39b-462089d3ee3a-1674728937f24d0bda-0": {
+          "type": "column",
+          "settings": {
+            "title": "Encouraging breast health.",
+            "text": "<p>For relief through change<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17629010854182__82a23ee6-c19a-4ea7-b39b-462089d3ee3a-1674728937f24d0bda-1": {
+          "type": "column",
+          "settings": {
+            "title": "Support for every mama.",
+            "text": "<p>Fitting 6 — 22, A — JJ cup.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17629010854182__82a23ee6-c19a-4ea7-b39b-462089d3ee3a-1674728937f24d0bda-2": {
+          "type": "column",
+          "settings": {
+            "title": "Mama-friendly returns.",
+            "text": "<p>45-day returns for busy mamas.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17629010854182__82a23ee6-c19a-4ea7-b39b-462089d3ee3a-1674728937f24d0bda-0",
+        "template--17629010854182__82a23ee6-c19a-4ea7-b39b-462089d3ee3a-1674728937f24d0bda-1",
+        "template--17629010854182__82a23ee6-c19a-4ea7-b39b-462089d3ee3a-1674728937f24d0bda-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "circle",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -232,6 +285,7 @@
   },
   "order": [
     "image_banner",
+    "82a23ee6-c19a-4ea7-b39b-462089d3ee3a",
     "rich_text",
     "featured_collection",
     "collage",
