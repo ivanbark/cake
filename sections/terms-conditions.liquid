@@ -1,8 +1,54 @@
 {% schema %}
 {
   "name": "Term + Conditions",
-  "tag": "section",
-  "class": "section",
+  "blocks": [
+    {
+      "type": "side-bar-menu",
+      "name": "Side bar menu",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "side-bar-menu",
+          "default": "footer",
+          "label": "Menu"
+        },
+        {
+          "type": "range",
+          "id": "font_size",
+          "min": 0,
+          "max": 5,
+          "step": 0.2,
+          "unit": "rem",
+          "label": "Font size",
+          "default": 1.4      
+        },
+        {
+          "type": "checkbox",
+          "id": "font_weight",
+          "default": false,
+          "label": "Font weight bold"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Heading",
+          "label": "t:sections.footer.blocks.text.settings.heading.label"
+        },
+        {
+          "type": "richtext",
+          "id": "subtext",
+          "default": "<p>Share contact information, store details, and brand content with your customers.</p>",
+          "label": "t:sections.footer.blocks.text.settings.subtext.label"
+        }
+      ]
+    }
+  ],
   "settings": [
     {
       "type": "header",
@@ -52,11 +98,27 @@
   }
 {%- endstyle -%}
 
-<div class="page-width page-width--narrow section-{{ section.id }}-padding">
-  <h1 class="main-page-title page-title h0">
-    {{ page.title | escape }}
-  </h1>
-  <div class="rte">
-    {{ page.content }}
+<div class="page-wrapper">
+
+  <div class="side-bar">
+    
   </div>
+
+  <div class="page-width page-width--narrow section-{{ section.id }}-padding">
+    <h1 class="main-page-title page-title h0">
+      {{ page.title | escape }}
+    </h1>
+    <div class="rte">
+      {{ page.content }}
+    </div>
+  </div>
+  
 </div>
+
+
+
+
+
+
+
+
