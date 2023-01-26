@@ -283,7 +283,7 @@
   }
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1500px) {
   .image-with-text__content {
     padding: 18rem !important;
   }
