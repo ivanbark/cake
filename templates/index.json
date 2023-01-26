@@ -73,6 +73,7 @@
         "template--17629010854182__82a23ee6-c19a-4ea7-b39b-462089d3ee3a-1674728937f24d0bda-0": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Icon-banner-1-breast-health.webp",
             "title": "Encouraging breast health.",
             "text": "<p>For relief through change<\/p>",
             "link_label": "",
@@ -82,6 +83,7 @@
         "template--17629010854182__82a23ee6-c19a-4ea7-b39b-462089d3ee3a-1674728937f24d0bda-1": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Icon-banner-2-support.webp",
             "title": "Support for every mama.",
             "text": "<p>Fitting 6 — 22, A — JJ cup.<\/p>",
             "link_label": "",
@@ -91,6 +93,7 @@
         "template--17629010854182__82a23ee6-c19a-4ea7-b39b-462089d3ee3a-1674728937f24d0bda-2": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Icon-banner-3-returns.webp",
             "title": "Mama-friendly returns.",
             "text": "<p>45-day returns for busy mamas.<\/p>",
             "link_label": "",
