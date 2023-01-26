@@ -285,7 +285,7 @@
 
 @media screen and (min-width: 2000px) {
   .image-with-text__content {
-    padding: 18rem;
+    padding: 18rem !important;
   }
 }
 
