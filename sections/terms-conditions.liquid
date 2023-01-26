@@ -180,7 +180,7 @@
             <div class="sidebar-menu">
               {%- if block.settings.sidebar-menu != blank -%}
                 <ul class="menu-list">
-                  {%- for link in block.settings.menu.links -%}
+                  {%- for link in block.settings.sidebar-menu.links -%}
                     <li>
                       <a href="{{ link.url }}" class="" style="font-size: {{ block.settings.font_size }}rem; font-weight:{% if block.settings.font_weight == true %}bold{% else %}unset{% endif %};">
                         {{ link.title }}
