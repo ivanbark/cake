@@ -78,7 +78,7 @@
               {%- endif -%}
               <div class="multicolumn-card__info">
                 {%- if block.settings.title == "Encouraging breast health." -%}
-                   {%- capture sizes -%}(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %}, (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %}, calc(100vw - 30px){%- endcapture -%}
+                   
                     {{ block.settings.image | image_url: width: 50 | image_tag:
                       loading: 'lazy',
                       sizes: sizes,
