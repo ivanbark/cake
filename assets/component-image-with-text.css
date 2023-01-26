@@ -283,6 +283,12 @@
   }
 }
 
+@media screen and (min-width: 2000px) {
+  .image-with-text__content {
+    padding: 18rem;
+  }
+}
+
 .image-with-text__content > * + * {
   margin-top: 2rem;
 }
