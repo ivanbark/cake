@@ -173,6 +173,7 @@
         "settings": {
           "color_scheme": "accent-2",
           "text_color": "#ffffff",
+          "background_color": "#e2b95b",
           "font_size": 15,
           "font_weight": "bold"
         }
