@@ -3,8 +3,8 @@
     "main": {
       "type": "terms-conditions",
       "blocks": {
-        "c2d3229b-5977-4c20-a62a-b22ab19f9f57": {
-          "type": "sidebar-menu",
+        "4f498ee0-1d29-4e6b-ab5a-150ff325ce96": {
+          "type": "link_list",
           "settings": {
             "sidebar-menu": "sidebar-menu",
             "font_size": 1.4,
@@ -24,7 +24,7 @@
         }
       },
       "block_order": [
-        "c2d3229b-5977-4c20-a62a-b22ab19f9f57",
+        "4f498ee0-1d29-4e6b-ab5a-150ff325ce96",
         "c169b02e-2ff0-4f11-a039-4fe634d94621"
       ],
       "settings": {
