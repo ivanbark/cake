@@ -15,9 +15,11 @@
           "type": "text",
           "settings": {
             "heading": "Heading",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>",
-            "font_size": 1.4,
-            "font_weight": false
+            "subtext": "Share contact information, store details, and brand content with your customers.",
+            "font_size_heading": 1.4,
+            "font_weight_heading": false,
+            "font_size_text": 1.4,
+            "font_weight_text": false
           }
         }
       },
@@ -28,8 +30,8 @@
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28,
-        "font_size_heading": 1.4,
-        "font_weight_heading": false,
+        "font_size_heading": 2.6,
+        "font_weight_heading": true,
         "font_size_text": 1.4,
         "font_weight_text": false
       }
