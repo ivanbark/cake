@@ -58,7 +58,7 @@
                   {%- render 'icon-star' -%}
               </li>
             </ul>
-              <p style="color:{{ block.settings.caption_color }}; {%- if block.settings.caption == "OVER 60,000 SOLD" -%}margin-bottom: 5px !important; margin: 0;{%- endif -%}" class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.caption | escape }}</p>
+              <p style="color:{{ block.settings.caption_color }}; {%- if block.settings.caption == "OVER 60,000 SOLD" -%}margin-bottom: 2rem !important; margin: 0;{%- endif -%}" class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.caption | escape }}</p>
             {%- when 'text' -%}
               <div style="color:{{ block.settings.text_color }};" class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}

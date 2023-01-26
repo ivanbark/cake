@@ -47,6 +47,18 @@
           "label": "t:sections.footer.blocks.text.settings.subtext.label"
         },
         {
+          "type": "checkbox",
+          "id": "sidebar-show-mail",
+          "default": true,
+          "label": "Show mail"
+        },
+        {
+          "type": "text",
+          "id": "sidebar-mail",
+          "default": "mail@email.com",
+          "label": "Mail"
+        },
+        {
           "type": "range",
           "id": "font_size_heading",
           "min": 0,
@@ -218,6 +230,9 @@
               <p style="font-size: {{ block.settings.font_size_text }}rem; font-weight: {% if block.settings.font_weight_text == true %}bold{% else %}unset{% endif %};">
                 {{ block.settings.subtext }}
               </p>
+              {% if block.settings.sidebar-show-mail == true %}
+                <a></a>
+              {% endif %}
             </div>          
         {% endcase %}
       {% endfor %}
