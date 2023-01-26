@@ -456,7 +456,17 @@
   }
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .image_button_alignment {
+    margin: 0px 1.5rem;
+    margin-top: 45px;
+    padding: 0;
+    --buttons-border-offset: 0;
+    border-radius: 3px;
+  }
+}
+
+@media only screen and (min-width: 801px) {
   .image_button_alignment {
     margin: 0px 3.5rem;
     margin-top: 45px;
