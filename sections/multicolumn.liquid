@@ -92,13 +92,13 @@
                 {%- endif -%}
                 {%- if block.settings.title != blank -%}
                 {%- if block.settings.title == "Encouraging breast health." or block.settings.title == "Mama-friendly returns." or block.settings.title == "Support for every mama." -%}
-                  <h3 style="margin: 0; font-size:{{ block.settings.title_font_size }}px; font-weight:{{ block.settings.title_font_weight }};">{{ block.settings.title | escape }}</h3>
+                  <h3 style="padding-left:50+{{ block.settings.padding_left }}px; margin: 0; font-size:{{ block.settings.title_font_size }}px; font-weight:{{ block.settings.title_font_weight }};">{{ block.settings.title | escape }}</h3>
                 {% else %}
                    <h3>{{ block.settings.title | escape }}</h3>
                 {%- endif -%}
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
-                  <div style="font-size:{{ block.settings.description_font_size }}; font-weight:{{ block.settings.description_font_weight }};" class="rte">{{ block.settings.text }}</div>
+                  <div style="padding-left:50+{{ block.settings.padding_left }}px; font-size:{{ block.settings.description_font_size }}; font-weight:{{ block.settings.description_font_weight }};" class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
                   <a class="link animate-arrow" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
@@ -348,6 +348,16 @@
           "type": "image_picker",
           "id": "image",
           "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "range",
+          "id": "padding_left",
+          "min": 0,
+          "max": 30,
+          "step": 2,
+          "unit": "px",
+          "label": "Padding left",
+          "default": 10
         },
         {
           "type": "text",
