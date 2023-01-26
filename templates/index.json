@@ -144,7 +144,8 @@
         "7da397e5-e426-45ec-a01d-5a870f291a24": {
           "type": "caption",
           "settings": {
-            "caption": "OVER 60,000 sold",
+            "caption": "OVER 60,000 SOLD",
+            "caption_color": "#ffffff",
             "text_style": "subtitle",
             "text_size": "medium"
           }
@@ -153,6 +154,7 @@
           "type": "heading",
           "settings": {
             "heading": "Our #1 best-selling bra for over 10 years.",
+            "heading_color": "#ffffff",
             "heading_size": "h1"
           }
         },
@@ -160,7 +162,8 @@
           "type": "text",
           "settings": {
             "text": "<ul><li>Much needed relief from pressure and compression<\/li><li>One step access for on-the-go breastfeeding & pumping<\/li><li>Ideal for fluctuation and change in size through each stage of motherhood<\/li><\/ul>",
-            "text_style": "body"
+            "text_style": "body",
+            "text_color": "#ffffff"
           }
         },
         "template--17629010854182__a319854e-9811-442a-98fc-1e5fcf8e5c76-1674734129adf959d4-2": {
