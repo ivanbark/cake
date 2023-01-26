@@ -171,7 +171,6 @@
           "605dd587-f13b-4f7b-a316-2223512dd90e"
         ],
         "settings": {
-          "color_scheme": "accent-2",
           "text_color": "#ffffff",
           "background_color": "#e2b95b",
           "font_size": 15,
@@ -202,21 +201,33 @@
             "type": "link_list",
             "settings": {
               "heading": "Quick links",
-              "menu": "quick-links"
+              "menu": "quick-links",
+              "font_size_heading_block": 1.4,
+              "font_weight_heading_block": true,
+              "font_size_text_block": 1.4,
+              "font_weight_text_block": false
             }
           },
           "footer-1": {
             "type": "link_list",
             "settings": {
               "heading": "About us",
-              "menu": "about-us"
+              "menu": "about-us",
+              "font_size_heading_block": 1.4,
+              "font_weight_heading_block": true,
+              "font_size_text_block": 1.4,
+              "font_weight_text_block": false
             }
           },
           "3487ea04-839d-49ff-9632-1fbbca539f57": {
             "type": "link_list",
             "settings": {
               "heading": "The fit",
-              "menu": "the-fit"
+              "menu": "the-fit",
+              "font_size_heading_block": 1.4,
+              "font_weight_heading_block": true,
+              "font_size_text_block": 1.4,
+              "font_weight_text_block": false
             }
           }
         },
@@ -230,8 +241,18 @@
           "footer_text": "Cake Maternity. All Rights Reserved.",
           "newsletter_enable": true,
           "newsletter_heading": "Get 10% OFF your first order",
+          "font_size_heading_newsletter": 2.6,
+          "font_weight_heading_newsletter": true,
           "newsletter_text": "Join CakeMama Club and you’ll receive 10% OFF your first order, earn CakeCoins every time you shop or leave a review, plus get member exclusive offers & more.",
+          "font_size_text_newsletter": 1.4,
+          "font_weight_text_newsletter": false,
           "newsletter_btn_text": "Join + Save",
+          "font_size_button": 1.4,
+          "font_weight_button": true,
+          "newsletter_btn_color": "#ffffff",
+          "newsletter_btn_text_color": "#653f51",
+          "font_size_bottom": 1.6,
+          "font_weight_bottom": false,
           "show_social": true,
           "enable_country_selector": false,
           "enable_language_selector": false,
@@ -239,21 +260,7 @@
           "margin_top": 48,
           "padding_sides": 56,
           "padding_top": 60,
-          "padding_bottom": 36,
-          "font_size_heading_newsletter": 2.6,
-          "font_weight_heading_newsletter": true,
-          "font_size_text_newsletter": 1.4,
-          "font_weight_text_newsletter": false,
-          "font_size_heading_block": 1.6,
-          "font_weight_heading_block": true,
-          "font_size_text_block": 1.6,
-          "font_weight_text_block": false,
-          "font_size_bottom": 1.6,
-          "font_weight_bottom": false,
-          "font_size_button": 1.4,
-          "font_weight_button": true,
-          "newsletter_btn_color": "#ffffff",
-          "newsletter_btn_text_color": "#653f51"
+          "padding_bottom": 36
         }
       },
       "main-password-header": {
