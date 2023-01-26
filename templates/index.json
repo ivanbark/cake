@@ -141,6 +141,14 @@
     "a319854e-9811-442a-98fc-1e5fcf8e5c76": {
       "type": "image-with-text",
       "blocks": {
+        "7da397e5-e426-45ec-a01d-5a870f291a24": {
+          "type": "caption",
+          "settings": {
+            "caption": "OVER 60,000 sold",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "template--17629010854182__a319854e-9811-442a-98fc-1e5fcf8e5c76-1674734129adf959d4-0": {
           "type": "heading",
           "settings": {
@@ -168,6 +176,7 @@
         }
       },
       "block_order": [
+        "7da397e5-e426-45ec-a01d-5a870f291a24",
         "template--17629010854182__a319854e-9811-442a-98fc-1e5fcf8e5c76-1674734129adf959d4-0",
         "template--17629010854182__a319854e-9811-442a-98fc-1e5fcf8e5c76-1674734129adf959d4-1",
         "template--17629010854182__a319854e-9811-442a-98fc-1e5fcf8e5c76-1674734129adf959d4-2"
