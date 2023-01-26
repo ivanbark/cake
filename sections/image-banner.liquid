@@ -95,7 +95,7 @@
               <span>{{ block.settings.heading | escape }}</span>
             </h2>
           {%- when 'text' -%}
-            <div style="color:{{ block.settings.description_color }};" class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+            <div style="color:{{ block.settings.description_color }}; font-size:{{ block.settings.description_font_size }};" class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
               <span>{{ block.settings.text | escape }}</span>
             </div>
   
@@ -427,7 +427,7 @@
         },
         {
           "type": "range",
-          "id": "descrp_font_size",
+          "id": "description_font_size",
           "min": 10,
           "max": 80,
           "step": 2,
