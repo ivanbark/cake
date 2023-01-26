@@ -240,8 +240,7 @@
               </p>
               {% if block.settings.sidebar-show-mail == true %}
                 <a href="mailto:{{ block.settings.sidebar-mail }}">
-                  {% render 'icon-mail' %}
-                  {{ block.settings.sidebar-mail }}
+                  {% render 'icon-mail' %}{{ block.settings.sidebar-mail }}
                 </a>
               {% endif %}
             </div>          
