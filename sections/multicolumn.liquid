@@ -74,8 +74,7 @@
                       loading: 'lazy',
                       sizes: sizes,
                       widths: '275, 550, 710, 1420',
-                      class: 'multicolumn-card__image',
-                      style: 'float: left;'
+                      class: 'multicolumn-card__image'
                     }}                    
                   </div>
                 {% endif %}
@@ -87,7 +86,8 @@
                       loading: 'lazy',
                       sizes: sizes,
                       widths: '50',
-                      class: 'multicolumn-card__image'
+                      class: 'multicolumn-card__image',
+                      style: 'float: left;'
                     }}
                 {%- endif -%}
                 {%- if block.settings.title != blank -%}
