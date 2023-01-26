@@ -15,7 +15,7 @@
           "type": "text",
           "settings": {
             "heading": "Heading",
-            "subtext": "Share contact information, store details, and brand content with your customers.",
+            "subtext": "<p>Our support team is on hand <\/p><p>9am - 5pm AEST                                                            <a href=\"mailto:support@cakematernity.com\">support@cakematernity.com<\/a><\/p>",
             "font_size_heading": 1.4,
             "font_weight_heading": true,
             "font_size_text": 1.4,
