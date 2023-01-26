@@ -666,20 +666,20 @@
         },
         {
           "type": "range",
-          "id": "font_size_block",
+          "id": "font_size_text_block",
           "min": 0,
           "max": 5,
           "step": 0.2,
           "unit": "rem",
-          "label": "Font size",
+          "label": "Font size text",
           "default": 1.4      
         },
         {
           "type": "checkbox",
-          "id": "font_weight_block",
-          "default": true,
-          "label": "Font weight bold"
-        },
+          "id": "font_weight_text_block",
+          "default": false,
+          "label": "Font weight text"
+        }
       ]
     },
     {
@@ -808,6 +808,38 @@
     },
     {
       "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "range",
+      "id": "font_size_button",
+      "min": 0,
+      "max": 5,
+      "step": 0.2,
+      "unit": "rem",
+      "label": "Font size",
+      "default": 1.4      
+    },
+    {
+      "type": "checkbox",
+      "id": "font_weight_button",
+      "default": false,
+      "label": "Font weight"
+    },
+    {
+      "type": "color",
+      "id": "newsletter_btn_color",
+      "default": "#ffffff",
+      "label": "Button color"
+    },
+    {
+      "type": "color",
+      "id": "newsletter_btn_text_color",
+      "default": "#000000",
+      "label": "Button text color"
+    },
+    {
+      "type": "header",
       "content": "t:sections.footer.settings.header__2.content",
       "info": "t:sections.footer.settings.header__2.info"
     },
@@ -899,38 +931,6 @@
     },
     {
       "type": "header",
-      "content": "Button"
-    },
-    {
-      "type": "range",
-      "id": "font_size_button",
-      "min": 0,
-      "max": 5,
-      "step": 0.2,
-      "unit": "rem",
-      "label": "Font size",
-      "default": 1.4      
-    },
-    {
-      "type": "checkbox",
-      "id": "font_weight_button",
-      "default": false,
-      "label": "Font weight"
-    },
-    {
-      "type": "color",
-      "id": "newsletter_btn_color",
-      "default": "#ffffff",
-      "label": "Button color"
-    },
-    {
-      "type": "color",
-      "id": "newsletter_btn_text_color",
-      "default": "#000000",
-      "label": "Button text color"
-    },
-    {
-      "type": "header",
       "content": "Bottom Footer"
     },
     {
@@ -947,7 +947,7 @@
       "type": "checkbox",
       "id": "font_weight_bottom",
       "default": false,
-      "label": "Font weight bold"
+      "label": "Font weight"
     }
   ],
   "default": {
