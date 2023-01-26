@@ -91,7 +91,11 @@
                     }}
                 {%- endif -%}
                 {%- if block.settings.title != blank -%}
-                  <h3>{{ block.settings.title | escape }}</h3>
+                {%- if block.settings.title == "Encouraging breast health." or block.settings.title == "Mama-friendly returns." or block.settings.title == "Support for every mama." -%}
+                  <h3 style="margin: 0;">{{ block.settings.title | escape }}</h3>
+                {% else %}
+                   <h3>{{ block.settings.title | escape }}</h3>
+                {%- endif -%}
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
