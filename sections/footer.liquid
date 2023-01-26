@@ -346,6 +346,16 @@
                   {%- endif -%}
 
                   <style>
+                    @media screen and (max-width: 750px) {
+                      .footer__blocks-wrapper {
+                        display: flex !important;
+                      }
+                      .footer__blocks-wrapper div {
+                        width: 30% !important;
+                        margin-top: 0 !important;
+                      }
+                    }
+
                     .footer__top-block-list {
                       list-style: none;
                       padding: 0;
