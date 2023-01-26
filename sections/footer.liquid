@@ -72,6 +72,10 @@
     text-align: center;
   }
 
+  .footer-block__btn::after {
+    display: none !important;
+  }
+
   .footer, .footer h2, .footer a {
     color: {{ settings.footer_text_color }} !important;
   }
@@ -314,7 +318,7 @@
             
             <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
-                <h2 style="margin-bottom: 0; font-size: {{ block.settings.font_size_heading_block }}rem; font-weight:{% if block.settings.font_weight_heading_block == true %}bold{% else %}unset{% endif %};" class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
+                <h2 style="margin-bottom: 2px; font-size: {{ block.settings.font_size_heading_block }}rem; font-weight:{% if block.settings.font_weight_heading_block == true %}bold{% else %}unset{% endif %};" class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
               {%- endif -%}
 
               {%- case block.type -%}
