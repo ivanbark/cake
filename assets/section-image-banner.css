@@ -401,6 +401,7 @@
 
 .banner__heading {
   margin-bottom: 0;
+  font-size: 39px !important;
 }
 
 .banner__box .banner__heading + * {
