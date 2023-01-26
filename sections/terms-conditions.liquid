@@ -47,6 +47,10 @@
           "label": "t:sections.footer.blocks.text.settings.subtext.label"
         },
         {
+          "type": "header",
+          "content": "Mail"
+        },
+        {
           "type": "checkbox",
           "id": "sidebar-show-mail",
           "default": true,
@@ -57,6 +61,10 @@
           "id": "sidebar-mail",
           "default": "mail@email.com",
           "label": "Mail"
+        },
+        {
+          "type": "header",
+          "content": "Font"
         },
         {
           "type": "range",
@@ -231,7 +239,10 @@
                 {{ block.settings.subtext }}
               </p>
               {% if block.settings.sidebar-show-mail == true %}
-                <a></a>
+                <a href="mailto:{{ block.settings.sidebar-mail }}">
+                  {% render 'icon-mail' %}
+                  {{ block.settings.sidebar-mail }}
+                </a>
               {% endif %}
             </div>          
         {% endcase %}
