@@ -46,7 +46,7 @@
               <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}
               {%- if block.settings.button_label != blank -%}
-                <a style=" font-weight:{{ block.settings.button_font_weight }}; color:{{ block.settings.button_text_color }}; background-color:{{ block.settings.button_background_color }}; border-radius: 5px; --buttons-border-offset: 0;" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
+                <a style="font-size:{{ block.settings.button_font_size }}; font-weight:{{ block.settings.button_font_weight }}; color:{{ block.settings.button_text_color }}; background-color:{{ block.settings.button_background_color }}; border-radius: 5px; --buttons-border-offset: 0;" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
                   {{ block.settings.button_label | escape }}
                 </a>
               {%- endif -%}
@@ -420,6 +420,16 @@
           ],
             "default": "normal",
             "label": "font weight"
+        },
+        {
+          "type": "range",
+          "id": "button_font_size",
+          "min": 0,
+          "max": 30,
+          "step": 2,
+          "unit": "px",
+          "label": "Button text size",
+          "default": 10
         }
       ]
     }
