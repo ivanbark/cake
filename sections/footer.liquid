@@ -181,7 +181,7 @@
               <p class="footer-block__details-content footer__top-newsletter-text" style="width: 100%;max-width: 450px;margin-top:0;line-height:21px;">{{ section.settings.newsletter_text | escape }}</p>
             {%- endif -%}
             {%- if section.settings.newsletter_btn_text != blank -%}
-              <button class="footer-block__btn footer__top-newsletter-btn">{{ section.settings.newsletter_btn_text | escape }}</button>
+              <button class="button footer-block__btn footer__top-newsletter-btn">{{ section.settings.newsletter_btn_text | escape }}</button>
             {%- endif -%}
             {% comment %} {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
               <input type="hidden" name="contact[tags]" value="newsletter">
