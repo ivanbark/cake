@@ -663,7 +663,23 @@
           "default": "footer",
           "label": "t:sections.footer.blocks.link_list.settings.menu.label",
           "info": "t:sections.footer.blocks.link_list.settings.menu.info"
-        }
+        },
+        {
+          "type": "range",
+          "id": "font_size_block",
+          "min": 0,
+          "max": 5,
+          "step": 0.2,
+          "unit": "rem",
+          "label": "Font size",
+          "default": 1.4      
+        },
+        {
+          "type": "checkbox",
+          "id": "font_weight_block",
+          "default": true,
+          "label": "Font weight bold"
+        },
       ]
     },
     {
@@ -883,98 +899,6 @@
     },
     {
       "type": "header",
-      "content": "Signup Block"
-    },
-    {
-      "type": "range",
-      "id": "font_size_heading_newsletter",
-      "min": 0,
-      "max": 5,
-      "step": 0.2,
-      "unit": "rem",
-      "label": "Font size heading",
-      "default": 1.4      
-    },
-    {
-      "type": "checkbox",
-      "id": "font_weight_heading_newsletter",
-      "default": true,
-      "label": "Font weight heading"
-    },
-    {
-      "type": "range",
-      "id": "font_size_text_newsletter",
-      "min": 0,
-      "max": 5,
-      "step": 0.2,
-      "unit": "rem",
-      "label": "Font size text",
-      "default": 1.4      
-    },
-    {
-      "type": "checkbox",
-      "id": "font_weight_text_newsletter",
-      "default": false,
-      "label": "Font weight text"
-    },
-    {
-      "type": "header",
-      "content": "Link Blocks"
-    },
-    {
-      "type": "range",
-      "id": "font_size_heading_block",
-      "min": 0,
-      "max": 5,
-      "step": 0.2,
-      "unit": "rem",
-      "label": "Font size heading",
-      "default": 1.4      
-    },
-    {
-      "type": "checkbox",
-      "id": "font_weight_heading_block",
-      "default": true,
-      "label": "Font weight heading"
-    },
-    {
-      "type": "range",
-      "id": "font_size_text_block",
-      "min": 0,
-      "max": 5,
-      "step": 0.2,
-      "unit": "rem",
-      "label": "Font size text",
-      "default": 1.4      
-    },
-    {
-      "type": "checkbox",
-      "id": "font_weight_text_block",
-      "default": false,
-      "label": "Font weight text"
-    },
-    {
-      "type": "header",
-      "content": "Bottom Footer"
-    },
-    {
-      "type": "range",
-      "id": "font_size_bottom",
-      "min": 0,
-      "max": 5,
-      "step": 0.2,
-      "unit": "rem",
-      "label": "Font size",
-      "default": 1.4      
-    },
-    {
-      "type": "checkbox",
-      "id": "font_weight_bottom",
-      "default": false,
-      "label": "Font weight"
-    },
-    {
-      "type": "header",
       "content": "Button"
     },
     {
@@ -1004,6 +928,26 @@
       "id": "newsletter_btn_text_color",
       "default": "#000000",
       "label": "Button text color"
+    },
+    {
+      "type": "header",
+      "content": "Bottom Footer"
+    },
+    {
+      "type": "range",
+      "id": "font_size_bottom",
+      "min": 0,
+      "max": 5,
+      "step": 0.2,
+      "unit": "rem",
+      "label": "Font size",
+      "default": 1.4      
+    },
+    {
+      "type": "checkbox",
+      "id": "font_weight_bottom",
+      "default": false,
+      "label": "Font weight bold"
     }
   ],
   "default": {
