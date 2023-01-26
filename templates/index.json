@@ -74,6 +74,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Icon-banner-1-breast-health.webp",
+            "padding_left": 60,
             "title": "Encouraging breast health.",
             "title_font_weight": "bold",
             "title_font_size": 16,
@@ -88,6 +89,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Icon-banner-2-support.webp",
+            "padding_left": 60,
             "title": "Support for every mama.",
             "title_font_weight": "bold",
             "title_font_size": 16,
@@ -102,6 +104,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Icon-banner-3-returns.webp",
+            "padding_left": 60,
             "title": "Mama-friendly returns.",
             "title_font_weight": "bold",
             "title_font_size": 16,
@@ -131,6 +134,49 @@
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "a319854e-9811-442a-98fc-1e5fcf8e5c76": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17629010854182__a319854e-9811-442a-98fc-1e5fcf8e5c76-1674734129adf959d4-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our #1 best-selling bra for over 10 years.",
+            "heading_size": "h1"
+          }
+        },
+        "template--17629010854182__a319854e-9811-442a-98fc-1e5fcf8e5c76-1674734129adf959d4-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--17629010854182__a319854e-9811-442a-98fc-1e5fcf8e5c76-1674734129adf959d4-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17629010854182__a319854e-9811-442a-98fc-1e5fcf8e5c76-1674734129adf959d4-0",
+        "template--17629010854182__a319854e-9811-442a-98fc-1e5fcf8e5c76-1674734129adf959d4-1",
+        "template--17629010854182__a319854e-9811-442a-98fc-1e5fcf8e5c76-1674734129adf959d4-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -250,6 +296,7 @@
         "column1": {
           "type": "column",
           "settings": {
+            "padding_left": 60,
             "title": "Column",
             "title_font_weight": "normal",
             "title_font_size": 10,
@@ -263,6 +310,7 @@
         "column2": {
           "type": "column",
           "settings": {
+            "padding_left": 60,
             "title": "Column",
             "title_font_weight": "normal",
             "title_font_size": 10,
@@ -276,6 +324,7 @@
         "column3": {
           "type": "column",
           "settings": {
+            "padding_left": 60,
             "title": "Column",
             "title_font_weight": "normal",
             "title_font_size": 10,
@@ -313,6 +362,7 @@
   "order": [
     "image_banner",
     "82a23ee6-c19a-4ea7-b39b-462089d3ee3a",
+    "a319854e-9811-442a-98fc-1e5fcf8e5c76",
     "rich_text",
     "featured_collection",
     "collage",
