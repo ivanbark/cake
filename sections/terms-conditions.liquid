@@ -3,12 +3,12 @@
   "name": "Term + Conditions",
   "blocks": [
     {
-      "type": "side-bar-menu",
-      "name": "Side bar menu",
+      "type": "sidebar-menu",
+      "name": "Sidebar menu",
       "settings": [
         {
           "type": "link_list",
-          "id": "side-bar-menu",
+          "id": "sidebar-menu",
           "default": "footer",
           "label": "Menu"
         },
@@ -173,11 +173,11 @@
 <div class="page-wrapper">
 
   {% if section.blocks.size > 0 %}
-    <div class="side-bar">
+    <div class="sidebar">
       {% for block in section.blocks %}
         {% case block.type %}
           {% when "link_list" %}
-            <div class="side-bar-menu">
+            <div class="sidebar-menu">
               {%- if block.settings.menu != blank -%}
                 <ul class="menu-list">
                   {%- for link in block.settings.menu.links -%}
@@ -191,7 +191,7 @@
               {%- endif -%}
             </div>
           {% when "text" %}
-            <div class="side-bar-text">
+            <div class="sidebar-text">
               <h2 style="font-size: {{ block.settings.font_size_heading }}rem; font-weight: {% if block.settings.font_weight_heading == true %}bold{% else %}unset{% endif %};">{{ block.settings.heading }}</h2>
               <p style="font-size: {{ block.settings.font_size_text }}rem; font-weight: {% if block.settings.font_weight_text == true %}bold{% else %}unset{% endif %};">
                 {{ block.settings.subtext }}
