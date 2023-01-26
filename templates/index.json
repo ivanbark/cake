@@ -162,7 +162,8 @@
             "button_link": "shopify:\/\/products\/cotton-candy-nursing-bra-heather-bl",
             "button_text_color": "#000000",
             "button_background_color": "#ffffff",
-            "button_font_weight": "Bold"
+            "button_font_weight": "Bold",
+            "button_font_size": 14
           }
         }
       },
