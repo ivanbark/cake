@@ -77,8 +77,7 @@
                 </div>
               {%- endif -%}
               <div class="multicolumn-card__info">
-                {%- if block.settings.title == "Encouraging breast health." -%}
-                   
+                {%- if block.settings.title == "Encouraging breast health." or block.settings.title == "Mama-friendly returns." or block.settings.title == "Support for every mama." -%}
                     {{ block.settings.image | image_url: width: 50 | image_tag:
                       loading: 'lazy',
                       sizes: sizes,
