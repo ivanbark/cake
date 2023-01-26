@@ -330,4 +330,6 @@
 
 .star_list_item {
   list-style: none;
+  width: 25px;
+  height: 25px;
 }
