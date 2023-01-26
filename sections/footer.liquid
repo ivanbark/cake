@@ -311,22 +311,10 @@
         -%}
         <div style="width: 50%; padding:0 15px 20px 15px;" class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
           {%- for block in section.blocks -%}
-            <style>
-              .footer__top-block-heading {
-                margin-bottom: 5px !important;
-                font-size: {{ block.settings.font_size_heading_block }}rem;
-                font-weight: {% if block.settings.font_weight_heading_block == true %}bold{% else %}unset{% endif %};
-              }
-            
-              .footer__top-block-text {
-                font-size: {{ block.settings.font_size_text_block }}rem !important;
-                font-weight: {% if block.settings.font_weight_text_block == true %}bold{% else %}unset{% endif %};
-              }
-            </style>
             
             <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
-                <h2 style="margin-bottom: 0;" class="footer-block__heading footer__top-block-heading">{{- block.settings.heading | escape -}}</h2>
+                <h2 style="margin-bottom: 0; font-size: {{ block.settings.font_size_heading_block }}rem; font-weight:{% if block.settings.font_weight_heading_block == true %}bold{% else %}unset{% endif %};" class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
               {%- endif -%}
 
               {%- case block.type -%}
@@ -339,7 +327,7 @@
                     <ul class="footer__top-block-list">
                       {%- for link in block.settings.menu.links -%}
                         <li>
-                          <a href="{{ link.url }}" class="">
+                          <a href="{{ link.url }}" class="" style="font-size: {{ block.settings.font_size_text_block }}rem; font-weight:{% if block.settings.font_weight_text_block == true %}bold{% else %}unset{% endif %};">
                             {{ link.title }}
                           </a>
                         </li>
@@ -668,6 +656,22 @@
         },
         {
           "type": "range",
+          "id": "font_size_heading_block",
+          "min": 0,
+          "max": 5,
+          "step": 0.2,
+          "unit": "rem",
+          "label": "Font size heading",
+          "default": 1.4      
+        },
+        {
+          "type": "checkbox",
+          "id": "font_weight_heading_block",
+          "default": false,
+          "label": "Font weight bold heading"
+        },
+        {
+          "type": "range",
           "id": "font_size_text_block",
           "min": 0,
           "max": 5,
@@ -680,7 +684,7 @@
           "type": "checkbox",
           "id": "font_weight_text_block",
           "default": false,
-          "label": "Font weight text"
+          "label": "Font weight bold text"
         }
       ]
     },
