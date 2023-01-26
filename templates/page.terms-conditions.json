@@ -3,10 +3,10 @@
     "main": {
       "type": "terms-conditions",
       "blocks": {
-        "43c677d4-91fe-4ab7-8e16-098b27c910d9": {
-          "type": "side-bar-menu",
+        "c2d3229b-5977-4c20-a62a-b22ab19f9f57": {
+          "type": "sidebar-menu",
           "settings": {
-            "side-bar-menu": "footer",
+            "sidebar-menu": "sidebar-menu",
             "font_size": 1.4,
             "font_weight": false
           }
@@ -24,7 +24,7 @@
         }
       },
       "block_order": [
-        "43c677d4-91fe-4ab7-8e16-098b27c910d9",
+        "c2d3229b-5977-4c20-a62a-b22ab19f9f57",
         "c169b02e-2ff0-4f11-a039-4fe634d94621"
       ],
       "settings": {
