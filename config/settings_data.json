@@ -250,7 +250,7 @@
           "font_size_bottom": 1.6,
           "font_weight_bottom": false,
           "font_size_button": 1.4,
-          "font_weight_button": false,
+          "font_weight_button": true,
           "newsletter_btn_color": "#ffffff",
           "newsletter_btn_text_color": "#653f51"
         }
