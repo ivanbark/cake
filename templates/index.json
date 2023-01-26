@@ -99,8 +99,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Icon-banner-3-returns.webp",
             "title": "Mama-friendly returns.",
-            "title_font_weight": "normal",
-            "title_font_size": 10,
+            "title_font_weight": "bold",
+            "title_font_size": 16,
             "text": "<p>45-day returns for busy mamas.<\/p>",
             "link_label": "",
             "link": ""
