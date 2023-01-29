@@ -34,7 +34,7 @@
               </p>
             {%- when 'text' -%}
               <div class="rich-text__text rte" {{ block.shopify_attributes }}>
-                <a href="{{ block.settings.link_url }}">
+                <a style="color:{{ block.settings.text_color }};" href="{{ block.settings.text_url }}">
                   {{ block.settings.text }}
                 </a>
               </div>
