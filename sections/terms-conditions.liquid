@@ -282,6 +282,10 @@
     color: black;
     text-decoration: none;
   }
+
+  .menu-list .active {
+    font-weight: bold;
+  }
   
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -374,7 +378,7 @@
                 <ul class="menu-list">
                   {%- for link in block.settings.sidebar-menu.links -%}
                     <li>
-                      <a href="{{ link.url }}" class="" style="font-size: {{ block.settings.font_size_text }}rem; font-weight:{% if block.settings.font_weight_text == true %}bold{% else %}unset{% endif %};">
+                      <a class="{% if link.title == page.title %}active{% endif %}" href="{{ link.url }}" class="" style="font-size: {{ block.settings.font_size_text }}rem; font-weight:{% if block.settings.font_weight_text == true %}bold{% else %}unset{% endif %};">
                         {{ link.title }}
                       </a>
                     </li>
