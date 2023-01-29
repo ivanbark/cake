@@ -202,6 +202,10 @@
   div.active {
     display: block;
   }
+
+  img.active {
+    
+  }
 </style>
 
 <script>
@@ -219,7 +223,18 @@
 
 <div class="video-with-text">
   <div class="visual-content">
-    
+    {% if section.blocks.size > 0 %}   
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'video' %}
+            <video>
+              <source src="{{ block.settings.video }}">
+            </video>
+          {% when 'image' %}
+            <img src="{{ block.settings.image | img_url }}">
+        {% endcase %}
+      {% endfor %}
+    {% endif %}
   </div>
   <div class="text-content">
     <h2>{{ section.settings.heading }}</h2>
