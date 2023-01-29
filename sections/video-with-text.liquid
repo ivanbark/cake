@@ -211,11 +211,11 @@
     display: block;
   }
 
-  img.active {
+  .img.active {
     display: block;
   }
 
-  video.active {
+  .video.active {
     display: block;
   }
 
@@ -246,11 +246,11 @@
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'video' %}
-            <video id="video-{{ block.id }}">
+            <video class="video" id="video-{{ block.id }}">
               <source src="{{ block.settings.video }}">
             </video>
           {% when 'image' %}
-            <img id="img-{{ block.id }}" src="{{ block.settings.image | img_url }}">
+            <img class="img" id="img-{{ block.id }}" src="{{ block.settings.image | img_url }}">
         {% endcase %}
       {% endfor %}
     {% endif %}
@@ -281,7 +281,7 @@
 
 <script>
   varients.forEach( function (varient) {
-    document.getElementById(varient + id).classList.add("active");    
+    document.getElementById(varient + blocks[0]).classList.add("active");    
   });     
 </script>
 
