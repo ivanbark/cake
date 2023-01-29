@@ -194,6 +194,7 @@
     
   </div>
   <div class="text-content">
+    <h2>{{ section.settings.heading }}</h2>
     {% if section.blocks.size > 0 %}
       <div class="icons">
         {% for block in section.blocks %}
@@ -201,6 +202,11 @@
         {% endfor %}
       </div>
     {% endif %}
+    <div class="block-content">
+
+    </div>
+
+    <a class="button">{{ section.settings.btn_text }}</a>
     
   </div>
 </div>
