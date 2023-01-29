@@ -198,7 +198,9 @@
   var blocks = [];
   
   function selectContent(id) {
-    document.getElementById("content-" + id).classList.toggle("active");
+    blocks.forEach(function(id) {
+      document.getElementById("content-" + id).classList.toggle("active");      
+    });
   }
 </script>
 
@@ -229,4 +231,8 @@
     
   </div>
 </div>
+
+<script>
+  document.getElementById("content-" + blocks[0]).classList.add("active");  
+</script>
 
