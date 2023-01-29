@@ -7,11 +7,6 @@
   "class": "section",
   "settings": [
     {
-      "type": "url",
-      "id": "video",
-      "label": "Video URL"
-    },    
-    {
       "type": "select",
       "id": "desktop_content_alignment",
       "options": [
@@ -115,12 +110,44 @@
   "blocks": [
     {
       "type": "video",
-      "name": "Item",
+      "name": "Image item",
       "settings": [
         {
           "type": "image_picker",
           "id": "icon",
           "label": "Icon"
+        },
+        {
+          "type": "url",
+          "id": "video",
+          "label": "Video URL"
+        },    
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Heading"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Info"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Video item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
         },
         {
           "type": "text",
