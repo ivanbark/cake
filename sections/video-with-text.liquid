@@ -195,11 +195,10 @@
 {% endschema %}
 
 <script>
-  alert("test");
   var blocks = [];
   
   function selectContent(id) {
-    document.getElementById(id).classList.toggle("active");
+    document.getElementById("content-" + id).classList.toggle("active");
   }
 </script>
 
@@ -215,11 +214,11 @@
           <script>
             blocks.push = {{ block.id }};
           </script>
-          <img class="{{ block.id }}" onClick="selectContent('{{ block.id }}')" src="{{ block.settings.icon | img_url }}">
+          <img id="img-{{ block.id }}" onClick="selectContent('{{ block.id }}')" src="{{ block.settings.icon | img_url }}">
         {% endfor %}
       </div>
       {% for block in section.blocks %}
-        <div class="{{ block.id }}" class="block-content">
+        <div id="content-{{ block.id }}" class="block-content">
           <h2 class="block-content-heading">{{ block.settings.heading }}</h2>
           <p class="block-content-text">{{ block.settings.text }}</p>
         </div>
