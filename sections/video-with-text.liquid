@@ -244,8 +244,8 @@
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'video' %}
-            <video class="video visual" id="visual-{{ block.id }}">
-              <source src="{{ block.settings.video }}">
+            <video autoplay="" loop="" muted="" playsinline="" class="video visual" id="visual-{{ block.id }}" data-bind="foreach: sources" controls="controls" controlslist="nodownload nofullscreen" alt="pumpkin nursing bra how to video">
+              <source data-bind="attr: { type: type, src: src }" type="video/mp4" src="{{ block.settings.video }}">
             </video>
           {% when 'image' %}
             <img class="img visual" id="visual-{{ block.id }}" src="{{ block.settings.image | img_url }}">
