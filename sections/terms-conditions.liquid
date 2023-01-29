@@ -13,8 +13,24 @@
           "label": "Menu"
         },
         {
+          "type": "header",
+          "content": "Heading"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_menu_heading",
+          "default": false,
+          "label": "Show Heading"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Heading",
+          "label": "Heading"
+        },
+        {
           "type": "range",
-          "id": "font_size",
+          "id": "font_size_heading",
           "min": 0,
           "max": 5,
           "step": 0.2,
@@ -24,7 +40,27 @@
         },
         {
           "type": "checkbox",
-          "id": "font_weight",
+          "id": "font_weight_heading",
+          "default": false,
+          "label": "Font weight bold"
+        },
+        {
+          "type": "header",
+          "content": "Text"
+        },
+        {
+          "type": "range",
+          "id": "font_size_text",
+          "min": 0,
+          "max": 5,
+          "step": 0.2,
+          "unit": "rem",
+          "label": "Font size",
+          "default": 1.4      
+        },
+        {
+          "type": "checkbox",
+          "id": "font_weight_text",
           "default": false,
           "label": "Font weight bold"
         }
@@ -257,10 +293,13 @@
           {% when 'link_list' %}
             <div class="sidebar-menu">
               {%- if block.settings.sidebar-menu != blank -%}
+                {% if block.settings.show_menu_heading == true %}
+                  <h2 style="font-size: {{ block.settings.font_size_heading }}rem; font-weight:{% if block.settings.font_weight_heading == true %}bold{% else %}unset{% endif %};">{{ block.settings.heading }}</h2>
+                {% endif %}
                 <ul class="menu-list">
                   {%- for link in block.settings.sidebar-menu.links -%}
                     <li>
-                      <a href="{{ link.url }}" class="" style="font-size: {{ block.settings.font_size }}rem; font-weight:{% if block.settings.font_weight == true %}bold{% else %}unset{% endif %};">
+                      <a href="{{ link.url }}" class="" style="font-size: {{ block.settings.font_size_text }}rem; font-weight:{% if block.settings.font_weight_text == true %}bold{% else %}unset{% endif %};">
                         {{ link.title }}
                       </a>
                     </li>
