@@ -203,11 +203,11 @@
     {% if section.blocks.size > 0 %}
       <div class="icons">
         {% for block in section.blocks %}
-          <img src="{{ block.settings.icon | img_url }}">
+          <img id="img-{{ block.id }}" src="{{ block.settings.icon | img_url }}">
         {% endfor %}
       </div>
       {% for block in section.blocks %}
-        <div id="{{ block.id }}" class="block-content">
+        <div id="content-{{ block.id }}" class="block-content">
           <h2 class="block-content-heading">{{ block.settings.heading }}</h2>
           <p class="block-content-text">{{ block.settings.text }}</p>
         </div>
