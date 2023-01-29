@@ -226,7 +226,7 @@
 
 <script>
   var blocks = [];
-  var varients = ["content-", "icon-"];
+  var varients = ["content-", "icon-", "video-", "img-"];
   
   function selectContent(id) {
     blocks.forEach( function (id) {
@@ -282,8 +282,10 @@
 </div>
 
 <script>
-  varients.forEach( function (varient) {
-    document.getElementById(varient + blocks[0]).classList.add("active");    
-  });     
+  try {
+    varients.forEach( function (varient) {
+      document.getElementById(varient + blocks[0]).classList.add("active");    
+    });    
+  } catch {}
 </script>
 
