@@ -214,7 +214,7 @@
       <div class="icons">
         {% for block in section.blocks %}
           <script>
-            blocks.push = {{ block.id }};
+            blocks.push = "{{ block.id }}";
           </script>
           <img id="{{ block.id }}" onClick="selectContent()" src="{{ block.settings.icon | img_url }}">
         {% endfor %}
