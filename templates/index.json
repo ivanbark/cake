@@ -255,7 +255,8 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Shop now<\/p>"
+            "text": "<p>Shop now<\/p>",
+            "text_link": "shopify:\/\/collections\/last-chance-to-buy"
           }
         }
       },
