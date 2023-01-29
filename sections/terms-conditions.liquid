@@ -293,7 +293,7 @@
             <div class="sidebar-menu">
               {%- if block.settings.sidebar-menu != blank -%}
                 {% if block.settings.show_menu_heading == true %}
-                  <h2 style="font-size: {{ block.settings.font_size_heading }}rem; font-weight:{% if block.settings.font_weight_heading == true %}bold{% else %}unset{% endif %};">{{ block.settings.heading }}</h2>
+                  <h2 style="margin: 0 0 20px 0;font-size: {{ block.settings.font_size_heading }}rem; font-weight:{% if block.settings.font_weight_heading == true %}bold{% else %}unset{% endif %};">{{ block.settings.heading }}</h2>
                 {% endif %}
                 <ul class="menu-list">
                   {%- for link in block.settings.sidebar-menu.links -%}
