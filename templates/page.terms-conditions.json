@@ -9,6 +9,7 @@
             "sidebar-menu": "general",
             "show_menu_heading": true,
             "heading": "General",
+            "heading_color": "#ad8260",
             "font_size_heading": 2,
             "font_weight_heading": true,
             "font_size_text": 1.6,
@@ -21,6 +22,7 @@
             "sidebar-menu": "sidebar-menu",
             "show_menu_heading": false,
             "heading": "",
+            "heading_color": "#ad8260",
             "font_size_heading": 1.4,
             "font_weight_heading": false,
             "font_size_text": 1.8,
@@ -50,7 +52,7 @@
         "padding_top": 28,
         "padding_bottom": 28,
         "font_size_heading": 2.6,
-        "font_weight_heading": true,
+        "font_weight_heading": false,
         "font_size_text": 1.8,
         "font_weight_text": false
       }
