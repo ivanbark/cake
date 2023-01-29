@@ -256,6 +256,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Shop now<\/p>",
+            "text_color": "#000000",
             "text_link": "shopify:\/\/collections\/last-chance-to-buy"
           }
         }
