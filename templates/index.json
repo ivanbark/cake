@@ -209,28 +209,32 @@
           "type": "featured_collection",
           "settings": {
             "collection": "maternity-nursing-bras",
-            "collection_title": "Bras"
+            "collection_title": "Bras",
+            "text_color": "#ffffff"
           }
         },
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-1": {
           "type": "featured_collection",
           "settings": {
             "collection": "maternity-clothing",
-            "collection_title": "Clothing"
+            "collection_title": "Clothing",
+            "text_color": "#ffffff"
           }
         },
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-2": {
           "type": "featured_collection",
           "settings": {
             "collection": "gifting",
-            "collection_title": "Wellbeing"
+            "collection_title": "Wellbeing",
+            "text_color": "#ffffff"
           }
         },
         "491e48e9-8bf9-449d-8682-87ef20d541ae": {
           "type": "featured_collection",
           "settings": {
             "collection": "sleep-bras",
-            "collection_title": "Sleep"
+            "collection_title": "Sleep",
+            "text_color": "#ffffff"
           }
         }
       },
@@ -303,6 +307,7 @@
           "type": "image",
           "settings": {
             "icon": "shopify:\/\/shop_images\/Pumping-technical-icon-zipper-2.webp",
+            "image": "shopify:\/\/shop_images\/pumpkin-nursing-bra-front.jpg",
             "heading": "Convenient safety zip for easy access.",
             "text": "Our multi-way zipper is cotton lined for comfort and provides breastfeeding and pumping access."
           }
@@ -311,6 +316,7 @@
           "type": "image",
           "settings": {
             "icon": "shopify:\/\/shop_images\/Pumping-technical-icon-t-shirt-bra-3.jpg",
+            "image": "shopify:\/\/shop_images\/pumpkin-nursing-bra-close-up.jpg",
             "heading": "The world’s first t-shirt pumping bra.",
             "text": "Spacer material creates a smooth profile & low center front, perfect for under t-shirts."
           }
@@ -319,6 +325,7 @@
           "type": "image",
           "settings": {
             "icon": "shopify:\/\/shop_images\/Pumping-technical-icon-back-4.webp",
+            "image": "shopify:\/\/shop_images\/pumpkin-nursing-bra-back.webp",
             "heading": "Room to grow with 6 hook & eye options.",
             "text": "Providing support and security while offering room to grow, expanding or contracting up to half a size."
           }
