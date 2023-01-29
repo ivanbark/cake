@@ -285,13 +285,54 @@
     },
     "23c2764d-de91-4d6e-beb0-09252a8655e2": {
       "type": "video-with-text",
+      "blocks": {
+        "a3440f32-582b-4d3d-8dbc-d4bfddcf8be9": {
+          "type": "image",
+          "settings": {
+            "heading": "Heading",
+            "text": ""
+          }
+        },
+        "5a314a9c-9c96-4382-a2b9-c129d392efdc": {
+          "type": "video",
+          "settings": {
+            "video": "",
+            "heading": "Heading",
+            "text": ""
+          }
+        },
+        "9342679c-b736-4222-9565-375d0bb5fb9e": {
+          "type": "video",
+          "settings": {
+            "video": "",
+            "heading": "Heading",
+            "text": ""
+          }
+        },
+        "496ed037-688e-4e59-8fc4-557a1da81408": {
+          "type": "video",
+          "settings": {
+            "video": "",
+            "heading": "Heading",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "a3440f32-582b-4d3d-8dbc-d4bfddcf8be9",
+        "5a314a9c-9c96-4382-a2b9-c129d392efdc",
+        "9342679c-b736-4222-9565-375d0bb5fb9e",
+        "496ed037-688e-4e59-8fc4-557a1da81408"
+      ],
       "settings": {
-        "video": "",
         "desktop_content_alignment": "left",
         "text_side_background_color": "#ffffff",
         "mobile_content_alignment": "left",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "heading": "Heading",
+        "font_size_heading": 1.4,
+        "font_weight_heading": false
       }
     },
     "featured_collection": {
