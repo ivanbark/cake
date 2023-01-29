@@ -94,11 +94,48 @@
       "id": "heading",
       "label": "Heading",
       "default": "Heading"
+    },
+    {
+      "type": "range",
+      "id": "font_size_heading",
+      "min": 0,
+      "max": 5,
+      "step": 0.2,
+      "unit": "rem",
+      "label": "Font size",
+      "default": 1.4      
+    },
+    {
+      "type": "checkbox",
+      "id": "font_weight_heading",
+      "default": false,
+      "label": "Font weight bold"
     }
-    
   ],
   "blocks": [
-    
+    {
+      "type": "text",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Info"
+        }
+      ]
+    }
   ]
 }
 {% endschema %}
+
