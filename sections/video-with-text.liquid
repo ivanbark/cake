@@ -231,7 +231,9 @@
   function selectContent(id) {
     blocks.forEach( function (id) {
       varients.forEach( function (varient) {
-        document.getElementById(varient + id).classList.remove("active");    
+        try {
+          document.getElementById(varient + id).classList.remove("active");   
+        } catch {}
       });
     });  
     varients.forEach( function (varient) {
