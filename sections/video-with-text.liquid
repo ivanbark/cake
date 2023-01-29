@@ -171,7 +171,7 @@
     {% if section.blocks.size > 0 %}
       <div class="icons">
         {% for block in section.blocks %}
-          <img src="{{ block.settings.icon }}">
+          <img src="{{ block.settings.icon | img_url }}">
         {% endfor %}
       </div>
     {% endif %}
