@@ -244,11 +244,11 @@
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'video' %}
-            <video class="video" id="visual-{{ block.id }}">
+            <video class="video visual" id="visual-{{ block.id }}">
               <source src="{{ block.settings.video }}">
             </video>
           {% when 'image' %}
-            <img class="img" id="visual-{{ block.id }}" src="{{ block.settings.image | img_url }}">
+            <img class="img visual" id="visual-{{ block.id }}" src="{{ block.settings.image | img_url }}">
         {% endcase %}
       {% endfor %}
     {% endif %}
