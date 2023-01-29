@@ -211,11 +211,7 @@
     display: block;
   }
 
-  .img.active {
-    display: block;
-  }
-
-  .video.active {
+  .visual.active {
     display: block;
   }
 
@@ -226,14 +222,14 @@
 
 <script>
   var blocks = [];
-  var varients = ["content-", "icon-", "video-", "img-"];
+  var varients = ["content-", "icon-", "visual-"];
   
   function selectContent(id) {
     blocks.forEach( function (id) {
       varients.forEach( function (varient) {
         try {
           document.getElementById(varient + id).classList.remove("active");   
-        } catch {}
+        } catch (e) { alert(e); }
       });
     });  
     varients.forEach( function (varient) {
@@ -248,11 +244,11 @@
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'video' %}
-            <video class="video" id="video-{{ block.id }}">
+            <video class="video" id="visual-{{ block.id }}">
               <source src="{{ block.settings.video }}">
             </video>
           {% when 'image' %}
-            <img class="img" id="img-{{ block.id }}" src="{{ block.settings.image | img_url }}">
+            <img class="img" id="visual-{{ block.id }}" src="{{ block.settings.image | img_url }}">
         {% endcase %}
       {% endfor %}
     {% endif %}
@@ -286,6 +282,6 @@
     varients.forEach( function (varient) {
       document.getElementById(varient + blocks[0]).classList.add("active");    
     });    
-  } catch {}
+  } catch (e) { alert(e); }
 </script>
 
