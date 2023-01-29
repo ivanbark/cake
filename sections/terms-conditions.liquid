@@ -220,6 +220,7 @@
 {%- style -%}
   .page-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 30px auto 10px auto;
     padding-left: 15px;
@@ -295,6 +296,11 @@
     margin: 0 0 20px 0 !important;
   }
 
+  .page-path a {
+    text-decoration: none;
+    color: black;
+  }
+
   @media (min-width: 576px) {
     .page-wrapper {
       max-width: 540px;
@@ -332,6 +338,10 @@
 
     .page-wrapper div {
       width: 100% !important;
+    }
+
+    .page-path {
+      display: none;
     }
   }
 
