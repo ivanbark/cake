@@ -208,25 +208,29 @@
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "maternity-nursing-bras"
+            "collection": "maternity-nursing-bras",
+            "collection_title": "Bras"
           }
         },
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "maternity-clothing"
+            "collection": "maternity-clothing",
+            "collection_title": "Name"
           }
         },
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "gifting"
+            "collection": "gifting",
+            "collection_title": "Name"
           }
         },
         "491e48e9-8bf9-449d-8682-87ef20d541ae": {
           "type": "featured_collection",
           "settings": {
-            "collection": "sleep-bras"
+            "collection": "sleep-bras",
+            "collection_title": "Name"
           }
         }
       },
@@ -334,7 +338,11 @@
         "padding_bottom": 36,
         "heading": "INNOVATIVE DESIGN — EASY TO USE",
         "font_size_heading": 1.4,
-        "font_weight_heading": false
+        "font_weight_heading": false,
+        "btn_text": "MEET PUMPKIN",
+        "btn_url": "",
+        "font_size_btn": 1.4,
+        "font_weight_btn": false
       }
     },
     "featured_collection": {
