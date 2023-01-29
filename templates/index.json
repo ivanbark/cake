@@ -211,7 +211,8 @@
             "collection": "maternity-nursing-bras",
             "collection_title": "Bras",
             "text_color": "#eac383",
-            "collection_title_alignment": "center"
+            "collection_title_alignment": "center",
+            "font_size": 34
           }
         },
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-1": {
@@ -220,7 +221,8 @@
             "collection": "maternity-clothing",
             "collection_title": "Clothing",
             "text_color": "#eac383",
-            "collection_title_alignment": "center"
+            "collection_title_alignment": "center",
+            "font_size": 34
           }
         },
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-2": {
@@ -229,7 +231,8 @@
             "collection": "gifting",
             "collection_title": "Wellbeing",
             "text_color": "#eac383",
-            "collection_title_alignment": "center"
+            "collection_title_alignment": "center",
+            "font_size": 34
           }
         },
         "491e48e9-8bf9-449d-8682-87ef20d541ae": {
@@ -238,7 +241,8 @@
             "collection": "sleep-bras",
             "collection_title": "Sleep",
             "text_color": "#eac383",
-            "collection_title_alignment": "center"
+            "collection_title_alignment": "center",
+            "font_size": 34
           }
         }
       },
