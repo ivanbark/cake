@@ -210,8 +210,8 @@
           "settings": {
             "collection": "maternity-nursing-bras",
             "collection_title": "Bras",
-            "text_color": "#ffffff",
-            "collection_title_alignment": "left"
+            "text_color": "#e2b95b",
+            "collection_title_alignment": "center"
           }
         },
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-1": {
@@ -219,8 +219,8 @@
           "settings": {
             "collection": "maternity-clothing",
             "collection_title": "Clothing",
-            "text_color": "#ffffff",
-            "collection_title_alignment": "left"
+            "text_color": "#e2b95b",
+            "collection_title_alignment": "center"
           }
         },
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-2": {
