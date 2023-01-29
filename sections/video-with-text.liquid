@@ -114,6 +114,11 @@
       "default": "MEET PUMPKIN"
     },
     {
+      "type": "url",
+      "id": "btn_url",
+      "label": "URL"
+    },
+    {
       "type": "range",
       "id": "font_size_btn",
       "min": 0,
@@ -207,7 +212,7 @@
       <p id="block-content-text"></p>
     </div>
 
-    <a class="button">{{ section.settings.btn_text }}</a>
+    <a class="button" href="{{ section.settings.btn_url }}">{{ section.settings.btn_text }}</a>
     
   </div>
 </div>
