@@ -87,6 +87,9 @@
       </div>
     </div>
     {% if card_style == 'card' or card_collection.featured_image %} 
+    {% if card_collection.title == "Maternity & Nursing Bras" or card_collection.title == "Maternity Clothing" or card_collection.title == "gifting" or card_collection.title == "Sleep Bras"  %}
+
+    {% else %}
       <div class="card__content">
         <div class="card__information">
           <h3 class="card__heading">
@@ -107,5 +110,6 @@
         </div>
       </div>
     {% endif %} 
+      {% endif %}
   </div>
 </div>
