@@ -197,10 +197,13 @@
 <script>
   var blocks = [];
   
-  function selectContent() {
+  function selectContent(id) {
     blocks.forEach( function (id) {
-      document.getElementById("content-" + id).classList.toggle("active");      
+      document.getElementById("content-" + id).classList.remove("active");      
+      document.getElementById("img-" + id).classList.remove("active");     
     });  
+    document.getElementById("content-" + id).classList.add("active");      
+    document.getElementById("img-" + id).classList.add("active");      
   }
 </script>
 
@@ -216,7 +219,7 @@
           <script>
             blocks.push("{{ block.id }}");
           </script>
-          <img id="img-{{ block.id }}" onClick="selectContent()" src="{{ block.settings.icon | img_url }}">
+          <img id="img-{{ block.id }}" onClick="selectContent('{{ block.id }}')" src="{{ block.settings.icon | img_url }}">
         {% endfor %}
       </div>
       {% for block in section.blocks %}
@@ -234,5 +237,6 @@
 
 <script>
   document.getElementById("content-" + blocks[0]).classList.add("active");  
+  document.getElementById("img-" + blocks[0]).classList.add("active");  
 </script>
 
