@@ -208,8 +208,12 @@
       </div>
     {% endif %}
     <div class="block-content">
-      <h2 id="block-content-heading"></h2>
-      <p id="block-content-text"></p>
+      {% if section.blocks.size > 0 %}
+        {% for block in section.blocks %}
+          <h2 class="block-content-heading">{{ block.settings.heading }}</h2>
+          <p class="block-content-text">{{ block.settings.text }}</p>
+        {% endfor %}    
+      {% endif %}
     </div>
 
     <a class="button" href="{{ section.settings.btn_url }}">{{ section.settings.btn_text }}</a>
