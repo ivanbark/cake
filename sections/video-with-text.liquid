@@ -207,7 +207,7 @@
         {% endfor %}
       </div>
       {% for block in section.blocks %}
-        <div class="block-content">
+        <div id="{{ block.id }}" class="block-content">
           <h2 class="block-content-heading">{{ block.settings.heading }}</h2>
           <p class="block-content-text">{{ block.settings.text }}</p>
         </div>
