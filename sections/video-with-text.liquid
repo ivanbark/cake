@@ -146,9 +146,13 @@
           "label": "Icon"
         },
         {
-          "type": "url",
+          "type": "video_url",
           "id": "video",
-          "label": "Video URL"
+          "label": "Video URL",
+          "accept": [
+            "youtube",
+            "vimeo"
+          ]
         },    
         {
           "type": "text",
@@ -204,17 +208,15 @@
       <div class="icons">
         {% for block in section.blocks %}
           <img src="{{ block.settings.icon | img_url }}">
-        {% endfor %}         
+        {% endfor %}
       </div>
-    {% endif %}
-    <div class="block-content">
-      {% if section.blocks.size > 0 %}
-        {% for block in section.blocks %}
+      {% for block in section.blocks %}
+        <div class="block-content">
           <h2 class="block-content-heading">{{ block.settings.heading }}</h2>
           <p class="block-content-text">{{ block.settings.text }}</p>
-        {% endfor %}    
-      {% endif %}
-    </div>
+        </div>
+      {% endfor %}    
+    {% endif %}
 
     <a class="button" href="{{ section.settings.btn_url }}">{{ section.settings.btn_text }}</a>
     
