@@ -230,13 +230,11 @@
   
   function selectContent(id) {
     blocks.forEach( function (id) {
-      viarients.forEach( function (varient) {
-        alert(varient+id);
+      varients.forEach( function (varient) {
         document.getElementById(varient + id).classList.remove("active");    
       });
     });  
-    viarients.forEach( function (varient) {
-      alert(varient+id);
+    varients.forEach( function (varient) {
       document.getElementById(varient + id).classList.add("active");    
     });  
   }
@@ -282,7 +280,7 @@
 </div>
 
 <script>
-  viarients.forEach( function (varient) {
+  varients.forEach( function (varient) {
     document.getElementById(varient + id).classList.add("active");    
   });     
 </script>
