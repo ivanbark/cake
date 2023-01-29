@@ -23,7 +23,7 @@
             "heading": "",
             "font_size_heading": 1.4,
             "font_weight_heading": false,
-            "font_size_text": 1.6,
+            "font_size_text": 1.8,
             "font_weight_text": true
           }
         },
@@ -34,9 +34,9 @@
             "subtext": "<p>Our support team is on hand<\/p><p>9am - 5pm AEST<\/p>",
             "sidebar-show-mail": true,
             "sidebar-mail": "support@cakematernity.com",
-            "font_size_heading": 1.6,
+            "font_size_heading": 1.8,
             "font_weight_heading": true,
-            "font_size_text": 1.6,
+            "font_size_text": 1.8,
             "font_weight_text": false
           }
         }
