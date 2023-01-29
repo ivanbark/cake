@@ -210,7 +210,7 @@
           "settings": {
             "collection": "maternity-nursing-bras",
             "collection_title": "Bras",
-            "text_color": "#e2b95b",
+            "text_color": "#eac383",
             "collection_title_alignment": "center"
           }
         },
@@ -219,7 +219,7 @@
           "settings": {
             "collection": "maternity-clothing",
             "collection_title": "Clothing",
-            "text_color": "#e2b95b",
+            "text_color": "#eac383",
             "collection_title_alignment": "center"
           }
         },
@@ -228,7 +228,7 @@
           "settings": {
             "collection": "gifting",
             "collection_title": "Wellbeing",
-            "text_color": "#e2b95b",
+            "text_color": "#eac383",
             "collection_title_alignment": "center"
           }
         },
@@ -237,7 +237,7 @@
           "settings": {
             "collection": "sleep-bras",
             "collection_title": "Sleep",
-            "text_color": "#e2b95b",
+            "text_color": "#eac383",
             "collection_title_alignment": "center"
           }
         }
