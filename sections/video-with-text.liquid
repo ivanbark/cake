@@ -197,17 +197,14 @@
     <h2>{{ section.settings.heading }}</h2>
     {% if section.blocks.size > 0 %}
       <div class="icons">
-        <select>
-          {% for block in section.blocks %}
-            <option>
-              <img src="{{ block.settings.icon | img_url }}">
-            </option>
-          {% endfor %}          
-        </select>
+        {% for block in section.blocks %}
+          <img src="{{ block.settings.icon | img_url }}">
+        {% endfor %}         
       </div>
     {% endif %}
     <div class="block-content">
-
+      <h2 id="block-content-heading"></h2>
+      <p id="block-content-text"></p>
     </div>
 
     <a class="button">{{ section.settings.btn_text }}</a>
