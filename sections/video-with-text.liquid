@@ -199,7 +199,7 @@
   
   function selectContent() {
     blocks.forEach( function (id) {
-      document.getElementsByClassName(id).classList.toggle("active");      
+      document.getElementById("content-" + id).classList.toggle("active");      
     });  
   }
 </script>
@@ -216,11 +216,11 @@
           <script>
             blocks.push("{{ block.id }}");
           </script>
-          <img id="{{ block.id }}" onClick="selectContent()" src="{{ block.settings.icon | img_url }}">
+          <img id="img-{{ block.id }}" onClick="selectContent()" src="{{ block.settings.icon | img_url }}">
         {% endfor %}
       </div>
       {% for block in section.blocks %}
-        <div id="{{ block.id }}" class="block-content">
+        <div id="content-{{ block.id }}" class="block-content">
           <h2 class="block-content-heading">{{ block.settings.heading }}</h2>
           <p class="block-content-text">{{ block.settings.text }}</p>
         </div>
@@ -233,6 +233,6 @@
 </div>
 
 <script>
-  document.getElementsByClassName(blocks[0]).classList.toggle("active");  
+  document.getElementsByClassName("content-" + blocks[0]).classList.toggle("active");  
 </script>
 
