@@ -198,9 +198,10 @@
   var blocks = [];
   
   function selectContent(id) {
-    blocks.forEach(function(id) {
-      document.getElementByClassName(id).classList.toggle("active");      
+    blocks.forEach( function (id) {
+      document.getElementByClassName(id).classList.remove("active");      
     });
+    document.getElementByClassName(id).classList.add("active");      
   }
 </script>
 
