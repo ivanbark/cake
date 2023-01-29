@@ -1,7 +1,4 @@
-
-
 {% schema %}
-
 {
   "name": "Video with text",
   "class": "section",
@@ -165,4 +162,22 @@
   ]
 }
 {% endschema %}
+
+<div class="video-with-text">
+  <div class="visual-content">
+    
+  </div>
+  <div class="text-content">
+    {% if section.blocks.size > 0 %}
+      <div class="icons">
+        {% for block in section.blocks %}
+          <div>
+            {{ block.settings.icon }}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+    
+  </div>
+</div>
 
