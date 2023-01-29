@@ -298,6 +298,7 @@
         "28a2cb9a-dbb7-41ed-babc-0ccf4544861c": {
           "type": "image",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/Pumping-technical-icon-zipper-2.webp",
             "heading": "Convenient safety zip for easy access.",
             "text": "Our multi-way zipper is cotton lined for comfort and provides breastfeeding and pumping access."
           }
@@ -305,6 +306,7 @@
         "d4c8c921-bc54-4835-b727-5117b5c300a8": {
           "type": "image",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/Pumping-technical-icon-t-shirt-bra-3.jpg",
             "heading": "The world’s first t-shirt pumping bra.",
             "text": "Spacer material creates a smooth profile & low center front, perfect for under t-shirts."
           }
