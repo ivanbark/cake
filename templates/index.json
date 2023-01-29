@@ -293,10 +293,34 @@
             "heading": "Hands-free for pumping warriors.",
             "text": "Our innovative design works with all breast shields, flanges and pumps, supporting the bottle as it fills, hands-free."
           }
+        },
+        "28a2cb9a-dbb7-41ed-babc-0ccf4544861c": {
+          "type": "image",
+          "settings": {
+            "heading": "Convenient safety zip for easy access.",
+            "text": "Our multi-way zipper is cotton lined for comfort and provides breastfeeding and pumping access."
+          }
+        },
+        "d4c8c921-bc54-4835-b727-5117b5c300a8": {
+          "type": "image",
+          "settings": {
+            "heading": "Heading",
+            "text": ""
+          }
+        },
+        "f68454ae-b93d-40f5-af26-4fa0367e4492": {
+          "type": "image",
+          "settings": {
+            "heading": "Heading",
+            "text": ""
+          }
         }
       },
       "block_order": [
-        "f1a7b1bb-6365-4c35-b162-169144c7bc7c"
+        "f1a7b1bb-6365-4c35-b162-169144c7bc7c",
+        "28a2cb9a-dbb7-41ed-babc-0ccf4544861c",
+        "d4c8c921-bc54-4835-b727-5117b5c300a8",
+        "f68454ae-b93d-40f5-af26-4fa0367e4492"
       ],
       "settings": {
         "desktop_content_alignment": "left",
