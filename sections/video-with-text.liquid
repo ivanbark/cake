@@ -231,10 +231,12 @@
   function selectContent(id) {
     blocks.forEach( function (id) {
       varients.forEach( function (varient) {
+        alert(varient+id);
         document.getElementById(varient + id).classList.remove("active");    
       });
     });  
     varients.forEach( function (varient) {
+      alert(varient+id);
       document.getElementById(varient + id).classList.add("active");    
     });  
   }
