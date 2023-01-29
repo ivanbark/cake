@@ -249,6 +249,7 @@
           "type": "heading",
           "settings": {
             "heading": "<p>Get up to 40% OFF <\/p><p>all <em>last chance items<\/em><\/p>",
+            "heading_color": "#000000",
             "heading_size": "h1"
           }
         },
