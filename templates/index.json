@@ -208,16 +208,22 @@
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "active-bras"
           }
         },
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "maternity-clothing"
           }
         },
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "491e48e9-8bf9-449d-8682-87ef20d541ae": {
           "type": "featured_collection",
           "settings": {
             "collection": ""
@@ -227,7 +233,8 @@
       "block_order": [
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-0",
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-1",
-        "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-2"
+        "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-2",
+        "491e48e9-8bf9-449d-8682-87ef20d541ae"
       ],
       "settings": {
         "title": "Collections",
