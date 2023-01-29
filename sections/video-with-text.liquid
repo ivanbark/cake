@@ -206,18 +206,25 @@
   img.active {
     
   }
+
+  .icon.active {
+    
+  }
 </style>
 
 <script>
   var blocks = [];
+  var varients = ["content-", "icon-", "img-", "video-"];
   
   function selectContent(id) {
     blocks.forEach( function (id) {
-      document.getElementById("content-" + id).classList.remove("active");      
-      document.getElementById("img-" + id).classList.remove("active");     
+      viarients.forEach( function (varient) {
+        document.getElementById(varient + id).classList.remove("active");    
+      });
     });  
-    document.getElementById("content-" + id).classList.add("active");      
-    document.getElementById("img-" + id).classList.add("active");      
+    viarients.forEach( function (varient) {
+      document.getElementById(varient + id).classList.add("active");    
+    });  
   }
 </script>
 
@@ -227,11 +234,11 @@
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'video' %}
-            <video>
+            <video id="video-{{ block.id }}">
               <source src="{{ block.settings.video }}">
             </video>
           {% when 'image' %}
-            <img src="{{ block.settings.image | img_url }}">
+            <img id="img-{{ block.id }}" src="{{ block.settings.image | img_url }}">
         {% endcase %}
       {% endfor %}
     {% endif %}
@@ -244,7 +251,7 @@
           <script>
             blocks.push("{{ block.id }}");
           </script>
-          <img id="img-{{ block.id }}" onClick="selectContent('{{ block.id }}')" src="{{ block.settings.icon | img_url }}">
+          <img id="icon-{{ block.id }}" onClick="selectContent('{{ block.id }}')" src="{{ block.settings.icon | img_url }}">
         {% endfor %}
       </div>
       {% for block in section.blocks %}
@@ -261,7 +268,8 @@
 </div>
 
 <script>
-  document.getElementById("content-" + blocks[0]).classList.add("active");  
-  document.getElementById("img-" + blocks[0]).classList.add("active");  
+  viarients.forEach( function (varient) {
+    document.getElementById(varient + id).classList.add("active");    
+  });     
 </script>
 
