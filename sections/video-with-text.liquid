@@ -265,7 +265,7 @@
     display: none;
   }
 
-  div.active {
+  .block-content.active {
     display: block;
   }
 
@@ -334,7 +334,7 @@
               <script>
                 blocks.push("{{ block.id }}");
               </script>
-              <img id="icon-{{ block.id }}" onClick="selectContent('{{ block.id }}')" src="{{ block.settings.icon | img_url }}">
+              <img class="icon" id="icon-{{ block.id }}" onClick="selectContent('{{ block.id }}')" src="{{ block.settings.icon | img_url }}">
             {% endfor %}
           </div>
           {% for block in section.blocks %}
