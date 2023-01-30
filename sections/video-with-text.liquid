@@ -340,10 +340,18 @@
     font-weight: {% if section.settings.font_weight_btn == true %}bold{% else %}unset{% endif %} !important;
     background-color: {{ section.settings.bg_color_btn }} !important;
     color: {{ section.settings.text_color_btn }} !important;
+    height: 40px;
+    width: 298px;
+    padding: 8px;
+  }
+
+  .text-content .button::before, .text-content .button::after {
+    content: "";
   }
   
   .block-content {
     display: none;
+    margin-bottom: 62px;
   }
 
   .block-content h2 {
