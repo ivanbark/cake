@@ -222,10 +222,10 @@
   }
 
   .text-content button {
-    font-size: {{ section.settings.font_size_btn }}rem;
-    font-weight: {% if section.settings.font_weight_btn == true %}bold{% else %}unset{% endif %};
-    background-color: {{ section.settings.bg_color_btn }};
-    color: {{ section.settings.text_color_btn }};
+    font-size: {{ section.settings.font_size_btn }}rem !important;
+    font-weight: {% if section.settings.font_weight_btn == true %}bold{% else %}unset{% endif %} !important;
+    background-color: {{ section.settings.bg_color_btn }} !important;
+    color: {{ section.settings.text_color_btn }} !important;
   }
   
   .block-content {
