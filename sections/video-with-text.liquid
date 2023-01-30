@@ -345,8 +345,13 @@
     padding: 8px;
   }
 
+  .text-content .button:hover {
+    background-color: {{ section.settings.text_color_btn }} !important;
+    color: {{ section.settings.bg_color_btn }} !important;
+  }
+
   .text-content .button::before, .text-content .button::after {
-    content: "";
+    content: unset;
   }
   
   .block-content {
