@@ -346,16 +346,6 @@
     display: none;
   }
 
-  .block-content h2 {
-    font-size: {{ block.settings.font_size_heading }}rem !important;
-    font-weight: {% if block.settings.font_weight_heading == true %}bold{% else %}unset{% endif %} !important;    
-  }
-
-  .block-content p {
-    font-size: {{ block.settings.font_size_text }}rem !important;
-    font-weight: {% if block.settings.font_weight_text == true %}bold{% else %}unset{% endif %} !important;        
-  }
-
   .block-content.active {
     display: block;
   }
@@ -442,6 +432,17 @@
             {% endfor %}
           </div>
           {% for block in section.blocks %}
+            <style>
+              .block-content h2 {
+                font-size: {{ block.settings.font_size_heading }}rem !important;
+                font-weight: {% if block.settings.font_weight_heading == true %}bold{% else %}unset{% endif %} !important;    
+              }
+            
+              .block-content p {
+                font-size: {{ block.settings.font_size_text }}rem !important;
+                font-weight: {% if block.settings.font_weight_text == true %}bold{% else %}unset{% endif %} !important;        
+              }
+            </style>
             <div id="content-{{ block.id }}" class="block-content">
               <h2 class="block-content-heading">{{ block.settings.heading }}</h2>
               <p class="block-content-text">{{ block.settings.text }}</p>
