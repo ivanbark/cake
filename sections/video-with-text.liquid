@@ -228,6 +228,17 @@
     text-align: {{ section.settings.desktop_content_alignment }};
     background-color: {{ section.settings.text_side_background_color }};
     width: 50%;
+    position: absolute;
+  }
+
+  .text-content-inner {
+    max-width: 560px;
+    margin: 0 auto;
+    display: table;
+  }
+
+  .text-content-inner .container {
+    display: table-cel;
   }
 
   .text-content h2 {
@@ -302,26 +313,29 @@
     {% endif %}
   </div>
   <div class="text-content">
-    <h2>{{ section.settings.heading }}</h2>
-    {% if section.blocks.size > 0 %}
-      <div class="icons">
-        {% for block in section.blocks %}
-          <script>
-            blocks.push("{{ block.id }}");
-          </script>
-          <img id="icon-{{ block.id }}" onClick="selectContent('{{ block.id }}')" src="{{ block.settings.icon | img_url }}">
-        {% endfor %}
-      </div>
-      {% for block in section.blocks %}
-        <div id="content-{{ block.id }}" class="block-content">
-          <h2 class="block-content-heading">{{ block.settings.heading }}</h2>
-          <p class="block-content-text">{{ block.settings.text }}</p>
-        </div>
-      {% endfor %}    
-    {% endif %}
-
-    <a class="button" href="{{ section.settings.btn_url }}">{{ section.settings.btn_text }}</a>
+    <div class="text-content-inner">
+      <div class="container">
+        <h2>{{ section.settings.heading }}</h2>
+        {% if section.blocks.size > 0 %}
+          <div class="icons">
+            {% for block in section.blocks %}
+              <script>
+                blocks.push("{{ block.id }}");
+              </script>
+              <img id="icon-{{ block.id }}" onClick="selectContent('{{ block.id }}')" src="{{ block.settings.icon | img_url }}">
+            {% endfor %}
+          </div>
+          {% for block in section.blocks %}
+            <div id="content-{{ block.id }}" class="block-content">
+              <h2 class="block-content-heading">{{ block.settings.heading }}</h2>
+              <p class="block-content-text">{{ block.settings.text }}</p>
+            </div>
+          {% endfor %}    
+        {% endif %}
     
+        <a class="button" href="{{ section.settings.btn_url }}">{{ section.settings.btn_text }}</a>
+      </div>
+    </div>
   </div>
 </div>
 
