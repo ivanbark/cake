@@ -307,11 +307,11 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/Pumping-technical-icon-pump-1.webp",
             "video": "https:\/\/player.vimeo.com\/progressive_redirect\/playback\/774483221\/rendition\/1080p\/file.mp4?loc=external&signature=9b59711ef7507a9fc8b5bcef2d484c21fa23eced1985d23f2fc9acfdee20eb80",
-            "heading": "Hands-free for pumping warriors.",
-            "font_size_heading": 2,
-            "font_weight_heading": true,
+            "heading": "<p>Hands-free <\/p><p>for pumping warriors.<\/p>",
+            "font_size_heading": 4.2,
+            "font_weight_heading": false,
             "text": "Our innovative design works with all breast shields, flanges and pumps, supporting the bottle as it fills, hands-free.",
-            "font_size_text": 1.4,
+            "font_size_text": 2.2,
             "font_weight_text": false
           }
         },
@@ -320,7 +320,7 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/Pumping-technical-icon-zipper-2.webp",
             "image": "shopify:\/\/shop_images\/pumpkin-nursing-bra-front.jpg",
-            "heading": "Convenient safety zip for easy access.",
+            "heading": "<p>Convenient safety zip for easy access.<\/p>",
             "font_size_heading": 1.4,
             "font_weight_heading": false,
             "text": "Our multi-way zipper is cotton lined for comfort and provides breastfeeding and pumping access.",
@@ -333,7 +333,7 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/Pumping-technical-icon-t-shirt-bra-3.jpg",
             "image": "shopify:\/\/shop_images\/pumpkin-nursing-bra-close-up.jpg",
-            "heading": "The world’s first t-shirt pumping bra.",
+            "heading": "<p>The world’s first t-shirt pumping bra.<\/p>",
             "font_size_heading": 1.4,
             "font_weight_heading": false,
             "text": "Spacer material creates a smooth profile & low center front, perfect for under t-shirts.",
@@ -346,7 +346,7 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/Pumping-technical-icon-back-4.webp",
             "image": "shopify:\/\/shop_images\/pumpkin-nursing-bra-back.webp",
-            "heading": "Room to grow with 6 hook & eye options.",
+            "heading": "<p>Room to grow with 6 hook & eye options.<\/p>",
             "font_size_heading": 1.4,
             "font_weight_heading": false,
             "text": "Providing support and security while offering room to grow, expanding or contracting up to half a size.",
