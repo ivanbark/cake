@@ -433,8 +433,8 @@
           </div>
           {% for block in section.blocks %}
             <div id="content-{{ block.id }}" class="block-content {% if block == section.blocks.first %}active{% endif %}">
-              <h2 style="font-size:{{ block.settings.font_size_heading }}" class="block-content-heading">{{ block.settings.heading }}</h2>
-              <p style="font-size:{{ block.settings.font_size_heading }}" class="block-content-text">{{ block.settings.text }}</p>
+              <h2 style="font-size:{{ block.settings.font_size_heading }}rem;font-weight:{% if block.settings.font_weight_heading == true %}bold{% else %}unset{% endif %};" class="block-content-heading">{{ block.settings.heading }}</h2>
+              <p style="font-size:{{ block.settings.font_size_heading }}rem;font-weight:{% if block.settings.font_weight_text == true %}bold{% else %}unset{% endif %};" class="block-content-text">{{ block.settings.text }}</p>
             </div>
           {% endfor %}    
         {% endif %}
