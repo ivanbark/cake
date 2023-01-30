@@ -210,13 +210,24 @@
   .video-with-text {
     padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px 0;
     display: flex;
-    justify-content: stretch;
-    align-items: center;
+  }
+
+  .visual-content {
+    width: 50%;
+  }
+
+  .visual-content video {
+    display: none;
+  }
+
+  .visual-content img {
+    display: none;
   }
   
   .text-content {
     text-align: {{ section.settings.desktop_content_alignment }};
     background-color: {{ section.settings.text_side_background_color }};
+    width: 50%;
   }
 
   .text-content h2 {
@@ -232,14 +243,6 @@
   }
   
   .block-content {
-    display: none;
-  }
-
-  .visual-content video {
-    display: none;
-  }
-
-  .visual-content img {
     display: none;
   }
 
