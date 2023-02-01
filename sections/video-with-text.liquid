@@ -379,12 +379,13 @@
     display: block;
   }
 
-  .icons {
+  .icons-clickeble {
     margin: 70px -15px 55px -15px;
-    display: table;
+    display: flex;
+    align-items: center;
   }
 
-  .icon {
+  .icon-clickeble {
     display: table-cell;
     vertical-align: middle;
     border-radius: 100%;
@@ -394,7 +395,7 @@
     margin: 0 15px;
   }
 
-  .icon.active {
+  .icon-clickeble.active {
     height: 95px;
     width: 95px;
     border: 1px solid #000;
@@ -448,12 +449,12 @@
       <div class="container">
         <h2>{{ section.settings.heading }}</h2>
         {% if section.blocks.size > 0 %}
-          <div class="icons">
+          <div class="icons-clickeble">
             {% for block in section.blocks %}
               <script>
                 blocks.push("{{ block.id }}");
               </script>
-              <img class="icon {% if block == section.blocks.first %}active{% endif %}" id="icon-{{ block.id }}" onClick="selectContent('{{ block.id }}')" src="{{ block.settings.icon | img_url }}">
+              <img class="icon-clickeble {% if block == section.blocks.first %}active{% endif %}" id="icon-{{ block.id }}" onClick="selectContent('{{ block.id }}')" src="{{ block.settings.icon | img_url }}">
             {% endfor %}
           </div>
           {% for block in section.blocks %}
