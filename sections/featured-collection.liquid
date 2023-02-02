@@ -52,7 +52,9 @@
           <h2 class="title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</h2>
         {%- endif -%} 
         <div style="text-align: end;" class="collection__view-all">
-          <p>{{ section.blocks.settings.collection_title }}</p>
+          {%- for block in section.blocks -%}
+          <p>{{ block.settings.collection_title }}</p>
+            {% endfor %}
         {%- if section.settings.show_view_all and more_in_collection -%}
             <a href="{{ section.settings.collection.url }}"
               class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
