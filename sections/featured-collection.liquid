@@ -83,6 +83,9 @@
               section_id: section.id
             %}
           </li>
+        <script>
+          blocks.push("{{ block.id }}");
+        </script>
         {%- else -%}
           {%- for i in (1..4) -%}
             <li class="grid__item">
