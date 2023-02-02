@@ -91,7 +91,7 @@
         <div class="card__information">
           <h3 class="card__heading">
             <a{% if card_collection == blank %} role="link" aria-disabled="true"{% else %} href="{{ card_collection.url }}"{% endif %} class="full-unstyled-link">
-               {% if card_collection.title == "Maternity & Nursing Bras" or card_collection.title == "Maternity Clothing" or card_collection.title == "gifting" or card_collection.title == "Sleep Bras"  %}
+               {% if card_collection.title == "Maternity & Nursing Bras" or card_collection.title == "Maternity Clothing" or card_collection.title == "gifting" or card_collection.title == "Sleep Bras" or card_collection.title == "Pumping Bras" or card_collection.title == "Maternity Sets" %}
                {% else %}
               {%- if card_collection.title != blank -%}
                 {{- card_collection.title | escape -}}
