@@ -259,10 +259,10 @@
           "type": "featured_collection",
           "settings": {
             "collection": "maternity-sets",
-            "collection_title": "",
+            "collection_title": "Sets",
             "text_color": "#ffffff",
-            "collection_title_alignment": "left",
-            "font_size": 10
+            "collection_title_alignment": "center",
+            "font_size": 32
           }
         }
       },
