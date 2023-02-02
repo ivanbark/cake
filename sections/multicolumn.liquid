@@ -41,27 +41,6 @@
         id="Slider-{{ section.id }}"
         role="list"
       >
-        
-      {% if section.settings.desktop_slider %}
-        <script>
-          var columnWidth = document.getElementById('Slider-{{ section.id }}').firstElementChild.offsetWidth;
-          var elementWidth = document.getElementById('Slider-{{ section.id }}').offsetWidth;
-          var columnCount = elementWidth / columnWidth;
-          var scrollPos = 1;
-      
-          setInterval(function() {
-            scrollPos += 1;
-            console.log(columnWidth);
-            if (scrollPos > columnCount) {
-              document.getElementById('Slider-{{ section.id }}').scroll(0, 0);          
-              scrollPos = 1;
-            } else {
-              document.getElementById('Slider-{{ section.id }}').scroll(scrollPos * columnWidth, 0);
-            }
-          }, 2000);
-        </script>
-      {% endif %}
-      
         {%- liquid
           assign highest_ratio = 0
           for block in section.blocks
@@ -152,6 +131,28 @@
     </div>
   </div>
 </div>
+
+
+        
+{% if section.settings.desktop_slider %}
+  <script>
+    var columnWidth = document.getElementById('Slider-{{ section.id }}').firstElementChild.offsetWidth;
+    var elementWidth = document.getElementById('Slider-{{ section.id }}').offsetWidth;
+    var columnCount = elementWidth / columnWidth;
+    var scrollPos = 1;
+
+    setInterval(function() {
+      scrollPos += 1;
+      console.log(columnWidth);
+      if (scrollPos > columnCount) {
+        document.getElementById('Slider-{{ section.id }}').scroll(0, 0);          
+        scrollPos = 1;
+      } else {
+        document.getElementById('Slider-{{ section.id }}').scroll(scrollPos * columnWidth, 0);
+      }
+    }, 2000);
+  </script>
+{% endif %}
 
 {% schema %}
 {
