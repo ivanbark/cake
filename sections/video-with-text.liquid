@@ -446,6 +446,10 @@
     }
     .icons-clickeble {
       justify-content: {% if section.settings.mobile_content_alignment == "left" %}flex-start{% elsif section.settings.mobile_content_alignment == "center" %}center{% else %}flex-end{% endif %};
+      display: none;
+    }
+    .icons-clickeble-mobile {
+      display: block !important;
     }
   }
   
@@ -501,7 +505,9 @@
           <div class="icons-clickeble">
             {% for block in section.blocks %}
               <script>
-                blocks.push("{{ block.id }}");
+                if (blocks.includes(block.id) == false) {
+                  blocks.push("{{ block.id }}");                  
+                }
               </script>
               <img class="icon-clickeble {% if block == section.blocks.first %}active{% endif %}" id="icon-{{ block.id }}" onClick="selectContent('{{ block.id }}')" src="{{ block.settings.icon | img_url }}">
             {% endfor %}
@@ -509,6 +515,14 @@
           {% for block in section.blocks %}
             <div id="content-{{ block.id }}" class="block-content {% if block == section.blocks.first %}active{% endif %}">
               <h2 style="font-size:{{ block.settings.font_size_heading }}rem;font-weight:{% if block.settings.font_weight_heading == true %}bold{% else %}unset{% endif %};" class="block-content-heading">{{ block.settings.heading }}</h2>
+            <div style="display:none;" class="icons-clickeble icons-blickeble-mobile">
+              <script>
+                if (blocks.includes(block.id) == false) {
+                  blocks.push("{{ block.id }}");                  
+                }
+              </script>
+              <img class="icon-clickeble {% if block == section.blocks.first %}active{% endif %}" id="icon-{{ block.id }}" onClick="selectContent('{{ block.id }}')" src="{{ block.settings.icon | img_url }}">
+            </div>
               <p style="min-height: 135px;font-size:{{ block.settings.font_size_text }}rem;font-weight:{% if block.settings.font_weight_text == true %}bold{% else %}unset{% endif %};" class="block-content-text">{{ block.settings.text }}</p>
             </div>
           {% endfor %}    
