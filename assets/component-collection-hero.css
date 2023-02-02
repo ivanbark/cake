@@ -99,12 +99,3 @@
     min-height: 20rem;
   }
 }
-
-.collection-list-scrollbar {
-  background-color:black;
-  ::-webkit-scrollbar-thumb {
-  background: grey; 
-  border-radius: 10px;
-  height: 5px;
-}
-}
