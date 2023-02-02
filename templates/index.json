@@ -122,6 +122,7 @@
         "template--17629010854182__82a23ee6-c19a-4ea7-b39b-462089d3ee3a-1674728937f24d0bda-2"
       ],
       "settings": {
+        "desktop_slider": false,
         "title": "",
         "heading_size": "h2",
         "image_width": "third",
@@ -548,6 +549,7 @@
         "84738ecf-0f9a-45e7-b36e-bf87a194a00f"
       ],
       "settings": {
+        "desktop_slider": true,
         "title": "",
         "heading_size": "h2",
         "image_width": "full",
