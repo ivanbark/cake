@@ -409,6 +409,16 @@
         "cc84c326-8abf-410b-928b-915a37faa99d": {
           "type": "featured_collection",
           "settings": {
+            "collection": "bestsellers",
+            "collection_title": "",
+            "text_color": "#ffffff",
+            "collection_title_alignment": "left",
+            "font_size": 10
+          }
+        },
+        "9135fef4-52f9-452c-b735-bda0947861d8": {
+          "type": "featured_collection",
+          "settings": {
             "collection": "",
             "collection_title": "",
             "text_color": "#ffffff",
@@ -418,7 +428,8 @@
         }
       },
       "block_order": [
-        "cc84c326-8abf-410b-928b-915a37faa99d"
+        "cc84c326-8abf-410b-928b-915a37faa99d",
+        "9135fef4-52f9-452c-b735-bda0947861d8"
       ],
       "settings": {
         "title": "Which bra is right for you?",
