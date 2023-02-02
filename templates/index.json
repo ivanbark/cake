@@ -419,7 +419,7 @@
         "9135fef4-52f9-452c-b735-bda0947861d8": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
+            "collection": "birth",
             "collection_title": "",
             "text_color": "#ffffff",
             "collection_title_alignment": "left",
