@@ -447,6 +447,9 @@
     .icons-clickeble {
       justify-content: {% if section.settings.mobile_content_alignment == "left" %}flex-start{% elsif section.settings.mobile_content_alignment == "center" %}center{% else %}flex-end{% endif %};
     }
+    hr {
+      display: block;
+    }
   }
   
 </style>
@@ -506,6 +509,7 @@
               <img class="icon-clickeble {% if block == section.blocks.first %}active{% endif %}" id="icon-{{ block.id }}" onClick="selectContent('{{ block.id }}')" src="{{ block.settings.icon | img_url }}">
             {% endfor %}
           </div>
+          <hr style="display:none;">
           {% for block in section.blocks %}
             <div id="content-{{ block.id }}" class="block-content {% if block == section.blocks.first %}active{% endif %}">
               <style>
