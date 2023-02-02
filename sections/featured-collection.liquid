@@ -435,10 +435,10 @@
     blocks.forEach( function (id) {
  
         try {
-          document.getElementById(id).classList.remove("active");
+          document.getElementById(id).style.display = "none";
         } catch (e) { alert(e); }
     });
-      document.getElementById(id).classList.add("active");
+      document.getElementById(id).style.display = "block";
 
     
     // //console.log(document.getElementById(id));
