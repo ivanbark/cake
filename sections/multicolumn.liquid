@@ -149,7 +149,7 @@
       console.log(elementWidth);
       console.log(columnCount)
       console.log(scrollPos);
-      if (scrollPos >= columnCount - visibleColumnCount + 1) {
+      if (scrollPos >= columnCount - visibleColumnCount) {
         document.getElementById('Slider-{{ section.id }}').scroll(0, 0);          
         scrollPos = 0;
       } else {
