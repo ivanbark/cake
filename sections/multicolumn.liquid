@@ -143,6 +143,9 @@
 
     setInterval(function() {
       scrollPos += 1;
+      console.log(columnWidth);
+      console.log(elementWidth);
+      console.log(columnCount)
       console.log(scrollPos);
       if (scrollPos > columnCount) {
         document.getElementById('Slider-{{ section.id }}').scroll(0, 0);          
