@@ -446,6 +446,13 @@
     }
     .icons-clickeble {
       justify-content: {% if section.settings.mobile_content_alignment == "left" %}flex-start{% elsif section.settings.mobile_content_alignment == "center" %}center{% else %}flex-end{% endif %};
+    }
+    .block-content-heading {
+      display: none;
+    }
+    .mobile-block-content-heading {
+      display: block !important;
+    }
   }
   
 </style>
@@ -497,6 +504,7 @@
       <div class="container">
         <h2>{{ section.settings.heading }}</h2>
         {% if section.blocks.size > 0 %}
+          <h2 style="display:none;font-size:{{ block.settings.font_size_heading }}rem;font-weight:{% if block.settings.font_weight_heading == true %}bold{% else %}unset{% endif %};" class="block-content-heading mobile-block-content-heading">{{ block.settings.heading }}</h2>
           <div class="icons-clickeble">
             {% for block in section.blocks %}
               <script>
