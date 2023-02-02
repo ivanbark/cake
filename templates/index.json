@@ -487,8 +487,9 @@
         "column1": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Logo-Well_Good.png",
             "padding_left": 60,
-            "title": "Column",
+            "title": "",
             "title_font_weight": "normal",
             "title_font_size": 10,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -501,8 +502,9 @@
         "column2": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Logo-Well_Good.png",
             "padding_left": 60,
-            "title": "Column",
+            "title": "",
             "title_font_weight": "normal",
             "title_font_size": 10,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -515,8 +517,69 @@
         "column3": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Logo-Well_Good.png",
             "padding_left": 60,
-            "title": "Column",
+            "title": "",
+            "title_font_weight": "normal",
+            "title_font_size": 10,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description_font_weight": "normal",
+            "description_font_size": 10,
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "3516bc41-3565-4acd-a32e-9095f893e285": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Logo-Well_Good.png",
+            "padding_left": 60,
+            "title": "",
+            "title_font_weight": "normal",
+            "title_font_size": 10,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description_font_weight": "normal",
+            "description_font_size": 10,
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "05112c55-bf4c-4165-a9e3-b6bd54fb5432": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Logo-Well_Good.png",
+            "padding_left": 60,
+            "title": "",
+            "title_font_weight": "normal",
+            "title_font_size": 10,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description_font_weight": "normal",
+            "description_font_size": 10,
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "729f0c78-39a9-4600-993e-7baf784a172d": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Logo-Well_Good.png",
+            "padding_left": 60,
+            "title": "",
+            "title_font_weight": "normal",
+            "title_font_size": 10,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description_font_weight": "normal",
+            "description_font_size": 10,
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "84738ecf-0f9a-45e7-b36e-bf87a194a00f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Logo-Well_Good.png",
+            "padding_left": 60,
+            "title": "",
             "title_font_weight": "normal",
             "title_font_size": 10,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -530,7 +593,11 @@
       "block_order": [
         "column1",
         "column2",
-        "column3"
+        "column3",
+        "3516bc41-3565-4acd-a32e-9095f893e285",
+        "05112c55-bf4c-4165-a9e3-b6bd54fb5432",
+        "729f0c78-39a9-4600-993e-7baf784a172d",
+        "84738ecf-0f9a-45e7-b36e-bf87a194a00f"
       ],
       "settings": {
         "title": "",
