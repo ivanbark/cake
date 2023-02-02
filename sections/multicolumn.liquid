@@ -109,7 +109,7 @@
         {%- endfor -%}
       </ul>
 
-      {%- if show_mobile_slider -%}
+<!--       {%- if show_mobile_slider -%}
         <div class="slider-buttons no-js-hidden medium-hide" {% if section.settings.desktop_slider %}style="display:flex;"{% endif %}>
           <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}">{% render 'icon-caret' %}</button>
           <div class="slider-counter caption">
@@ -120,7 +120,7 @@
           </div>
           <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'general.slider.next_slide' | t }}">{% render 'icon-caret' %}</button>
         </div>
-      {%- endif -%}
+      {%- endif -%} -->
     </slider-component>
     <div class="center{% if show_mobile_slider %} small-hide medium-hide{% endif %}">
       {%- if section.settings.button_label != blank -%}
