@@ -51,7 +51,7 @@
       
           setInterval(function() {
             scrollPos += 1;
-            console.log(scrollPos);
+            console.log(columnCount);
             if (scrollPos > columnCount) {
               document.getElementById('Slider-{{ section.id }}').scroll(0, 0);          
               scrollPos = 1;
