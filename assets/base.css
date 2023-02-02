@@ -2978,7 +2978,7 @@ details-disclosure > details {
     padding-right: 30px;
   }
 }
-
+@media only screen and (min-width: 601px) {
 /* custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -2993,4 +2993,5 @@ details-disclosure > details {
 
 ::-webkit-scrollbar-thumb:hover {
   background: black; 
+}
 }
