@@ -511,7 +511,7 @@
               <style>
                 @media screen and (max-width: 1300px) {
                   .block-content-heading {
-                    font-size: 2.2rem !important;
+                    font-size: calc({{ block.settings.font-size-heading }}rem / 1.3) !important;
                   }         
                   .block-content-text {
                     font-size:{{ block.settings.font_size_text }}rem !important;
