@@ -436,7 +436,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Logo-Well_Good.png",
-            "padding_left": 60,
+            "padding_left": 50,
             "title": "",
             "title_font_weight": "normal",
             "title_font_size": 10,
