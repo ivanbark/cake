@@ -137,8 +137,10 @@
 {% if section.settings.desktop_slider %}
   <script>
     var columnWidth = document.getElementById('Slider-{{ section.id }}').firstElementChild.offsetWidth;
+    var elementVisibleWidth = document.getElementById('Slider-{{ section.id }}').offsetWidth;
     var elementWidth = document.getElementById('Slider-{{ section.id }}').scrollWidth;
     var columnCount = elementWidth / columnWidth;
+    var visibleColumnCount = elementVisibleWidth / columnWidth;
     var scrollPos = 0;
 
     setInterval(function() {
@@ -147,7 +149,7 @@
       console.log(elementWidth);
       console.log(columnCount)
       console.log(scrollPos);
-      if (scrollPos >= columnCount) {
+      if (scrollPos >= columnCount - visibleColumnCount + 1) {
         document.getElementById('Slider-{{ section.id }}').scroll(0, 0);          
         scrollPos = 0;
       } else {
