@@ -509,10 +509,10 @@
           {% for block in section.blocks %}
             <div id="content-{{ block.id }}" class="block-content {% if block == section.blocks.first %}active{% endif %}">
               <style>
-                  .block-content h2 {
+                  .block-content-heading {
                     font-size: 2.2rem !important;
                   }         
-                  .block-content p {
+                  .block-content-text {
                     font-size:{{ block.settings.font_size_text }}rem !important;
                   }
               </style>
