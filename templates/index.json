@@ -244,13 +244,24 @@
             "collection_title_alignment": "center",
             "font_size": 32
           }
+        },
+        "b2fd5e3f-5a82-4976-8b4b-757a42d7cf9d": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pumping-bras",
+            "collection_title": "",
+            "text_color": "#ffffff",
+            "collection_title_alignment": "left",
+            "font_size": 10
+          }
         }
       },
       "block_order": [
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-0",
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-1",
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-2",
-        "491e48e9-8bf9-449d-8682-87ef20d541ae"
+        "491e48e9-8bf9-449d-8682-87ef20d541ae",
+        "b2fd5e3f-5a82-4976-8b4b-757a42d7cf9d"
       ],
       "settings": {
         "title": "Discover our ranges",
