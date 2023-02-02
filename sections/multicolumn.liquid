@@ -37,6 +37,11 @@
       </div>
     {%- endunless -%}
     <slider-component class="slider-mobile-gutter">
+      <ul {% if section.settings.desktop_slider %}style="flex-wrap:inherit;overflow-x:scroll;scroll-snap-type:both mandatory;scroll-behavior:smooth;"{% endif %} class="multicolumn-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--mobile grid--peek{% endif %}"
+        id="Slider-{{ section.id }}"
+        role="list"
+      >
+        
       {% if section.settings.desktop_slider %}
         <script>
           var columnWidth = document.getElementById('Slider-{{ section.id }}').firstElementChild.offsetWidth;
@@ -54,10 +59,7 @@
           }, 2000);
         </script>
       {% endif %}
-      <ul {% if section.settings.desktop_slider %}style="flex-wrap:inherit;overflow-x:scroll;scroll-snap-type:both mandatory;scroll-behavior:smooth;"{% endif %} class="multicolumn-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--mobile grid--peek{% endif %}"
-        id="Slider-{{ section.id }}"
-        role="list"
-      >
+      
         {%- liquid
           assign highest_ratio = 0
           for block in section.blocks
