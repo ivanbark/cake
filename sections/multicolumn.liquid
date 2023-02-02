@@ -137,7 +137,7 @@
 {% if section.settings.desktop_slider %}
   <script>
     var columnWidth = document.getElementById('Slider-{{ section.id }}').firstElementChild.offsetWidth;
-    var elementWidth = document.getElementById('Slider-{{ section.id }}').offsetWidth;
+    var elementWidth = document.getElementById('Slider-{{ section.id }}').scrollWidth;
     var columnCount = elementWidth / columnWidth;
     var scrollPos = 1;
 
