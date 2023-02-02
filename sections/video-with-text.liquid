@@ -442,6 +442,7 @@
     }
     .text-content {
       text-align: {{ section.settings.mobile_content_alignment }};
+      padding: 40px 15px;
     }
     .icons-clickeble {
       justify-content: {% if section.settings.mobile_content_alignment == "left" %}flex-start{% elsif section.settings.mobile_content_alignment == "center" %}center{% else %}flex-end{% endif %};
