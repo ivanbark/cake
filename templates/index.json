@@ -388,7 +388,7 @@
       "settings": {
         "desktop_content_alignment": "left",
         "text_side_background_color": "#fbf1e3",
-        "mobile_content_alignment": "left",
+        "mobile_content_alignment": "center",
         "padding_top": 36,
         "padding_bottom": 36,
         "heading": "INNOVATIVE DESIGN — EASY TO USE",
