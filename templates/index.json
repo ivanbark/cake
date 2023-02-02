@@ -254,6 +254,16 @@
             "collection_title_alignment": "left",
             "font_size": 10
           }
+        },
+        "f210017c-32df-498d-bf55-25fda52c78f1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "maternity-sets",
+            "collection_title": "",
+            "text_color": "#ffffff",
+            "collection_title_alignment": "left",
+            "font_size": 10
+          }
         }
       },
       "block_order": [
@@ -261,7 +271,8 @@
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-1",
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-2",
         "491e48e9-8bf9-449d-8682-87ef20d541ae",
-        "b2fd5e3f-5a82-4976-8b4b-757a42d7cf9d"
+        "b2fd5e3f-5a82-4976-8b4b-757a42d7cf9d",
+        "f210017c-32df-498d-bf55-25fda52c78f1"
       ],
       "settings": {
         "title": "Discover our ranges",
