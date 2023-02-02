@@ -34,7 +34,7 @@
               </p>
             {%- when 'text' -%}
               <div class="rich-text__text rte" {{ block.shopify_attributes }}>
-                <a style="color:{{ block.settings.text_color }};" href="{{ block.settings.text_url }}">
+                <a style="font-weight:{{ block.settings.text_font_weight }}; font-size:{{ block.settings.text_font_size }}; color:{{ block.settings.text_color }};" href="{{ block.settings.text_url }}">
                   {{ block.settings.text }}
                 </a>
               </div>
@@ -280,7 +280,33 @@
           "type": "url",
           "id": "text_link",
           "label": "Text link"
-        }
+        },
+        {
+        "type": "select",
+        "id": "text_font_weight",
+        "options": [
+          {
+            "value": "normal",
+            "label": "normal"
+          },
+          {
+            "value": "bold",
+            "label": "bold"
+          }
+        ],
+        "default": "normal",
+        "label": "Text thickness"
+       },
+       {
+        "type": "range",
+        "id": "text_font_size",
+        "min": 10,
+        "max": 60,
+        "step": 5,
+        "unit": "px",
+        "label": "text size",
+        "default": 10
+      }
       ]
     },
     {
