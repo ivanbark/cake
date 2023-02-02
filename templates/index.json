@@ -249,10 +249,10 @@
           "type": "featured_collection",
           "settings": {
             "collection": "pumping-bras",
-            "collection_title": "",
-            "text_color": "#ffffff",
-            "collection_title_alignment": "left",
-            "font_size": 10
+            "collection_title": "Pumping",
+            "text_color": "#e2b95b",
+            "collection_title_alignment": "center",
+            "font_size": 32
           }
         },
         "f210017c-32df-498d-bf55-25fda52c78f1": {
