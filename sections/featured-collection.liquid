@@ -53,8 +53,8 @@
         {%- endif -%} 
         <div style="text-align: end;" class="collection__view-all">
           {%- for block in section.blocks -%}
-          <p onclick="showCollection()">{{ block.settings.collection.title }}</p>
-            {% endfor %}
+            <p onclick="showCollection({{ block.id }})">{{ block.settings.collection.title }}</p>
+          {% endfor %}
         {%- if section.settings.show_view_all and more_in_collection -%}
             <a href="{{ section.settings.collection.url }}"
               class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
