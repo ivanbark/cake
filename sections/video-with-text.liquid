@@ -456,11 +456,11 @@
 </style>
 
 <script>
-  var blocks = [];
+  var blocksVideoWithText = [];
   var varients = ["content-", "icon-", "visual-"];
   
   function selectContent(id) {
-    blocks.forEach( function (id) {
+    blocksVideoWithText.forEach( function (id) {
       varients.forEach( function (varient) {
         try {
           document.getElementById(varient + id).classList.remove("active");   
@@ -505,7 +505,7 @@
           <div class="icons-clickeble">
             {% for block in section.blocks %}
               <script>
-                blocks.push("{{ block.id }}");
+                blocksVideoWithText.push("{{ block.id }}");
               </script>
               <img class="icon-clickeble {% if block == section.blocks.first %}active{% endif %}" id="icon-{{ block.id }}" onClick="selectContent('{{ block.id }}')" src="{{ block.settings.icon | img_url }}">
             {% endfor %}
