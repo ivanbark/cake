@@ -108,32 +108,17 @@
         {%- endfor -%}
          <div class="card__media">
             <div class="media media--transparent media--hover-effect">
-              {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
-              <img
-                srcset="
-                  {%- if section.settings.image.width >= 165 -%}{{ section.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
-                  {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
-                  {%- if section.settings.image.width >= 533 -%}{{ section.settings.image | image_url: width: 533 }} 533w,{%- endif -%}
-                  {%- if section.settings.image.width >= 720 -%}{{ section.settings.image | image_url: width: 720 }} 720w,{%- endif -%}
-                  {%- if section.settings.image.width >= 940 -%}{{ section.settings.image | image_url: width: 940 }} 940w,{%- endif -%}
-                  {%- if section.settings.image.width >= 1066 -%}{{ section.settings.image | image_url: width: 1066 }} 1066w,{%- endif -%}
-                  {{ section.settings.image | image_url }} {{ section.settings.image.width }}w
-                "
-                src="{{ section.settings.image.width | image_url: width: 533 }}"
-                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-                alt="{{ section.settings.image.width.alt | escape }}"
-                class="motion-reduce"
-                {% unless lazy_load == false %}
-                  loading="lazy"
-                {% endunless %}
-                width="{{ section.settings.image.width.width }}"
-                height="{{ section.settings.image.width.height }}"
-              >
-              {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
+               {{ section.settings.image | image_url: width: section.settings.width | image_tag:
+                class: '',
+                width: '353px',
+                aspect-ratio: '1',
+                height: '470px',
+                alt: logo_alt
+              }}
            </div>
           </div>
         
-      <div class="grid__item">
+<!--       <div class="grid__item">
           {{ section.settings.image | image_url: width: section.settings.width | image_tag:
             class: '',
             width: '353px',
@@ -141,7 +126,7 @@
             height: '470px',
             alt: logo_alt
           }}
-      </div>
+      </div> -->
       </ul>
       {%- if show_mobile_slider or show_desktop_slider -%}
         <div class="slider-buttons no-js-hidden">
