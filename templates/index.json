@@ -500,6 +500,53 @@
         "padding_bottom": 36
       }
     },
+    "924cc6c3-9169-4f24-b203-f5cde17f8419": {
+      "type": "rich-text",
+      "blocks": {
+        "95a64933-f8f9-4953-bd35-dd05d878a1df": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><em>We see you, Warrior<\/em><\/p>",
+            "heading_color": "#ffffff",
+            "heading_size": "h1"
+          }
+        },
+        "fc52df22-912e-4a1e-a8e0-039b42cacf33": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Supporting you through pregnancy breastfeeding and pumping<\/p>",
+            "text_color": "#ffffff",
+            "text_link": "",
+            "text_font_weight": "normal",
+            "text_font_size": 22
+          }
+        },
+        "df65a97b-373c-4d14-ab6e-e3ef2eef5127": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover our ranges<\/p>",
+            "text_color": "#ffffff",
+            "text_link": "shopify:\/\/collections\/last-chance-to-buy",
+            "text_font_weight": "normal",
+            "text_font_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "95a64933-f8f9-4953-bd35-dd05d878a1df",
+        "fc52df22-912e-4a1e-a8e0-039b42cacf33",
+        "df65a97b-373c-4d14-ab6e-e3ef2eef5127"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "background_color": "#eac383",
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
@@ -645,6 +692,7 @@
     "rich_text",
     "23c2764d-de91-4d6e-beb0-09252a8655e2",
     "featured_collection",
+    "924cc6c3-9169-4f24-b203-f5cde17f8419",
     "multicolumn"
   ]
 }
