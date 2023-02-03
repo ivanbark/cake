@@ -483,6 +483,7 @@
         "show_description": false,
         "description_style": "body",
         "collection": "bestsellers",
+        "image": "shopify:\/\/shop_images\/fittingroom.webp",
         "products_to_show": 3,
         "columns_desktop": 4,
         "full_width": false,
