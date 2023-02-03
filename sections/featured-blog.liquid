@@ -45,54 +45,56 @@
         {%- endif -%}
       </div>
     {%- endunless -%}
-    {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
-      <slider-component class="slider-mobile-gutter">
-        <ul id="Slider-{{ section.id }}"
-          class="blog__posts articles-wrapper contains-card contains-card--article{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--peek grid--2-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %}"
-          role="list"
-        >
-          {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
-            <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="blog__post grid__item article slider__slide slider__slide--full-width">
-              {% render 'article-card', blog: section.settings.blog, article: article, media_aspect_ratio: 1.66, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author, show_excerpt: true %}
-            </li>
-          {%- endfor -%}
-        </ul>
-        {%- if posts_exceed_limit -%}
-          <div class="slider-buttons no-js-hidden{% if section.settings.post_limit < 3 %} medium-hide{% endif %}{% if section.settings.post_limit < 2 %} small-hide{% endif %}">
-            <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}">{% render 'icon-caret' %}</button>
-            <div class="slider-counter caption">
-              <span class="slider-counter--current">1</span>
-              <span aria-hidden="true"> / </span>
-              <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-              <span class="slider-counter--total">{{ section.settings.post_limit }}</span>
+    {% for block in section.blocks %}
+        {%- if block.settings.blog != blank and block.settings.blog.articles_count > 0 -%}
+        <slider-component class="slider-mobile-gutter">
+          <ul id="Slider-{{ block.id }}"
+            class="blog__posts articles-wrapper contains-card contains-card--article{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--peek grid--2-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %}"
+            role="list"
+          >
+            {%- for article in block.settings.blog.articles limit: block.settings.post_limit -%}
+              <li id="Slide-{{ block.id }}-{{ forloop.index }}" class="blog__post grid__item article slider__slide slider__slide--full-width">
+                {% render 'article-card', blog: block.settings.blog, article: article, media_aspect_ratio: 1.66, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author, show_excerpt: true %}
+              </li>
+            {%- endfor -%}
+          </ul>
+          {%- if posts_exceed_limit -%}
+            <div class="slider-buttons no-js-hidden{% if section.settings.post_limit < 3 %} medium-hide{% endif %}{% if section.settings.post_limit < 2 %} small-hide{% endif %}">
+              <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}">{% render 'icon-caret' %}</button>
+              <div class="slider-counter caption">
+                <span class="slider-counter--current">1</span>
+                <span aria-hidden="true"> / </span>
+                <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+                <span class="slider-counter--total">{{ section.settings.post_limit }}</span>
+              </div>
+              <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'general.slider.next_slide' | t }}">{% render 'icon-caret' %}</button>
             </div>
-            <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'general.slider.next_slide' | t }}">{% render 'icon-caret' %}</button>
+          {%- endif -%}
+        </slider-component>
+  
+        {%- if section.settings.show_view_all and section.settings.post_limit < block.settings.blog.articles_count -%}
+          <div class="blog__view-all center small-hide medium-hide">
+            <a href="{{ block.settings.blog.url }}" id="ViewAll-{{ block.id }}" class="blog__button button" aria-labelledby="ViewAll-{{ block.id }} SectionHeading-{{ block.id }}">
+              {{ 'sections.featured_blog.view_all' | t }}
+            </a>
           </div>
         {%- endif -%}
-      </slider-component>
-
-      {%- if section.settings.show_view_all and section.settings.post_limit < section.settings.blog.articles_count -%}
-        <div class="blog__view-all center small-hide medium-hide">
-          <a href="{{ section.settings.blog.url }}" id="ViewAll-{{ section.id }}" class="blog__button button" aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}">
-            {{ 'sections.featured_blog.view_all' | t }}
-          </a>
+      {%- else -%}
+        <div class="blog-placeholder">
+          <div class="placeholder media media--landscape">
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          </div>
+          <div class="blog-placeholder__content">
+            <h2>
+              {{ 'sections.featured_blog.onboarding_title' | t }}
+            </h2>
+            <p class="rte-width">
+              {{ 'sections.featured_blog.onboarding_content' | t }}
+            </p>
+          </div>
         </div>
       {%- endif -%}
-    {%- else -%}
-      <div class="blog-placeholder">
-        <div class="placeholder media media--landscape">
-          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-        </div>
-        <div class="blog-placeholder__content">
-          <h2>
-            {{ 'sections.featured_blog.onboarding_title' | t }}
-          </h2>
-          <p class="rte-width">
-            {{ 'sections.featured_blog.onboarding_content' | t }}
-          </p>
-        </div>
-      </div>
-    {%- endif -%}
+    {% endfor %}
   </div>
 </div>
 
@@ -127,11 +129,6 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
-    },
-    {
-      "type": "blog",
-      "id": "blog",
-      "label": "t:sections.featured-blog.settings.blog.label"
     },
     {
       "type": "range",
@@ -238,17 +235,9 @@
         {
           "type": "blog",
           "id": "blog",
-          "label": "t:sections.featured-blog.settings.blog.label"
+          "label": "Blog"
         }
       ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "t:sections.featured-blog.presets.name",
-      "settings": {
-        "blog": "News"
-      }
     }
   ]
 }
