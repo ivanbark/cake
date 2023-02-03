@@ -525,7 +525,7 @@
             "text": "<p>Discover our ranges<\/p>",
             "text_color": "#ffffff",
             "text_link": "shopify:\/\/collections\/last-chance-to-buy",
-            "text_font_weight": "normal",
+            "text_font_weight": "bold",
             "text_font_size": 16
           }
         }
