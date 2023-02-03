@@ -514,10 +514,41 @@
     },
     "2c373a33-388c-4d94-8694-978cc1fbdd63": {
       "type": "featured-blog",
+      "blocks": {
+        "19860f8b-9ccc-473a-94b1-15a892c8496d": {
+          "type": "blog",
+          "settings": {
+            "blog": "test"
+          }
+        },
+        "07b1dc49-1522-49dc-a3c1-7978367ed900": {
+          "type": "blog",
+          "settings": {
+            "blog": "test"
+          }
+        },
+        "786c196f-cae0-422b-890f-61fd17b267da": {
+          "type": "blog",
+          "settings": {
+            "blog": "test"
+          }
+        },
+        "8a222c01-a901-4b68-8c00-f7b897ce8a35": {
+          "type": "blog",
+          "settings": {
+            "blog": "test"
+          }
+        }
+      },
+      "block_order": [
+        "19860f8b-9ccc-473a-94b1-15a892c8496d",
+        "07b1dc49-1522-49dc-a3c1-7978367ed900",
+        "786c196f-cae0-422b-890f-61fd17b267da",
+        "8a222c01-a901-4b68-8c00-f7b897ce8a35"
+      ],
       "settings": {
         "heading": "Raw Motherhood Blog",
         "heading_size": "h1",
-        "blog": "test",
         "post_limit": 4,
         "columns_desktop": 4,
         "color_scheme": "background-1",
