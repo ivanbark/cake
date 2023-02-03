@@ -482,12 +482,11 @@
 
 console.log(blocks);
     blocks.forEach( function (id) {
+ 
         try {
           document.getElementById(id).style.display = "none";
-          document.getElementById(id).style.text-decoration-line = "none";
         } catch (e) { alert(e); }
     });
       document.getElementById(id).style.display = "flex";
-      document.getElementById(id).style.text-decoration-line = "underline";
   }
 </script>
