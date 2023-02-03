@@ -459,7 +459,7 @@
         "0763c412-244a-4ab6-a758-a7ec4332706c": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
+            "collection": "pumping-friendly",
             "collection_title": "",
             "text_color": "#ffffff",
             "collection_title_alignment": "left",
