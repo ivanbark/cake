@@ -460,16 +460,17 @@
   var varients = ["content-", "icon-", "visual-"];
   
   function selectContent(id) {
-    blocks.forEach( function (id) {
-      varients.forEach( function (varient) {
-        try {
-          document.getElementById(varient + id).classList.remove("active");   
-        } catch (e) { alert(e); }
-      });
-    });  
-    varients.forEach( function (varient) {
-      document.getElementById(varient + id).classList.add("active");    
-    });  
+    alert(id);
+    // blocks.forEach( function (id) {
+    //   varients.forEach( function (varient) {
+    //     try {
+    //       document.getElementById(varient + id).classList.remove("active");   
+    //     } catch (e) { alert(e); }
+    //   });
+    // });  
+    // varients.forEach( function (varient) {
+    //   document.getElementById(varient + id).classList.add("active");    
+    // });  
   }
 </script>
 
