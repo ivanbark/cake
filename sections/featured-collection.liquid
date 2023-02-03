@@ -56,7 +56,7 @@
       <div class="collection__title title-wrapper title-wrapper--no-top-margin {% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
         {%- if section.settings.title != blank -%}
           <div class="title {{ section.settings.heading_size }}">
-            {{ section.settings.title | escape }}
+            {{ section.settings.title }}
           </div>
         {%- endif -%} 
         <div style="text-align: end;" class="collection__view-all">
