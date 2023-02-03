@@ -511,14 +511,12 @@
             "heading_size": "h1"
           }
         },
-        "fc52df22-912e-4a1e-a8e0-039b42cacf33": {
-          "type": "text",
+        "567821b3-2688-4a9a-9b47-615262a65e74": {
+          "type": "caption",
           "settings": {
-            "text": "<p>Supporting you through pregnancy breastfeeding and pumping<\/p>",
-            "text_color": "#ffffff",
-            "text_link": "",
-            "text_font_weight": "normal",
-            "text_font_size": 22
+            "caption": "Supporting you through pregnancy breastfeeding and pumping",
+            "text_style": "subtitle",
+            "text_size": "medium"
           }
         },
         "df65a97b-373c-4d14-ab6e-e3ef2eef5127": {
@@ -534,13 +532,13 @@
       },
       "block_order": [
         "95a64933-f8f9-4953-bd35-dd05d878a1df",
-        "fc52df22-912e-4a1e-a8e0-039b42cacf33",
+        "567821b3-2688-4a9a-9b47-615262a65e74",
         "df65a97b-373c-4d14-ab6e-e3ef2eef5127"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "background_color": "#eac383",
+        "background_color": "#beb5d9",
         "color_scheme": "accent-2",
         "full_width": true,
         "padding_top": 20,
