@@ -106,13 +106,15 @@
             </li>
           {%- endfor -%}
         {%- endfor -%}
+      <div class="card__inner color-background-2 gradient">
           {{ section.settings.image | image_url: width: section.settings.width | image_tag:
-            class: 'card__inner color-background-2 gradient',
+            class: '',
             widths: '50, 100, 150, 200, 250, 300, 400, 500',
             height: logo_height,
             width: section.settings.logo_width,
             alt: logo_alt
           }}
+      </div>
       </ul>
       {%- if show_mobile_slider or show_desktop_slider -%}
         <div class="slider-buttons no-js-hidden">
