@@ -105,20 +105,8 @@
               {% render 'card-product', show_vendor: section.settings.show_vendor %}
             </li>
           {%- endfor -%}
-        {%- endfor -%}
-         <div class="card__media">
-            <div class="media media--transparent media--hover-effect">
-               {{ section.settings.image | image_url: width: section.settings.width | image_tag:
-                class: '',
-                width: '353px',
-                aspect-ratio: '1',
-                height: '470px',
-                alt: logo_alt
-              }}
-           </div>
-          </div>
-        
-<!--       <div class="grid__item">
+        {%- endfor -%}   
+      <div class="grid__item">
           {{ section.settings.image | image_url: width: section.settings.width | image_tag:
             class: '',
             width: '353px',
@@ -126,7 +114,7 @@
             height: '470px',
             alt: logo_alt
           }}
-      </div> -->
+      </div>
       </ul>
       {%- if show_mobile_slider or show_desktop_slider -%}
         <div class="slider-buttons no-js-hidden">
