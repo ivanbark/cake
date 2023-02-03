@@ -4,6 +4,10 @@
   padding-bottom: 0;
 }
 
+.active {
+  display: block;
+}
+
 .featured-product .product__modal-opener {
   margin-bottom: var(--media-shadow-vertical-offset);
 }
