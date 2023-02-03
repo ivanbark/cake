@@ -57,8 +57,8 @@
         {%- if section.settings.title != blank -%}
           <h2 class="title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</h2>
         {%- endif -%} 
-        <div style="text-align: end; display: inline-flex;" class="collection__view-all">
-          <div>
+        <div style="text-align: end;" class="collection__view-all">
+          <div style="display: inline-flex; float: left;">
           {%- for block in section.blocks -%}
             <p style="margin: 0 1rem; {% if block == section.blocks.first %}margin-left: 0;{% endif %}" onclick="showCollection('{{ block.id }}')">{{ block.settings.collection.title }}</p>
           {% endfor %}
