@@ -60,7 +60,7 @@
           </div>
         {%- endif -%} 
         <div style="text-align: end; display: flex; flex-flow: nowrap; overflow-x: scroll;" class="collection__view-all">
-          <div style="display: inline-flex; float: left;">
+          <div style="margin-bottom: 7px; display: inline-flex; float: left;">
           {%- for block in section.blocks -%}
             <p style="min-width: max-content; margin: 0 1rem; {% if block == section.blocks.first %}margin-left: 0;{% endif %}" onclick="showCollection('{{ block.id }}')">{{ block.settings.collection.title }}</p>
           {% endfor %}
