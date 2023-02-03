@@ -476,7 +476,7 @@
         "0763c412-244a-4ab6-a758-a7ec4332706c"
       ],
       "settings": {
-        "title": "Which bra is right for you?",
+        "title": "<p>Which bra is <em>right<\/em> for you?<\/p>",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
