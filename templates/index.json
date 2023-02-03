@@ -321,7 +321,8 @@
         "color_scheme": "accent-2",
         "full_width": true,
         "padding_top": 20,
-        "padding_bottom": 20
+        "padding_bottom": 20,
+        "block_spacing": 2
       }
     },
     "23c2764d-de91-4d6e-beb0-09252a8655e2": {
@@ -487,6 +488,7 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "link",
+        "font_weight": "bold",
         "enable_desktop_slider": false,
         "color_scheme": "background-1",
         "image_ratio": "adapt",
@@ -542,7 +544,8 @@
         "color_scheme": "accent-2",
         "full_width": true,
         "padding_top": 20,
-        "padding_bottom": 20
+        "padding_bottom": 20,
+        "block_spacing": 2
       }
     },
     "multicolumn": {
