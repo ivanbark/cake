@@ -306,7 +306,8 @@
             "text_color": "#000000",
             "text_link": "shopify:\/\/collections\/last-chance-to-buy",
             "text_font_weight": "bold",
-            "text_font_size": 18
+            "text_font_size": 18,
+            "block_spacing_top": 1.6
           }
         }
       },
@@ -321,8 +322,7 @@
         "color_scheme": "accent-2",
         "full_width": true,
         "padding_top": 20,
-        "padding_bottom": 20,
-        "block_spacing": 2
+        "padding_bottom": 20
       }
     },
     "23c2764d-de91-4d6e-beb0-09252a8655e2": {
@@ -519,7 +519,8 @@
           "settings": {
             "caption": "Supporting you through pregnancy breastfeeding and pumping",
             "text_style": "subtitle",
-            "text_size": "large"
+            "text_size": "extra-large-block-text",
+            "block_spacing_top": 0.8
           }
         },
         "df65a97b-373c-4d14-ab6e-e3ef2eef5127": {
@@ -529,7 +530,8 @@
             "text_color": "#ffffff",
             "text_link": "shopify:\/\/collections\/last-chance-to-buy",
             "text_font_weight": "bold",
-            "text_font_size": 16
+            "text_font_size": 16,
+            "block_spacing_top": 1.6
           }
         }
       },
@@ -545,8 +547,7 @@
         "color_scheme": "accent-2",
         "full_width": true,
         "padding_top": 36,
-        "padding_bottom": 36,
-        "block_spacing": 2
+        "padding_bottom": 36
       }
     },
     "multicolumn": {
