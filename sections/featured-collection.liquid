@@ -57,7 +57,7 @@
         {%- if section.settings.title != blank -%}
           <h2 class="title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</h2>
         {%- endif -%} 
-        <div style="text-align: end;" class="collection__view-all">
+        <div style="text-align: end; display: inline-flex;" class="collection__view-all">
           {%- for block in section.blocks -%}
             <p onclick="showCollection('{{ block.id }}')">{{ block.settings.collection.title }}</p>
           {% endfor %}
