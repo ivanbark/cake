@@ -5,7 +5,7 @@
 }
 
 .active {
-  display: block;
+  display: block !important;
 }
 
 .featured-product .product__modal-opener {
