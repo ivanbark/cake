@@ -10,11 +10,6 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
-  .extra-large-block-text {
-    font-size: 1.4rem !important;
-    background: black;
-  }
-
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -22,6 +17,15 @@
     }
   }
 {%- endstyle -%}
+
+<style>
+
+  .extra-large-block-text {
+    font-size: 1.4rem !important;
+    background: black;
+  }
+  
+</style>
 
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
   <div style="background-color:{{ section.settings.background_color }};" class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
