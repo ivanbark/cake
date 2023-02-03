@@ -156,15 +156,15 @@
     var visibleColumnCount = elementVisibleWidth / columnWidth;
     var scrollPos = 0;
 
-    // setInterval(function() {
-    //   scrollPos += 1;
-    //   if (scrollPos >= columnCount - visibleColumnCount) {
-    //     document.getElementById('Slider-{{ section.id }}').scroll(0, 0);          
-    //     scrollPos = 0;
-    //   } else {
-    //     document.getElementById('Slider-{{ section.id }}').scroll(scrollPos * columnWidth, 0);
-    //   }
-    // }, 2000);
+    setInterval(function() {
+      scrollPos += 1;
+      if (scrollPos >= columnCount - visibleColumnCount) {
+        document.getElementById('Slider-{{ section.id }}').scroll(0, 0);          
+        scrollPos = 0;
+      } else {
+        document.getElementById('Slider-{{ section.id }}').scroll(scrollPos * columnWidth, 0);
+      }
+    }, 2000);
   </script>
 {% endif %}
 
