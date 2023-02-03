@@ -105,13 +105,13 @@
                 {%- endif -%}
                 {%- if block.settings.title != blank -%}
                 {%- if block.settings.title == "Encouraging breast health." or block.settings.title == "Mama-friendly returns." or block.settings.title == "Support for every mama." -%}
-                  <h3 style="padding-left:{{ block.settings.padding_left }}px; margin: 0; font-size:{{ block.settings.title_font_size }}px; font-weight:{{ block.settings.title_font_weight }};">{{ block.settings.title | escape }}</h3>
+                  <h3 style="padding-left:{{ block.settings.padding_left }}px; margin: 0; font-size:{{ block.settings.title_font_size }}rem; font-weight:{% if block.settings.title_font_weight == true %}bold{% else %}unset{% endif %};">{{ block.settings.title | escape }}</h3>
                 {% else %}
                    <h3>{{ block.settings.title | escape }}</h3>
                 {%- endif -%}
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
-                  <div style="padding-left:{{ block.settings.padding_left }}px; font-size:{{ block.settings.description_font_size }}px; font-weight:{{ block.settings.description_font_weight }};" class="rte">{{ block.settings.text }}</div>
+                  <div style="padding-left:{{ block.settings.padding_left }}px; font-size:{{ block.settings.description_font_size }}rem; font-weight:{% if block.settings.description_font_weight == true %}bold{% else %}unset{% endif %};" class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
                   <a class="link animate-arrow" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
@@ -408,30 +408,20 @@
           "label": "t:sections.multicolumn.blocks.column.settings.title.label"
         },
         {
-          "type": "select",
-          "id": "title_font_weight",
-          "options": [
-        {
-          "value": "bold",
-          "label": "Bold"
-        },
-        {
-          "value": "normal",
-          "label": "Normal"
-        }
-        ],
-          "default": "normal",
-          "label": "Title font size"
-        },
-        {
           "type": "range",
           "id": "title_font_size",
           "min": 0,
-          "max": 30,
-          "step": 2,
-          "unit": "px",
-          "label": "Title font weight",
-          "default": 10
+          "max": 5,
+          "step": 0.2,
+          "unit": "rem",
+          "label": "Font size heading",
+          "default": 1.4      
+        },
+        {
+          "type": "checkbox",
+          "id": "title_font_weight",
+          "default": false,
+          "label": "Font weight bold heading"
         },
         {
           "type": "richtext",
@@ -440,30 +430,20 @@
           "label": "t:sections.multicolumn.blocks.column.settings.text.label"
         },
         {
-          "type": "select",
-          "id": "description_font_weight",
-          "options": [
-        {
-          "value": "bold",
-          "label": "Bold"
-        },
-        {
-          "value": "normal",
-          "label": "Normal"
-        }
-        ],
-          "default": "normal",
-          "label": "Description font size"
-        },
-        {
           "type": "range",
           "id": "description_font_size",
           "min": 0,
-          "max": 30,
-          "step": 2,
-          "unit": "px",
-          "label": "Description font weight",
-          "default": 10
+          "max": 5,
+          "step": 0.2,
+          "unit": "rem",
+          "label": "Font size description",
+          "default": 1.4      
+        },
+        {
+          "type": "checkbox",
+          "id": "description_font_weight",
+          "default": false,
+          "label": "Font weight bold description"
         },
         {
           "type": "text",
