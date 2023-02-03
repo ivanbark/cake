@@ -70,7 +70,7 @@
         <div style="text-align: end;" class="collection__view-all">
           <div style="margin-bottom: 7px; display: inline-flex; float: left;">
           {%- for block in section.blocks -%}
-            <p style="min-width: max-content; margin: 0 1rem; {% if block == section.blocks.first %}margin-left: 0; text-decoration-line: underline;{% endif %}" onclick="showCollection('{{ block.id }}')">{{ block.settings.collection.title }}</p>
+            <p style="cursor: pointer; min-width: max-content; margin: 0 1rem; {% if block == section.blocks.first %}margin-left: 0; text-decoration-line: underline;{% endif %}" onclick="showCollection('{{ block.id }}')">{{ block.settings.collection.title }}</p>
           {% endfor %}
           </div>
         {%- if section.settings.show_view_all -%}
