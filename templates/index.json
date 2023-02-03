@@ -488,7 +488,7 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "link",
-        "viewall_font_weight": "normal",
+        "viewall_font_weight": "bold",
         "enable_desktop_slider": false,
         "color_scheme": "background-1",
         "image_ratio": "adapt",
