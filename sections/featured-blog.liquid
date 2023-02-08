@@ -67,7 +67,7 @@
             blogs.push('{{ block.id }}');
           </script>
         
-          <p id="title-{{ block.id }}" class="blog-title {% if block == section.blocks.first %}active-blog{% endif %}">{{ block.settings.blog.title }}</p>
+          <p id="title-{{ block.id }}" class="blog-title {% if block == section.blocks.first %}active-blog{% endif %}" onClick="selectBlog('{{ block.id }}')">{{ block.settings.blog.title }}</p>
         {% endfor %}
       </div>
       {% for block in section.blocks %}
