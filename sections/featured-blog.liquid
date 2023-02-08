@@ -56,7 +56,11 @@
   }
 
   .article-card .card__inner {
-    --ratio-percent: 90% !important;
+    --ratio-percent: 100% !important;
+  }
+
+  .article-car .card__content {
+    text-align: center;
   }
 {%- endstyle -%}
 
@@ -117,7 +121,7 @@
           >
             {%- for article in block.settings.blog.articles limit: block.settings.post_limit -%}
               <li id="Slide-{{ block.id }}-{{ forloop.index }}" class="blog__post grid__item article slider__slide slider__slide--full-width">
-                {% render 'article-card', blog: block.settings.blog, article: article, media_aspect_ratio: 1.66, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author, show_excerpt: true %}
+                {% render 'article-card', blog: block.settings.blog, article: article, media_aspect_ratio: 1.66, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author, show_excerpt: false %}
               </li>
             {%- endfor -%}
           </ul>
