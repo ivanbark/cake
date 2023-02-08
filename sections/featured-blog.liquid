@@ -126,7 +126,7 @@
             
         {%- if block.settings.blog != blank and block.settings.blog.articles_count > 0 -%}
         <div id="blog-list-{{ block.id }}" class="slider-mobile-gutter blog-list {% if block == section.blocks.first %}active-blog{% endif %}">
-          <ul id="Slider-{{ block.id }}"
+          <ul id="Slider-{{ block.id }}" style="overflow: unset;flex-wrap:warp;"
             class="blog__posts articles-wrapper contains-card contains-card--article{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--peek grid--2-col-tablet grid--{{ block.settings.columns_desktop }}-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %}"
             role="list"
           >
