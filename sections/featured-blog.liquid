@@ -104,7 +104,8 @@
         {% endfor %}
       </div>
       {% for block in section.blocks %}
-        {% if section.settings.show_view_all and section.settings.heading.strip_html == "Raw Motherhood Blog" %}
+        {% assign title = section.settings.heading | strip_html %}
+        {% if section.settings.show_view_all and title == "Raw Motherhood Blog" %}
           <a id="blog-view-all-{{ block.id }}" class="link underlined-link view-all {% if block == section.blocks.first %}active-blog{% endif %}" style="font-weight:bold;color: black;" href="{{ block.settings.blog.url }}">VIEW ALL</a>
         {% endif %}
       {% endfor %}
@@ -150,7 +151,8 @@
           {%- endif -%}
         </slider-component>
   
-        {%- if section.settings.show_view_all and section.settings.post_limit < block.settings.blog.articles_count and section.settings.heading != "Raw Motherhood Blog" -%}
+        {% assign title = section.settings.heading | strip_html %}
+        {%- if section.settings.show_view_all and section.settings.post_limit < block.settings.blog.articles_count and title != "Raw Motherhood Blog" -%}
           <div class="blog__view-all center small-hide medium-hide">
             <a href="{{ block.settings.blog.url }}" id="ViewAll-{{ block.id }}" class="blog__button button" aria-labelledby="ViewAll-{{ block.id }} SectionHeading-{{ block.id }}">
               {{ 'sections.featured_blog.view_all' | t }}
