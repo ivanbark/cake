@@ -135,15 +135,15 @@
   var idvarients = ["title-", "view-all-", "blog-"];
   
   function selectBlog(id) {
-    blogs.forEach( function (blogsid) {
-      idvarients.forEach( function (idvarient) {
+    blogs.forEach( function (id) {
+      varients.forEach( function (varient) {
         try {
-          document.getElementById(idvarient + blogsid).classList.remove("active-blog");   
+          document.getElementById(varient + id).classList.remove("active-blog");   
         } catch (e) { alert(e); }
       });
     });  
-    idvarients.forEach( function (idvarient) {
-      document.getElementById(idvarient + id).classList.add("active-blog");    
+    varients.forEach( function (varient) {
+      document.getElementById(varient + id).classList.add("active-blog");    
     });  
   }
 </script>
