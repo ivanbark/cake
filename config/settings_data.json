@@ -124,7 +124,9 @@
     "show_vendor": false,
     "show_cart_note": false,
     "checkout_header_image": "shopify:\/\/shop_images\/319040484_799834691116396_7497934810660812326_n.jpg",
-    "checkout_logo_image": "shopify:\/\/shop_images\/CakeMaternity-Logo-Positive.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/CakeMaternity-Logo-Negative.png",
+    "checkout_body_background_color": "#fafafa",
+    "checkout_sidebar_background_color": "#ffffff",
     "checkout_accent_color": "#b58069",
     "checkout_button_color": "#d6b069",
     "sections": {
