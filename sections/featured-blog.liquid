@@ -104,7 +104,7 @@
         {% endfor %}
       </div>
       {% for block in section.blocks %}
-        {% if section.settings.show_view_all and section.settings.heading == "Raw Motherhood Blog" %}
+        {% if section.settings.show_view_all and section.settings.heading.strip_html == "Raw Motherhood Blog" %}
           <a id="blog-view-all-{{ block.id }}" class="link underlined-link view-all {% if block == section.blocks.first %}active-blog{% endif %}" style="font-weight:bold;color: black;" href="{{ block.settings.blog.url }}">VIEW ALL</a>
         {% endif %}
       {% endfor %}
