@@ -43,6 +43,20 @@
 
 <script>
   var blogs = [];
+  var varients = ["title-", "view-all-", "blog-"];
+  
+  function selectBlog(id) {
+    blogs.forEach( function (id) {
+      varients.forEach( function (varient) {
+        try {
+          document.getElementById(varient + id).classList.remove("active-blog");   
+        } catch (e) { alert(e); }
+      });
+    });  
+    varients.forEach( function (varient) {
+      document.getElementById(varient + id).classList.add("active-blog");    
+    });  
+  }
 </script>
 
 <div class="blog color-{{ section.settings.color_scheme }} gradient{% if section.settings.heading == blank %} no-heading{% endif %}">
@@ -130,23 +144,6 @@
     {% endfor %}
   </div>
 </div>
-
-<script>
-  var varients = ["title-", "view-all-", "blog-"];
-  
-  function selectBlog(id) {
-    blogs.forEach( function (id) {
-      varients.forEach( function (varient) {
-        try {
-          document.getElementById(varient + id).classList.remove("active-blog");   
-        } catch (e) { alert(e); }
-      });
-    });  
-    varients.forEach( function (varient) {
-      document.getElementById(varient + id).classList.add("active-blog");    
-    });  
-  }
-</script>
 
 {% schema %}
 {
