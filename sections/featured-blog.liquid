@@ -27,9 +27,20 @@
   }
 
   .blogs__view-all {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: end;
+  }
+
+  .blogs__view-all .blog_title_list {
+    display: inline-flex;
+    float: left;
+  }
+
+  .blog_title_list .blog-title {
+    margin: 0 1rem;
+  }
+
+  .blog_title_list p:first-child() {
+    margin: 0 1rem 0 0;
   }
 
   .active-blog {
