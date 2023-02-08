@@ -43,12 +43,13 @@
 
 <script>
   var blogs = [];
+  var varients = ["blog-title-", "blog-view-all-", "blog-list-"];
   
   function selectBlog(id) {
     blogs.forEach( function (id) {
-      document.getElementById("blog-list-" + id).classList.remove("active-blog");
-      document.getElementById("blog-view-all-" + id).classList.remove("active-blog");
-      document.getElementById("blog-title-" + id).classList.remove("active-blog");
+      varients.forEach( function (varient) {
+        document.getElementById(varient + id).classList.remove("active-blog");
+      });
     });  
     varients.forEach( function (varient) {
       document.getElementById(varient + id).classList.add("active-blog");    
