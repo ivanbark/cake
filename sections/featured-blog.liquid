@@ -125,7 +125,7 @@
         -%}
             
         {%- if block.settings.blog != blank and block.settings.blog.articles_count > 0 -%}
-        <slider-component id="blog-list-{{ block.id }}" class="slider-mobile-gutter blog-list {% if block == section.blocks.first %}active-blog{% endif %}">
+        <div id="blog-list-{{ block.id }}" class="slider-mobile-gutter blog-list {% if block == section.blocks.first %}active-blog{% endif %}">
           <ul id="Slider-{{ block.id }}"
             class="blog__posts articles-wrapper contains-card contains-card--article{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--peek grid--2-col-tablet grid--{{ block.settings.columns_desktop }}-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %}"
             role="list"
@@ -137,7 +137,7 @@
             {%- endfor -%}
           </ul>
               
-          {%- if posts_exceed_limit -%}
+<!--           {%- if posts_exceed_limit -%}
             <div class="slider-buttons no-js-hidden{% if section.settings.post_limit < 3 %} medium-hide{% endif %}{% if section.settings.post_limit < 2 %} small-hide{% endif %}">
               <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}">{% render 'icon-caret' %}</button>
               <div class="slider-counter caption">
@@ -148,8 +148,8 @@
               </div>
               <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'general.slider.next_slide' | t }}">{% render 'icon-caret' %}</button>
             </div>
-          {%- endif -%}
-        </slider-component>
+          {%- endif -%} -->
+        </div>
   
         {% assign title = section.settings.heading | strip_html %}
         {%- if section.settings.show_view_all and section.settings.post_limit < block.settings.blog.articles_count and title != "Raw Motherhood Blog" -%}
