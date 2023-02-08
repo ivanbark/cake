@@ -38,6 +38,15 @@
       </div>
     {%- endunless -%}
     {% for block in section.blocks %}
+        
+        {%- liquid
+          assign posts_displayed = block.settings.blog.articles_count
+          if block.settings.post_limit <= block.settings.blog.articles_count
+            assign posts_exceed_limit = true
+            assign posts_displayed = block.settings.post_limit
+          endif
+        -%}
+    
         {%- if block.settings.blog != blank and block.settings.blog.articles_count > 0 -%}
         <slider-component class="slider-mobile-gutter">
           <ul id="Slider-{{ block.id }}"
@@ -50,14 +59,6 @@
               </li>
             {%- endfor -%}
           </ul>
-          
-          {%- liquid
-            assign posts_displayed = block.settings.blog.articles_count
-            if block.settings.show_article_count <= block.settings.blog.articles_count
-              assign posts_exceed_limit = true
-              assign posts_displayed = block.settings.post_limit
-            endif
-          -%}
               
           {%- if posts_exceed_limit -%}
             <div class="slider-buttons no-js-hidden{% if section.settings.post_limit < 3 %} medium-hide{% endif %}{% if section.settings.post_limit < 2 %} small-hide{% endif %}">
