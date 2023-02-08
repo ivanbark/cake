@@ -43,13 +43,12 @@
 
 <script>
   var blogs = [];
-  var varients = ["blog-title-", "blog-view-all-", "blog-list-"];
   
   function selectBlog(id) {
-    blogs.forEach( function (blogsid) {
-      varients.forEach( function (varient) {
-        document.getElementById("blog-list-07b1dc49-1522-49dc-a3c1-7978367ed900").classList.remove("active-blog");
-      });
+    blogs.forEach( function (id) {
+      document.getElementById("blog-list-" + id).classList.remove("active-blog");
+      document.getElementById("blog-view-all-" + id).classList.remove("active-blog");
+      document.getElementById("blog-title-" + id).classList.remove("active-blog");
     });  
     varients.forEach( function (varient) {
       document.getElementById(varient + id).classList.add("active-blog");    
