@@ -50,12 +50,12 @@
     blogs.forEach( function (id) {
       idvarients.forEach( function (idvarient) {
         try {
-          console.log(idvarient + id);
           document.getElementById(idvarient + id).classList.remove("active-blog");   
         } catch (e) { alert(e); }
       });
     });  
     idvarients.forEach( function (idvarient) {
+      console.log(idvarient + id);
       document.getElementById(idvarient + id).classList.add("active-blog");    
     });  
   }
