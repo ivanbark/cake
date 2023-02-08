@@ -54,7 +54,7 @@
           >
             {%- for article in block.settings.blog.articles limit: block.settings.post_limit -%}
               <li id="Slide-{{ block.id }}-{{ forloop.index }}" class="blog__post grid__item article slider__slide slider__slide--full-width">
-                {% render 'article-card', blog: block.settings.blog, article: article, media_aspect_ratio: 1.66, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: "test", show_excerpt: true %}
+                {% render 'article-card', blog: block.settings.blog, article: article, media_aspect_ratio: 1.66, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author, show_excerpt: true %}
               </li>
             {%- endfor -%}
           </ul>
