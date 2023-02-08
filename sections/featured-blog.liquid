@@ -43,12 +43,11 @@
 
 <script>
   var blogs = [];
-  var idvarients = ["blog-title-", "blog-view-all-"];
+  var idvarients = ["blog-title-", "blog-view-all-", "blog-list-"];
   
   function selectBlog(id) {
     blogs.forEach( function (id) {
       idvarients.forEach( function (varient) {
-        console.log(varient + id);
         document.getElementById(varient + id).classList.remove("active-blog");
       });
     });  
@@ -73,7 +72,7 @@
       </div>
       {% for block in section.blocks %}
         {% if section.settings.show_view_all and section.settings.heading == "Raw Motherhood Blog" %}
-          <a id="link underlined-link blog-view-all-{{ block.id }}" class="view-all {% if block == section.blocks.first %}active-blog{% endif %}" style="font-weight:bold;color: black;" href="{{ block.settings.blog.url }}">VIEW ALL</a>
+          <a id="blog-view-all-{{ block.id }}" class="link underlined-link view-all {% if block == section.blocks.first %}active-blog{% endif %}" style="font-weight:bold;color: black;" href="{{ block.settings.blog.url }}">VIEW ALL</a>
         {% endif %}
       {% endfor %}
     </div>
