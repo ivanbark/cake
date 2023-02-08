@@ -29,6 +29,10 @@
   .active-blog {
     display: block !important;
   }
+
+  .active-blog.blog-title {
+    text-decoration: underline;
+  }
 {%- endstyle -%}
 
 <div class="blog color-{{ section.settings.color_scheme }} gradient{% if section.settings.heading == blank %} no-heading{% endif %}">
