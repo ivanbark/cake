@@ -26,6 +26,12 @@
     display: none !important;
   }
 
+  .blogs__view-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .active-blog {
     display: block !important;
   }
@@ -72,7 +78,7 @@
       </div>
       {% for block in section.blocks %}
         {% if section.settings.show_view_all and section.settings.heading == "Raw Motherhood Blog" %}
-          <a id="view-all-{{ block.id }}" class="view-all {% if block == section.blocks.first %}active-blog{% endif %}" href="{{ block.settings.blog.url }}">VIEW ALL</a>
+          <a id="link underlined-link view-all-{{ block.id }}" class="view-all {% if block == section.blocks.first %}active-blog{% endif %}" style="font-weight:bold;" href="{{ block.settings.blog.url }}">VIEW ALL</a>
         {% endif %}
       {% endfor %}
     </div>
