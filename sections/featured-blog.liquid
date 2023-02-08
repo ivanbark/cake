@@ -43,7 +43,7 @@
 
 <script>
   var blogs = [];
-  var varients = ["title-", "view-all-", "blog-"];
+  var varients = ["blog-title-", "blog-view-all-", "blog-list-"];
   
   function selectBlog(id) {
     blogs.forEach( function (blogsid) {
@@ -67,12 +67,12 @@
     <div class="blogs__view-all">
       <div class="blog_title_list">
         {% for block in section.blocks %}        
-          <p id="title-{{ block.id }}" class="blog-title {% if block == section.blocks.first %}active-blog{% endif %}" onClick="selectBlog('{{ block.id }}')">{{ block.settings.blog.title }}</p>
+          <p id="blog-title-{{ block.id }}" class="blog-title {% if block == section.blocks.first %}active-blog{% endif %}" onClick="selectBlog('{{ block.id }}')">{{ block.settings.blog.title }}</p>
         {% endfor %}
       </div>
       {% for block in section.blocks %}
         {% if section.settings.show_view_all and section.settings.heading == "Raw Motherhood Blog" %}
-          <a id="link underlined-link view-all-{{ block.id }}" class="view-all {% if block == section.blocks.first %}active-blog{% endif %}" style="font-weight:bold;color: black;" href="{{ block.settings.blog.url }}">VIEW ALL</a>
+          <a id="link underlined-link blog-view-all-{{ block.id }}" class="view-all {% if block == section.blocks.first %}active-blog{% endif %}" style="font-weight:bold;color: black;" href="{{ block.settings.blog.url }}">VIEW ALL</a>
         {% endif %}
       {% endfor %}
     </div>
@@ -91,7 +91,7 @@
         -%}
             
         {%- if block.settings.blog != blank and block.settings.blog.articles_count > 0 -%}
-        <slider-component id="blog-{{ block.id }}" class="slider-mobile-gutter blog-list {% if block == section.blocks.first %}active-blog{% endif %}">
+        <slider-component id="blog-list-{{ block.id }}" class="slider-mobile-gutter blog-list {% if block == section.blocks.first %}active-blog{% endif %}">
           <ul id="Slider-{{ block.id }}"
             class="blog__posts articles-wrapper contains-card contains-card--article{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--peek grid--2-col-tablet grid--{{ block.settings.columns_desktop }}-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %}"
             role="list"
