@@ -48,6 +48,7 @@
   function selectBlog(id) {
     blogs.forEach( function (id) {
       idvarients.forEach( function (varient) {
+        console.log(varient + id);
         document.getElementById(varient + id).classList.remove("active-blog");
       });
     });  
