@@ -135,10 +135,10 @@
   var idvarients = ["title-", "view-all-", "blog-"];
   
   function selectBlog(id) {
-    blogs.forEach( function (id) {
+    blogs.forEach( function (blogsid) {
       idvarients.forEach( function (idvarient) {
         try {
-          document.getElementById(idvarient + id).classList.remove("active-blog");   
+          document.getElementById(idvarient + blogsid).classList.remove("active-blog");   
         } catch (e) { alert(e); }
       });
     });  
