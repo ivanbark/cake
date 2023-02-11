@@ -116,7 +116,7 @@
         <h2 id="SectionHeading-{{ section.id }}" class="blog__title {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
       </div>
     {%- endunless -%}
-    <div class="blogs__view-all">
+    <div class="blogs__view-all" style="font-size:{{ section.settings.menu_size }}rem;">
       <div class="blog_title_list">
         {% for block in section.blocks %}        
           <p id="blog-title-{{ block.id }}" class="blog-title {% if block == section.blocks.first %}active-blog{% endif %}" onClick="selectBlog('{{ block.id }}')">{{ block.settings.blog.title }}</p>
@@ -125,7 +125,7 @@
       {% for block in section.blocks %}
         {% assign title = section.settings.heading | strip_html %}
         {% if section.settings.show_view_all and title == "Raw Motherhood Blog" %}
-          <a id="blog-view-all-{{ block.id }}" class="link underlined-link view-all {% if block == section.blocks.first %}active-blog{% endif %}" style="font-weight:bold;color: black;" href="{{ block.settings.blog.url }}">VIEW ALL</a>
+          <a id="blog-view-all-{{ block.id }}" class="link underlined-link view-all {% if block == section.blocks.first %}active-blog{% endif %}" style="font-weight:bold;color: black;font-size: {{ section.settings.menu_size }}rem;" href="{{ block.settings.blog.url }}">VIEW ALL</a>
         {% endif %}
       {% endfor %}
     </div>
@@ -228,6 +228,16 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "range",
+      "id": "menu_size",
+      "min": 0.2,
+      "max": 4,
+      "step": 0.2,
+      "unit": "rem",
+      "label": "Menu size",
+      "default": 2
     },
     {
       "type": "select",
@@ -335,6 +345,26 @@
           "step": 1,
           "label": "Number of columns",
           "default": 4
+        },
+        {
+          "type": "range",
+          "id": "heading_size",
+          "min": 0.2,
+          "max": 4,
+          "step": 0.2,
+          "unit": "rem",
+          "label": "Heading size",
+          "default": 2
+        },
+        {
+          "type": "range",
+          "id": "content_size",
+          "min": 0.2,
+          "max": 4,
+          "step": 0.2,
+          "unit": "rem",
+          "label": "Content size",
+          "default": 1.8
         }
       ]
     }
