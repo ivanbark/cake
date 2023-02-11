@@ -75,6 +75,16 @@
   li.blog__post {
     margin: 0 !important;
   }
+  @media screen and (min-width: 1000px) {
+    li.blog__post {
+      max-width: 23%;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    li.blog__post {
+      max-width: 20%;
+    }
+  }
   
 {%- endstyle -%}
 
@@ -135,7 +145,7 @@
             role="list"
           >
             {%- for article in block.settings.blog.articles limit: block.settings.post_limit -%}
-              <li id="Slide-{{ block.id }}-{{ forloop.index }}" class="blog__post grid__item article slider__slide slider__slide--full-width" style="max-width:20%;">
+              <li id="Slide-{{ block.id }}-{{ forloop.index }}" class="blog__post grid__item article slider__slide slider__slide--full-width">
                 {% render 'article-card', blog: block.settings.blog, article: article, media_aspect_ratio: 1.66, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author, show_excerpt: false %}
               </li>
             {%- endfor -%}
