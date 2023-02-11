@@ -73,6 +73,13 @@
     text-decoration: none !important;
   }
 
+  .card__information a {
+    font-size: {{ section.settings.card_content_size }}rem !important;
+  }
+  .card_heading {
+    font-size: {{ section.settings.card_heading_size }}rem !important;
+  }
+
   .card__heading {
     margin-bottom: 2rem !important;
   }
@@ -210,6 +217,10 @@
       "label": "t:sections.featured-blog.settings.heading.label"
     },
     {
+      "type": "header",
+      "content": "Font Size"
+    },
+    {
       "type": "select",
       "id": "heading_size",
       "options": [
@@ -238,6 +249,30 @@
       "unit": "rem",
       "label": "Menu size",
       "default": 2
+    },
+    {
+      "type": "range",
+      "id": "card_heading_size",
+      "min": 0.2,
+      "max": 4,
+      "step": 0.2,
+      "unit": "rem",
+      "label": "Card Heading size",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "card_content_size",
+      "min": 0.2,
+      "max": 4,
+      "step": 0.2,
+      "unit": "rem",
+      "label": "Card Content size",
+      "default": 1.8
+    },
+    {
+      "type": "header",
+      "content": "Visual"
     },
     {
       "type": "select",
@@ -345,26 +380,6 @@
           "step": 1,
           "label": "Number of columns",
           "default": 4
-        },
-        {
-          "type": "range",
-          "id": "heading_size",
-          "min": 0.2,
-          "max": 4,
-          "step": 0.2,
-          "unit": "rem",
-          "label": "Heading size",
-          "default": 2
-        },
-        {
-          "type": "range",
-          "id": "content_size",
-          "min": 0.2,
-          "max": 4,
-          "step": 0.2,
-          "unit": "rem",
-          "label": "Content size",
-          "default": 1.8
         }
       ]
     }
