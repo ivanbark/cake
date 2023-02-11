@@ -517,7 +517,7 @@
         "9535b092-3f0f-4232-859c-41df2bc173e9"
       ],
       "custom_css": [
-        ".jdgm-carousel-item__inner-wrapper {border-radius: 15px !important; background: white;}",
+        ".jdgm-carousel-item__inner-wrapper {border-radius: 15px !important; background: white; padding: 32px;}",
         ".page-width {background: #f6cfc2; margin: 0; width: 100% !important; max-width: 100%; padding-top: 70px; padding-bottom: 70px;}"
       ],
       "settings": {
