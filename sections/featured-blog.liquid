@@ -137,7 +137,7 @@
         <h2 id="SectionHeading-{{ section.id }}" class="blog__title {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
       </div>
     {%- endunless -%}
-    <div class="blogs__view-all" style="font-size:{{ section.settings.menu_size }}rem;">
+    <div class="blogs__view-all" style="font-size:{{ section.settings.menu_size }}rem; margin-bottom: 3rem;">
       <div class="blog_title_list">
         {% for block in section.blocks %}        
           <p id="blog-title-{{ block.id }}" class="blog-title {% if block == section.blocks.first %}active-blog{% endif %}" onClick="selectBlog('{{ block.id }}')">{{ block.settings.blog.title }}</p>
