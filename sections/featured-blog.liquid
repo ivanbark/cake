@@ -98,6 +98,15 @@
       max-width: 20% !important;
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    .card__information span {
+      font-size: {{ section.settings.card_content_size | divided_by: 1.5  }}rem !important;
+    }
+    .card__heading {
+      font-size: {{ section.settings.card_heading_size | divided_by: 1.5 }}rem !important;
+    }
+  }
   
 {%- endstyle -%}
 
