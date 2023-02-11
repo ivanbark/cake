@@ -79,10 +79,12 @@
 
   .card__information span {
     font-size: {{ section.settings.card_content_size }}rem !important;
+    font-weight: {% if section.settings.font_weight_card_content %}bold{% else %}unset{% endif %};
     text-transform: none !important;
   }
   .card__heading {
     font-size: {{ section.settings.card_heading_size }}rem !important;
+    font-weight: {% if section.settings.font_weight_card_heading %}bold{% else %}unset{% endif %};
   }
 
   .card__heading {
@@ -134,10 +136,10 @@
   <div class="title-wrapper--self-padded-mobile isolate{% if posts_displayed < 3 %} page-width-tablet{% endif %} section-{{ section.id }}-padding">
     {%- unless section.settings.heading == blank -%}
       <div class="title-wrapper-with-link{% if posts_displayed > 2 %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin" style="padding:0;margin-bottom:5rem;">
-        <h2 id="SectionHeading-{{ section.id }}" class="blog__title {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
+        <h2 id="SectionHeading-{{ section.id }}" class="blog__title {{ section.settings.heading_size }}" style="font-weight: {% if section.settings.font_weight_heading %}bold{% else %}unset{% endif %};">{{ section.settings.heading }}</h2>
       </div>
     {%- endunless -%}
-    <div class="blogs__view-all" style="font-size:{{ section.settings.menu_size }}rem; margin-bottom: 3rem;">
+    <div class="blogs__view-all" style="font-size:{{ section.settings.menu_size }}rem; margin-bottom: 3rem;font-weight: {% if section.settings.font_weight_menu %}bold{% else %}unset{% endif %};">
       <div class="blog_title_list">
         {% for block in section.blocks %}        
           <p id="blog-title-{{ block.id }}" class="blog-title {% if block == section.blocks.first %}active-blog{% endif %}" onClick="selectBlog('{{ block.id }}')">{{ block.settings.blog.title }}</p>
