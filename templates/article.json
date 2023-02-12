@@ -13,18 +13,26 @@
           "type": "title",
           "settings": {
             "blog_show_date": true,
-            "blog_show_author": true
+            "blog_show_author": true,
+            "font-size-title": 1.6,
+            "font-weight-title": false,
+            "font-size-profile": 1.6,
+            "profile-bg-color": "#c6a387"
           }
         },
         "content": {
           "type": "content",
           "settings": {
+            "font-size": 1.6,
+            "font-weight": false
           }
         },
         "share": {
           "type": "share",
           "settings": {
-            "share_label": "SHARE THE LOVE"
+            "share_label": "SHARE THE LOVE",
+            "font-size": 1.6,
+            "font-weight": false
           }
         }
       },
@@ -35,6 +43,8 @@
         "share"
       ],
       "settings": {
+        "font-size-link": 1.6,
+        "font-weight-link": true
       }
     }
   },
