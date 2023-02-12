@@ -35,11 +35,17 @@
             "font-weight": true
           }
         },
-        "8705cc28-1ceb-4d7b-ad25-cd171564e8e2": {
-          "type": "blog-post",
+        "7f606ed8-5350-4c60-ad4f-4e10f1617b92": {
+          "type": "featured-blog",
           "settings": {
             "title": "Featured Blog Posts",
-            "article-1": "feeding-1\/pumping-breast-milk-everything-you-must-know"
+            "font-size": 1.2,
+            "font-weight": false,
+            "article-1": "feeding-1\/pumping-breast-milk-everything-you-must-know",
+            "article-2": "test\/test",
+            "article-3": "test\/test2",
+            "article-font-size": 1.2,
+            "article-font-weight": false
           }
         }
       },
@@ -48,7 +54,7 @@
         "title",
         "content",
         "share",
-        "8705cc28-1ceb-4d7b-ad25-cd171564e8e2"
+        "7f606ed8-5350-4c60-ad4f-4e10f1617b92"
       ],
       "settings": {
         "bg-color": "#f0ede8",
