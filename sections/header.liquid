@@ -514,6 +514,7 @@
                         </ul>
                   <div class="submenu_image_container">
                         {%- if section.settings.submenu_first_image != null -%}
+                           <a>
                             {{ section.settings.submenu_first_image | image_url: width: section.settings.submenu_image_size | image_tag:
                               class: 'submenu_images',
                               width: "100%",
@@ -522,8 +523,10 @@
                               height: 'auto',
                               alt: logo_alt
                             }}
+                          </a>
                         {% endif %}
                         {%- if section.settings.submenu_second_image != null -%}
+                         <a>
                           {{ section.settings.submenu_second_image | image_url: width: section.settings.submenu_image_size | image_tag:
                             class: 'submenu_images',
                             width: "100%",
@@ -532,7 +535,8 @@
                             height: 'auto',
                             alt: logo_alt
                           }}
-                        {% endif %}
+                         </a>
+                       {% endif %}
                        </div>
                       </div>
                     </details>
