@@ -34,13 +34,21 @@
             "font-size": 1.6,
             "font-weight": true
           }
+        },
+        "8705cc28-1ceb-4d7b-ad25-cd171564e8e2": {
+          "type": "blog-post",
+          "settings": {
+            "title": "Featured Blog Posts",
+            "article-1": "feeding-1\/pumping-breast-milk-everything-you-must-know"
+          }
         }
       },
       "block_order": [
         "featured_image",
         "title",
         "content",
-        "share"
+        "share",
+        "8705cc28-1ceb-4d7b-ad25-cd171564e8e2"
       ],
       "settings": {
         "bg-color": "#f0ede8",
