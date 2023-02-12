@@ -90,6 +90,12 @@
   .submenu_images {
     padding: 5px;
   }
+
+  .submenu_text {
+    margin: 0;
+    text-decoration: none;
+    color: black;
+  }
 </style>
 
 {%- style -%}
@@ -523,7 +529,7 @@
                               height: 'auto',
                               alt: logo_alt
                             }}
-                          <p style="margin: 0;" class="submenu_images">{{ section.settings.submenu_first_image_text }}</p>
+                          <p style="margin: 0;" class="submenu_images submenu_text">{{ section.settings.submenu_first_image_text }}</p>
                           </a>
                         {% endif %}
                         {%- if section.settings.submenu_second_image != null -%}
@@ -536,7 +542,7 @@
                             height: 'auto',
                             alt: logo_alt
                           }}
-                          <p style="margin: 0;" class="submenu_images">{{ section.settings.submenu_second_image_text }}</p>
+                          <p style="" class="submenu_images submenu_text">{{ section.settings.submenu_second_image_text }}</p>
                          </a>
                        {% endif %}
                        </div>
