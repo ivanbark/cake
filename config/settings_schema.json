@@ -1523,6 +1523,12 @@
         "id": "cart_drawer_collection",
         "label": "t:settings_schema.cart.settings.cart_drawer.collection.label",
         "info": "t:settings_schema.cart.settings.cart_drawer.collection.info"
+      },
+      {
+        "type": "color",
+        "id": "cart_drawer_color",
+        "label": "background color",
+        "default": "#ffffff"
       }
     ]
   }
