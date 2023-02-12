@@ -509,7 +509,7 @@
                           {%- endfor -%}
                         </ul>
                   <div class="submenu_images">
-                        {%- if section.settings.submenu_first_image != empty -%}
+                        {%- if section.settings.submenu_first_image != null -%}
                             {{ section.settings.submenu_first_image | image_url: width: section.settings.submenu_image_size | image_tag:
                               class: '',
                               width: "100%",
@@ -519,7 +519,7 @@
                               alt: logo_alt
                             }}
                         {% endif %}
-                        {%- if section.settings.submenu_second_image != empty -%}
+                        {%- if section.settings.submenu_second_image != null -%}
                           {{ section.settings.submenu_second_image | image_url: width: section.settings.submenu_image_size | image_tag:
                             class: '',
                             width: "100%",
