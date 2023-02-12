@@ -78,40 +78,50 @@
         {%- when 'share' -%}
           <div class="article-template__social-sharing page-width" {{ block.shopify_attributes }} style="font-weight:{% if block.settings.font-weight %}bold{% else %}unset{% endif %};width:fit-content;">
             <h2>{{ block.settings.share_label | escape }}</h2>
-            <share-button class="share-button" {{ block.shopify_attributes }}>
-              <button class="share-button__button hidden">
-                {% render 'icon-share' %}
+            <div>
+              <button>
+                {% render 'icon-facebook' %}
               </button>
-              <details id="Details-{{ block.id }}-{{ section.id }}">
-                <summary class="share-button__button">
-                  {% render 'icon-share' %}
-                  {{ block.settings.share_label | escape }}
-                </summary>
-                <div id="Article-share-{{ section.id }}" class="share-button__fallback motion-reduce">
-                  <div class="field">
-                    <span id="ShareMessage-{{ section.id }}" class="share-button__message hidden" role="status">
-                    </span>
-                    <input type="text"
-                          class="field__input"
-                          id="url"
-                          value="{{ request.origin | append: article.url }}"
-                          placeholder="{{ 'general.share.share_url' | t }}"
-                          onclick="this.select();"
-                          readonly
-                    >
-                    <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
+              <button>
+                {% render 'icon-twitter' %}
+              </button>
+              <button>
+                {% render 'icon-pinterest' %}
+              </button>
+              <button>
+                {% render 'icon-mail' %}
+              </button>
+              <share-button class="share-button" {{ block.shopify_attributes }}>
+                <details id="Details-{{ block.id }}-{{ section.id }}">
+                  <summary class="share-button__button">
+                    {% render 'icon-share' %}
+                  </summary>
+                  <div id="Article-share-{{ section.id }}" class="share-button__fallback motion-reduce">
+                    <div class="field">
+                      <span id="ShareMessage-{{ section.id }}" class="share-button__message hidden" role="status">
+                      </span>
+                      <input type="text"
+                            class="field__input"
+                            id="url"
+                            value="{{ request.origin | append: article.url }}"
+                            placeholder="{{ 'general.share.share_url' | t }}"
+                            onclick="this.select();"
+                            readonly
+                      >
+                      <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
+                    </div>
+                    <button class="share-button__close hidden no-js-hidden">
+                      {% render 'icon-close' %}
+                      <span class="visually-hidden">{{ 'general.share.close' | t }}</span>
+                    </button>
+                    <button class="share-button__copy no-js-hidden">
+                      {% render 'icon-clipboard' %}
+                      <span class="visually-hidden">{{ 'general.share.copy_to_clipboard' | t }}</span>
+                    </button>
                   </div>
-                  <button class="share-button__close hidden no-js-hidden">
-                    {% render 'icon-close' %}
-                    <span class="visually-hidden">{{ 'general.share.close' | t }}</span>
-                  </button>
-                  <button class="share-button__copy no-js-hidden">
-                    {% render 'icon-clipboard' %}
-                    <span class="visually-hidden">{{ 'general.share.copy_to_clipboard' | t }}</span>
-                  </button>
-                </div>
-              </details>
-            </share-button>
+                </details>
+              </share-button>
+            </div>
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
           </div>
           <hr>
