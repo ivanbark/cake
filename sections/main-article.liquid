@@ -304,6 +304,28 @@
   "name": "t:sections.main-article.name",
   "tag": "section",
   "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Back to blog link"
+    }, 
+    {
+      "type": "range",
+      "id": "font-size-link",
+      "min": 0,
+      "max": 6,
+      "step": 0.2,
+      "default": 1.6,
+      "unit": "rem",
+      "label": "Font Size"
+    },
+    {
+      "type": "checkbox",
+      "id": "font-weight-link",
+      "default": false,
+      "label": "Font Weight"
+    }
+  ],
   "blocks": [
     {
       "type": "@app"
@@ -356,6 +378,46 @@
           "id": "blog_show_author",
           "default": false,
           "label": "t:sections.main-article.blocks.title.settings.blog_show_author.label"
+        },
+        {
+          "type": "header",
+          "content": "Title"
+        }, 
+        {
+          "type": "range",
+          "id": "font-size-title",
+          "min": 0,
+          "max": 6,
+          "step": 0.2,
+          "default": 1.6,
+          "unit": "rem",
+          "label": "Font Size"
+        },
+        {
+          "type": "checkbox",
+          "id": "font-weight-title",
+          "default": false,
+          "label": "Font Weight"
+        },
+        {
+          "type": "header",
+          "content": "Profile & Date"
+        }, 
+        {
+          "type": "range",
+          "id": "font-size-profile",
+          "min": 0,
+          "max": 6,
+          "step": 0.2,
+          "default": 1.6,
+          "unit": "rem",
+          "label": "Font Size"
+        },
+        {
+          "type": "color",
+          "id": "profile-bg-color",
+          "label": "Profile Background Color",
+          "default": "#c6a387"
         }
       ]
     },
