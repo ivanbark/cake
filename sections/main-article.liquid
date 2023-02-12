@@ -9,7 +9,7 @@
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting" style="max-width: 920px;margin: 0 auto 10rem;">
   <div class="article-template__back element-margin-top center">
-    <a href="{{ blog.url }}" class="article-template__link link animate-arrow" style="width: fit-content;margin-bottom: 2rem;text-transform:uppercase;">
+    <a href="{{ blog.url }}" class="article-template__link link animate-arrow" style="width: fit-content;margin-bottom: 2rem;text-transform:uppercase;font-size:{{ section.settings.font-size-link }}rem;font-weight:{% if section.settings.font-weight-link %}bold{% else %}unset{% endif %};">
       <span class="icon-wrap">{% render 'icon-arrow' %}</span>
       {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
     </a>
@@ -47,28 +47,28 @@
 
         {%- when 'title'-%}
           <header style="text-align:center;" class="" {{ block.shopify_attributes }}>
-            <h1 class="page-width article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
+            <h1 class="page-width article-template__title" itemprop="headline" style="font-size:{{ block.settings.font-size-title }}rem;font-weight:{% if section.settings.font-weight-title %}bold{% else %}unset{% endif %};">{{ article.title | escape }}</h1>
             {%- if block.settings.blog_show_author -%}
               <div style="width: 100%;">
-                <h1 style="width:fit-content;color:white;margin: 40px auto 20px;padding:0 27px;border-radius:100%;background-color:#c6a387;font-size:7rem;">{{ article.author | slice: 0 }}</h1>
-                <span style="text-transform:uppercase;font-weight:bold;" class="caption-with-letter-spacing" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <h1 style="width:fit-content;color:white;margin: 40px auto 20px;padding:0 27px;border-radius:100%;background-color:{{ block.settings.profile-bg-color }};font-size:7rem;">{{ article.author | slice: 0 }}</h1>
+                <span style="text-transform:uppercase;font-weight:bold;font-size:{{ block.settings.font-size-profile }}rem;" class="caption-with-letter-spacing" itemprop="author" itemscope itemtype="http://schema.org/Person">
                   <span itemprop="name">{{ article.author }}</span>
                 </span>                
               </div>
             {%- endif -%}
             {%- if block.settings.blog_show_date -%}
-              <span style="text-transform:uppercase;" class="caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
+              <span style="text-transform:uppercase;font-size:{{ block.settings.font-size-profile }}rem;" class="caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
             {%- endif -%}
             <hr>
           </header>
 
         {%- when 'content'-%}
-          <div class="article-template__content page-width rte" itemprop="articleBody" {{ block.shopify_attributes }}>
+          <div class="article-template__content page-width rte" itemprop="articleBody" {{ block.shopify_attributes }} style="font-size:{{ block.settings.font-size }}rem;font-weight:{% if section.settings.font-weight %}bold{% else %}unset{% endif %};">
               {{ article.content }}
           </div>
 
         {%- when 'share' -%}
-          <div class="article-template__social-sharing page-width" {{ block.shopify_attributes }}>
+          <div class="article-template__social-sharing page-width" {{ block.shopify_attributes }} style="font-size:{{ block.settings.font-size }}rem;font-weight:{% if section.settings.font-weight %}bold{% else %}unset{% endif %};">
             <share-button class="share-button" {{ block.shopify_attributes }}>
               <button class="share-button__button hidden">
                 {% render 'icon-share' %}
@@ -424,7 +424,25 @@
     {
       "type": "content",
       "name": "t:sections.main-article.blocks.content.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "range",
+          "id": "font-size",
+          "min": 0,
+          "max": 6,
+          "step": 0.2,
+          "default": 1.6,
+          "unit": "rem",
+          "label": "Font Size"
+        },
+        {
+          "type": "checkbox",
+          "id": "font-weight",
+          "default": false,
+          "label": "Font Weight"
+        }
+      ]
     },
     {
       "type": "share",
@@ -436,6 +454,22 @@
           "id": "share_label",
           "label": "t:sections.main-article.blocks.share.settings.text.label",
           "default": "Share"
+        },
+        {
+          "type": "range",
+          "id": "font-size",
+          "min": 0,
+          "max": 6,
+          "step": 0.2,
+          "default": 1.6,
+          "unit": "rem",
+          "label": "Font Size"
+        },
+        {
+          "type": "checkbox",
+          "id": "font-weight",
+          "default": false,
+          "label": "Font Weight"
         },
         {
           "type": "paragraph",
