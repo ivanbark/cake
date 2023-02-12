@@ -18,7 +18,7 @@
     <div id="CartDrawer-Overlay"class="cart-drawer__overlay"></div>
     <div class="drawer__inner" role="dialog" aria-modal="true" aria-label="{{ 'sections.cart.title' | t }}" tabindex="-1">
        {%- if cart == empty -%}
-        <div style="{{ settings.cart_drawer_color }}" class="drawer__inner-empty">
+        <div style="background-color:{{ settings.cart_drawer_color }};" class="drawer__inner-empty">
           <div class="cart-drawer__warnings center{% if settings.cart_drawer_collection != blank %} cart-drawer__warnings--has-collection{% endif %}">
             <div class="cart-drawer__empty-content">
               <h2 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h2>
