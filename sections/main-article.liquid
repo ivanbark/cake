@@ -42,6 +42,7 @@
           <header style="text-align:center;" class="page-width" {{ block.shopify_attributes }}>
             <h1 class="article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
             {%- if block.settings.blog_show_author -%}
+              <h1>{{ article.author | slice: 0 }}</h1>
               <span style="text-transform:uppercase;font-weight:bold;" class="caption-with-letter-spacing" itemprop="author" itemscope itemtype="http://schema.org/Person">
                 <span itemprop="name">{{ article.author }}</span>
               </span>
