@@ -5,6 +5,14 @@
     width: 110% !important;
     margin: 5rem 0 5rem -5% !important;
   }
+
+  #MainContent {
+    background: {{ section.settings.bg-color }} !important;
+  }
+
+  footer {
+    margin: 0 !important;
+  }
 </style>
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting" style="max-width: 920px;margin: 0 auto 10rem;">
@@ -305,6 +313,12 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "color",
+      "id": "bg-color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
     {
       "type": "header",
       "content": "Back to blog link"
