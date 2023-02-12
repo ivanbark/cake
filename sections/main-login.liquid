@@ -1,7 +1,5 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
-{% section 'announcement-bar' %}
-{% section 'header' %}
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
