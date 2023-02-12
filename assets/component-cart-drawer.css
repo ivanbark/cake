@@ -383,3 +383,11 @@ cart-drawer-items::-webkit-scrollbar-thumb {
 cart-drawer-items::-webkit-scrollbar-track-piece {
   margin-top: 31px;
 }
+
+.heading_cart_drawer {
+    position: absolute;
+    color: #D6B068;
+    z-index: 1000;
+    width: 100%;
+    background-color: #D6B068;
+}
