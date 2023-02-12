@@ -86,16 +86,16 @@
                   margin: 0 5px !important;
                 }
               </style>
-              <a>
+              <a href="https://www.facebook.com/sharer.php?u={{ request.origin | append: article.url }}">
                 {% render 'icon-facebook' %}
               </a>
-              <a>
+              <a href="http://twitter.com/share?text={{ request.origin | append: article.url }}">
                 {% render 'icon-twitter' %}
               </a>
-              <a>
+              <a href="http://pinterest.com/pin/create/button/?url={{ request.origin | append: article.url }}">
                 {% render 'icon-pinterest' %}
               </a>
-              <a>
+              <a href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site {{ request.origin | append: article.url }}.">
                 {% render 'icon-mail' %}
               </a>
               <share-button class="share-button" {{ block.shopify_attributes }}>
