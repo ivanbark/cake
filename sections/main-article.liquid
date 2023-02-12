@@ -138,10 +138,9 @@
         {%- when 'featured-blog' -%}
           <hr>
           <div class="blog-articles__article article">
-
             {%- render 'article-card',
               article: block.settings.article-1,
-              media_height: "adapt",
+              media_height: adapt,
               media_aspect_ratio: article.image.aspect_ratio,
               show_image: true,
               show_date: true,
@@ -150,7 +149,7 @@
             -%}
             {%- render 'article-card',
               article: block.settings.article-2,
-              media_height: "adapt",
+              media_height: adapt,
               media_aspect_ratio: article.image.aspect_ratio,
               show_image: true,
               show_date: true,
@@ -159,7 +158,7 @@
             -%}
             {%- render 'article-card',
               article: block.settings.article-3,
-              media_height: "adapt",
+              media_height: adapt,
               media_aspect_ratio: article.image.aspect_ratio,
               show_image: true,
               show_date: true,
