@@ -458,7 +458,7 @@
                       </summary>
                       <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
                        
-                          <div>
+                          <ul class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
                             {%- for childlink in link.links -%}
                                {%- if childlink.links != blank -%}
                                  <li style="height: 100%;">
@@ -480,7 +480,7 @@
                                  {% else %}
                                {% endif %}
                              {% endfor %}
-                          </div>
+                          </ul>
                          <ul class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
                           {%- for childlink in link.links -%}
                             <li style="height: 100%;">
