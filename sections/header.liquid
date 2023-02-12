@@ -460,7 +460,7 @@
                         <ul class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
                           <div>
                             {%- for childlink in link.links -%}
-                               {%- if childlink.title != empty -%}
+                               {%- if childlink.title == empty -%}
                             dddd
                                  {% else %}
                                {% endif %}
