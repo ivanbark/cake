@@ -508,6 +508,7 @@
                               {% endif %}
                           {%- endfor -%}
                         </ul>
+                    {%- if section.settings.submenu_first_image != empty -%}
                         <div class="submenu_images">
                           {{ section.settings.submenu_first_image | image_url: width: section.settings.submenu_image_size | image_tag:
                             class: '',
@@ -518,6 +519,7 @@
                             alt: logo_alt
                           }}
                         </div>
+                        {% endif %}
                       </div>
                     </details>
                   </header-menu>
