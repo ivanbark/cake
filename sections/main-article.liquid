@@ -39,8 +39,8 @@
         {%- endif -%}
 
         {%- when 'title'-%}
-          <header style="text-align:center;" class="page-width" {{ block.shopify_attributes }}>
-            <h1 class="article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
+          <header style="text-align:center;" class="" {{ block.shopify_attributes }}>
+            <h1 class="page-width article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
             {%- if block.settings.blog_show_author -%}
               <div style="width: 100%;">
                 <h1 style="width:fit-content;color:white;margin: 40px auto 20px;padding:0 27px;border-radius:100%;background-color:#c6a387;font-size:7rem;">{{ article.author | slice: 0 }}</h1>
@@ -52,6 +52,7 @@
             {%- if block.settings.blog_show_date -%}
               <span style="text-transform:uppercase;" class="caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
             {%- endif -%}
+            <hr>
           </header>
 
         {%- when 'content'-%}
@@ -98,6 +99,7 @@
             </share-button>
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
           </div>
+          <hr>
     {%- endcase -%}
   {%- endfor -%}
   
