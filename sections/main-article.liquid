@@ -138,6 +138,11 @@
         {%- when 'featured-blog' -%}
           <hr>
           <div>
+  {% render 'article-card', 
+    blog: block.settings.blog, 
+    article: article, 
+    media_aspect_ratio: 1.66, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author, show_excerpt: false %}
+
             {%- render 'article-card',
               blog: blog,
               article: block.settings.article-1,
