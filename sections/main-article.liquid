@@ -80,6 +80,9 @@
             <h2 style="text-align:center;font-weight:{% if block.settings.font-weight %}bold{% else %}unset{% endif %};font-size:{{ block.settings.font-size }}rem">{{ block.settings.share_label | escape }}</h2>
             <div class="blog-share-icons" style="display: flex;justify-content:center;align-items:baseline;"> 
               <style>
+                .blog-share-icons a {
+                  color: black !important;
+                }
                 .blog-share-icons svg {
                   width: 3rem !important;
                   height: 3rem !important;
