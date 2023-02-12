@@ -1,5 +1,7 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
+{% section 'announcement-bar' %}
+{% section 'header' %}
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -13,10 +15,6 @@
     }
   }
 {%- endstyle -%}
-
-{% section 'announcement-bar' %}
-{% section 'header' %}
-
 <div class="customer login section-{{ section.id }}-padding">
   <h1 id="recover" tabindex="-1">
     {{ 'customer.recover_password.title' | t }}
