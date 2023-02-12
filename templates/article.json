@@ -31,8 +31,7 @@
           "type": "share",
           "settings": {
             "share_label": "SHARE THE LOVE",
-            "font-size": 1.6,
-            "font-weight": false
+            "font-weight": true
           }
         }
       },
