@@ -388,7 +388,7 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
     position: absolute;
     color: #D6B068;
     z-index: 1000;
-    width: 100%;
+    width: 40rem;;
     background-color: #D6B068;
     height: 20px !important;
     border: none;
