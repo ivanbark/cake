@@ -47,7 +47,7 @@
 
         {%- when 'title'-%}
           <header style="text-align:center;" class="" {{ block.shopify_attributes }}>
-            <h1 class="page-width article-template__title" itemprop="headline" style="font-size:{{ block.settings.font-size-title }}rem;font-weight:{% if section.settings.font-weight-title %}bold{% else %}unset{% endif %};">{{ article.title | escape }}</h1>
+            <h1 class="page-width article-template__title" itemprop="headline" style="font-size:{{ block.settings.font-size-title }}rem;font-weight:{% if block.settings.font-weight-title %}bold{% else %}unset{% endif %};">{{ article.title | escape }}</h1>
             {%- if block.settings.blog_show_author -%}
               <div style="width: 100%;">
                 <h1 style="width:fit-content;color:white;margin: 40px auto 20px;padding:0 27px;border-radius:100%;background-color:{{ block.settings.profile-bg-color }};font-size:7rem;">{{ article.author | slice: 0 }}</h1>
@@ -63,12 +63,12 @@
           </header>
 
         {%- when 'content'-%}
-          <div class="article-template__content page-width rte" itemprop="articleBody" {{ block.shopify_attributes }} style="font-size:{{ block.settings.font-size }}rem;font-weight:{% if section.settings.font-weight %}bold{% else %}unset{% endif %};">
+          <div class="article-template__content page-width rte" itemprop="articleBody" {{ block.shopify_attributes }} style="font-size:{{ block.settings.font-size }}rem;font-weight:{% if block.settings.font-weight %}bold{% else %}unset{% endif %};">
               {{ article.content }}
           </div>
 
         {%- when 'share' -%}
-          <div class="article-template__social-sharing page-width" {{ block.shopify_attributes }} style="font-size:{{ block.settings.font-size }}rem;font-weight:{% if section.settings.font-weight %}bold{% else %}unset{% endif %};">
+          <div class="article-template__social-sharing page-width" {{ block.shopify_attributes }} style="font-size:{{ block.settings.font-size }}rem;font-weight:{% if block.settings.font-weight %}bold{% else %}unset{% endif %};">
             <share-button class="share-button" {{ block.shopify_attributes }}>
               <button class="share-button__button hidden">
                 {% render 'icon-share' %}

@@ -14,8 +14,8 @@
           "settings": {
             "blog_show_date": true,
             "blog_show_author": true,
-            "font-size-title": 1.6,
-            "font-weight-title": false,
+            "font-size-title": 4,
+            "font-weight-title": true,
             "font-size-profile": 1.6,
             "profile-bg-color": "#c6a387"
           }
