@@ -3,6 +3,7 @@
     "main": {
       "type": "main-blog",
       "settings": {
+        "bg-color": "#f0ede8",
         "layout": "grid",
         "show_image": true,
         "image_height": "adapt",
