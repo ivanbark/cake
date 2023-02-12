@@ -14,6 +14,10 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  #MainContent {
+    background: {{ section.settings.bg-color }} !important;
+  }
 {%- endstyle -%}
 
 {%- paginate blog.articles by 6 -%}
@@ -48,6 +52,12 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "color",
+      "id": "bg-color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
     {
       "type": "header",
       "content": "t:sections.main-blog.settings.header.content"
