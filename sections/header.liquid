@@ -93,7 +93,6 @@
 
   .submenu_text {
     margin: 0;
-    text-decoration: none;
     color: black;
   }
 </style>
@@ -520,7 +519,7 @@
                         </ul>
                   <div class="submenu_image_container">
                         {%- if section.settings.submenu_first_image != null -%}
-                           <a href="{{ section.settings.submenu_first_url }}">
+                           <a style="text-decoration: none;" href="{{ section.settings.submenu_first_url }}">
                             {{ section.settings.submenu_first_image | image_url: width: section.settings.submenu_image_size | image_tag:
                               class: 'submenu_images',
                               width: "100%",
@@ -533,7 +532,7 @@
                           </a>
                         {% endif %}
                         {%- if section.settings.submenu_second_image != null -%}
-                         <a href="{{ section.settings.submenu_second_url }}">
+                         <a style="text-decoration: none;" href="{{ section.settings.submenu_second_url }}">
                           {{ section.settings.submenu_second_image | image_url: width: section.settings.submenu_image_size | image_tag:
                             class: 'submenu_images',
                             width: "100%",
