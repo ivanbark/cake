@@ -502,6 +502,16 @@
                               {% endif %}
                           {%- endfor -%}
                         </ul>
+                        <div class="">
+                          {{ section.settings.menu_first_image | image_url: width: section.settings.width | image_tag:
+                            class: '',
+                            width: '100%',
+                            sizes: '(min-width: 1200px) 267px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)',
+                            aspect-ratio: '1',
+                            height: 'auto',
+                            alt: logo_alt
+                          }}
+                        </div>
                       </div>
                     </details>
                   </header-menu>
