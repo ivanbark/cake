@@ -138,7 +138,18 @@
         {%- when 'featured-blog' -%}
           <hr>
           <div>
-           
+           {%- for article in blog.articles -%}
+            {%- render 'article-card',
+              blog: article,
+              article: block.settings.article-1,
+              media_height: "adapt",
+              media_aspect_ratio: article.image.aspect_ratio,
+              show_image: true,
+              show_date: true,
+              show_author: false,
+              show_excerpt: false
+            -%}
+             {% endfor %}
             {%- render 'article-card',
               blog: blog,
               article: block.settings.article-1,
