@@ -391,4 +391,5 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
     width: 100%;
     background-color: #D6B068;
     height: 20px !important;
+    border: none;
 }
