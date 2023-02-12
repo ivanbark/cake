@@ -43,7 +43,6 @@
             <h1 class="article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
             {%- if block.settings.blog_show_author -%}
               <div style="width: 100%;">
-              {{ article.author.profile }}
                 <h1 style="width:fit-content;color:white;margin: 40px auto 20px;padding:0 27px;border-radius:100%;background-color:#c6a387;font-size:7rem;">{{ article.author | slice: 0 }}</h1>
                 <span style="text-transform:uppercase;font-weight:bold;" class="caption-with-letter-spacing" itemprop="author" itemscope itemtype="http://schema.org/Person">
                   <span itemprop="name">{{ article.author }}</span>
