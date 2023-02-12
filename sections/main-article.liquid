@@ -140,7 +140,7 @@
           <div>
            {%- for article in blog.articles -%}
             {%- render 'article-card',
-              blog: article,
+              blog: blog,
               article: block.settings.article-1,
               media_height: "adapt",
               media_aspect_ratio: article.image.aspect_ratio,
