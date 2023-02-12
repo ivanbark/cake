@@ -137,9 +137,9 @@
 
         {%- when 'featured-blog' -%}
           <hr>
-          <div>
+          <div class="blog-articles__article article">
+
             {%- render 'article-card',
-              blog: blog,
               article: block.settings.article-1,
               media_height: "adapt",
               media_aspect_ratio: article.image.aspect_ratio,
