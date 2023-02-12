@@ -77,10 +77,10 @@
 
         {%- when 'share' -%}
           <div class="article-template__social-sharing page-width" {{ block.shopify_attributes }} style="font-weight:{% if block.settings.font-weight %}bold{% else %}unset{% endif %};width:fit-content;">
+            <h2>{{ block.settings.share_label | escape }}</h2>
             <share-button class="share-button" {{ block.shopify_attributes }}>
               <button class="share-button__button hidden">
                 {% render 'icon-share' %}
-                {{ block.settings.share_label | escape }}
               </button>
               <details id="Details-{{ block.id }}-{{ section.id }}">
                 <summary class="share-button__button">
