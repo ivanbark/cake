@@ -1,0 +1,63 @@
+{
+  "sections": {
+    "main": {
+      "type": "general",
+      "blocks": {
+        "b6d4509d-3b99-4b61-8c6d-b901757b0f0c": {
+          "type": "link_list",
+          "settings": {
+            "sidebar-menu": "general",
+            "show_menu_heading": true,
+            "heading_color": "#ad8260",
+            "font_size_heading": 2,
+            "font_weight_heading": true,
+            "font_size_text": 1.6,
+            "font_weight_text": false
+          }
+        },
+        "4f498ee0-1d29-4e6b-ab5a-150ff325ce96": {
+          "type": "link_list",
+          "settings": {
+            "sidebar-menu": "sidebar-menu",
+            "show_menu_heading": false,
+            "heading_color": "#ad8260",
+            "font_size_heading": 1.4,
+            "font_weight_heading": false,
+            "font_size_text": 1.8,
+            "font_weight_text": true
+          }
+        },
+        "c169b02e-2ff0-4f11-a039-4fe634d94621": {
+          "type": "text",
+          "settings": {
+            "heading": "Still got questions?",
+            "subtext": "<p>Our support team is on hand<\/p><p>9am - 5pm AEST<\/p>",
+            "sidebar-show-mail": true,
+            "sidebar-mail": "support@cakematernity.com",
+            "font_size_heading": 1.8,
+            "font_weight_heading": true,
+            "font_size_text": 1.8,
+            "font_weight_text": false
+          }
+        }
+      },
+      "block_order": [
+        "b6d4509d-3b99-4b61-8c6d-b901757b0f0c",
+        "4f498ee0-1d29-4e6b-ab5a-150ff325ce96",
+        "c169b02e-2ff0-4f11-a039-4fe634d94621"
+      ],
+      "settings": {
+        "title": "General",
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "font_size_heading": 2.6,
+        "font_weight_heading": false,
+        "font_size_text": 1.8,
+        "font_weight_text": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
