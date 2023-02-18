@@ -587,7 +587,7 @@
                          {% endif %}
                        {% endif %}
                        {%- if link.title == "Rewards" -%}
-                         <p>Find out more</p>
+                         <p class="more_button">Find out more</p>
                           {%- if section.settings.submenu_third_image != null -%}
                             <a class="submenu_images" style="text-decoration: none;" href="{{ section.settings.submenu_third_url }}">
                               {{ section.settings.submenu_third_image | image_url: width: section.settings.submenu_image_size | image_tag:
