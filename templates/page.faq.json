@@ -46,9 +46,9 @@
         "font_size_section_heading": 2.8,
         "font_weight_section_heading": true,
         "heading_color": "#ad8260",
-        "font_size_heading": 2,
+        "font_size_heading": 2.2,
         "font_weight_heading": true,
-        "font_size_links": 2.2,
+        "font_size_links": 1.6,
         "font_weight_links": false
       }
     }
