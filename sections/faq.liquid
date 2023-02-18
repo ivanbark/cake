@@ -115,6 +115,7 @@
     color: black;
     font-weight: bold;
     border-bottom: 2px solid black;
+    font-size: {{ section.settings.font_size_links }}rem;
   }
 
   .faq-see-all::after {  
@@ -131,7 +132,7 @@
     color: {{ section.settings.heading_color }};
   }
 
-  .faq-menu-list a, .faq-see-all {
+  .faq-menu-list a {
     font-size: {{ section.settings.font_size_links }}rem;
     font-weight: {% if section.settings.font_weight_links %}bold{% else %}unset{% endif %};    
   }
