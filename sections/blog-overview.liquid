@@ -22,12 +22,11 @@
 
 {% for block in section.blocks %}
   <div class="blog">
-  <h2>test</h2>
     <div class="blog-header">
-      <h2>{{ block.blog.title }}</h2>
-      <a href="{{ block.blog.url }}" style="text-transform:uppercase;">See all</a>
+      <h2>{{ block.settings.blog.title }}</h2>
+      <a href="{{ block.settings.blog.url }}" style="text-transform:uppercase;">See all</a>
     </div>
-    {% for article in block.blog.articles limit:3 %}
+    {% for article in block.settings.blog.articles limit:3 %}
       {% render 'article-card', 
         blog: blog, 
         article: article, 
