@@ -20,9 +20,25 @@
   }
 {% endschema %}
 
- <div>
+<style>
+  .faq {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+  }
+
+  .faq-menu {
+    
+  }
+
+  .faq-menu-list {
+    list-style: none;
+  }
+</style>
+
+ <div class="faq">
    {% for block in section.blocks %}
-     <div>
+     <div class="faq-menu">
        <h2>{{ block.settings.menu.title }}</h2>
         <ul class="faq-menu-list">
           {%- for link in block.settings.menu.links limit: 4 -%}
@@ -33,6 +49,7 @@
             </li>
           {%- endfor -%}
         </ul>
+       <a
      </div>
    {% endfor %}
  </div>
