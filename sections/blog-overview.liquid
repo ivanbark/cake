@@ -5,20 +5,18 @@
   }
 {% endschema %}
 
-{% for blog in blogs %}}
-  <div class="blog">
-    <div class="blog-header">
-      <h2>{{ blog.title }}</h2>
-      <a href="{{ blog.url }}" style="text-transform:uppercase;">See all</a>
-    </div>
-    {% for article in blog.articles limit:3 %}
-      {% render 'article-card', 
-        blog: blog, 
-        article: article, 
-        show_image: true, 
-        show_date: false, 
-        show_author: false, 
-        show_excerpt: false %}
-    {% endfor %}
+<div class="blog">
+  <div class="blog-header">
+    <h2>{{ blog["Test"] }}.title }}</h2>
+    <a href="{{ blog.url }}" style="text-transform:uppercase;">See all</a>
   </div>
-{% endfor %}
+  {% for article in blog.articles limit:3 %}
+    {% render 'article-card', 
+      blog: blog, 
+      article: article, 
+      show_image: true, 
+      show_date: false, 
+      show_author: false, 
+      show_excerpt: false %}
+  {% endfor %}
+</div>
