@@ -102,12 +102,12 @@
   }
 
   .blog-header h2 {
-    font-size: {{ section.settings.font_size_card_title }};
-    font-weight: {% if section.settings.font_weight_card_title %}bold{% else %}unset{% endif %};    
+    font-size: {{ section.settings.font_size_title }}rem;
+    font-weight: {% if section.settings.font_weight_title %}bold{% else %}unset{% endif %};    
   }
 
   .blog-header a {
-    font-size: {{ section.settings.font_size_link }};
+    font-size: {{ section.settings.font_size_link }}rem;
     font-weight: {% if section.settings.font_weight_link %}bold{% else %}unset{% endif %};    
   }
 
@@ -142,8 +142,8 @@
   .blog-card h2 {
     padding: 0 20px;
     text-align: center;
-    font-size: {{ section.settings.font_size_title }};
-    font-weight: {% if section.settings.font_weight_title %}bold{% else %}unset{% endif %};
+    font-size: {{ section.settings.font_size_card_title }}rem;
+    font-weight: {% if section.settings.font_weight_card_title %}bold{% else %}unset{% endif %};
   }
 
   @media screen and (max-width: 950px) {
