@@ -10,12 +10,6 @@
         "name": "Menu",
         "settings": [
           {
-            "type": "text",
-            "id": "title",
-            "default": "Title",
-            "label": "Title"
-          },
-          {
             "type": "link_list",
             "id": "menu",
             "label": "Menu"
@@ -29,7 +23,7 @@
  <div>
    {% for block in section.blocks %}
      <div>
-       <h2>{{ block.settings.title }}</h2>
+       <h2>{{ block.settings.menu.title }}</h2>
         <ul class="faq-menu-list">
           {%- for link in block.settings.menu.links -%}
             <li>
