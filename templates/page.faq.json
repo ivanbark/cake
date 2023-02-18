@@ -39,10 +39,22 @@
             "menu": "contact-us"
           }
         },
+        "96872426-9bbe-4aa1-bf7e-ad7cd5f28dbd": {
+          "type": "link_list",
+          "settings": {
+            "menu": "about-us-1"
+          }
+        },
         "5535791b-5e07-4b17-94ff-60d5876b2201": {
           "type": "link_list",
           "settings": {
             "menu": "general"
+          }
+        },
+        "34f649bb-646d-4fdf-b3f1-b457cd6f87e4": {
+          "type": "link_list",
+          "settings": {
+            "menu": "sale-details"
           }
         }
       },
@@ -53,7 +65,9 @@
         "c9237268-1dea-472e-99af-243356e970cf",
         "4b34e2a5-069e-4ab8-bb88-30f53beebfbc",
         "70372f13-4aeb-41c2-9b34-e541e8438296",
-        "5535791b-5e07-4b17-94ff-60d5876b2201"
+        "96872426-9bbe-4aa1-bf7e-ad7cd5f28dbd",
+        "5535791b-5e07-4b17-94ff-60d5876b2201",
+        "34f649bb-646d-4fdf-b3f1-b457cd6f87e4"
       ],
       "settings": {
         "title": "Frequently asked questions",
