@@ -38,9 +38,13 @@
         "7f606ed8-5350-4c60-ad4f-4e10f1617b92": {
           "type": "featured-blog",
           "settings": {
-            "title": "Featured Blog Posts",
-            "font-size": 1.4,
-            "font-weight": false,
+            "title": "You might also like...",
+            "font_size_title": 3.8,
+            "font_weight_title": false,
+            "font_size_card_title": 2.2,
+            "font_weight_card_title": false,
+            "font_size_card_date": 1.2,
+            "font_weight_card_date": false,
             "article-1": "feeding-1\/pumping-breast-milk-everything-you-must-know",
             "article-2": "test\/test",
             "article-3": "test\/test2",
