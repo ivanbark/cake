@@ -571,6 +571,7 @@
               </style>
               {%- for type in shop.enabled_payment_types -%}
                 <li class="list-payment__item">
+                  <p>test</p>
                   {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
                 </li>
               {%- endfor -%}
