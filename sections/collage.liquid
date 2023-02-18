@@ -50,7 +50,7 @@
                 extend_height: true
               %}
             {% when 'article' %}
-             {% render 'article-card' %}
+                {% render 'article-card', article: block.settings.article, media_aspect_ratio: 1.66, show_image: true, show_date: false, show_author: false, show_excerpt: false %}
             {%- when 'collection' -%}
               {% render 'card-collection',
                 card_collection: block.settings.collection,
