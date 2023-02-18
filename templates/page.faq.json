@@ -43,8 +43,8 @@
       ],
       "settings": {
         "title": "Frequently asked questions",
-        "font_size_section_heading": 2.8,
-        "font_weight_section_heading": true,
+        "font_size_section_heading": 3.6,
+        "font_weight_section_heading": false,
         "heading_color": "#ad8260",
         "font_size_heading": 2.2,
         "font_weight_heading": true,
