@@ -1,12 +1,44 @@
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "FAQ",
+    "settings": [
+      
+    ],
+    "blocks": [
+      {
+        "type": "link_list",
+        "name": "Menu",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "default": "Title",
+            "label": "Title"
+          },
+          {
+            "type": "link_list",
+            "id": "menu",
+            "label": "Menu"
+          }          
+        ]
+      }
+    ]
   }
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+ <div>
+   {% for block in section.blocks %}
+     <div>
+       <h2>{{ block.settings.title }}</h2>
+        <ul class="faq-menu-list">
+          {%- for link in block.settings.menu.links -%}
+            <li>
+              <a class="" href="{{ link.url }}" style="">
+                {{ link.title }}
+              </a>
+            </li>
+          {%- endfor -%}
+        </ul>
+     </div>
+   {% endfor %}
+ </div>
