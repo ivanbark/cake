@@ -83,7 +83,13 @@
         "3210b9f7-6012-42c4-88ed-275f1859d1ea"
       ],
       "settings": {
-        "bg-color": "#f0ede8"
+        "bg-color": "#f0ede8",
+        "font_size_title": 4.6,
+        "font_weight_title": false,
+        "font_size_link": 2,
+        "font_weight_link": false,
+        "font_size_card_title": 2,
+        "font_weight_card_title": false
       }
     }
   },
