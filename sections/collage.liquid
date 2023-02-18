@@ -17,8 +17,8 @@
   }
 
   {% if section.settings.heading == "Featured" %}
-    .isolate {
-      background: black !important;
+    .collage {
+      grid-template-columns: repeat(5,minmax(0,1fr));
     }
   {% endif %}}
 {%- endstyle -%}
