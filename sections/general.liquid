@@ -1,6 +1,14 @@
 {% schema %}
 {
   "name": "General",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Category",
+      "label": "Category Title"
+    }
+  ],
   "blocks": [
     {
       "type": "link_list",
@@ -363,7 +371,7 @@
 {%- endstyle -%}
 
 <div class="page-wrapper">
-  <h3 class="page-path" style="width: 100%;"><a href="/" style="font-weight: bold;">Home</a> / <a href="/pages/help" style="font-weight: bold;">Help</a> / {{ section.name }}</h3>
+  <h3 class="page-path" style="width: 100%;"><a href="/" style="font-weight: bold;">Home</a> / <a href="/pages/help" style="font-weight: bold;">Help</a> / {{ section.settings.title }}</h3>
 
   {% if section.blocks.size > 0 %}
     <div class="sidebar">
