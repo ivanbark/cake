@@ -142,7 +142,11 @@
           <hr>
           <div class="blog-articles__article article">
             <div>
-              <img src="{{ block.settings.article-1.image.src | image_url }}">
+              <a class="full-unstyled-link" href="{{ block.settings.article-1.url }}">
+                <img src="{{ block.settings.article-1.image.src | image_url }}">
+                <h2>{{ block.settings.article-1.title }}</h2>
+                <p>{{ block.settings.article-1.published_at | time_tag: format: 'date' }}</p>
+              </a>
             </div>
           </div>
   
