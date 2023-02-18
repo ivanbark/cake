@@ -1,5 +1,10 @@
 {
   "sections": {
+    "featured-blogs": {
+      "type": "featured-blog",
+      "settings": {
+      }
+    },
     "main": {
       "type": "blog-overview",
       "settings": {
@@ -7,6 +12,7 @@
     }
   },
   "order": [
+    "featured-blogs",
     "main"
   ]
 }
