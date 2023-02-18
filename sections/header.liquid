@@ -518,14 +518,14 @@
                             {%- for childlink in link.links -%}
                                {%- if childlink.links == blank -%}
                                  <li style="height: 100%;">
-                                  <a style="font-weight:{{ section.settings.menu_title_font_weight }};" href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                                  <a style="font-weight:{{ section.settings.menu_title_font_weight }};" href="{{ childlink.url }}" class="{% if childlink.title == "Login" %} button {% endif %}  mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                                     {{ childlink.title | escape }}
                                   </a>
                                   {%- if childlink.links != blank -%}
                                     <ul class="list-unstyled" role="list">
                                       {%- for grandchildlink in childlink.links -%}
                                         <li>
-                                          <a href="{{ grandchildlink.url }}" class="{% if grandchildlink.title == "Login" %} button {% endif %} mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                          <a href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
                                             {{ grandchildlink.title | escape }}
                                           </a>
                                         </li>
