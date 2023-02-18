@@ -53,7 +53,7 @@
       ],
       "settings": {
         "heading": "Featured",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "desktop_layout": "left",
         "mobile_layout": "collage",
         "card_styles": "none",
