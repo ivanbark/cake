@@ -566,7 +566,7 @@
                        {% endif %}
                        {%- if link.title == "Rewards" -%}
                           {%- if section.settings.submenu_third_image != null -%}
-                            <a style="text-decoration: none;" href="{{ section.settings.submenu_third_url }}">
+                            <a class="submenu_images" style="text-decoration: none;" href="{{ section.settings.submenu_third_url }}">
                               {{ section.settings.submenu_third_image | image_url: width: section.settings.submenu_image_size | image_tag:
                                 class: '',
                                 width: "100%",
@@ -579,7 +579,7 @@
                             </a>
                           {% endif %}
                           {%- if section.settings.submenu_fourth_image != null -%}
-                            <a style="text-decoration: none;" href="{{ section.settings.submenu_fourth_url }}">
+                            <a class="submenu_images" style="text-decoration: none;" href="{{ section.settings.submenu_fourth_url }}">
                               {{ section.settings.submenu_fourth_image | image_url: width: section.settings.submenu_image_size | image_tag:
                                 class: '',
                                 width: "100%",
