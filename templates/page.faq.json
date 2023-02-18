@@ -15,6 +15,18 @@
             "menu": "shipping"
           }
         },
+        "1a91913a-2471-413f-b2ad-69a244da7f79": {
+          "type": "link_list",
+          "settings": {
+            "menu": "returns-exchanges"
+          }
+        },
+        "70372f13-4aeb-41c2-9b34-e541e8438296": {
+          "type": "link_list",
+          "settings": {
+            "menu": "contact-us"
+          }
+        },
         "5535791b-5e07-4b17-94ff-60d5876b2201": {
           "type": "link_list",
           "settings": {
@@ -25,6 +37,8 @@
       "block_order": [
         "2680a558-ffc3-46b6-b52c-2b8918c1dc87",
         "8a642155-6df7-4f99-a1ce-64f802f1ec75",
+        "1a91913a-2471-413f-b2ad-69a244da7f79",
+        "70372f13-4aeb-41c2-9b34-e541e8438296",
         "5535791b-5e07-4b17-94ff-60d5876b2201"
       ],
       "settings": {
