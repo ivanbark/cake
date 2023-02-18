@@ -531,7 +531,6 @@
                           <ul style="max-width: 350px; display: block !important;" class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
                             <li style="font-size:{{ section.settings.submenu_title_rewards_size }}px"> 
                               {{ section.settings.submenu_title_rewards }}
-                              <p>Find out more</p>
                             </li>
                             <li> 
                               {{ section.settings.submenu_text_rewards }}
@@ -588,6 +587,7 @@
                          {% endif %}
                        {% endif %}
                        {%- if link.title == "Rewards" -%}
+                         <p>Find out more</p>
                           {%- if section.settings.submenu_third_image != null -%}
                             <a class="submenu_images" style="text-decoration: none;" href="{{ section.settings.submenu_third_url }}">
                               {{ section.settings.submenu_third_image | image_url: width: section.settings.submenu_image_size | image_tag:
