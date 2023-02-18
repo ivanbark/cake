@@ -1,22 +1,39 @@
 {% schema %}
   {
     "name": "Blog overview",
-    "settings": []
+    "settings": [
+      
+    ],
+    "blocks": [
+      {
+        "type": "blog",
+        "name": "Blog",
+        "settings": [
+          {
+            "type": "blog",
+            "id": "blog",
+            "label": "Blog"
+          }          
+        ]
+      }
+    ]
   }
 {% endschema %}
 
-<div class="blog">
-  <div class="blog-header">
-    <h2>{{ blog["test"].title }}</h2>
-    <a href="{{ blog.url }}" style="text-transform:uppercase;">See all</a>
+{% for block in blocks %}
+  <div class="blog">
+    <div class="blog-header">
+      <h2>{{ block.blog.title }}</h2>
+      <a href="{{ block.blog.url }}" style="text-transform:uppercase;">See all</a>
+    </div>
+    {% for article in block.blog.articles limit:3 %}
+      {% render 'article-card', 
+        blog: blog, 
+        article: article, 
+        show_image: true, 
+        show_date: false, 
+        show_author: false, 
+        show_excerpt: false %}
+    {% endfor %}
   </div>
-  {% for article in blog.articles limit:3 %}
-    {% render 'article-card', 
-      blog: blog, 
-      article: article, 
-      show_image: true, 
-      show_date: false, 
-      show_author: false, 
-      show_excerpt: false %}
-  {% endfor %}
-</div>
+{% endfor %}
