@@ -533,9 +533,10 @@
                                   </li>
                                  {% else %}
                                {% endif %}
-                                <div class="submenu_image_container">
-                    
-                      {%- if link.title == "Shop" -%}
+                             {% endfor %}
+                          </ul>
+                            <div class="submenu_image_container">
+                      {%- if link.title == "Rewards" -%}
                         {%- if section.settings.submenu_first_image != null -%}
                            <a style="text-decoration: none;" href="{{ section.settings.submenu_first_url }}">
                             {{ section.settings.submenu_first_image | image_url: width: section.settings.submenu_image_size | image_tag:
@@ -563,24 +564,10 @@
                          </a>
                        {% endif %}
                      {% endif %}
-                       {%- if link.title == "Rewards" -%}
-                        {%- if section.settings.submenu_first_image != null -%}
-                           <a style="text-decoration: none;" href="{{ section.settings.submenu_first_url }}">
-                            {{ section.settings.submenu_first_image | image_url: width: section.settings.submenu_image_size | image_tag:
-                              class: 'submenu_images',
-                              width: "100%",
-                              sizes: '(min-width: 1200px) 267px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)',
-                              aspect-ratio: '1',
-                              height: 'auto',
-                              alt: logo_alt
-                            }}
-                          <p class="submenu_images submenu_text">{{ section.settings.submenu_first_image_text }}</p>
-                          </a>
-                        {% endif %}
+                       {%- if link.title == "Shop" -%}
+                        j
                        {% endif %}
                        </div>
-                             {% endfor %}
-                          </ul>
                          <ul class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
                           {%- for childlink in link.links -%}
                             {%- if childlink.links != blank -%}
