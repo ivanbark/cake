@@ -8,10 +8,38 @@
           "settings": {
             "menu": "general"
           }
+        },
+        "a4d9e9d0-895a-4ec5-a5a4-5254ba337e86": {
+          "type": "link_list",
+          "settings": {
+            "menu": "quick-links"
+          }
+        },
+        "00adb78f-f616-4ef0-8c5f-c571552fd830": {
+          "type": "link_list",
+          "settings": {
+            "menu": "the-fit"
+          }
+        },
+        "a38fd9e3-a3f2-4557-96fb-5a0d76b28b76": {
+          "type": "link_list",
+          "settings": {
+            "menu": "about-us"
+          }
+        },
+        "e5f5cb17-fd7c-47be-b61d-0aa565367e1b": {
+          "type": "link_list",
+          "settings": {
+            "menu": "general"
+          }
         }
       },
       "block_order": [
-        "5535791b-5e07-4b17-94ff-60d5876b2201"
+        "5535791b-5e07-4b17-94ff-60d5876b2201",
+        "a4d9e9d0-895a-4ec5-a5a4-5254ba337e86",
+        "00adb78f-f616-4ef0-8c5f-c571552fd830",
+        "a38fd9e3-a3f2-4557-96fb-5a0d76b28b76",
+        "e5f5cb17-fd7c-47be-b61d-0aa565367e1b"
       ],
       "settings": {
       }
