@@ -61,11 +61,12 @@
   {% endif %}}
 
   {% if section.settings.heading == "Featured" %}
-    .collage {
-      grid-template-columns: repeat(4,minmax(0,1fr)) !important;
-    }
   
     @media screen and (min-width: 750px) {
+      .collage {
+        grid-template-columns: repeat(4,minmax(0,1fr)) !important;
+      }
+    
       .collage__item--left:nth-child(5n - 4) {
         grid-column: 1 / span 2;
         grid-row: span 2;
