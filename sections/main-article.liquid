@@ -157,26 +157,27 @@
   
 
         {%- when 'featured-blog' -%}
+          <h2 style="font-size:{{ block.settings.font_size_title }};font-weight:{% if block.settings.font_weight_title %}bold{% else %}unset{% endif %};">{{ block.settings.title }}</h2>
           <div class="might-also-like">
             <div>
               <a class="full-unstyled-link" href="{{ block.settings.article-1.url }}">
                 <img src="{{ block.settings.article-1.image.src | image_url }}">
-                <h2>{{ block.settings.article-1.title }}</h2>
-                <p>{{ block.settings.article-1.published_at | time_tag: format: 'date' }}</p>
+                <h2 style="font-size:{{ block.settings.font_size_card_title }};font-weight:{% if block.settings.font_weight_card_title %}bold{% else %}unset{% endif %};">{{ block.settings.article-1.title }}</h2>
+                <p style="font-size:{{ block.settings.font_size_card_date }};font-weight:{% if block.settings.font_size_card_date %}bold{% else %}unset{% endif %};">{{ block.settings.article-1.published_at | time_tag: format: 'date' }}</p>
               </a>
             </div>
             <div>
               <a class="full-unstyled-link" href="{{ block.settings.article-2.url }}">
                 <img src="{{ block.settings.article-2.image.src | image_url }}">
-                <h2>{{ block.settings.article-2.title }}</h2>
-                <p>{{ block.settings.article-2.published_at | time_tag: format: 'date' }}</p>
+                <h2 style="font-size:{{ block.settings.font_size_card_title }};font-weight:{% if block.settings.font_weight_card_title %}bold{% else %}unset{% endif %};">{{ block.settings.article-2.title }}</h2>
+                <p style="font-size:{{ block.settings.font_size_card_date }};font-weight:{% if block.settings.font_size_card_date %}bold{% else %}unset{% endif %};">{{ block.settings.article-2.published_at | time_tag: format: 'date' }}</p>
               </a>
             </div>
             <div>
               <a class="full-unstyled-link" href="{{ block.settings.article-2.url }}">
                 <img src="{{ block.settings.article-2.image.src | image_url }}">
-                <h2>{{ block.settings.article-2.title }}</h2>
-                <p>{{ block.settings.article-2.published_at | time_tag: format: 'date' }}</p>
+                <h2 style="font-size:{{ block.settings.font_size_card_title }};font-weight:{% if block.settings.font_weight_card_title %}bold{% else %}unset{% endif %};">{{ block.settings.article-2.title }}</h2>
+                <p style="font-size:{{ block.settings.font_size_card_date }};font-weight:{% if block.settings.font_size_card_date %}bold{% else %}unset{% endif %};">{{ block.settings.article-2.published_at | time_tag: format: 'date' }}</p>
               </a>
             </div>
           </div>
