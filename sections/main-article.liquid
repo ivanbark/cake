@@ -148,6 +148,20 @@
                 <p>{{ block.settings.article-1.published_at | time_tag: format: 'date' }}</p>
               </a>
             </div>
+            <div>
+              <a class="full-unstyled-link" href="{{ block.settings.article-2.url }}">
+                <img src="{{ block.settings.article-2.image.src | image_url }}">
+                <h2>{{ block.settings.article-2.title }}</h2>
+                <p>{{ block.settings.article-2.published_at | time_tag: format: 'date' }}</p>
+              </a>
+            </div>
+            <div>
+              <a class="full-unstyled-link" href="{{ block.settings.article-2.url }}">
+                <img src="{{ block.settings.article-2.image.src | image_url }}">
+                <h2>{{ block.settings.article-2.title }}</h2>
+                <p>{{ block.settings.article-2.published_at | time_tag: format: 'date' }}</p>
+              </a>
+            </div>
           </div>
   
     {%- endcase -%}
