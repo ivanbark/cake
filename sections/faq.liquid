@@ -108,6 +108,9 @@
   .faq-menu-list li a {
     text-decoration: none;
     color: black;
+    font-size: {{ section.settings.font_size_links }}rem;
+    font-weight: {% if section.settings.font_weight_links %}bold{% else %}unset{% endif %};  
+    line-height: 30px;
   }
 
   .faq-see-all {
@@ -130,11 +133,8 @@
     font-size: {{ section.settings.font_size_heading }}rem;
     font-weight: {% if section.settings.font_weight_heading %}bold{% else %}unset{% endif %};
     color: {{ section.settings.heading_color }};
-  }
-
-  .faq-menu-list a {
-    font-size: {{ section.settings.font_size_links }}rem;
-    font-weight: {% if section.settings.font_weight_links %}bold{% else %}unset{% endif %};    
+    margin: 0;
+    margin-bottom: 15px;
   }
 
   .faq-title {
