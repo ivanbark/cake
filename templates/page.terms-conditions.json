@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "terms-conditions",
+      "type": "general",
       "blocks": {
         "b6d4509d-3b99-4b61-8c6d-b901757b0f0c": {
           "type": "link_list",
