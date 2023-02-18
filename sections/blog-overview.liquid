@@ -7,6 +7,58 @@
         "id": "bg-color",
         "label": "Background Color",
         "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Font"
+      },
+      {
+        "type": "range",
+        "id": "font_size_title",
+        "min": 0.2,
+        "max": 4,
+        "step": 0.2,
+        "unit": "rem",
+        "label": "Font Size Heading",
+        "default": 2
+      },
+      {
+        "type": "checkbox",
+        "id": "font_weight_title",
+        "default": false,
+        "label": "Font Weight Heading"
+      },
+      {
+        "type": "range",
+        "id": "font_size_link",
+        "min": 0.2,
+        "max": 4,
+        "step": 0.2,
+        "unit": "rem",
+        "label": "Font Size Link",
+        "default": 2
+      },
+      {
+        "type": "checkbox",
+        "id": "font_weight_link",
+        "default": false,
+        "label": "Font Weight Link"
+      },
+      {
+        "type": "range",
+        "id": "font_size_card_title",
+        "min": 0.2,
+        "max": 4,
+        "step": 0.2,
+        "unit": "rem",
+        "label": "Font Size Card Title",
+        "default": 2
+      },
+      {
+        "type": "checkbox",
+        "id": "font_weight_card_title",
+        "default": false,
+        "label": "Font Weight Card Title"
       }
     ],
     "blocks": [
@@ -49,6 +101,16 @@
     align-items: baseline;
   }
 
+  .blog-header h2 {
+    font-size: {{ section.settings.font_size_card_title }};
+    font-weight: {% if section.settings.font_weight_card_title %}bold{% else %}unset{% endif %};    
+  }
+
+  .blog-header a {
+    font-size: {{ section.settings.font_size_link }};
+    font-weight: {% if section.settings.font_weight_link %}bold{% else %}unset{% endif %};    
+  }
+
   .blog-header {
     margin: 50px 0 ;
   }
@@ -80,6 +142,8 @@
   .blog-card h2 {
     padding: 0 20px;
     text-align: center;
+    font-size: {{ section.settings.font_size_title }};
+    font-weight: {% if section.settings.font_weight_title %}bold{% else %}unset{% endif %};
   }
 
   @media screen and (max-width: 950px) {
