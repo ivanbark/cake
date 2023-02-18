@@ -558,6 +558,8 @@
                           {%- endfor -%}
                         </ul>
                   <div class="submenu_image_container">
+                    {%- for link in section.settings.menu.links -%}
+                      {%- if link.title == "gjkogrou" -%}
                         {%- if section.settings.submenu_first_image != null -%}
                            <a style="text-decoration: none;" href="{{ section.settings.submenu_first_url }}">
                             {{ section.settings.submenu_first_image | image_url: width: section.settings.submenu_image_size | image_tag:
@@ -584,6 +586,8 @@
                           <p class="submenu_images submenu_text">{{ section.settings.submenu_second_image_text }}</p>
                          </a>
                        {% endif %}
+                       {% endif %}
+                      {% endfor %}
                        </div>
                       </div>
                     </details>
