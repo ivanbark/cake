@@ -49,6 +49,8 @@
                 show_secondary_image: block.settings.second_image,
                 extend_height: true
               %}
+            {% when 'article' %}
+             {% render 'article-card' %}
             {%- when 'collection' -%}
               {% render 'card-collection',
                 card_collection: block.settings.collection,
