@@ -2,7 +2,12 @@
   {
     "name": "Blog overview",
     "settings": [
-      
+      {
+        "type": "color",
+        "id": "bg-color",
+        "label": "Background Color",
+        "default": "#ffffff"
+      }
     ],
     "blocks": [
       {
@@ -24,6 +29,10 @@
   .blogs {
     max-width: 1150px;
     margin: 0 auto;
+  }  
+  
+  #MainContent {
+    background: {{ section.settings.bg-color }} !important;
   }
 
   .blog-header {
