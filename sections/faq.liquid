@@ -25,7 +25,7 @@
      <div>
        <h2>{{ block.settings.menu.title }}</h2>
         <ul class="faq-menu-list">
-          {%- for link in block.settings.menu.links -%}
+          {%- for link in block.settings.menu.links limit: 4 -%}
             <li>
               <a class="" href="{{ link.url }}" style="">
                 {{ link.title }}
