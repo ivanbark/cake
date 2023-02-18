@@ -97,6 +97,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
   }
 
   .faq-menu-list {
@@ -119,6 +120,9 @@
     font-weight: bold;
     border-bottom: 2px solid black;
     font-size: {{ section.settings.font_size_links }}rem;
+    display: block;
+    width: fit-content;
+    margin-top: 15px;
   }
 
   .faq-see-all::after {  
