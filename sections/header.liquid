@@ -525,7 +525,7 @@
                         {% render 'icon-caret' %}
                       </summary>
                       <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
-                          <ul style="display: block !important;" class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
+                          <ul style="max-width: 350px; display: block !important;" class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
                             <li> 
                               {{ section.settings.submenu_text_rewards }}
                             </li>
