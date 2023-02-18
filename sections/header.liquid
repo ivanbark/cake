@@ -527,7 +527,7 @@
                       <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
                           <ul style="display: block !important;" class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
                             <li> 
-                              {{ section.settings_submenu_text_rewards }}
+                              {{ section.settings.submenu_text_rewards }}
                             </li>
                             {%- for childlink in link.links -%}
                                {%- if childlink.links == blank -%}
