@@ -27,14 +27,12 @@
       <a href="{{ block.settings.blog.url }}" style="text-transform:uppercase;">See all</a>
     </div>
     {% for article in block.settings.blog.articles limit:3 %}
-      {% render 'article-card', 
-        blog: blog, 
-        article: article, 
-        media_height: adapt,
-        show_image: true, 
-        show_date: false, 
-        show_author: false, 
-        show_excerpt: false %}
+      <div>
+        <a class="full-unstyled-link" href="{{ article.url }}">
+          <img src="{{ article.image.src | image_url }}">
+          <h2 style="font-size:{{ section.settings.font_size_card_title }}rem;font-weight:{% if section.settings.font_weight_card_title %}bold{% else %}unset{% endif %};">{{ article.title }}</h2>
+        </a>
+      </div>      
     {% endfor %}
   </div>
 {% endfor %}
