@@ -9,6 +9,12 @@
             "menu": "fitting"
           }
         },
+        "8a642155-6df7-4f99-a1ce-64f802f1ec75": {
+          "type": "link_list",
+          "settings": {
+            "menu": "shipping"
+          }
+        },
         "5535791b-5e07-4b17-94ff-60d5876b2201": {
           "type": "link_list",
           "settings": {
@@ -18,6 +24,7 @@
       },
       "block_order": [
         "2680a558-ffc3-46b6-b52c-2b8918c1dc87",
+        "8a642155-6df7-4f99-a1ce-64f802f1ec75",
         "5535791b-5e07-4b17-94ff-60d5876b2201"
       ],
       "settings": {
