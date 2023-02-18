@@ -6,7 +6,7 @@
         "b6d4509d-3b99-4b61-8c6d-b901757b0f0c": {
           "type": "link_list",
           "settings": {
-            "sidebar-menu": "general",
+            "sidebar-menu": "returns-exchanges",
             "show_menu_heading": true,
             "heading_color": "#ad8260",
             "font_size_heading": 2,
@@ -47,7 +47,7 @@
         "c169b02e-2ff0-4f11-a039-4fe634d94621"
       ],
       "settings": {
-        "title": "General",
+        "title": "Returns & exchanges",
         "padding_top": 28,
         "padding_bottom": 28,
         "font_size_heading": 2.6,
