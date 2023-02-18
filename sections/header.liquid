@@ -555,7 +555,9 @@
                               {%- endif -%}
                             </li>
                               {% endif %}
-                            <div class="submenu_image_container">
+                          {%- endfor -%}
+                        </ul>
+                  <div class="submenu_image_container">
                     {%- for link in section.settings.menu.links -%}
                       {%- if link.title == "Rewards" -%}
                         {%- if section.settings.submenu_first_image != null -%}
@@ -589,9 +591,6 @@
                        {% endif %}
                       {% endfor %}
                        </div>
-                          {%- endfor -%}
-                        </ul>
-                        
                       </div>
                     </details>
                   </header-menu>
