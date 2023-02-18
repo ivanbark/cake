@@ -57,13 +57,12 @@
 
   .blog-cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     margin: 0 -5px;
   }
 
   .blog-card {
-    width: fit-content;
     width: 400px;
     max-width: 33%;
     text-align: center;
@@ -77,6 +76,13 @@
   .blog-card h2 {
     padding: 0 20px;
     text-align: center;
+  }
+
+  @media screen and (max-width: 950px) {
+    .blog-card {
+      min-width: 80%;
+      max-width: 100%;
+    }    
   }
 </style>
 
