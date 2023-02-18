@@ -152,21 +152,23 @@
   }
 </style>
 
-<h2 class="faq-title">{{ section.settings.title }}</h2>
-<div class="faq">
- {% for block in section.blocks %}
-   <div class="faq-menu">
-     <h2>{{ block.settings.menu.title }}</h2>
-      <ul class="faq-menu-list">
-        {%- for link in block.settings.menu.links limit: 4 -%}
-          <li>
-            <a class="" href="{{ link.url }}" style="">
-              {{ link.title }}
-            </a>
-          </li>
-        {%- endfor -%}
-      </ul>
-     <a class="faq-see-all" href="{{ block.settings.menu.links.first.url }}">See all Questions</a>
-   </div>
- {% endfor %}
+<div style="max-width: 1100px;">
+  <h2 class="faq-title">{{ section.settings.title }}</h2>
+  <div class="faq">
+   {% for block in section.blocks %}
+     <div class="faq-menu">
+       <h2>{{ block.settings.menu.title }}</h2>
+        <ul class="faq-menu-list">
+          {%- for link in block.settings.menu.links limit: 4 -%}
+            <li>
+              <a class="" href="{{ link.url }}" style="">
+                {{ link.title }}
+              </a>
+            </li>
+          {%- endfor -%}
+        </ul>
+       <a class="faq-see-all" href="{{ block.settings.menu.links.first.url }}">See all Questions</a>
+     </div>
+   {% endfor %}
+  </div>
 </div>
