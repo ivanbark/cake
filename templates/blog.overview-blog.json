@@ -1,7 +1,7 @@
 {
   "sections": {
     "featured-blogs": {
-      "type": "featured-blog",
+      "type": "collage",
       "settings": {
       }
     },
