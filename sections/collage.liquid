@@ -143,10 +143,10 @@
                 extend_height: true
               %}
             {% when 'article' %}
-              <div class="blog-card">
+              <div style="width: 100%;">
                 <a class="full-unstyled-link" href="{{ block.settings.article.url }}">
-                  <img src="{{ block.settings.article.image.src | image_url }}">
-                  <h2 style="font-size:{{ section.settings.font_size_card_title }}rem;font-weight:{% if section.settings.font_weight_card_title %}bold{% else %}unset{% endif %};">{{ block.settings.article.title }}</h2>
+                  <img style="width: 100%;" src="{{ block.settings.article.image.src | image_url }}">
+                  <h2 style="font-size:{{ block.settings.font_size_card_title }}rem;font-weight:{% if block.settings.font_weight_card_title %}bold{% else %}unset{% endif %};">{{ block.settings.article.title }}</h2>
                 </a>
               </div>                 
             {%- when 'collection' -%}
