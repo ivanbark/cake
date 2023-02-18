@@ -21,6 +21,18 @@
             "menu": "returns-exchanges"
           }
         },
+        "c9237268-1dea-472e-99af-243356e970cf": {
+          "type": "link_list",
+          "settings": {
+            "menu": "eco"
+          }
+        },
+        "4b34e2a5-069e-4ab8-bb88-30f53beebfbc": {
+          "type": "link_list",
+          "settings": {
+            "menu": "care"
+          }
+        },
         "70372f13-4aeb-41c2-9b34-e541e8438296": {
           "type": "link_list",
           "settings": {
@@ -38,6 +50,8 @@
         "2680a558-ffc3-46b6-b52c-2b8918c1dc87",
         "8a642155-6df7-4f99-a1ce-64f802f1ec75",
         "1a91913a-2471-413f-b2ad-69a244da7f79",
+        "c9237268-1dea-472e-99af-243356e970cf",
+        "4b34e2a5-069e-4ab8-bb88-30f53beebfbc",
         "70372f13-4aeb-41c2-9b34-e541e8438296",
         "5535791b-5e07-4b17-94ff-60d5876b2201"
       ],
