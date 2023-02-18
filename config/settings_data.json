@@ -198,7 +198,7 @@
           "submenu_second_image_text": "Shop nursing bras",
           "submenu_third_url": "",
           "submenu_third_image": "shopify:\/\/shop_images\/cmc-non-member-unlock.png",
-          "submenu_third_image_text": "<p><strong>JOIN<\/strong><\/p><p>Get 10% OFF your first order,<br\/>earn CakeCoins + more<br\/>goodies<\/p>",
+          "submenu_third_image_text": "<p><strong>JOIN<br\/><\/strong>Get 10% OFF your first order,<br\/>earn CakeCoins + more<br\/>goodies<\/p>",
           "submenu_image_size": 200,
           "show_line_separator": true,
           "enable_sticky_header": true,
