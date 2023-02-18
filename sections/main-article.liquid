@@ -13,6 +13,18 @@
   footer {
     margin: 0 !important;
   }
+
+  .might-also-like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .might-also-like div {
+    width: fit-content;
+    text-align: center;
+  }
 </style>
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting" style="max-width: 920px;margin: 0 auto 10rem;">
@@ -140,7 +152,7 @@
 
         {%- when 'featured-blog' -%}
           <hr>
-          <div class="blog-articles__article article">
+          <div class="might-also-like">
             <div>
               <a class="full-unstyled-link" href="{{ block.settings.article-1.url }}">
                 <img src="{{ block.settings.article-1.image.src | image_url }}">
