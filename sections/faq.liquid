@@ -2,7 +2,78 @@
   {
     "name": "FAQ",
     "settings": [
-      
+      {
+        "type": "header",
+        "content": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "default": "Title",
+        "label": "Title"
+      },
+      {
+        "type": "range",
+        "id": "font_size_section_heading",
+        "min": 0,
+        "max": 5,
+        "step": 0.2,
+        "unit": "rem",
+        "label": "Font size",
+        "default": 1.4      
+      },
+      {
+        "type": "checkbox",
+        "id": "font_weight_section_heading",
+        "default": false,
+        "label": "Font weight bold"
+      },
+      {
+        "type": "header",
+        "content": "Menu Heading"
+      },
+      {
+        "type": "color",
+        "id": "heading_color",
+        "default": "#ad8260",
+        "label": "Heading color"
+      },
+      {
+        "type": "range",
+        "id": "font_size_heading",
+        "min": 0,
+        "max": 5,
+        "step": 0.2,
+        "unit": "rem",
+        "label": "Font size",
+        "default": 1.4      
+      },
+      {
+        "type": "checkbox",
+        "id": "font_weight_heading",
+        "default": false,
+        "label": "Font weight bold"
+      },
+      {
+        "type": "header",
+        "content": "Links"
+      },
+      {
+        "type": "range",
+        "id": "font_size_links",
+        "min": 0,
+        "max": 5,
+        "step": 0.2,
+        "unit": "rem",
+        "label": "Font size",
+        "default": 1.4      
+      },
+      {
+        "type": "checkbox",
+        "id": "font_weight_links",
+        "default": false,
+        "label": "Font weight bold"
+      }
     ],
     "blocks": [
       {
@@ -26,10 +97,6 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .faq-menu {
-    
   }
 
   .faq-menu-list {
@@ -57,9 +124,26 @@
     display: inline-block;
     padding-left: 5px;
   }
+
+  .faq-menu h2 {
+    font-size: {{ section.settings.font_size_heading }}rem;
+    font-weight: {% if section.settings.font_weight_heading %}bold{% else %}unset{% endif %};
+    color: {{ section.settings.heading_color }};
+  }
+
+  .faq-menu-lis a {
+    font-size: {{ section.settings.font_size_links }}rem;
+    font-weight: {% if section.settings.font_weight_links %}bold{% else %}unset{% endif %};    
+  }
+
+  .faq-title {
+    font-size: {{ section.settings.font_size_section_heading }}rem;
+    font-weight: {% if section.settings.font_weight_section_heading %}bold{% else %}unset{% endif %};    
+  }
 </style>
 
  <div class="faq">
+   <h2 class="faq-title">{{ section.settings.title }}</h2>
    {% for block in section.blocks %}
      <div class="faq-menu">
        <h2>{{ block.settings.menu.title }}</h2>
