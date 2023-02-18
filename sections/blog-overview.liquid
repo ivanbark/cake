@@ -27,8 +27,10 @@
 
 <style>
   #MainContent {
-    background: {{ section.settings.bg-color }} !important;
-    padding: 20px;
+    background: {{ section.settings.bg-color }} !important;  
+    padding-top: 128px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
   }
 
   footer {
@@ -82,7 +84,21 @@
 
   @media screen and (max-width: 950px) {
     .blog-card {
-      min-width: 80%;
+      min-width: 50%;
+      max-width: 100%;
+    }    
+  }
+
+  @media screen and (max-width: 650px) {
+    .blog-card {
+      min-width: 65%;
+      max-width: 100%;
+    }    
+  }
+
+  @media screen and (max-width: 500px) {
+    .blog-card {
+      min-width: 65%;
       max-width: 100%;
     }    
   }
