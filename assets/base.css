@@ -1,7 +1,7 @@
 /* Color custom properties */
 
 body {
-    font-family: "Quincy-Cf";
+    font-family: Quincy-Cf !important;
     src: url({{ "quincy-cf.woff" | asset_url }}) format("woff");
 }
 
