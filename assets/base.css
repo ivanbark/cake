@@ -1,6 +1,6 @@
 /* Color custom properties */
 
-@font-face {
+body {
     font-family: "Quincy-Cf";
     src: url({{ "quincy-cf.woff" | asset_url }}) format("woff");
 }
