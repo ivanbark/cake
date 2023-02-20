@@ -10,6 +10,10 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "custom_css": [
+        ".small-hide {display: none !important;}",
+        ".large-up-hide {display: block !important;}"
+      ],
       "settings": {
         "products_per_page": 24,
         "columns_desktop": 4,
