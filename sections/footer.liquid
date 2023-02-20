@@ -569,11 +569,16 @@
                   width: 50px !important;
                 }
               </style>
-              {% for type in shop.enabled_payment_types %}
+
+              {% assign enabled_payment_types = 'paypal,ideal,visa,master,american_express,klarna' | remove: ' ' | split: ',' %}
+                {% for type in enabled_payment_types %}
+                  {% endfor %}
+  
+<!--               {% for type in shop.enabled_payment_types %}
                 <li class="list-payment__item">
                   {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
                 </li>
-              {% endfor %}
+              {% endfor %} -->
             </ul>
           </div>
         {%- endif -%}
