@@ -2243,7 +2243,6 @@ input[type='checkbox'] {
   position: relative;
   background-color: rgb(var(--color-background));
   z-index: 1;
-  font-family: 'GroteskPro-SemiBold' !important;
 }
 
 .header-wrapper--border-bottom {
