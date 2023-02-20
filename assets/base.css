@@ -3008,5 +3008,6 @@ details-disclosure > details {
 /* Fonts */
 
 p {
-  font-family: 'HKGroteskPro-Light' !important;
+  font-family: 'GroteskPro-Light' !important;
+  src: url({{ "HKGroteskPro-Light.ttf" | asset_url }}) format("ttf");
 }
