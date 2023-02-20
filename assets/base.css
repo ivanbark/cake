@@ -3004,3 +3004,9 @@ details-disclosure > details {
   box-shadow: inset 0 0 5px grey; 
 }
 }
+
+/* Fonts */
+
+p.ups-lowerline {
+  font-family: 'GroteskPro-Light' !important;
+}
