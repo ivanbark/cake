@@ -2999,10 +2999,3 @@ details-disclosure > details {
   box-shadow: inset 0 0 5px grey; 
 }
 }
-
-/* Fonts */
-
-p {
-  font-family: 'GroteskPro-Light' !important;
-  src: url({{ "HKGroteskPro-Light.ttf" | asset_url }}) format("ttf");
-}
