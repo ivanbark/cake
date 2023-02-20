@@ -1,10 +1,5 @@
 /* Color custom properties */
 
-body {
-    font-family: Quincy-Cf !important;
-    src: url({{ "quincy-cf.woff" | asset_url }}) format("woff");
-}
-
 :root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
