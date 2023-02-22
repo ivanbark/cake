@@ -46,7 +46,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Details",
-            "icon": "star",
+            "icon": "none",
             "content": "<p>{{ product.metafields.custom.details | metafield_tag }}<\/p>",
             "page": ""
           }
@@ -55,7 +55,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Features",
-            "icon": "shirt",
+            "icon": "none",
             "content": "<p>{{ product.metafields.custom.features | metafield_tag }}<\/p>",
             "page": ""
           }
@@ -64,9 +64,9 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Eco",
-            "icon": "snowflake",
-            "content": "<p>{{ product.metafields.custom.eco | metafield_tag }}<\/p>",
-            "page": ""
+            "icon": "none",
+            "content": "",
+            "page": "eco"
           }
         },
         "collapsible-row-3": {
