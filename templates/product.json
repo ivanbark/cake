@@ -121,8 +121,8 @@
         "image-with-text-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
-            "heading_color": "#ffffff",
+            "heading": "The Cake Maternity Story",
+            "heading_color": "#000000",
             "heading_size": "h1",
             "caption_font_weight": "normal"
           }
@@ -130,9 +130,9 @@
         "image-with-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Cake was born out of our founder, Tracey Montford’s own personal struggle during her pregnancy journey. In her search for comfortable, functional and stylish maternity and nursing wear, it appeared hitting all three was the trifecta that didn’t exist. Suddenly in this new role, she was being forced into this one-size-fits-all mould of how a mother should look—and it wasn’t pretty. She wanted more and realised that if she felt this way, so must many other women across the world.<\/p><p>This became her driving force to create beautiful, high quality, functional and comfortable pieces inspired by her own experiences designed to support mamas on their breastfeeding journey. Bras that truly enhance the lives of women every day, allowing them to fully embrace motherhood & all that it brings to the table. <\/p><p>To this day, Tracey has that same passion and vision driving her, encouraging women to breastfeed for as long as possible in a supported & educated community.<\/p>",
             "text_style": "body",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "text_font_weight": "normal"
           }
         }
@@ -209,6 +209,22 @@
         "padding_bottom": 36
       }
     },
+    "167640207953c157e9": {
+      "type": "apps",
+      "blocks": {
+        "befc4699-e39c-40f3-a996-9dd2ec47464b": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "befc4699-e39c-40f3-a996-9dd2ec47464b"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -225,29 +241,13 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "167640207953c157e9": {
-      "type": "apps",
-      "blocks": {
-        "befc4699-e39c-40f3-a996-9dd2ec47464b": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "befc4699-e39c-40f3-a996-9dd2ec47464b"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "main",
     "image-with-text",
     "multicolumn",
-    "product-recommendations",
-    "167640207953c157e9"
+    "167640207953c157e9",
+    "product-recommendations"
   ]
 }
