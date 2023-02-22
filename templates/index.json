@@ -530,7 +530,7 @@
         "19860f8b-9ccc-473a-94b1-15a892c8496d": {
           "type": "blog",
           "settings": {
-            "blog": "feeding",
+            "blog": "feeding-1",
             "post_limit": 4,
             "columns_desktop": 4
           }
@@ -553,6 +553,7 @@
         },
         "8a222c01-a901-4b68-8c00-f7b897ce8a35": {
           "type": "blog",
+          "disabled": true,
           "settings": {
             "blog": "lifestyle",
             "post_limit": 4,
