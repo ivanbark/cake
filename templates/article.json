@@ -68,6 +68,7 @@
     },
     "53950a1a-b278-4f8c-b924-b032649c49d9": {
       "type": "featured-collection",
+      "disabled": true,
       "blocks": {
         "01490c17-68c6-4a97-8570-c7d2b36160be": {
           "type": "featured_collection",
