@@ -530,7 +530,7 @@
         "19860f8b-9ccc-473a-94b1-15a892c8496d": {
           "type": "blog",
           "settings": {
-            "blog": "feeding-1",
+            "blog": "feeding",
             "post_limit": 4,
             "columns_desktop": 4
           }
