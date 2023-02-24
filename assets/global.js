@@ -761,7 +761,7 @@ class VariantSelects extends HTMLElement {
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
     this.removeErrorMessage();
-    // this.filterThumbnails(this.currentVariant);
+    this.filterThumbnails(this.currentVariant);
 
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
