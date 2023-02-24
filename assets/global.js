@@ -788,7 +788,7 @@ class VariantSelects extends HTMLElement {
     else {
         var thumbnails = document.getElementsByClassName("data-thumbnail-color");
         for (let thumbnail of thumbnails) {
-          thumbnail.style.display = "block";
+          // thumbnail.style.display = "block";
         } 
     }
   }
