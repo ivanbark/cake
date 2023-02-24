@@ -778,15 +778,18 @@ class VariantSelects extends HTMLElement {
   filterThumbnails(variant){
     console.log(variant);
     if(variant.featured_image != null && variant.featured_image.alt != null){
+        document.querySelector('[data-thumbnail-color]').hide();
 
-        $('[data-thumbnail-color]').hide();
+        // $('[data-thumbnail-color]').hide();
 
         var selected_color = variant.featured_image.alt;
         var thumbnail_selector = '[data-thumbnail-color="' + selected_color + '"]';
-        $(thumbnail_selector).show();
+        document.querySelector(thumbnail_selector).show();
+        // $(thumbnail_selector).show();
     }
     else {
-        $('[data-thumbnail-color]').show();
+        document.querySelector('[data-thumbnail-color]').show();
+        // $('[data-thumbnail-color]').show();
     }
   }
 
