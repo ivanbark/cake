@@ -157,6 +157,11 @@
   
 
         {%- when 'featured-blog' -%}
+          <style>
+            .might-also-like img {
+              width: 100%;
+            }
+          </style>
           <h2 style="text-align:center;font-size:{{ block.settings.font_size_title }}rem;font-weight:{% if block.settings.font_weight_title %}bold{% else %}unset{% endif %};">{{ block.settings.title }}</h2>
           <div class="might-also-like">
             <div>
