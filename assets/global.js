@@ -761,6 +761,7 @@ class VariantSelects extends HTMLElement {
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
     this.removeErrorMessage();
+    this.filterThumbnails(this.currentVariant);
 
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
@@ -773,6 +774,21 @@ class VariantSelects extends HTMLElement {
       this.updateShareUrl();
     }
   }
+
+  filterThumbnails(variant){
+    console.log(variant);
+    if(variant.featured_image != null && variant.featured_image.alt != null){
+
+        $('[data-thumbnail-color]').hide();
+
+        var selected_color = variant.featured_image.alt;
+        var thumbnail_selector = '[data-thumbnail-color="' + selected_color + '"]';
+        $(thumbnail_selector).show();
+    }
+    else {
+        $('[data-thumbnail-color]').show();
+    }
+},
 
   updateOptions() {
     this.options = Array.from(this.querySelectorAll('select'), (select) => select.value);
