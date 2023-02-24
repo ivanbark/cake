@@ -782,13 +782,14 @@ class VariantSelects extends HTMLElement {
         var thumbnail_selector = 'alt-' + selected_color;
         var thumbnails = document.getElementsByClassName(thumbnail_selector);
         for (let thumbnail of thumbnails) {
+          console.log(thumbnail);
           thumbnail.style.display = "block";
         } 
     }
     else {
         var thumbnails = document.getElementsByClassName("data-thumbnail-color");
         for (let thumbnail of thumbnails) {
-          // thumbnail.style.display = "block";
+          thumbnail.style.display = "block";
         } 
     }
   }
