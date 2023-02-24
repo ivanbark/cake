@@ -778,11 +778,6 @@ class VariantSelects extends HTMLElement {
   filterThumbnails(variant){
     console.log(variant);
     if(variant.featured_image != null && variant.featured_image.alt != null){
-        var thumbnails = document.getElementsByClassName("data-thumbnail-color");
-        for (let thumbnail of thumbnails) {
-          thumbnail.style.display = "none";
-        } 
-
         var selected_color = variant.featured_image.alt;
         var thumbnail_selector = 'alt-' + selected_color;
         var thumbnails = document.getElementsByClassName(thumbnail_selector);
