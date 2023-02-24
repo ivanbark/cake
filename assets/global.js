@@ -788,7 +788,7 @@ class VariantSelects extends HTMLElement {
     else {
         $('[data-thumbnail-color]').show();
     }
-},
+  }
 
   updateOptions() {
     this.options = Array.from(this.querySelectorAll('select'), (select) => select.value);
