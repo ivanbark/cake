@@ -761,7 +761,7 @@ class VariantSelects extends HTMLElement {
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
     this.removeErrorMessage();
-    this.filterThumbnails(this.currentVariant);
+    // this.filterThumbnails(this.currentVariant);
 
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
@@ -776,7 +776,6 @@ class VariantSelects extends HTMLElement {
   }
 
   filterThumbnails(variant){
-    console.log(variant);
     if(variant.featured_image != null && variant.featured_image.alt != null){
         $('[data-thumbnail-color]').hide();
       
