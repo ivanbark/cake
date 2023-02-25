@@ -100,13 +100,13 @@
 
           <div>
             <p>We'd recommend:</p>
-            <ul>
+            <ul style="list-style:none;">
               {% for product in article.metafields.custom.recommended_products.value.products %}
-                <li>
+                <li style="width: fit-content;">
                   <img src="{{ product.featured_image.src | img_url: width: 1066 }}">
                   <p>{{ product.vendor }}</p>
                   <h2>{{ product.title }}</h2>
-                  <a href="{{ product.url }}">Learn more</a>
+                  <a style="background:black;padding:10px 20px;border-radius:20px;color:white;text-decoration:none;" href="{{ product.url }}">Learn more</a>
                 </li>
               {% endfor %}
             </ul>
