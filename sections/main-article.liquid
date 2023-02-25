@@ -92,6 +92,10 @@
               {{ article.content }}
           </div>
 
+          {% for metafield in article.metafields %}
+            <h1>{{ metafield }}</h1>
+          {% endfor %}
+
         {%- when 'share' -%}
           <div class="article-template__social-sharing page-width" {{ block.shopify_attributes }} style="width:fit-content;">
             <h2 style="text-align:center;font-weight:{% if block.settings.font-weight %}bold{% else %}unset{% endif %};font-size:{{ block.settings.font-size }}rem">{{ block.settings.share_label | escape }}</h2>
