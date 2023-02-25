@@ -93,9 +93,7 @@
           </div>
 
           <div>
-          {% for metafield in article.metafields %}
-            <h1>{{ metafield.custom.author.value }}</h1>
-          {% endfor %}
+            <h1>{{ article.metafields.custom.author.value }}</h1>
           </div>
 
         {%- when 'share' -%}
