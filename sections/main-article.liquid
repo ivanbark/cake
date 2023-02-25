@@ -103,7 +103,7 @@
             <ul>
               {% for product in article.metafields.custom.recommended_products.value.products %}
                 <li>
-                  <img src="{{ product.featured_image.src | img_url }}">
+                  <img src="{{ product.featured_image.src | img_url: width: 500 }}">
                   <p>{{ product.vendor }}</p>
                   <h2>{{ product.title }}</h2>
                   <a href="{{ product.url }}">Learn more</a>
