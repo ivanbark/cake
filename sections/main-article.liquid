@@ -102,6 +102,22 @@
             <h1>{{ article.metafields.custom.recommended_products.value }}</h1>
           </div>
 
+          <div>
+            <ul>
+              {% for product in article.metafields.custom.recommended_products.value.products %}
+                <li>
+                  {% render 'card-product',
+                    card_product: product,
+                    show_secondary_image: true,
+                    show_vendor: true,
+                    show_quick_add: section.settings.enable_quick_add,
+                    section_id: section.id
+                  %}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+
         {%- when 'share' -%}
           <div class="article-template__social-sharing page-width" {{ block.shopify_attributes }} style="width:fit-content;">
             <h2 style="text-align:center;font-weight:{% if block.settings.font-weight %}bold{% else %}unset{% endif %};font-size:{{ block.settings.font-size }}rem">{{ block.settings.share_label | escape }}</h2>
