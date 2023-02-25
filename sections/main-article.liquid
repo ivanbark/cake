@@ -99,14 +99,14 @@
           </div>
 
           <div>
-            <h1>{{ article.metafields.custom.recommended_products.value }}</h1>
-          </div>
-
-          <div>
+            <p>We'd recommend:</p>
             <ul>
               {% for product in article.metafields.custom.recommended_products.value.products %}
                 <li>
                   <img src="{{ product.featured_image.src | img_url }}">
+                  <p>{{ product.vendor }}</p>
+                  <h2>{{ product.title }}</h2>
+                  <a href="{{ product.url }}">Learn more</a>
                 </li>
               {% endfor %}
             </ul>
