@@ -106,13 +106,7 @@
             <ul>
               {% for product in article.metafields.custom.recommended_products.value.products %}
                 <li>
-                  {% render 'card-product',
-                    card_product: product,
-                    show_secondary_image: true,
-                    show_vendor: true,
-                    show_quick_add: section.settings.enable_quick_add,
-                    section_id: section.id
-                  %}
+                  <img src="{{ product.featured_image.src | img_url }}">
                 </li>
               {% endfor %}
             </ul>
