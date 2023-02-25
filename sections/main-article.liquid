@@ -65,13 +65,13 @@
                 height="{{ article.image.height }}"
                 alt="{{ article.image.alt | escape }}">
             </div>
-            <p style="width:100%;text-align:center;text-transform:uppercase;font-weight:bold;font-size:16px;">{{ article.image.alt }}</p>
+            <p style="width:100%;text-align:center;text-transform:uppercase;font-weight:bold;font-size:18px;">{{ article.image.alt }}</p>
           </div>
         {%- endif -%}
 
         {%- when 'title'-%}
           <header style="text-align:center;" class="" {{ block.shopify_attributes }}>
-            <p style="width:100%;text-align:center;text-transform:uppercase;font-weight:bold;margin-bottom:20px;font-size:16px;">{{ article.tags }}</p>
+            <p style="width:100%;text-align:center;text-transform:uppercase;font-weight:bold;margin-bottom:30px;font-size:18px;">{{ article.tags }}</p>
             <h1 class="page-width article-template__title" itemprop="headline" style="font-size:{{ block.settings.font-size-title }}rem;font-weight:{% if block.settings.font-weight-title %}bold{% else %}unset{% endif %};">{{ article.title | escape }}</h1>
             {%- if block.settings.blog_show_author -%}
               <div style="width: 100%;">
