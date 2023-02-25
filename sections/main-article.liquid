@@ -75,7 +75,11 @@
             <h1 class="page-width article-template__title" itemprop="headline" style="font-size:{{ block.settings.font-size-title }}rem;font-weight:{% if block.settings.font-weight-title %}bold{% else %}unset{% endif %};">{{ article.title | escape }}</h1>
             {%- if block.settings.blog_show_author -%}
               <div style="width: 100%;">
-                <h1 style="width:fit-content;color:white;margin: 40px auto 20px;width:100px;height:100px;border-radius:100%;background-color:{{ block.settings.profile-bg-color }};font-size:7rem;">{{ article.author | slice: 0 }}</h1>
+                {% if article.metafields.custom.author_image != null %}
+                  <img style="width:fit-content;color:white;margin: 40px auto 20px;width:100px;height:100px;border-radius:100%; src="{{ article.metafields.custom.author_image | img_url }}">
+                {% else %}
+                  <h1 style="width:fit-content;color:white;margin: 40px auto 20px;width:100px;height:100px;border-radius:100%;background-color:{{ block.settings.profile-bg-color }};font-size:7rem;">{{ article.author | slice: 0 }}</h1>
+                {% endif %}
                 <span style="text-transform:uppercase;font-weight:bold;font-size:{{ block.settings.font-size-profile }}rem;" class="caption-with-letter-spacing" itemprop="author" itemscope itemtype="http://schema.org/Person">
                   <span itemprop="name">{% if article.metafields.custom.author.value != null %}{{ article.metafields.custom.author.value }}{% else %}{{ article.author }}{% endif %}</span>
                 </span>                
