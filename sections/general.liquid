@@ -417,6 +417,12 @@
         {{ page.content }}
     
         {% if page.title == "Before you contact us..." %}
+          <style>
+            .field {
+              background: white !important;
+              margin-bottom: 15px;
+            }
+          </style>
           <div class="color-{{ section.settings.color_scheme }} gradient">
             <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
               {%- if section.settings.heading != blank -%}
@@ -471,7 +477,7 @@
                   </div>
                 </div>
                 <div class="field">
-                          <select style="padding: 15px;" class="field" name="contact[Topic]" id="ContactForm-phone">
+                          <select style="padding: 15px;margin: 0 !important;" class="field" name="contact[Topic]" id="ContactForm-phone">
                             <option value="---">Select Topic</option>
                             <option value="Customer Service">Customer Service</option>
                             <option value="Order">Order</option>
