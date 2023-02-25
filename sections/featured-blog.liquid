@@ -94,6 +94,17 @@
   li.blog__post {
     margin: 0 !important;
   }
+
+  @media screen and (max-width: 750px) {
+    li.blog__post {
+      max-width: 45%;
+      margin: 0 20px;
+    }
+    .blog-list ul {
+      justify-content: center;
+    }
+  }
+  
   @media screen and (min-width: 1000px) {
     li.blog__post {
       max-width: 23% !important;
