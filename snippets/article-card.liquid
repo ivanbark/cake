@@ -60,7 +60,7 @@
         {%- endif -%}
         <div class="card__content">       
           <div class="card__information">
-            <p style="width:100%;text-align:center;text-transform:uppercase;font-weight:bold;font-size:14px;">{{ {{ block.settings.article-1.tags }}</p>
+            <p style="width:100%;text-align:center;text-transform:uppercase;font-weight:bold;font-size:14px;">{{ {{ article.tags }}</p>
             <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
               <a href="{{ article.url }}" class="full-unstyled-link">
                 {{ article.title | escape }}
@@ -100,7 +100,7 @@
       </div>
       <div class="card__content">
         <div class="card__information">
-          <p style="width:100%;text-align:center;text-transform:uppercase;font-weight:bold;font-size:14px;">{{ {{ block.settings.article-1.tags }}</p>
+          <p style="width:100%;text-align:center;text-transform:uppercase;font-weight:bold;font-size:14px;">{{ {{ article.tags }}</p>
           <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
             <a href="{{ article.url }}" class="full-unstyled-link">
               {{ article.title | escape }}
