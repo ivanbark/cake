@@ -76,7 +76,7 @@
             {%- if block.settings.blog_show_author -%}
               <div style="width: 100%;">
                 {% if article.metafields.custom.author_image != null %}
-                  <img style="width:fit-content;color:white;margin: 40px auto 20px;width:100px;height:100px;border-radius:100%; src="{{ article.metafields.custom.author_image | img_url: width: 500 }}">
+                  <img style="width:fit-content;color:white;margin: 40px auto 20px;width:100px;height:100px;border-radius:100%; src="{{ article.metafields.custom.author_image.src | img_url: width: 500 }}">
                 {% else %}
                   <h1 style="width:fit-content;color:white;margin: 40px auto 20px;width:100px;height:100px;border-radius:100%;background-color:{{ block.settings.profile-bg-color }};font-size:7rem;">{{ article.author | slice: 0 }}</h1>
                 {% endif %}
