@@ -328,6 +328,7 @@
         "template--18040513626406__4221f84b-d953-4ced-b66d-0b02e0474f25-1677446499b4ff1151-1": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/yellow-corn-1356x2048.jpg",
             "padding_left": 60,
             "title": "Column",
             "subtitle": "Column",
@@ -343,6 +344,7 @@
         "template--18040513626406__4221f84b-d953-4ced-b66d-0b02e0474f25-1677446499b4ff1151-2": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/woman-pumping-pumpkin.jpg",
             "padding_left": 60,
             "title": "Column",
             "subtitle": "Column",
@@ -370,7 +372,7 @@
         "image_ratio": "adapt",
         "columns_desktop": 4,
         "column_alignment": "left",
-        "background_style": "primary",
+        "background_style": "none",
         "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
