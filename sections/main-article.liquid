@@ -100,11 +100,10 @@
 
           <div>
             <p>We'd recommend:</p>
-            <div style="">
+            <div style="display: flex;justify-content: center; margin: 0 -10px;">
               {% for product in article.metafields.custom.recommended_products.value.products %}
-                <div style="width: fit-content;">
-<!--                   <img style="width: 100%;" src="{{ product.featured_image | img_url: width: 1066 }} 1066w"> -->
-                  <img srcset="
+                <div style="width: 33%; margin: 0 10px;">
+                  <img style="width:100%;" srcset="
                   {%- if product.featured_media.width >= 165 -%}{{ product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
                   {%- if product.featured_media.width >= 360 -%}{{ product.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
                   {%- if product.featured_media.width >= 533 -%}{{ product.featured_media | image_url: width: 533 }} 533w,{%- endif -%}
@@ -112,7 +111,7 @@
                   {%- if product.featured_media.width >= 940 -%}{{ product.featured_media | image_url: width: 940 }} 940w,{%- endif -%}
                   {%- if product.featured_media.width >= 1066 -%}{{ product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
                   {{ product.featured_media | image_url }} {{ product.featured_media.width }}w">
-                  <p>{{ product.vendor }}</p>
+                  <p style="font-weight: bold;">{{ product.vendor }}</p>
                   <p>{{ product.title }}</p>
                   <a style="background:black;padding:10px 20px;border-radius:20px;color:white;text-decoration:none;" href="{{ product.url }}">Learn more</a>
                 </div>
