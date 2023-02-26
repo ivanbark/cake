@@ -53,13 +53,25 @@
             "text_font_size": 20,
             "block_spacing_top": 1.6
           }
+        },
+        "05489e88-0e5e-4b51-8131-aa6e4f876671": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As nursing bra specialists, we’re passionate about breastfeeding and the many benefits it offers to mum, bub and the environment. Breastfeeding, whilst natural doesn’t always come naturally. We understand that every woman’s experience is different & while perseverance is often required, it’s not always possible. That’s why it’s our mission to support, nurture and provide women with the confidence to navigate this often tricky but rewarding phase.<\/p>",
+            "text_color": "#000000",
+            "text_link": "",
+            "text_font_weight": "normal",
+            "text_font_size": 20,
+            "block_spacing_top": 1.6
+          }
         }
       },
       "block_order": [
         "template--18040513626406__ddc5b180-ffa8-4fb7-aace-5d64ba300ce4-167744531887272fa3-0",
         "template--18040513626406__ddc5b180-ffa8-4fb7-aace-5d64ba300ce4-167744531887272fa3-1",
         "bba04bd8-4be4-4811-8cdb-db81dbbfcfed",
-        "5cb60d38-5d3d-4fa3-acaa-64f069e85edb"
+        "5cb60d38-5d3d-4fa3-acaa-64f069e85edb",
+        "05489e88-0e5e-4b51-8131-aa6e4f876671"
       ],
       "settings": {
         "desktop_content_position": "center",
