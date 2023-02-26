@@ -324,11 +324,14 @@
   
 function plusDivs() {
   var i;
-  var items = document.getElementById("Slide-template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1");
+
+  var getTransformValue = document.getElementById("Slide-template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1");
   var style = window.getComputedStyle(items);
   var matrix = new WebKitCSSMatrix(style.transform);
 
   console.log(matrix.m41 + "Nieuwe waarde");
+
+  var items = document.getElementsByClassName("list-item-discover_our_ranges");
   
   for (i = 0; i < items.length; i++) {
     items[i].style.transform = "translate3d(-356px, 0px, 0px)";
