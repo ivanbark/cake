@@ -145,7 +145,7 @@
         "color_scheme": "accent-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
+        "padding_top": 300,
         "padding_bottom": 0,
         "column_size": "big"
       }
