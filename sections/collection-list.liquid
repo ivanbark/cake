@@ -321,6 +321,13 @@
 {% endschema %}
 
 <script>
+
+function getTranslateX() {
+  var style = window.getComputedStyle(myElement);
+  var matrix = new WebKitCSSMatrix(style.transform);
+  console.log('translateX: ', matrix.m41);
+}
+  
 function plusDivs() {
   var i;
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
