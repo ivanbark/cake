@@ -31,11 +31,23 @@
             "text_font_size": 20,
             "block_spacing_top": 1.6
           }
+        },
+        "bba04bd8-4be4-4811-8cdb-db81dbbfcfed": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>PROUDLY BY MUMS, FOR MUMS.<\/strong><\/em><\/p>",
+            "text_color": "#000000",
+            "text_link": "",
+            "text_font_weight": "normal",
+            "text_font_size": 10,
+            "block_spacing_top": 1.6
+          }
         }
       },
       "block_order": [
         "template--18040513626406__ddc5b180-ffa8-4fb7-aace-5d64ba300ce4-167744531887272fa3-0",
-        "template--18040513626406__ddc5b180-ffa8-4fb7-aace-5d64ba300ce4-167744531887272fa3-1"
+        "template--18040513626406__ddc5b180-ffa8-4fb7-aace-5d64ba300ce4-167744531887272fa3-1",
+        "bba04bd8-4be4-4811-8cdb-db81dbbfcfed"
       ],
       "settings": {
         "desktop_content_position": "center",
