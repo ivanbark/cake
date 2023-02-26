@@ -336,7 +336,7 @@ function plusDivs() {
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
   
   for (i = 0; i < items.length; i++) {
-    items[i].style.transform = "translate3d(-356px, 0px, 0px)";
+    items[i].style.transform = "translate3d(" + newMatrix + "px, 0px, 0px)";
   }
 }
 
@@ -346,14 +346,14 @@ function minDivs() {
   var style = window.getComputedStyle(getTransformValue);
   var matrix = new WebKitCSSMatrix(style.transform);
 
-  var newMatrix = matrix + 10;
+  var newMatrix = matrix - 356;
 
   console.log(matrix.m41 + " Nieuwe waarde" + newMatrix);
 
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
   
   for (i = 0; i < items.length; i++) {
-    items[i].style.transform = "translate3d(-356px, 0px, 0px)";
+    items[i].style.transform = "translate3d(" + newMatrix + "px, 0px, 0px)";
   }
 }
 </script>
