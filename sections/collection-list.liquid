@@ -322,6 +322,7 @@
 
 <script>
   var i;
+  var l;
   var getTransformValue = document.getElementById("Slide-template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1");
 
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
@@ -339,9 +340,10 @@ function plusDivs() {
   console.log("Matrix.m41 waarde: " + matrix.m41 + " newMatrix waarde: " + newMatrix.m41);
 
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
-  
-  for (i = 0; i < items.length; i++) {
-    items[i].style.transform = "translate3d(" + newMatrix + "px, 0px, 0px)";
+  for (l = 0; l < maxClicks; l++) {
+    for (i = 0; i < items.length; i++) {
+      items[i].style.transform = "translate3d(" + newMatrix + "px, 0px, 0px)";
+    }
   }
 }
 
@@ -356,9 +358,11 @@ function minDivs() {
  console.log("Matrix.m41 waarde: " + matrix.m41 + " newMatrix waarde: " + newMatrix.m41);
 
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
-  
-  for ( i = 0; i < items.length; i++) {
-    items[i].style.transform = "translate3d(" + newMatrix + "px, 0px, 0px)";
+
+  for ( l = 0; l < maxClicks; l++) {
+    for ( i = 0; i < items.length; i++) {
+      items[i].style.transform = "translate3d(" + newMatrix + "px, 0px, 0px)";
+    }
   }
 }
 </script>
