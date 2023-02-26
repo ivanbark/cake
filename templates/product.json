@@ -142,6 +142,7 @@
         "image-with-text-1"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/mother-with-baby-2.jpg",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -182,7 +183,7 @@
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "show_vendor": true,
-        "show_rating": true,
+        "show_rating": false,
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 28
