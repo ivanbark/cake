@@ -328,8 +328,8 @@ function plusDivs() {
   var style = window.getComputedStyle(items);
   var matrix = new WebKitCSSMatrix(style.transform);
 
-  var newMatrix = matrix + 350;
-  console.log(newMatrix + "Nieuwe waarde");
+  
+  console.log(matrix.m41 + "Nieuwe waarde");
   
   for (i = 0; i < items.length; i++) {
     items[i].style.transform = "translate3d(-356px, 0px, 0px)";
@@ -342,7 +342,7 @@ function minDivs() {
    var style = window.getComputedStyle(items);
   var matrix = new WebKitCSSMatrix(style.transform);
 
-  var newMatrix = matrix - 350;
+  
   console.log(newMatrix + "Nieuwe waarde");
   
    for (i = 0; i < items.length; i++) {
