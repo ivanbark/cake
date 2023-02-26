@@ -114,7 +114,7 @@
           {% if article.metafields.custom.recommended_products.value != null %}
             <divstyle="margin: 70px 0;">
               <p style="font-weight:bold;">We'd recommend:</p>
-              <div class="recommended_products_metafield" style="display: flex;justify-content: center; margin: 0 -10px;flex-wrap:wrap;">
+              <div class="recommended_products_metafield" style="display: flex;justify-content: center; margin: 0 -10px;">
                 {% for product in article.metafields.custom.recommended_products.value.products %}
                   <div class="metafield_item" style="width: 33%; margin: 0 10px; display: flex; flex-direction: column; justify-content: space-between;min-width:200px;">
                     <div style="margin: 0 0 20px 0;">
