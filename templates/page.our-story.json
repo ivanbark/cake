@@ -147,11 +147,40 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "4d9c271a-04f8-4aa3-9290-ed61aac666cb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18040513626406__4d9c271a-04f8-4aa3-9290-ed61aac666cb-167744609160a33e25-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>As mothers, we all want to be the best version of ourselves. We adopt the best of what we know and have learnt from others. It’s important to understand that we will all make mistakes because no mother is perfect. Motherhood is an exciting journey through the unknown. Ride the wave and see where it takes you.”<\/strong><\/p><p><strong>TRACEY MONTFORD<\/strong> • FOUNDER & MUM OF TWO<\/p>",
+            "text_color": "#000000",
+            "text_link": "",
+            "text_font_weight": "normal",
+            "text_font_size": 10,
+            "block_spacing_top": 1.6
+          }
+        }
+      },
+      "block_order": [
+        "template--18040513626406__4d9c271a-04f8-4aa3-9290-ed61aac666cb-167744609160a33e25-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "background_color": "#ffffff",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "ddc5b180-ffa8-4fb7-aace-5d64ba300ce4",
-    "0364f9fd-6aa7-4396-956b-1bf159d199f2"
+    "0364f9fd-6aa7-4396-956b-1bf159d199f2",
+    "4d9c271a-04f8-4aa3-9290-ed61aac666cb"
   ]
 }
