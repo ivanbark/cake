@@ -327,7 +327,6 @@
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
   var maxClicks = items.length - 4;
   var clicks = 0;
-  console.log(maxClicks);
   
 function plusDivs() {
 
@@ -336,8 +335,6 @@ function plusDivs() {
   var matrix = new WebKitCSSMatrix(style.transform);
 
   var newMatrix = matrix.m41 - width;
-
-  console.log("Matrix.m41 waarde: " + matrix.m41 + " newMatrix waarde: " + newMatrix.m41);
 
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
 
@@ -356,8 +353,6 @@ function minDivs() {
   var matrix = new WebKitCSSMatrix(style.transform);
 
   var newMatrix = matrix.m41 + width;
-
- console.log("Matrix.m41 waarde: " + matrix.m41 + " newMatrix waarde: " + newMatrix.m41);
 
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
 
