@@ -340,9 +340,12 @@ function plusDivs() {
   console.log("Matrix.m41 waarde: " + matrix.m41 + " newMatrix waarde: " + newMatrix.m41);
 
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
-  
-  for (i = 0; i < items.length; i++) {
-    items[i].style.transform = "translate3d(" + newMatrix + "px, 0px, 0px)";
+
+  if(clicks < maxClicks){
+    for (i = 0; i < items.length; i++) {
+      items[i].style.transform = "translate3d(" + newMatrix + "px, 0px, 0px)";
+    }
+    clicks--;
   }
 }
 
@@ -358,11 +361,11 @@ function minDivs() {
 
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
 
-  if(maxClicks < 3){
+  if(clicks < maxClicks){
   for ( i = 0; i < items.length; i++) {
       items[i].style.transform = "translate3d(" + newMatrix + "px, 0px, 0px)";
     }
-     maxClicks++;
+     clicks++;
   }
 }
 </script>
