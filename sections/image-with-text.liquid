@@ -23,6 +23,9 @@
   {% if section.settings.show_multiple_img %}
     .image_container {
       display: flex !important;
+      background: {{ section.settings.text_side_background_color }};
+      justify-content: center;
+      align-items: center;
     }
     .image_container img {
       width: 30% !important;
@@ -30,6 +33,7 @@
       margin-right: 15px !important;
       height: auto !important;
     }
+    
   {% endif %}
 </style>
 
