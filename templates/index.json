@@ -752,6 +752,21 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "cf6bd949-47e0-43e5-9be5-302512180cf9": {
+          "type": "column",
+          "settings": {
+            "padding_left": 60,
+            "title": "",
+            "subtitle": "",
+            "title_font_weight": "normal",
+            "title_font_size": 10,
+            "text": "",
+            "description_font_weight": "normal",
+            "description_font_size": 10,
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -761,7 +776,8 @@
         "3516bc41-3565-4acd-a32e-9095f893e285",
         "05112c55-bf4c-4165-a9e3-b6bd54fb5432",
         "729f0c78-39a9-4600-993e-7baf784a172d",
-        "84738ecf-0f9a-45e7-b36e-bf87a194a00f"
+        "84738ecf-0f9a-45e7-b36e-bf87a194a00f",
+        "cf6bd949-47e0-43e5-9be5-302512180cf9"
       ],
       "settings": {
         "border": false,
