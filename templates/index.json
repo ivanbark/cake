@@ -765,7 +765,7 @@
       ],
       "settings": {
         "border": false,
-        "desktop_slider": true,
+        "desktop_slider": false,
         "title": "",
         "heading_size": "h2",
         "image_width": "full",
