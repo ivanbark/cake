@@ -124,7 +124,6 @@
             "image": "shopify:\/\/shop_images\/cake-maternity-croissant-nursing-bra.jpg",
             "padding_left": 0,
             "title": "Racerback design with 6 hook & eye options.",
-            "subtitle": "Column",
             "title_font_weight": "normal",
             "title_font_size": 24,
             "text": "<p>Providing support and security while offering room to grow, expanding or contracting up to half a size.<\/p>",
@@ -140,7 +139,6 @@
             "image": "shopify:\/\/shop_images\/cake-maternity-zest-lemon-nursing-bra.jpg",
             "padding_left": 0,
             "title": "Racerback design with 6 hook & eye options.",
-            "subtitle": "Column",
             "title_font_weight": "normal",
             "title_font_size": 24,
             "text": "<p>Providing support and security while offering room to grow, expanding or contracting up to half a size.<\/p>",
@@ -156,7 +154,6 @@
             "image": "shopify:\/\/shop_images\/truffles-nursing-bra.jpg",
             "padding_left": 0,
             "title": "Racerback design with 6 hook & eye options.",
-            "subtitle": "Column",
             "title_font_weight": "normal",
             "title_font_size": 24,
             "text": "<p>Providing support and security while offering room to grow, expanding or contracting up to half a size.<\/p>",
@@ -171,6 +168,9 @@
         "template--17629011214630__8ca61d3a-dcaa-4633-9313-46c10ea993db-1677441678d4086f2f-0",
         "template--17629011214630__8ca61d3a-dcaa-4633-9313-46c10ea993db-1677441678d4086f2f-1",
         "template--17629011214630__8ca61d3a-dcaa-4633-9313-46c10ea993db-1677441678d4086f2f-2"
+      ],
+      "custom_css": [
+        ".multicolumn-list__item {max-width: 300px; }"
       ],
       "settings": {
         "desktop_slider": false,
