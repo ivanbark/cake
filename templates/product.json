@@ -176,6 +176,7 @@
 
       ],
       "settings": {
+        "border": true,
         "desktop_slider": false,
         "title": "",
         "heading_size": "h1",
