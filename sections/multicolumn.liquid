@@ -67,9 +67,11 @@
     <slider-component class="slider-mobile-gutter">
       <style>
         @media screen and (min-width: 990px) {
-          .slider-mobile-gutter ul {
-            justify-content: {% if section.settings.column_size == "small" %}center{% else %}space-around{% endif %}} !important;
-          }
+          {% if section.settings.desktop_slider == false %} 
+            .slider-mobile-gutter ul {
+              justify-content: {% if section.settings.column_size == "small" %}center{% else %}space-around{% endif %}} !important;
+            }
+          {% endif %}
           {% if section.settings.column_size == "small" %}
             .slider-list-item.multicolumn-list__item {
               margin: 0 15px;
