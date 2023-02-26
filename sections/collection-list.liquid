@@ -329,7 +329,9 @@ function plusDivs() {
   var style = window.getComputedStyle(items);
   var matrix = new WebKitCSSMatrix(style.transform);
 
-  console.log(matrix.m41 + "Nieuwe waarde");
+  var newMatrix = matrix + 10;
+
+  console.log(matrix.m41 + " Nieuwe waarde" + newMatrix);
 
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
   
