@@ -24,8 +24,8 @@
         "template--18040513626406__ddc5b180-ffa8-4fb7-aace-5d64ba300ce4-167744531887272fa3-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
-            "text_color": "#ffffff",
+            "text": "<p><strong>Our purpose is to empower women as they mindfully navigate the world of motherhood, providing them with the products and information necessary to sustainably support their breastfeeding journey.<\/strong><\/p>",
+            "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
             "text_font_size": 10,
