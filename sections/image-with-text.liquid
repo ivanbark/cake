@@ -24,14 +24,14 @@
     .image_container {
       display: flex !important;
       background: {{ section.settings.text_side_background_color }};
-      justify-content: center;
       align-items: center;
+      overflow-x: hidden !important;
     }
     .image_container img {
-      width: 30% !important;
+      max-width: 450px !important;
       position: relative !important;
-      margin-right: 15px !important;
-      height: auto !important;
+      margin-right: 20px !important;
+      max-height: 550px !important;
     }
     
   {% endif %}
