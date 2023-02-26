@@ -113,8 +113,8 @@
         "template--18040513626406__0364f9fd-6aa7-4396-956b-1bf159d199f2-167744587565f7d502-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
-            "heading_color": "#ffffff",
+            "heading": "OUR STORY",
+            "heading_color": "#000000",
             "heading_size": "h1",
             "caption_font_weight": "normal"
           }
@@ -127,23 +127,11 @@
             "text_color": "#ffffff",
             "text_font_weight": "normal"
           }
-        },
-        "template--18040513626406__0364f9fd-6aa7-4396-956b-1bf159d199f2-167744587565f7d502-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_text_color": "#ffffff",
-            "button_background_color": "#ffffff",
-            "button_font_weight": "normal",
-            "button_font_size": 10
-          }
         }
       },
       "block_order": [
         "template--18040513626406__0364f9fd-6aa7-4396-956b-1bf159d199f2-167744587565f7d502-0",
-        "template--18040513626406__0364f9fd-6aa7-4396-956b-1bf159d199f2-167744587565f7d502-1",
-        "template--18040513626406__0364f9fd-6aa7-4396-956b-1bf159d199f2-167744587565f7d502-2"
+        "template--18040513626406__0364f9fd-6aa7-4396-956b-1bf159d199f2-167744587565f7d502-1"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/about-author.jpg",
