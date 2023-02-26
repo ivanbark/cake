@@ -326,10 +326,11 @@ function plusDivs() {
   var i;
   
   var getTransformValue = document.getElementById("Slide-template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1");
+  let width = getTransformValue.offsetWidth;
   var style = window.getComputedStyle(getTransformValue);
   var matrix = new WebKitCSSMatrix(style.transform);
 
-  var newMatrix = matrix.m41 - 300;
+  var newMatrix = matrix.m41 - width;
 
   console.log("Matrix.m41 waarde: " + matrix.m41 + " newMatrix waarde: " + newMatrix.m41);
 
@@ -344,10 +345,11 @@ function minDivs() {
   var i;
   
   var getTransformValue = document.getElementById("Slide-template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1");
+  let width = getTransformValue.offsetWidth;
   var style = window.getComputedStyle(getTransformValue);
   var matrix = new WebKitCSSMatrix(style.transform);
 
-  var newMatrix = matrix.m41 + 300;
+  var newMatrix = matrix.m41 + width;
 
  console.log("Matrix.m41 waarde: " + matrix.m41 + " newMatrix waarde: " + newMatrix.m41);
 
