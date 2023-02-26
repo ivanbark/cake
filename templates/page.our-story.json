@@ -226,11 +226,23 @@
             "text_font_size": 22,
             "block_spacing_top": 1.6
           }
+        },
+        "bd5cf837-640c-41f7-bbea-5a6e92183685": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Find out more<\/p>",
+            "text_color": "#ffffff",
+            "text_link": "",
+            "text_font_weight": "normal",
+            "text_font_size": 10,
+            "block_spacing_top": 1.6
+          }
         }
       },
       "block_order": [
         "template--18040513626406__a430c8f4-a485-481e-8972-6acc6fccd6fa-167744609160a33e25-0",
-        "template--18040513626406__a430c8f4-a485-481e-8972-6acc6fccd6fa-167744609160a33e25-1"
+        "template--18040513626406__a430c8f4-a485-481e-8972-6acc6fccd6fa-167744609160a33e25-1",
+        "bd5cf837-640c-41f7-bbea-5a6e92183685"
       ],
       "settings": {
         "desktop_content_position": "center",
