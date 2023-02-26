@@ -51,6 +51,18 @@
               </p>
             {%- when 'text' -%}
               <div class="rich-text__text rte block-link" {{ block.shopify_attributes }}>
+                {% if block.settings.text_link != empty %}
+                <style>
+                    .block-link {
+                      margin-top: 0 !important;
+                    }
+                    .block-link p {
+                      margin-top: {{ block.settings.block_spacing_top }}rem;
+                    }
+                </style>
+                {{ block.settings.text }}
+                {% else %}
+                
                 <a style="font-weight:{{ block.settings.text_font_weight }}; font-size:{{ block.settings.text_font_size }}px; color:{{ block.settings.text_color }};" href="{{ block.settings.text_url }}">
                   <style>
                     .block-link {
@@ -62,6 +74,7 @@
                   </style>
                   {{ block.settings.text }}
                 </a>
+                  {% endif %}
               </div>
             {%- when 'button' -%}
               <div class="rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
