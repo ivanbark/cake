@@ -433,51 +433,7 @@
         "1d90c05b-ba02-4950-b28c-e5cff079dd15": {
           "type": "column",
           "settings": {
-            "padding_left": 60,
-            "title": "",
-            "subtitle": "",
-            "title_font_weight": "normal",
-            "title_font_size": 10,
-            "text": "",
-            "description_font_weight": "normal",
-            "description_font_size": 10,
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "abb222e8-1dd8-423b-b938-72483ec56733": {
-          "type": "column",
-          "settings": {
-            "padding_left": 60,
-            "title": "",
-            "subtitle": "",
-            "title_font_weight": "normal",
-            "title_font_size": 10,
-            "text": "",
-            "description_font_weight": "normal",
-            "description_font_size": 10,
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "86c6b26f-8117-4578-879e-108cfb95d155": {
-          "type": "column",
-          "settings": {
-            "padding_left": 60,
-            "title": "",
-            "subtitle": "",
-            "title_font_weight": "normal",
-            "title_font_size": 10,
-            "text": "",
-            "description_font_weight": "normal",
-            "description_font_size": 10,
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "b9e65fb8-a4d4-4c28-abe8-b0557a190974": {
-          "type": "column",
-          "settings": {
+            "image": "shopify:\/\/shop_images\/ptpa-award.png",
             "padding_left": 60,
             "title": "",
             "subtitle": "",
@@ -500,10 +456,7 @@
         "8c89fd60-b127-4937-b8d3-1df472ef23ea",
         "1868266d-85ed-43ae-983f-ff0a20d9c194",
         "feed303c-b97d-4943-a43e-c02fefb36fec",
-        "1d90c05b-ba02-4950-b28c-e5cff079dd15",
-        "abb222e8-1dd8-423b-b938-72483ec56733",
-        "86c6b26f-8117-4578-879e-108cfb95d155",
-        "b9e65fb8-a4d4-4c28-abe8-b0557a190974"
+        "1d90c05b-ba02-4950-b28c-e5cff079dd15"
       ],
       "settings": {
         "border": false,
