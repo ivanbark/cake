@@ -2,6 +2,11 @@
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
+.pclass {
+  font-family: "GroteskPro-SemiBold";
+  src: url("{{ '[GroteskPro-SemiBold]' | asset_url }}") format("[tff]");
+}
+
 {%- style -%}
   html, body {
    scroll-behavior: smooth !important; 
@@ -116,7 +121,7 @@
                 {%- endif -%}
                 {%- if block.settings.title != blank -%}
                 {%- if block.settings.title == "Encouraging breast health." or block.settings.title == "Mama-friendly returns." or block.settings.title == "Support for every mama." -%}
-                  <h3 style="padding-left:{{ block.settings.padding_left }}px; margin: 0; font-size:{{ block.settings.title_font_size }}px; font-weight:{{ block.settings.title_font_weight }};">{{ block.settings.title | escape }}</h3>
+                  <p style="padding-left:{{ block.settings.padding_left }}px; margin: 0; font-size:{{ block.settings.title_font_size }}px; font-weight:{{ block.settings.title_font_weight }};">{{ block.settings.title | escape }}</p>
                 {% else %}
                    <h3>{{ block.settings.title | escape }}</h3>
                 {%- endif -%}
@@ -390,22 +395,6 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    },
-    {
-      "type": "select",
-      "id": "style",
-      "options": [
-        {
-          "value": "feature",
-          "label": "Feature"
-        },
-        {
-          "value": "normal",
-          "label": "Normal"
-        }
-      ],
-      "default": "normal",
-      "label": "Style"
     }
   ],
   "blocks": [
@@ -433,12 +422,6 @@
           "id": "title",
           "default": "Column",
           "label": "t:sections.multicolumn.blocks.column.settings.title.label"
-        },
-        {
-          "type": "text",
-          "id": "subtitle",
-          "default": "Column",
-          "label": "Sub heading"
         },
         {
           "type": "select",
