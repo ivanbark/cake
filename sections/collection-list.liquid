@@ -329,7 +329,7 @@ function plusDivs() {
   var style = window.getComputedStyle(getTransformValue);
   var matrix = new WebKitCSSMatrix(style.transform);
 
-  var newMatrix = matrix.m41 + 356;
+  var newMatrix = matrix.m41 - 356;
 
   console.log("Matrix.m41 waarde: " + matrix.m41 + " newMatrix waarde: " + newMatrix.m41);
 
@@ -347,7 +347,7 @@ function minDivs() {
   var style = window.getComputedStyle(getTransformValue);
   var matrix = new WebKitCSSMatrix(style.transform);
 
-  var newMatrix = matrix.m41 - 356;
+  var newMatrix = matrix.m41 + 356;
 
  console.log("Matrix.m41 waarde: " + matrix.m41 + " newMatrix waarde: " + newMatrix.m41);
 
