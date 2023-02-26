@@ -224,18 +224,18 @@
             "text_link": "",
             "text_font_weight": "normal",
             "text_font_size": 22,
-            "block_spacing_top": 1.6
+            "block_spacing_top": 0
           }
         },
         "bd5cf837-640c-41f7-bbea-5a6e92183685": {
           "type": "text",
           "settings": {
             "text": "<p>Find out more<\/p>",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
-            "text_font_size": 10,
-            "block_spacing_top": 1.6
+            "text_font_size": 14,
+            "block_spacing_top": 0
           }
         }
       },
