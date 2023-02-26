@@ -124,11 +124,12 @@
             "image": "shopify:\/\/shop_images\/cake-maternity-croissant-nursing-bra.jpg",
             "padding_left": 0,
             "title": "Racerback design with 6 hook & eye options.",
+            "subtitle": "Column",
             "title_font_weight": "normal",
-            "title_font_size": 10,
+            "title_font_size": 24,
             "text": "<p>Providing support and security while offering room to grow, expanding or contracting up to half a size.<\/p>",
             "description_font_weight": "normal",
-            "description_font_size": 10,
+            "description_font_size": 16,
             "link_label": "",
             "link": ""
           }
@@ -139,11 +140,12 @@
             "image": "shopify:\/\/shop_images\/cake-maternity-zest-lemon-nursing-bra.jpg",
             "padding_left": 0,
             "title": "Racerback design with 6 hook & eye options.",
+            "subtitle": "Column",
             "title_font_weight": "normal",
-            "title_font_size": 10,
+            "title_font_size": 24,
             "text": "<p>Providing support and security while offering room to grow, expanding or contracting up to half a size.<\/p>",
             "description_font_weight": "normal",
-            "description_font_size": 10,
+            "description_font_size": 16,
             "link_label": "",
             "link": ""
           }
@@ -154,11 +156,12 @@
             "image": "shopify:\/\/shop_images\/truffles-nursing-bra.jpg",
             "padding_left": 0,
             "title": "Racerback design with 6 hook & eye options.",
+            "subtitle": "Column",
             "title_font_weight": "normal",
-            "title_font_size": 10,
+            "title_font_size": 24,
             "text": "<p>Providing support and security while offering room to grow, expanding or contracting up to half a size.<\/p>",
             "description_font_weight": "normal",
-            "description_font_size": 10,
+            "description_font_size": 16,
             "link_label": "",
             "link": ""
           }
