@@ -325,7 +325,7 @@
 function plusDivs() {
   var i;
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
-  var style = window.getComputedStyle(element);
+  var style = window.getComputedStyle(items);
   var matrix = new WebKitCSSMatrix(style.transform);
 
   
@@ -339,7 +339,7 @@ function plusDivs() {
 function minDivs() {
   var i;
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
-   var style = window.getComputedStyle(element);
+   var style = window.getComputedStyle(items);
   var matrix = new WebKitCSSMatrix(style.transform);
 
   
