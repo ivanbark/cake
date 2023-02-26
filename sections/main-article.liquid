@@ -112,7 +112,7 @@
                     {%- if product.featured_media.width >= 940 -%}{{ product.featured_media | image_url: width: 940 }} 940w,{%- endif -%}
                     {%- if product.featured_media.width >= 1066 -%}{{ product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
                     {{ product.featured_media | image_url }} {{ product.featured_media.width }}w">
-                    <p style="font-weight: bold;margin: 0 0 10px 0;text-transform:uppercase;font-size:12px;">{{ product.vendor }}</p>
+                    <p style="font-weight: bold;margin: 0;text-transform:uppercase;font-size:12px;">{{ product.vendor }}</p>
                     <p style="margin: 0;font-size:16px;">{{ product.title }}</p>
                   </div>
                   <a style="background:black;padding:5px 0;border-radius:5px;color:white;text-decoration:none;width:100%;text-align:center;" href="{{ product.url }}">Learn more</a>
