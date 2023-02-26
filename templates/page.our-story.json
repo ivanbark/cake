@@ -469,13 +469,55 @@
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
-        "align_center": true,
         "button_link": "",
         "color_scheme": "accent-1",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 0,
         "padding_bottom": 0,
+        "column_size": "big"
+      }
+    },
+    "1fa5aada-4703-4171-936e-42b4ac7592b4": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18040513626406__1fa5aada-4703-4171-936e-42b4ac7592b4-167744843129920def-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/about-author.jpg",
+            "padding_left": 60,
+            "title": "",
+            "subtitle": "",
+            "title_font_weight": "normal",
+            "title_font_size": 10,
+            "text": "",
+            "description_font_weight": "normal",
+            "description_font_size": 10,
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18040513626406__1fa5aada-4703-4171-936e-42b4ac7592b4-167744843129920def-0"
+      ],
+      "settings": {
+        "border": false,
+        "desktop_slider": false,
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 1,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
         "column_size": "big"
       }
     }
@@ -488,6 +530,7 @@
     "8a0ad626-bf0c-46ea-963e-deefb8d2cc2e",
     "a430c8f4-a485-481e-8972-6acc6fccd6fa",
     "6a1e1f90-8d8e-4b10-beff-d86ccebc2b12",
-    "4221f84b-d953-4ced-b66d-0b02e0474f25"
+    "4221f84b-d953-4ced-b66d-0b02e0474f25",
+    "1fa5aada-4703-4171-936e-42b4ac7592b4"
   ]
 }
