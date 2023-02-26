@@ -531,12 +531,6 @@
                       </summary>
                       <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
                           <ul style="max-width: 350px; display: block !important;" class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
-                            <li style="font-size:{{ section.settings.submenu_title_rewards_size }}px"> 
-                              {{ section.settings.submenu_title_rewards }}
-                            </li>
-                            <li> 
-                              {{ section.settings.submenu_text_rewards }}
-                            </li>
                             {%- for childlink in link.links -%}
                                {%- if childlink.links == blank -%}
                                  <li style="height: 100%;">
@@ -559,6 +553,16 @@
                                {% endif %}
                              {% endfor %}
                           </ul>
+                           {%- if link.title == "Rewards" -%}
+                          <ul style="max-width: 350px; display: block !important;" class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
+                            <li style="font-size:{{ section.settings.submenu_title_rewards_size }}px"> 
+                              {{ section.settings.submenu_title_rewards }}
+                            </li>
+                            <li> 
+                              {{ section.settings.submenu_text_rewards }}
+                            </li>
+                          </ul>
+                        {% endif %} 
                           <div class="submenu_image_container">
                           {%- if link.title == "Shop" -%}
                             {%- if section.settings.submenu_first_image != null -%}
