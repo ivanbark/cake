@@ -76,6 +76,7 @@
             "image": "shopify:\/\/shop_images\/Icon-banner-1-breast-health.webp",
             "padding_left": 60,
             "title": "Encouraging breast health.",
+            "subtitle": "",
             "title_font_weight": "bold",
             "title_font_size": 16,
             "text": "<p>For relief through change<\/p>",
@@ -91,6 +92,7 @@
             "image": "shopify:\/\/shop_images\/Icon-banner-2-support.webp",
             "padding_left": 60,
             "title": "Support for every mama.",
+            "subtitle": "",
             "title_font_weight": "bold",
             "title_font_size": 16,
             "text": "<p>Fitting 6 — 22, A — JJ cup.<\/p>",
@@ -106,6 +108,7 @@
             "image": "shopify:\/\/shop_images\/Icon-banner-3-returns.webp",
             "padding_left": 60,
             "title": "Mama-friendly returns.",
+            "subtitle": "",
             "title_font_weight": "bold",
             "title_font_size": 16,
             "text": "<p>45-day returns for busy mamas.<\/p>",
@@ -122,6 +125,7 @@
         "template--17629010854182__82a23ee6-c19a-4ea7-b39b-462089d3ee3a-1674728937f24d0bda-2"
       ],
       "settings": {
+        "border": false,
         "desktop_slider": false,
         "title": "",
         "heading_size": "h2",
@@ -136,7 +140,8 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "column_size": "big"
       }
     },
     "a319854e-9811-442a-98fc-1e5fcf8e5c76": {
@@ -642,6 +647,7 @@
             "image": "shopify:\/\/shop_images\/Logo-Well_Good.png",
             "padding_left": 0,
             "title": "",
+            "subtitle": "Column",
             "title_font_weight": "normal",
             "title_font_size": 10,
             "text": "<p>“If you need a workhorse to keep your boobs in place and feed the BB, this is it.” (<a href=\"\/products\/zest-nursing-sports-bra-last-chance-grey\" title=\"Zest Nursing Sports Bra (Last Chance) - Grey\">Zest Sports Nursing Bra<\/a>).<\/p>",
@@ -657,6 +663,7 @@
             "image": "shopify:\/\/shop_images\/Logo-Well_Good.png",
             "padding_left": 0,
             "title": "",
+            "subtitle": "Column",
             "title_font_weight": "normal",
             "title_font_size": 10,
             "text": "<p>“If you need a workhorse to keep your boobs in place and feed the BB, this is it.” (<a href=\"\/products\/zest-nursing-sports-bra-last-chance-grey\" title=\"Zest Nursing Sports Bra (Last Chance) - Grey\">Zest Sports Nursing Bra<\/a>).<\/p>",
@@ -672,6 +679,7 @@
             "image": "shopify:\/\/shop_images\/Logo-Well_Good.png",
             "padding_left": 0,
             "title": "",
+            "subtitle": "Column",
             "title_font_weight": "normal",
             "title_font_size": 10,
             "text": "<p>“If you need a workhorse to keep your boobs in place and feed the BB, this is it.” (<a href=\"\/products\/zest-nursing-sports-bra-last-chance-grey\" title=\"Zest Nursing Sports Bra (Last Chance) - Grey\">Zest Sports Nursing Bra<\/a>).<\/p>",
@@ -687,6 +695,7 @@
             "image": "shopify:\/\/shop_images\/Logo-Well_Good.png",
             "padding_left": 0,
             "title": "",
+            "subtitle": "Column",
             "title_font_weight": "normal",
             "title_font_size": 10,
             "text": "<p>“If you need a workhorse to keep your boobs in place and feed the BB, this is it.” (<a href=\"\/products\/zest-nursing-sports-bra-last-chance-grey\" title=\"Zest Nursing Sports Bra (Last Chance) - Grey\">Zest Sports Nursing Bra<\/a>).<\/p>",
@@ -702,6 +711,7 @@
             "image": "shopify:\/\/shop_images\/Logo-Well_Good.png",
             "padding_left": 0,
             "title": "",
+            "subtitle": "Column",
             "title_font_weight": "normal",
             "title_font_size": 10,
             "text": "<p>“If you need a workhorse to keep your boobs in place and feed the BB, this is it.” (<a href=\"\/products\/zest-nursing-sports-bra-last-chance-grey\" title=\"Zest Nursing Sports Bra (Last Chance) - Grey\">Zest Sports Nursing Bra<\/a>).<\/p>",
@@ -717,6 +727,7 @@
             "image": "shopify:\/\/shop_images\/Logo-Well_Good.png",
             "padding_left": 0,
             "title": "",
+            "subtitle": "Column",
             "title_font_weight": "normal",
             "title_font_size": 10,
             "text": "<p>“If you need a workhorse to keep your boobs in place and feed the BB, this is it.” (<a href=\"\/products\/zest-nursing-sports-bra-last-chance-grey\" title=\"Zest Nursing Sports Bra (Last Chance) - Grey\">Zest Sports Nursing Bra<\/a>).<\/p>",
@@ -732,6 +743,7 @@
             "image": "shopify:\/\/shop_images\/Logo-Well_Good.png",
             "padding_left": 0,
             "title": "",
+            "subtitle": "Column",
             "title_font_weight": "normal",
             "title_font_size": 10,
             "text": "<p>“If you need a workhorse to keep your boobs in place and feed the BB, this is it.” (<a href=\"\/products\/zest-nursing-sports-bra-last-chance-grey\" title=\"Zest Nursing Sports Bra (Last Chance) - Grey\">Zest Sports Nursing Bra<\/a>).<\/p>",
@@ -752,6 +764,7 @@
         "84738ecf-0f9a-45e7-b36e-bf87a194a00f"
       ],
       "settings": {
+        "border": false,
         "desktop_slider": true,
         "title": "",
         "heading_size": "h2",
@@ -766,7 +779,8 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "column_size": "big"
       }
     }
   },
