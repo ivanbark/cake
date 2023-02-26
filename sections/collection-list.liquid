@@ -12,6 +12,7 @@
     border: none;
     position: absolute;
     z-index: 1;
+    height: 100%;
   }
   
   .section-{{ section.id }}-padding {
@@ -55,7 +56,7 @@
     {%- endunless -%}
   
     <slider-component class="slider-mobile-gutter">
-       <button style="height: 100%;" class="button_switch switch_left" onclick="minDivs()">&#10094;</button>
+       <button style="" class="button_switch switch_left" onclick="minDivs()">&#10094;</button>
       <ul style="padding-bottom: 15px; overflow: overlay; flex-flow:nowrap; overflow-x:hidden; overflow-y:hidden;" class="collection-list-scrollbar collection-list contains-card contains-card--collection{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down{% if section.settings.swipe_on_mobile %} slider slider--tablet grid--peek{% endif %} collection-list--{{ section.blocks.size }}-items"
         id="Slider-{{ section.id }}"
         role="list"
