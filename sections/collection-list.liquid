@@ -329,6 +329,7 @@ function plusDivs() {
   var matrix = new WebKitCSSMatrix(style.transform);
 
   var newMatrix = matrix + 350;
+  console.log(newMatrix + "Nieuwe waarde");
   
   for (i = 0; i < items.length; i++) {
     items[i].style.transform = "translate3d(-356px, 0px, 0px)";
@@ -338,8 +339,11 @@ function plusDivs() {
 function minDivs() {
   var i;
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
-  var style = window.getComputedStyle(items);
+   var style = window.getComputedStyle(items);
   var matrix = new WebKitCSSMatrix(style.transform);
+
+  var newMatrix = matrix - 350;
+  console.log(newMatrix + "Nieuwe waarde");
   
    for (i = 0; i < items.length; i++) {
     items[i].style.transform = "translate3d(356px, 0px, 0px)";
