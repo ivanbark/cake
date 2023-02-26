@@ -76,7 +76,7 @@
         {% else %}
           @media screen and (min-width: 990px) {
               .slider-mobile-gutter ul {
-                justify-content: {% if section.settings.column_size == "small" %}center{% elsif section.settings.desktop_slider %}unset{% else %}space-around{% endif %} !important;
+                justify-content: {% if section.settings.column_size == "small" %}center{% else %}space-around{% endif %} !important;
               }
             {% if section.settings.column_size == "small" %}
               .slider-list-item.multicolumn-list__item {
