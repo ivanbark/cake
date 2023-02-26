@@ -204,6 +204,43 @@
         "show_text_below": true,
         "button_font_weight": "normal"
       }
+    },
+    "a430c8f4-a485-481e-8972-6acc6fccd6fa": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18040513626406__a430c8f4-a485-481e-8972-6acc6fccd6fa-167744609160a33e25-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>OUR PHILOSOPHY + BELIEFS<\/p>",
+            "heading_color": "#000000",
+            "heading_size": "h2"
+          }
+        },
+        "template--18040513626406__a430c8f4-a485-481e-8972-6acc6fccd6fa-167744609160a33e25-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text_color": "#ffffff",
+            "text_link": "",
+            "text_font_weight": "normal",
+            "text_font_size": 10,
+            "block_spacing_top": 1.6
+          }
+        }
+      },
+      "block_order": [
+        "template--18040513626406__a430c8f4-a485-481e-8972-6acc6fccd6fa-167744609160a33e25-0",
+        "template--18040513626406__a430c8f4-a485-481e-8972-6acc6fccd6fa-167744609160a33e25-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "background_color": "#ffffff",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -211,6 +248,7 @@
     "ddc5b180-ffa8-4fb7-aace-5d64ba300ce4",
     "0364f9fd-6aa7-4396-956b-1bf159d199f2",
     "4d9c271a-04f8-4aa3-9290-ed61aac666cb",
-    "8a0ad626-bf0c-46ea-963e-deefb8d2cc2e"
+    "8a0ad626-bf0c-46ea-963e-deefb8d2cc2e",
+    "a430c8f4-a485-481e-8972-6acc6fccd6fa"
   ]
 }
