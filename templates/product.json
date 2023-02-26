@@ -15,6 +15,11 @@
             "text_style": "uppercase"
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -36,11 +41,6 @@
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
           }
         },
         "collapsible-row-0": {
@@ -89,11 +89,11 @@
       "block_order": [
         "title",
         "vendor",
+        "description",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
@@ -113,60 +113,6 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column-0": {
-          "type": "column",
-          "settings": {
-            "padding_left": 60,
-            "title": "Free Shipping",
-            "title_font_weight": "normal",
-            "title_font_size": 10,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "description_font_weight": "normal",
-            "description_font_size": 10,
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column-1": {
-          "type": "column",
-          "settings": {
-            "padding_left": 60,
-            "title": "Hassle-Free Exchanges",
-            "title_font_weight": "normal",
-            "title_font_size": 10,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "description_font_weight": "normal",
-            "description_font_size": 10,
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column-0",
-        "column-1"
-      ],
-      "settings": {
-        "desktop_slider": false,
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "image-with-text": {
@@ -202,7 +148,7 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "text_side_background_color": "#ffffff",
+        "text_side_background_color": "#fdf8f1",
         "color_scheme": "background-2",
         "mobile_content_alignment": "left",
         "padding_top": 36,
@@ -245,7 +191,6 @@
   },
   "order": [
     "main",
-    "multicolumn",
     "image-with-text",
     "167640207953c157e9",
     "product-recommendations"
