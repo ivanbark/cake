@@ -328,6 +328,10 @@ function plusDivs(n) {
   showDivs(slideIndex += n);
 }
 
+function minDivs(n) {
+translate3d(0px, 0px, 0px)
+}
+
 function showDivs(n) {
   var i;
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
@@ -336,7 +340,7 @@ function showDivs(n) {
   
   if (n < 1) {slideIndex = items.length} ;
   
-  for (i = 0; i < 3; i++) {
+  for (i = 0; i < items.length; i++) {
     items[i].style.display = "none";
   }
   for (i = 0; i < 1; i++) {
