@@ -341,7 +341,7 @@ function plusDivs() {
 
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
 
-  if(clicks < maxClicks){
+  if(clicks > maxClicks){
     for (i = 0; i < items.length; i++) {
       items[i].style.transform = "translate3d(" + newMatrix + "px, 0px, 0px)";
     }
@@ -361,7 +361,7 @@ function minDivs() {
 
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
 
-  if(clicks < maxClicks){
+  if(clicks > maxClicks){
   for ( i = 0; i < items.length; i++) {
       items[i].style.transform = "translate3d(" + newMatrix + "px, 0px, 0px)";
     }
