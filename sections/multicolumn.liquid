@@ -2,12 +2,14 @@
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
+{%- style -%}
+
 .pclass {
   font-family: "GroteskPro-SemiBold";
   src: url("{{ '[GroteskPro-SemiBold]' | asset_url }}") format("[tff]");
 }
 
-{%- style -%}
+  
   html, body {
    scroll-behavior: smooth !important; 
   }
