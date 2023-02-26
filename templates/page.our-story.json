@@ -39,7 +39,7 @@
             "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
-            "text_font_size": 10,
+            "text_font_size": 12,
             "block_spacing_top": 1.6
           }
         },
@@ -75,6 +75,17 @@
             "text_font_size": 20,
             "block_spacing_top": 1.6
           }
+        },
+        "cb9e064e-6437-4a26-8927-0d96edb978b2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From humble beginnings in 2007, we are an award-winning maternity brand, proudly based in Sydney, Australia.<\/p>",
+            "text_color": "#000000",
+            "text_link": "",
+            "text_font_weight": "normal",
+            "text_font_size": 20,
+            "block_spacing_top": 1.6
+          }
         }
       },
       "block_order": [
@@ -83,7 +94,8 @@
         "bba04bd8-4be4-4811-8cdb-db81dbbfcfed",
         "5cb60d38-5d3d-4fa3-acaa-64f069e85edb",
         "05489e88-0e5e-4b51-8131-aa6e4f876671",
-        "1913ed61-02dc-4acd-b1bc-66dc25db94c9"
+        "1913ed61-02dc-4acd-b1bc-66dc25db94c9",
+        "cb9e064e-6437-4a26-8927-0d96edb978b2"
       ],
       "settings": {
         "desktop_content_position": "center",
