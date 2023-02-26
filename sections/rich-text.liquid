@@ -60,7 +60,8 @@
                       margin-top: {{ block.settings.block_spacing_top }}rem;
                     }
                 </style>
-                {{ block.settings.text }}
+                <p style="font-weight:{{ block.settings.text_font_weight }}; font-size:{{ block.settings.text_font_size }}px; color:{{ block.settings.text_color }};">{{ block.settings.text }}</p>
+                
                 {% else %}
                 
                 <a style="font-weight:{{ block.settings.text_font_weight }}; font-size:{{ block.settings.text_font_size }}px; color:{{ block.settings.text_color }};" href="{{ block.settings.text_url }}">

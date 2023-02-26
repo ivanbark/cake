@@ -42,12 +42,24 @@
             "text_font_size": 10,
             "block_spacing_top": 1.6
           }
+        },
+        "5cb60d38-5d3d-4fa3-acaa-64f069e85edb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Cake Maternity we specialise in maternity and nursing bras designed to support women as they embark on this new and exciting chapter in their lives. We also offer an equally thoughtful assortment of maternity and nursing friendly garments and accessories, designed to grow with them.<\/p>",
+            "text_color": "#000000",
+            "text_link": "",
+            "text_font_weight": "normal",
+            "text_font_size": 12,
+            "block_spacing_top": 1.6
+          }
         }
       },
       "block_order": [
         "template--18040513626406__ddc5b180-ffa8-4fb7-aace-5d64ba300ce4-167744531887272fa3-0",
         "template--18040513626406__ddc5b180-ffa8-4fb7-aace-5d64ba300ce4-167744531887272fa3-1",
-        "bba04bd8-4be4-4811-8cdb-db81dbbfcfed"
+        "bba04bd8-4be4-4811-8cdb-db81dbbfcfed",
+        "5cb60d38-5d3d-4fa3-acaa-64f069e85edb"
       ],
       "settings": {
         "desktop_content_position": "center",
