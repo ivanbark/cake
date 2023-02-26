@@ -317,6 +317,17 @@
             "heading_size": "h2"
           }
         },
+        "6b40d7d4-1bb3-444f-9a7e-e13e68d80341": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Cake is an award-winning brand recognised widely as a key supplier of maternity and nursing bras.<\/strong><\/p>",
+            "text_color": "#000000",
+            "text_link": "",
+            "text_font_weight": "normal",
+            "text_font_size": 20,
+            "block_spacing_top": 1.6
+          }
+        },
         "template--18040513626406__6a1e1f90-8d8e-4b10-beff-d86ccebc2b12-167744609160a33e25-1": {
           "type": "text",
           "settings": {
@@ -324,13 +335,14 @@
             "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
-            "text_font_size": 22,
+            "text_font_size": 20,
             "block_spacing_top": 1.6
           }
         }
       },
       "block_order": [
         "template--18040513626406__6a1e1f90-8d8e-4b10-beff-d86ccebc2b12-167744609160a33e25-0",
+        "6b40d7d4-1bb3-444f-9a7e-e13e68d80341",
         "template--18040513626406__6a1e1f90-8d8e-4b10-beff-d86ccebc2b12-167744609160a33e25-1"
       ],
       "settings": {
