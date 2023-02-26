@@ -756,14 +756,14 @@
         "cf6bd949-47e0-43e5-9be5-302512180cf9": {
           "type": "column",
           "settings": {
-            "padding_left": 60,
+            "padding_left": 0,
             "title": "",
             "subtitle": "",
             "title_font_weight": "normal",
-            "title_font_size": 10,
+            "title_font_size": 0,
             "text": "",
             "description_font_weight": "normal",
-            "description_font_size": 10,
+            "description_font_size": 0,
             "link_label": "",
             "link": ""
           }
