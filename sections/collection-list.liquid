@@ -321,10 +321,12 @@
 {% endschema %}
 
 <script>
-   var i;
+  var i;
   var getTransformValue = document.getElementById("Slide-template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1");
-  var maxClicks = getTransformValue.length - 4;
-  console.log(getTransformValue.length);
+
+  var items = document.getElementsByClassName("list-item-discover_our_ranges");
+  var maxClicks = items.length - 4;
+  console.log(maxClicks);
   
 function plusDivs() {
 
