@@ -312,7 +312,7 @@
         "template--18040513626406__4221f84b-d953-4ced-b66d-0b02e0474f25-1677446499b4ff1151-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/about-banner.jpg",
+            "image": "shopify:\/\/shop_images\/mfm-awards-shortlisted.png",
             "padding_left": 60,
             "title": "",
             "subtitle": "",
@@ -328,7 +328,7 @@
         "template--18040513626406__4221f84b-d953-4ced-b66d-0b02e0474f25-1677446499b4ff1151-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/yellow-corn-1356x2048.jpg",
+            "image": "shopify:\/\/shop_images\/about-award6.webp",
             "padding_left": 0,
             "title": "",
             "subtitle": "",
@@ -344,7 +344,23 @@
         "template--18040513626406__4221f84b-d953-4ced-b66d-0b02e0474f25-1677446499b4ff1151-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/woman-pumping-pumpkin.jpg",
+            "image": "shopify:\/\/shop_images\/about-award7.png",
+            "padding_left": 60,
+            "title": "",
+            "subtitle": "",
+            "title_font_weight": "normal",
+            "title_font_size": 10,
+            "text": "",
+            "description_font_weight": "normal",
+            "description_font_size": 10,
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "fde8dd51-6c73-41d9-b7b3-07743b96d9cb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/about-award8.png",
             "padding_left": 60,
             "title": "",
             "subtitle": "",
@@ -361,15 +377,16 @@
       "block_order": [
         "template--18040513626406__4221f84b-d953-4ced-b66d-0b02e0474f25-1677446499b4ff1151-0",
         "template--18040513626406__4221f84b-d953-4ced-b66d-0b02e0474f25-1677446499b4ff1151-1",
-        "template--18040513626406__4221f84b-d953-4ced-b66d-0b02e0474f25-1677446499b4ff1151-2"
+        "template--18040513626406__4221f84b-d953-4ced-b66d-0b02e0474f25-1677446499b4ff1151-2",
+        "fde8dd51-6c73-41d9-b7b3-07743b96d9cb"
       ],
       "settings": {
         "border": false,
         "desktop_slider": false,
         "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "square",
         "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "none",
