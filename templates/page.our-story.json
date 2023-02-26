@@ -64,6 +64,17 @@
             "text_font_size": 20,
             "block_spacing_top": 1.6
           }
+        },
+        "1913ed61-02dc-4acd-b1bc-66dc25db94c9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For this very reason, our bras are designed for mums, based on our own personal nursing experiences. Each bra is carefully crafted with comfort, functionality, durability and sustainability in mind, to ensure that while we are fit for mamas, we’re fit for Mother Earth too. From our soft fabrics, flattering cuts, easy single-handed nursing clips, each and every bra has been designed to make the breastfeeding experience as simple as possible.<\/p>",
+            "text_color": "#000000",
+            "text_link": "",
+            "text_font_weight": "normal",
+            "text_font_size": 20,
+            "block_spacing_top": 1.6
+          }
         }
       },
       "block_order": [
@@ -71,7 +82,8 @@
         "template--18040513626406__ddc5b180-ffa8-4fb7-aace-5d64ba300ce4-167744531887272fa3-1",
         "bba04bd8-4be4-4811-8cdb-db81dbbfcfed",
         "5cb60d38-5d3d-4fa3-acaa-64f069e85edb",
-        "05489e88-0e5e-4b51-8131-aa6e4f876671"
+        "05489e88-0e5e-4b51-8131-aa6e4f876671",
+        "1913ed61-02dc-4acd-b1bc-66dc25db94c9"
       ],
       "settings": {
         "desktop_content_position": "center",
