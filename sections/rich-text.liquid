@@ -51,7 +51,7 @@
               </p>
             {%- when 'text' -%}
               <div class="rich-text__text rte block-link" {{ block.shopify_attributes }}>
-                {% if block.settings.text_link != empty %}
+                {% if block.settings.text_link == null %}
                 <style>
                     .block-link {
                       margin-top: 0 !important;
