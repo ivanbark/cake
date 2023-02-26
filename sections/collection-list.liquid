@@ -63,7 +63,7 @@
             assign columns = 3
           endif
         -%}
-        <button class="button_switch switch_left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="button_switch switch_left" onclick="minDivs()">&#10094;</button>
         {%- for block in section.blocks -%}
           <li style="transition: all 0.25s ease 0s; transform: translate3d(0px, 0px, 0px); cursor: pointer;{%- if block.settings.collection_title != null -%} position:relative; {%- endif -%}" id="Slide-{{ section.id }}-{{ forloop.index }}" class="list-item-discover_our_ranges collection-list__item grid__item{% if show_mobile_slider %} slider__slide{% endif %}{% if block.settings.collection.featured_image == nil %} collection-list__item--no-media{% endif %}" {{ block.shopify_attributes }}>
             <a href="{{ block.settings.collection.url }}">
@@ -74,7 +74,7 @@
             </a>
             </li>
         {%- endfor -%}
-        <button class="button_switch switch_right" onclick="plusDivs(+1)">&#10095;</button>
+        <button class="button_switch switch_right" onclick="plusDivs()">&#10095;</button>
       </ul>
       {%- if show_mobile_slider -%}
         <div class="slider-buttons no-js-hidden">
@@ -324,7 +324,7 @@
   var slideIndex = 1;
 showDivs(slideIndex);
 
-function plusDivs(n) {
+function plusDivs() {
   var i;
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
   
@@ -333,7 +333,7 @@ function plusDivs(n) {
   }
 }
 
-function minDivs(n) {
+function minDivs() {
   var i;
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
   
