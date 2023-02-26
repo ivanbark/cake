@@ -67,7 +67,7 @@
     <slider-component class="slider-mobile-gutter">
       <style>
         @media screen and (min-width: 990px) {
-          {% if section.settings.desktop_slider %} 
+          {% if section.settings.desktop_slider == false %} 
             .slider-mobile-gutter ul {
               justify-content: {% if section.settings.column_size == "small" %}center{% else %}space-around{% endif %} !important;
             }
