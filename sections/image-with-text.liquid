@@ -22,12 +22,14 @@
     display: flex;
   }
 
-  .image_container img {
-    width: 30%;
-    position: relative;
-    margin-right: 15px;
-    height: auto;
-  }
+  {% if section.settings.show_multiple_img %}
+    .image_container img {
+      width: 30%;
+      position: relative;
+      margin-right: 15px;
+      height: auto;
+    }
+  {% endif %}
 {%- endstyle -%}
 
 <div class="image-with-text image-with-text--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding">
