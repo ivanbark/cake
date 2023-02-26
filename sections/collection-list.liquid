@@ -325,7 +325,9 @@
 showDivs(slideIndex);
 
 function plusDivs(n) {
-  showDivs(slideIndex += n);
+  for (i = 0; i < items.length; i++) {
+    items[i].style.transform = "translate3d(-356px, 0px, 0px)";
+  }
 }
 
 function minDivs(n) {
