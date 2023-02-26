@@ -98,8 +98,8 @@
               {{ article.content }}
           </div>
 
-          <div>
-            <p>We'd recommend:</p>
+          <div style="margin: 70px 0;">
+            <p style="font-weight:bold;">We'd recommend:</p>
             <div style="display: flex;justify-content: center; margin: 0 -10px;">
               {% for product in article.metafields.custom.recommended_products.value.products %}
                 <div style="width: 33%; margin: 0 10px; display: flex; flex-direction: column; justify-content: space-between;">
