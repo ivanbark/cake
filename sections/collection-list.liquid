@@ -323,6 +323,8 @@
 <script>
   
 function plusDivs() {
+  var i;
+  
   var getTransformValue = document.getElementById("Slide-template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1");
   var style = window.getComputedStyle(getTransformValue);
   var matrix = new WebKitCSSMatrix(style.transform);
@@ -333,12 +335,14 @@ function plusDivs() {
 
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
   
-  for (var i = 0; i < items.length; i++) {
+  for (i = 0; i < items.length; i++) {
     items[i].style.transform = "translate3d(" + newMatrix + "px, 0px, 0px)";
   }
 }
 
 function minDivs() {
+  var i;
+  
   var getTransformValue = document.getElementById("Slide-template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1");
   var style = window.getComputedStyle(getTransformValue);
   var matrix = new WebKitCSSMatrix(style.transform);
@@ -349,7 +353,7 @@ function minDivs() {
 
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
   
-  for (var i = 0; i < items.length; i++) {
+  for ( i = 0; i < items.length; i++) {
     items[i].style.transform = "translate3d(" + newMatrix + "px, 0px, 0px)";
   }
 }
