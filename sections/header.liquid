@@ -530,6 +530,37 @@
                         {% render 'icon-caret' %}
                       </summary>
                       <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
+                        {%- if link.title == "Rewards" -%}
+                          <ul style="max-width: 350px; display: block !important;" class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
+                            <li style="font-size:{{ section.settings.submenu_title_rewards_size }}px"> 
+                              {{ section.settings.submenu_title_rewards }}
+                            </li>
+                            <li> 
+                              {{ section.settings.submenu_text_rewards }}
+                            </li>
+                            {%- for childlink in link.links -%}
+                               {%- if childlink.links == blank -%}
+                                 <li style="height: 100%;">
+                                  <a style="font-weight:{{ section.settings.menu_title_font_weight }};" href="{{ childlink.url }}" class="{% if childlink.title == "Login" or childlink.title == "Join + Save"%} button custom_btn_login {% endif %}  mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                                    {{ childlink.title | escape }}
+                                  </a>
+                                  {%- if childlink.links != blank -%}
+                                    <ul class="list-unstyled" role="list">
+                                      {%- for grandchildlink in childlink.links -%}
+                                        <li>
+                                          <a href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                            {{ grandchildlink.title | escape }}
+                                          </a>
+                                        </li>
+                                      {%- endfor -%}
+                                    </ul>
+                                  {%- endif -%}
+                                  </li>
+                                 {% else %}
+                               {% endif %}
+                             {% endfor %}
+                          </ul>
+                        {% endif %} 
                           <div class="submenu_image_container">
                           {%- if link.title == "Shop" -%}
                             {%- if section.settings.submenu_first_image != null -%}
@@ -560,35 +591,6 @@
                          {% endif %}
                        {% endif %}
                        {%- if link.title == "Rewards" -%}
-                         <ul style="max-width: 350px; display: block !important;" class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
-                            <li style="font-size:{{ section.settings.submenu_title_rewards_size }}px"> 
-                              {{ section.settings.submenu_title_rewards }}
-                            </li>
-                            <li> 
-                              {{ section.settings.submenu_text_rewards }}
-                            </li>
-                            {%- for childlink in link.links -%}
-                               {%- if childlink.links == blank -%}
-                                 <li style="height: 100%;">
-                                  <a style="font-weight:{{ section.settings.menu_title_font_weight }};" href="{{ childlink.url }}" class="{% if childlink.title == "Login" or childlink.title == "Join + Save"%} button custom_btn_login {% endif %}  mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                                    {{ childlink.title | escape }}
-                                  </a>
-                                  {%- if childlink.links != blank -%}
-                                    <ul class="list-unstyled" role="list">
-                                      {%- for grandchildlink in childlink.links -%}
-                                        <li>
-                                          <a href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
-                                            {{ grandchildlink.title | escape }}
-                                          </a>
-                                        </li>
-                                      {%- endfor -%}
-                                    </ul>
-                                  {%- endif -%}
-                                  </li>
-                                 {% else %}
-                               {% endif %}
-                             {% endfor %}
-                          </ul>
                          <p class="more_button"><a style="color:black;" href="{{ section.settings.find_more_url }}"> Find out more </a></p>
                           {%- if section.settings.submenu_third_image != null -%}
                             <a class="submenu_images" style="text-decoration: none;" href="{{ section.settings.submenu_third_url }}">
