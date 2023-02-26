@@ -223,6 +223,9 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/mother-with-baby-2.jpg",
+        "show_multiple_img": true,
+        "image2": "shopify:\/\/shop_images\/about-banner.jpg",
+        "image3": "shopify:\/\/shop_images\/woman-holding-flowers.jpg",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
