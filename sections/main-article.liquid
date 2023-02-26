@@ -31,6 +31,15 @@
   iframe {
     max-width: 100%;
   }
+
+  @media screen and (max-width: 750px) }{
+    .recommended_products_metafield {
+      flex-wrap: wrap;
+    }
+    .recommended_products_metafield .metafield_item {
+      margin-bottom: 20px;
+    }
+  }
 </style>
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting" style="margin: 0 auto 10rem;">
@@ -103,11 +112,11 @@
           </div>
 
           {% if article.metafields.custom.recommended_products.value != null %}
-            <div style="margin: 70px 0;">
+            <divstyle="margin: 70px 0;">
               <p style="font-weight:bold;">We'd recommend:</p>
-              <div style="display: flex;justify-content: center; margin: 0 -10px;flex-wrap:wrap;">
+              <div class="recommended_products_metafield" style="display: flex;justify-content: center; margin: 0 -10px;flex-wrap:wrap;">
                 {% for product in article.metafields.custom.recommended_products.value.products %}
-                  <div style="width: 33%; margin: 0 10px; display: flex; flex-direction: column; justify-content: space-between;min-width:200px;">
+                  <div class="metafield_item" style="width: 33%; margin: 0 10px; display: flex; flex-direction: column; justify-content: space-between;min-width:200px;">
                     <div style="margin: 0 0 20px 0;">
                       <img style="width:100%;" srcset="
                       {%- if product.featured_media.width >= 165 -%}{{ product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
