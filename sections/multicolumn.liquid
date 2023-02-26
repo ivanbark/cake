@@ -121,7 +121,7 @@
                 {%- endif -%}
                 {%- if block.settings.title != blank -%}
                 {%- if block.settings.title == "Encouraging breast health." or block.settings.title == "Mama-friendly returns." or block.settings.title == "Support for every mama." -%}
-                  <p style="padding-left:{{ block.settings.padding_left }}px; margin: 0; font-size:{{ block.settings.title_font_size }}px; font-weight:{{ block.settings.title_font_weight }};">{{ block.settings.title | escape }}</p>
+                  <p class="pclass" style="padding-left:{{ block.settings.padding_left }}px; margin: 0; font-size:{{ block.settings.title_font_size }}px; font-weight:{{ block.settings.title_font_weight }};">{{ block.settings.title | escape }}</p>
                 {% else %}
                    <h3>{{ block.settings.title | escape }}</h3>
                 {%- endif -%}
