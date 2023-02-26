@@ -323,14 +323,13 @@
 <script>
   var i;
   var l;
-  var getTransformValue = document.getElementById("Slide-template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1");
 
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
   var maxClicks = items.length - 4;
   console.log(maxClicks);
   
 function plusDivs() {
-
+var getTransformValue = document.getElementById("Slide-template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1");
   let width = getTransformValue.offsetWidth;
   var style = window.getComputedStyle(getTransformValue);
   var matrix = new WebKitCSSMatrix(style.transform);
@@ -349,7 +348,7 @@ function plusDivs() {
 }
 
 function minDivs() {
- 
+ var getTransformValue = document.getElementById("Slide-template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1");
   let width = getTransformValue.offsetWidth;
   var style = window.getComputedStyle(getTransformValue);
   var matrix = new WebKitCSSMatrix(style.transform);
