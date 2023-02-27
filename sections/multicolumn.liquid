@@ -41,6 +41,11 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+@media screen and (max-width: 750px) {
+   .button_switch {
+        display: none;
+      }
+}
 
   {% if section.settings.column_size == "small" %}
     @media screen and (min-width: 800px) {
