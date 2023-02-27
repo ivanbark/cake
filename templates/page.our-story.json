@@ -460,6 +460,7 @@
         "feed303c-b97d-4943-a43e-c02fefb36fec": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/about-award3.webp",
             "padding_left": 60,
             "title": "",
             "subtitle": "",
