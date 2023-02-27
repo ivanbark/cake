@@ -586,48 +586,44 @@
 {% endschema %}
 
 <script>
-  var i;
-  var getTransformValue = document.getElementById("multicolumn_our_story_id");
+  var i2;
+  var getvalue = document.getElementById("multicolumn_our_story_id");
 
-  var items = document.getElementsByClassName("multicolumn_our_story");
-  var maxClicks = items.length - 4;
-  var clicks = 0;
+  var items2 = document.getElementsByClassName("multicolumn_our_story");
+  var maxClicks2 = items.length - 4;
+  var clicks2 = 0;
   
 function plusDivsourstory() {
 
-  //let width = getTransformValue.offsetWidth;
-  var style = window.getComputedStyle(getTransformValue);
-  var matrix = new WebKitCSSMatrix(style.transform);
+  let width2 = getvalue.offsetWidth;
+  var style2 = window.getComputedStyle(getvalue);
+  var matrix2 = new WebKitCSSMatrix(style.transform);
 
-  var width = document.getElementById('multicolumn_our_story_id').width;
-  
-  var newMatrix = matrix.m41 - width;
+  var newMatrix2 = matrix2.m41 - width2;
 
-  var items = document.getElementsByClassName("multicolumn_our_story");
+  var items2 = document.getElementsByClassName("multicolumn_our_story");
 
   if(clicks < maxClicks){
-    for (i = 0; i < items.length; i++) {
-      items[i].style.transform = "translate3d(" + newMatrix + "px, 0px, 0px)";
+    for (i2 = 0; i2 < items.length; i2++) {
+      items2[i].style2.transform = "translate3d(" + newMatrix2 + "px, 0px, 0px)";
     }
-    clicks++;
+    clicks2++;
   }
 }
 
 function minDivsourstory() {
  
-  //let width = getTransformValue.offsetWidth;
-  var style = window.getComputedStyle(getTransformValue);
-  var matrix = new WebKitCSSMatrix(style.transform);
+  let width2 = getvalue.offsetWidth;
+  var style2 = window.getComputedStyle(getvalue);
+  var matrix2 = new WebKitCSSMatrix(style.transform);
 
-  var width = document.getElementById('multicolumn_our_story_id').width;
+  var newMatrix2 = matrix2.m41 + width2;
 
-  var newMatrix = matrix.m41 + width;
+  var items2 = document.getElementsByClassName("multicolumn_our_story");
 
-  var items = document.getElementsByClassName("multicolumn_our_story");
-
-  if(matrix.m41 != 0 && clicks <= maxClicks && clicks != 0){
-    for ( i = 0; i < items.length; i++) {
-        items[i].style.transform = "translate3d(" + newMatrix + "px, 0px, 0px)";
+  if(matrix.m41 != 0 && clicks2 <= maxClicks && clicks != 0){
+    for ( i2 = 0; i2 < items.length; i2++) {
+        items2[i].style2.transform = "translate3d(" + newMatrix2 + "px, 0px, 0px)";
       }
      clicks--;
   }
