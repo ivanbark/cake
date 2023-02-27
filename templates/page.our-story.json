@@ -428,6 +428,7 @@
         "8c89fd60-b127-4937-b8d3-1df472ef23ea": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/about-award1.webp",
             "padding_left": 60,
             "title": "",
             "subtitle": "",
@@ -443,6 +444,7 @@
         "1868266d-85ed-43ae-983f-ff0a20d9c194": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/about-award2.webp",
             "padding_left": 60,
             "title": "",
             "subtitle": "",
