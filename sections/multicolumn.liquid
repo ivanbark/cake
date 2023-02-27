@@ -76,7 +76,7 @@
           }
         {% else %}
           @media screen and (min-width: 990px) {
-              .slider-mobile-gutter ul {
+              .slider-mobile-gutter.multicolumn-list ul {
                 justify-content: {% if section.settings.column_size == "small" %}center{% else %}space-around{% endif %};
               }
             {% if section.settings.column_size == "small" %}
