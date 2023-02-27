@@ -39,7 +39,7 @@
     {% if section.settings.show_multiple_img %}
       function imgScroll(direction) {
         var margin = document.getElementById("imgScroll").style.marginLeft;
-        if (direction == "r") {
+        if (direction == 'r') {
           document.getElementById("imgScroll").style.marginLeft = margin - 450;   
         }
       }
@@ -90,8 +90,8 @@
         {%- endif -%}
         {% if section.settings.show_multiple_img %}
           <div>
-            <h2 onclick="imgScroll('l')" >❮</h2>
-            <h2 onclick="imgScroll('r')" >❯</h2>
+            <button onclick="imgScroll('l')" >❮</button>
+            <button onclick="imgScroll('r')" >❯</button>
           </div>
         {% endif %}
       </div>
