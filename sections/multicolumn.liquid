@@ -106,8 +106,8 @@
         {% endif %}
       </style>
       {% if section.blocks.first.settings.image.alt == "awards_image" %}
-       <button style="margin-left: 20%;" class="button_switch_outstory switch_left" onclick="minDivs()">&#10094;</button>
-       <button style="margin-left: 80%;" class="button_switch_outstory switch_right" onclick="plusDivs()">&#10095;</button>
+       <button style="margin-left: 20%;" class="button_switch_outstory switch_left" onclick="minDivsourstory()">&#10094;</button>
+       <button style="margin-left: 80%;" class="button_switch_outstory switch_right" onclick="plusDivsourstory()">&#10095;</button>
       {% endif %}
       <ul style="{% if section.blocks.first.settings.image.alt == "awards_image" %} overflow-x: scroll; flex-wrap: nowrap; width: 50%; margin: auto; {% endif %}" class="{% if section.blocks.first.settings.image.alt == "awards_image" %} multicolumn_our_story {% endif %} {% if section.settings.desktop_slider %} desktop_slider_class{% endif %} multicolumn-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--mobile grid--peek{% endif %}"
         id="Slider-{{ section.id }}"
@@ -593,7 +593,7 @@
   var maxClicks = items.length - 4;
   var clicks = 0;
   
-function plusDivs() {
+function plusDivsourstory() {
 
   let width = getTransformValue.offsetWidth;
   var style = window.getComputedStyle(getTransformValue);
@@ -611,7 +611,7 @@ function plusDivs() {
   }
 }
 
-function minDivs() {
+function minDivsourstory() {
  
   let width = getTransformValue.offsetWidth;
   var style = window.getComputedStyle(getTransformValue);
