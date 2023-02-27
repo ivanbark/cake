@@ -568,27 +568,47 @@
 {% endschema %}
 
 <script>
+  var i;
+  var getTransformValue = document.getElementById("Slide-template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1");
 
-      function imgScroll(direction) {
-        var width = document.getElementById('imgScroll').clientWidth;
-        var maxMargin = "-470px";
-        if (width < 920) {maxMargin = "-940px";}
-        var margin = document.getElementById("imgScroll").firstChild.style.marginLeft;
-        if (direction == 'r') {
-          if (margin == maxMargin) {
-            document.getElementById("imgScroll").firstChild.style.marginLeft = "0px";               
-          } else if (margin == "-470px") {
-            document.getElementById("imgScroll").firstChild.style.marginLeft = "-940px";                 
-          } else {
-            document.getElementById("imgScroll").firstChild.style.marginLeft = "-470px";               
-          }
-        } else if (direction == 'l') {
-          if (margin == "-940px") {
-            document.getElementById("imgScroll").firstChild.style.marginLeft = "-470px";                
-          } else {
-            document.getElementById("imgScroll").firstChild.style.marginLeft = "0px";      
-          }
-        }
+  var items = document.getElementsByClassName("list-item-discover_our_ranges");
+  var maxClicks = items.length - 4;
+  var clicks = 0;
+  
+function plusDivs() {
+
+  let width = getTransformValue.offsetWidth;
+  var style = window.getComputedStyle(getTransformValue);
+  var matrix = new WebKitCSSMatrix(style.transform);
+
+  var newMatrix = matrix.m41 - width;
+
+  var items = document.getElementsByClassName("list-item-discover_our_ranges");
+
+  if(clicks < maxClicks){
+    for (i = 0; i < items.length; i++) {
+      items[i].style.transform = "translate3d(" + newMatrix + "px, 0px, 0px)";
+    }
+    clicks++;
+  }
+}
+
+function minDivs() {
+ 
+  let width = getTransformValue.offsetWidth;
+  var style = window.getComputedStyle(getTransformValue);
+  var matrix = new WebKitCSSMatrix(style.transform);
+
+  var newMatrix = matrix.m41 + width;
+
+  var items = document.getElementsByClassName("list-item-discover_our_ranges");
+
+  if(matrix.m41 != 0 && clicks <= maxClicks && clicks != 0){
+    console.log(clicks)
+    for ( i = 0; i < items.length; i++) {
+        items[i].style.transform = "translate3d(" + newMatrix + "px, 0px, 0px)";
       }
-
+     clicks--;
+  }
+}
 </script>
