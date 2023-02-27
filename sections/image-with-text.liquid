@@ -39,8 +39,7 @@
   <script>
     {% if section.settings.show_multiple_img %}
       function imgScroll(direction) {
-        var width = document.getElementById('imgScroll').clientWidth - document.getElementById('imgScroll').offsetLeft;
-        console.log(document.getElementById('imgScroll').offsetLeft);
+        var width = document.getElementById('imgScroll').clientWidth + document.getElementById('imgScroll').offsetLeft;
         var maxMargin = "-470px";
         if (width < 920) {maxMargin = "-940px";}
         console.log(maxMargin);
