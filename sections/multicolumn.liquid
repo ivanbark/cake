@@ -597,14 +597,14 @@ function plusDivsourstory() {
 
   let width2 = getvalue.offsetWidth;
   var style2 = window.getComputedStyle(getvalue);
-  var matrix2 = new WebKitCSSMatrix(style.transform);
+  var matrix2 = new WebKitCSSMatrix(style2.transform);
 
   var newMatrix2 = matrix2.m41 - width2;
 
   var items2 = document.getElementsByClassName("multicolumn_our_story");
 
   if(clicks < maxClicks){
-    for (i2 = 0; i2 < items.length; i2++) {
+    for (i2 = 0; i2 < items2.length; i2++) {
       items2[i].style2.transform = "translate3d(" + newMatrix2 + "px, 0px, 0px)";
     }
     clicks2++;
@@ -615,14 +615,14 @@ function minDivsourstory() {
  
   let width2 = getvalue.offsetWidth;
   var style2 = window.getComputedStyle(getvalue);
-  var matrix2 = new WebKitCSSMatrix(style.transform);
+  var matrix2 = new WebKitCSSMatrix(style2.transform);
 
   var newMatrix2 = matrix2.m41 + width2;
 
   var items2 = document.getElementsByClassName("multicolumn_our_story");
 
-  if(matrix.m41 != 0 && clicks2 <= maxClicks && clicks != 0){
-    for ( i2 = 0; i2 < items.length; i2++) {
+  if(matrix.m41 != 0 && clicks2 <= maxClicks2 && clicks2 != 0){
+    for ( i2 = 0; i2 < items2.length; i2++) {
         items2[i].style2.transform = "translate3d(" + newMatrix2 + "px, 0px, 0px)";
       }
      clicks--;
