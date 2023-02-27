@@ -76,14 +76,14 @@
           }
         {% else %}
           @media screen and (min-width: 990px) {
-              .slider-mobile-gutter ul {
+              .slider-mobile-gutter .multicolumn-list {
                 justify-content: {% if section.settings.column_size == "small" %}center{% else %}space-around{% endif %};
               }
             {% if section.settings.column_size == "small" %}
               .slider-list-item.multicolumn-list__item {
                 margin: 0 15px;
               }
-              .slider-mobile-gutter ul {
+              .slider-mobile-gutter .multicolumn-list {
                 margin: 0 -10px;
               }
             {% endif %}
