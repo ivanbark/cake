@@ -40,8 +40,13 @@
       function imgScroll(direction) {
         var margin = document.getElementById("imgScroll").style.marginLeft;
         if (direction == 'r') {
-          console.log(margin);
-          document.getElementById("imgScroll").style.marginLeft = -450 + "px";   
+          if (margin == "-450px") {
+            document.getElementById("imgScroll").style.marginLeft = 0 "px";               
+          } else {
+            document.getElementById("imgScroll").style.marginLeft = -450 + "px";               
+          }
+        } else if (direction == 'l') {
+            document.getElementById("imgScroll").style.marginLeft = 0 "px";      
         }
       }
     {% endif %}
