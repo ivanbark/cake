@@ -412,6 +412,7 @@
         "8d562bd2-69d6-4729-a90e-ac40e0b2b325": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/about-award5.webp",
             "padding_left": 60,
             "title": "",
             "subtitle": "",
