@@ -114,7 +114,7 @@
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
                 {% endif %}
-                <div style="{% if image.alt == "our_story" %}width: 250px; margin: auto; margin-top: 20px;{% endif %}" class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
+                <div style="{% if block.settings.image.alt == "our_story" %}width: 250px; margin: auto; margin-top: 20px;{% endif %}" class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
                   
                 {%- if block.settings.title == "Encouraging breast health." or block.settings.title == "Mama-friendly returns." or block.settings.title == "Support for every mama." -%}
                 {% else %} 
