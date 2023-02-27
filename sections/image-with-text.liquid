@@ -39,10 +39,15 @@
   <script>
     {% if section.settings.show_multiple_img %}
       function imgScroll(direction) {
+        var width = document.getElementById('imgScroll').offsetWidth;
+        var maxMargin = "-470px";
+        if (width < 920) {maxMargin = "-940px";}
         var margin = document.getElementById("imgScroll").style.marginLeft;
         if (direction == 'r') {
-          if (margin == "-470px") {
+          if (margin == maxMargin) {
             document.getElementById("imgScroll").style.marginLeft = "0px";               
+          } else if (margin == "-470px") {
+            document.getElementById("imgScroll").style.marginLeft = "-940px";                 
           } else {
             document.getElementById("imgScroll").style.marginLeft = "-470px";               
           }
