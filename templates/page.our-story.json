@@ -533,10 +533,21 @@
             "collection_title_alignment": "left",
             "font_size": 10
           }
+        },
+        "602d397c-28c4-46d7-852a-4803600e89a9": {
+          "type": "Instagram_post",
+          "settings": {
+            "post_image": "shopify:\/\/shop_images\/brodiebriddock_x-truffles_a229d71b-4657-4e39-b43a-a9bd78fd3c98.webp",
+            "post_title": "",
+            "text_color": "#ffffff",
+            "collection_title_alignment": "left",
+            "font_size": 10
+          }
         }
       },
       "block_order": [
-        "3e765193-2328-4361-9c8f-19130f526814"
+        "3e765193-2328-4361-9c8f-19130f526814",
+        "602d397c-28c4-46d7-852a-4803600e89a9"
       ],
       "settings": {
         "section_title": "As seen on #realmamas",
