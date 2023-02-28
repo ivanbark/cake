@@ -523,6 +523,7 @@
     },
     "25550e8a-14be-448c-ad3a-c42af31e0ba7": {
       "type": "instagram-collection",
+      "disabled": true,
       "settings": {
       }
     }
