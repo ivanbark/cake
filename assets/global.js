@@ -783,13 +783,17 @@ class VariantSelects extends HTMLElement {
     //   $(thumbnail_selector).show();
     // } 
     if (variant.option3) {
+      $('[data-featured-color]').hide();
       $('[data-thumbnail-color]').hide();
       var selected_color = variant.option3;
       var thumbnail_selector = '[data-thumbnail-color="' + selected_color + '"]';
+      var featured_selector = '[data-featured-color="' + selected_color + '"]';
       $(thumbnail_selector).show();
+      $(featured_selector).first.show();
     }
     else {
         $('[data-thumbnail-color]').show();
+        $('[data-featured-color]').first.show();
     }
   }
 
