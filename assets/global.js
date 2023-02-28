@@ -776,14 +776,15 @@ class VariantSelects extends HTMLElement {
   }
 
   filterThumbnails(variant){
-      console.log(variant);
-      $('[data-thumbnail-color]').hide();
-      var color = variant.title.split("/");
-      var selected_color = color[2];
-      console.log(selected_color);
-      // var selected_color = variant.featured_image.alt;
-      var thumbnail_selector = '[data-thumbnail-color="' + selected_color + '"]';
-      $(thumbnail_selector).show();
+      var selected_color = variant.option3;
+      if (selected_color) {
+        $('[data-thumbnail-color]').hide();
+        console.log(selected_color);
+        var thumbnail_selector = '[data-thumbnail-color="' + selected_color + '"]';
+        $(thumbnail_selector).show();
+      } else {
+        $('[data-thumbnail-color]').show();
+      }
   }
 
   updateOptions() {
