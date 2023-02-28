@@ -790,10 +790,12 @@ class VariantSelects extends HTMLElement {
       var featured_selector = '[data-featured-color="' + selected_color + '"]';
       $(thumbnail_selector).show();
       $(featured_selector + ':first').show();
+      $(featured_selector + ':eq(2)').show();
     }
     else {
         $('[data-thumbnail-color]').show();
         $('[data-featured-color]:first').show();
+        $('[data-featured-color]:eq(2)').show();
     }
   }
 
