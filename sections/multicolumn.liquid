@@ -608,6 +608,7 @@ function ourStoryRight() {
   var matrix2 = new WebKitCSSMatrix(style2.transform);
 
   var calculatedValue = matrix2.m41 - 20 - width2 * 4 ;
+  var maxcalculatedValue = matrix2.m41 - 20 - width2 * 8 ;
 
   var items2 = document.getElementsByClassName("multicolumn_our_story");
 
@@ -615,7 +616,12 @@ function ourStoryRight() {
     for (i = 0; i < items2.length; i++) {
       console.log("For loop right" + items2[i]);
       // Smaller screens
-         items2[i].style.transform = "translate3d(" + calculatedValue + "px, 0px, 0px)";
+      if(matri2.m41 == maxcalculatedValue)
+      {
+        items2[i].style.transform = "translate3d(0px, 0px, 0px)";
+      } else {
+        items2[i].style.transform = "translate3d(" + calculatedValue + "px, 0px, 0px)";
+      } 
     }
   }
 
