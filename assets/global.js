@@ -778,9 +778,16 @@ class VariantSelects extends HTMLElement {
   filterThumbnails(variant){
     if(variant.featured_image != null && variant.featured_image.alt != null){
       $('[data-thumbnail-color]').hide();
+      $('[data-thumbnail-mobile-color]').hide();
       var selected_color = variant.featured_image.alt;
       var thumbnail_selector = '[data-thumbnail-color="' + selected_color + '"]';
+      var featured_mobile_selector = '[data-thumbnail-mobile-color="' + selected_color + '"]';
       $(thumbnail_selector).show();
+      if ($(window).width() < 750) {
+        $(featured_mobile_selector).show();        
+      } else {
+        $(featured_mobile_selector + ':first').show();                
+      }
     } 
     // if (variant.option3) {
     //   $('[data-featured-color]').hide();
