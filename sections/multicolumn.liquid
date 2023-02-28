@@ -607,12 +607,12 @@ function ourStoryRight() {
   var matrix2 = new WebKitCSSMatrix(style2.transform);
   var items2 = document.getElementsByClassName("multicolumn_our_story");
 
-  var calculatedValue = matrix2.m41 - 20 - width2 * 4 ;
+  var calculatedValue = matrix2.m41 - 25 - width2 * 4 ;
   
 
   if(alreadyCalculated == false)
   {
-      maxcalculatedValue = matrix2.m41 - 40 - width2 * 8 ;
+      maxcalculatedValue = matrix2.m41 - 50 - width2 * 8 ;
       alreadyCalculated = true;
   }
 
@@ -636,7 +636,7 @@ function ourStoryLeft() {
   var style2 = window.getComputedStyle(getvalue);
   var matrix2 = new WebKitCSSMatrix(style2.transform);
 
-   var calculatedValue = matrix2.m41 + 20 + width2 * 4 ;
+   var calculatedValue = matrix2.m41 + 25 + width2 * 4 ;
 
   var items2 = document.getElementsByClassName("multicolumn_our_story");
 
