@@ -788,14 +788,22 @@ class VariantSelects extends HTMLElement {
       var selected_color = variant.option3;
       var thumbnail_selector = '[data-thumbnail-color="' + selected_color + '"]';
       var featured_selector = '[data-featured-color="' + selected_color + '"]';
+      var thumbnail_featured_selector = '[data-thumbnail-featured-color="' + selected_color + '"]';
+      var featured_mobile_selector = '[data-featured-mobile-color="' + selected_color + '"]';
       $(thumbnail_selector).show();
       $(featured_selector + ':first').show();
-      $(featured_selector + ':second').show();
+      $(thumbnail_featured_selector + ':first').show();
+      if ($( window ).width() < 750) {
+        $(featured_mobile_selector).show();        
+      }
     }
     else {
         $('[data-thumbnail-color]').show();
         $('[data-featured-color]:first').show();
-        $('[data-featured-color]:second').show();
+        $('[data-thumbnail-featured-color]:first').show();
+        if ($( window ).width() < 750) {
+          $('[data-featured-mobile-color]').show();        
+        }
     }
   }
 
