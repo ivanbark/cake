@@ -600,6 +600,7 @@
   var maxClicks2 = items2.length - 4;
   var clicks2 = 0;
   var alreadyCalculated = false;
+  var maxcalculatedValue = 0;
   
 function ourStoryRight() {
 
@@ -614,7 +615,7 @@ function ourStoryRight() {
 
   if(alreadyCalculated == false)
   {
-      var maxcalculatedValue = matrix2.m41 - 40 - width2 * 8 ;
+      maxcalculatedValue = matrix2.m41 - 40 - width2 * 8 ;
       alreadyCalculated = true;
   }
 
