@@ -4,9 +4,13 @@
     max-width: 425px;
     object-fit: contain;
   }
+
+  .instapost_container {
+    max-height: 400px;
+  }
 {% endstyle %}
 
-<div class="container">
+<div class="instapost_container">
   {% for block in section.blocks%}
     {% if block.settings.post_image != null %}
      {{ block.settings.post_image | image_url: width: 1420 | image_tag:
