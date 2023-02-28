@@ -346,15 +346,14 @@ function plusDivs() {
   var style = window.getComputedStyle(getTransformValue);
   var matrix = new WebKitCSSMatrix(style.transform);
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
-  var calculatedValue = matrix2.m41 - 25 - width2 * 4 ;
+  var calculatedValue = matrix.m41 - 25 - width * 4 ;
 
   if(getTransformAlreadyCalculated == false)
   {
-      maxTransformValue = matrix.m41 - 50 - width2 * 8 ;
+      maxTransformValue = matrix.m41 - 50 - width * 8 ;
       getTransformAlreadyCalculated = true;
   }
 
-  
   for (i = 0; i < items.length; i++) {
     if(matrix.m41 <= maxTransformValue)
     {
