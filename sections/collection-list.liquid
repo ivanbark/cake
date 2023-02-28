@@ -336,26 +336,31 @@
 <script>
   var i;
   var getTransformValue = document.getElementById("Slide-template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1");
-
+  var getTransformAlreadyCalculated = false;
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
-  var maxClicks = items.length - 4;
-  var clicks = 0;
+  var maxTransformValue = 0;
+
   
 function plusDivs() {
-
   let width = getTransformValue.offsetWidth;
   var style = window.getComputedStyle(getTransformValue);
   var matrix = new WebKitCSSMatrix(style.transform);
-
-  var newMatrix = matrix.m41 - width;
-
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
+  var calculatedValue = matrix2.m41 - 25 - width2 * 4 ;
 
-  if(clicks < maxClicks){
-    for (i = 0; i < items.length; i++) {
-      items[i].style.transform = "translate3d(" + newMatrix + "px, 0px, 0px)";
+  if(getTransformAlreadyCalculated == false)
+  {
+      maxTransformValue = matrix.m41 - 50 - width2 * 8 ;
+      getTransformAlreadyCalculated = true;
+  }
+  
+  for (i = 0; i < items.length; i++) {
+    if(matrix2.m41 <= maxTransformValue)
+    {
+      items[i].style.transform = "translate3d(0px, 0px, 0px)";
+    } else {
+      items[i].style.transform = "translate3d(" + calculatedValue + "px, 0px, 0px)";
     }
-    clicks++;
   }
 }
 
