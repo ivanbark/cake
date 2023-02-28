@@ -4,7 +4,7 @@
 
 {%- style -%}
 
-   .button_switch_outstory {
+   .button_switch_ourstory {
     height: 25px;
     background-color: #f0ede8;
     border: none;
@@ -106,8 +106,8 @@
         {% endif %}
       </style>
       {% if section.blocks.first.settings.image.alt == "awards_image" %}
-       <button style="margin-left: 20%;" class="button_switch_outstory switch_left" onclick="ourStoryLeft()">&#10094;</button>
-       <button style="margin-left: 80%;" class="button_switch_outstory switch_right" onclick="ourStoryRight()">&#10095;</button>
+       <button style="margin-left: 20%;" class="button_switch_ourstory switch_left" onclick="ourStoryLeft()">&#10094;</button>
+       <button style="margin-left: 80%;" class="button_switch_ourstory switch_right" onclick="ourStoryRight()">&#10095;</button>
       {% endif %}
       <ul style="{% if section.blocks.first.settings.image.alt == "awards_image" %} overflow-x: scroll; flex-wrap: nowrap; width: 50%; margin: auto; {% endif %}" class="{% if section.blocks.first.settings.image.alt == "awards_image" %} multicolumn_our_story {% endif %} {% if section.settings.desktop_slider %} desktop_slider_class{% endif %} multicolumn-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--mobile grid--peek{% endif %}"
         id="Slider-{{ section.id }}"
