@@ -608,7 +608,14 @@ function ourStoryRight() {
     console.log("if statement right");
     for (i = 0; i < items2.length; i++) {
       console.log("For loop right" + items2[i]);
-      items2[i].style.transform = "translate3d(-525px, 0px, 0px)";
+      if(matrix2.m41 == "-525")
+      {
+         items2[i].style.transform = "translate3d(-525px, 0px, 0px)";
+      }
+      if(matrix2.m41 == "0")
+      {
+        items2[i].style.transform = "translate3d(-1050px, 0px, 0px)";
+      }
     }
     clicks2++;
   }
