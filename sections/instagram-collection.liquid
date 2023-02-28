@@ -1,5 +1,10 @@
-<div>
-  <iframe width="320" height="440" src="{{ section.settings.post_url }}embed" frameborder="0"></iframe>
+<div class="container">
+ {{ block.settings.post_image | image_url: width: 1420 | image_tag:
+    loading: 'lazy',
+    sizes: sizes,
+    widths: '275, 550, 710, 1420',
+    class: 'instagram_post'
+  }}  
 </div>
 
 {% schema %}
@@ -21,7 +26,7 @@
       "settings": [
         {
           "type": "image_picker",
-          "id": "image",
+          "id": "post_image",
           "label": "t:sections.multicolumn.blocks.column.settings.image.label"
         },
         {
