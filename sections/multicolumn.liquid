@@ -586,7 +586,7 @@
 {% endschema %}
 
 <script>
-  var i2;
+  var i;
   var getvalue = document.getElementById("multicolumn_our_story_id");
 
   var items2 = document.getElementsByClassName("multicolumn_our_story");
@@ -606,7 +606,7 @@ function ourStoryRight() {
 
   //if(clicks2 < maxClicks2){
     console.log("if statement right");
-    for (i2 = 0; i2 < items2.length; i2++) {
+    for (i = 0; i < items2.length; i++) {
       console.log("For loop right");
       items2[i].style2.transform = "translate3d(" + newMatrix2 + "px, 0px, 0px)";
     }
@@ -627,7 +627,7 @@ function ourStoryLeft() {
 
   //if(matrix2.m41 != 0 && clicks2 <= maxClicks2 && clicks2 != 0){
     console.log("if statement left");
-    for ( i2 = 0; i2 < items2.length; i2++) {
+    for (i = 0; i < items2.length; i++) {
       console.log("For loop left");
         items2[i].style2.transform = "translate3d(" + newMatrix2 + "px, 0px, 0px)";
       }
