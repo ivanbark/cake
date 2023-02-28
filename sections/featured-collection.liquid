@@ -113,17 +113,19 @@
               {% render 'card-product', show_vendor: section.settings.show_vendor %}
             </li>
           {%- endfor -%}
-        {%- endfor -%}   
-      <div class="grid__item">
-          {{ section.settings.image | image_url: width: section.settings.width | image_tag:
-            class: '',
-            width: '100%',
-            sizes: '(min-width: 1200px) 267px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)',
-            aspect-ratio: '1',
-            height: 'auto',
-            alt: logo_alt
-          }}
-      </div>
+        {%- endfor -%} 
+      {% if section.settings.imgae != null %}
+        <div class="grid__item">
+            {{ section.settings.image | image_url: width: section.settings.width | image_tag:
+              class: '',
+              width: '100%',
+              sizes: '(min-width: 1200px) 267px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)',
+              aspect-ratio: '1',
+              height: 'auto',
+              alt: logo_alt
+            }}
+        </div>
+      {% endif %}
       </ul>
       {%- if show_mobile_slider or show_desktop_slider -%}
         <div class="slider-buttons no-js-hidden">
