@@ -524,6 +524,26 @@
     "23197daa-447e-4801-979c-4fd808243740": {
       "type": "instagram-collection",
       "blocks": {
+        "602d397c-28c4-46d7-852a-4803600e89a9": {
+          "type": "Instagram_post",
+          "settings": {
+            "post_image": "shopify:\/\/shop_images\/brodiebriddock_x-truffles_a229d71b-4657-4e39-b43a-a9bd78fd3c98.webp",
+            "post_title": "",
+            "text_color": "#ffffff",
+            "collection_title_alignment": "left",
+            "font_size": 10
+          }
+        },
+        "315bbd2c-ef5f-4440-b4ea-da9d174c4197": {
+          "type": "Instagram_post",
+          "settings": {
+            "post_image": "shopify:\/\/shop_images\/k__desirae-eclair.webp",
+            "post_title": "",
+            "text_color": "#ffffff",
+            "collection_title_alignment": "left",
+            "font_size": 10
+          }
+        },
         "3e765193-2328-4361-9c8f-19130f526814": {
           "type": "Instagram_post",
           "settings": {
@@ -534,10 +554,10 @@
             "font_size": 10
           }
         },
-        "602d397c-28c4-46d7-852a-4803600e89a9": {
+        "7bdcf022-3c8a-45f8-8837-899de17189a5": {
           "type": "Instagram_post",
           "settings": {
-            "post_image": "shopify:\/\/shop_images\/brodiebriddock_x-truffles_a229d71b-4657-4e39-b43a-a9bd78fd3c98.webp",
+            "post_image": "shopify:\/\/shop_images\/naymullins_dnmphotography-biscotti.webp",
             "post_title": "",
             "text_color": "#ffffff",
             "collection_title_alignment": "left",
@@ -546,8 +566,10 @@
         }
       },
       "block_order": [
+        "602d397c-28c4-46d7-852a-4803600e89a9",
+        "315bbd2c-ef5f-4440-b4ea-da9d174c4197",
         "3e765193-2328-4361-9c8f-19130f526814",
-        "602d397c-28c4-46d7-852a-4803600e89a9"
+        "7bdcf022-3c8a-45f8-8837-899de17189a5"
       ],
       "settings": {
         "section_title": "As seen on #realmamas",
