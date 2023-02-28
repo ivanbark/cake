@@ -780,6 +780,7 @@ class VariantSelects extends HTMLElement {
         $('[data-thumbnail-color]').hide();
 
         var selected_color = variant.title.split("/")[2];
+        console.log(selected_color);
         // var selected_color = variant.featured_image.alt;
         var thumbnail_selector = '[data-thumbnail-color="' + selected_color + '"]';
         $(thumbnail_selector).show();
