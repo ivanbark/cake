@@ -615,33 +615,8 @@ function ourStoryRight() {
     for (i = 0; i < items2.length; i++) {
       console.log("For loop right" + items2[i]);
       // Smaller screens
-      if(matrix2.m41 == "0")
-      {
          items2[i].style.transform = "translate3d(" + calculatedValue + "px, 0px, 0px)";
-      }
-      if(matrix2.m41 == "-700")
-      {
-        items2[i].style.transform = "translate3d(-900px, 0px, 0px)";
-      }
-      if(matrix2.m41 == "-950")
-      {
-        items2[i].style.transform = "translate3d(0px, 0px, 0px)";
-      }
-      // Large screens
-      if(matrix2.m41 == "585")
-      {
-         items2[i].style.transform = "translate3d(-150px, 0px, 0px)";
-      }
-      if(matrix2.m41 == "-150")
-      {
-        items2[i].style.transform = "translate3d(-800px, 0px, 0px)";
-      }
-      if(matrix2.m41 == "-800")
-      {
-        items2[i].style.transform = "translate3d(585px, 0px, 0px)";
-      }
     }
-    clicks2++;
   }
 
 
