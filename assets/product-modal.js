@@ -21,7 +21,7 @@ if (!customElements.get('product-modal')) {
       const activeMedia = this.querySelector(`[data-media-id="${this.openedBy.getAttribute("data-media-id")}"]`);
       const activeMediaTemplate = activeMedia.querySelector('template');
       const activeMediaContent = activeMediaTemplate ? activeMediaTemplate.content : null;
-      activeMedia.classList.add('active');
+      // activeMedia.classList.add('active');
       activeMedia.scrollIntoView();
 
       const container = this.querySelector('[role="document"]');
