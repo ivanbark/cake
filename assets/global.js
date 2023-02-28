@@ -789,11 +789,11 @@ class VariantSelects extends HTMLElement {
       var thumbnail_selector = '[data-thumbnail-color="' + selected_color + '"]';
       var featured_selector = '[data-featured-color="' + selected_color + '"]';
       $(thumbnail_selector).show();
-      $(featured_selector).first.show();
+      $(featured_selector)[0].show();
     }
     else {
         $('[data-thumbnail-color]').show();
-        $('[data-featured-color]').first.show();
+        $('[data-featured-color]')[0].show();
     }
   }
 
