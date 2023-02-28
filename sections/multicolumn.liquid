@@ -607,7 +607,7 @@ function ourStoryRight() {
   var style2 = window.getComputedStyle(getvalue);
   var matrix2 = new WebKitCSSMatrix(style2.transform);
 
-  var calculatedValue = width2 * 4 - matrix2.m41;
+  var calculatedValue = matrix2.m41 - width2 * 4 ;
 
   var items2 = document.getElementsByClassName("multicolumn_our_story");
 
