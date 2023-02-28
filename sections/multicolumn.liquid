@@ -607,16 +607,16 @@ function ourStoryRight() {
   let width2 = getvalue.offsetWidth;
   var style2 = window.getComputedStyle(getvalue);
   var matrix2 = new WebKitCSSMatrix(style2.transform);
-  
+  var items2 = document.getElementsByClassName("multicolumn_our_story");
 
   var calculatedValue = matrix2.m41 - 20 - width2 * 4 ;
-  var maxcalculatedValue = matrix2.m41 - 40 - width2 * 8 ;
+  
 
-  // if(alreadyCalculated == false)
-  // {
-  //     var items2 = document.getElementsByClassName("multicolumn_our_story");
-  //     alreadyCalculated = true;
-  // }
+  if(alreadyCalculated == false)
+  {
+      var maxcalculatedValue = matrix2.m41 - 40 - width2 * 8 ;
+      alreadyCalculated = true;
+  }
 
 
     for (i = 0; i < items2.length; i++) {
