@@ -604,7 +604,6 @@ function ourStoryRight() {
   var style2 = window.getComputedStyle(getvalue);
   var matrix2 = new WebKitCSSMatrix(style2.transform);
   var items2 = document.getElementsByClassName("multicolumn_our_story");
-
   var calculatedValue = matrix2.m41 - 25 - width2 * 4 ;
   
 
@@ -629,9 +628,7 @@ function ourStoryLeft() {
   let width2 = getvalue.offsetWidth;
   var style2 = window.getComputedStyle(getvalue);
   var matrix2 = new WebKitCSSMatrix(style2.transform);
-
-   var calculatedValue = matrix2.m41 + 25 + width2 * 4 ;
-
+  var calculatedValue = matrix2.m41 + 25 + width2 * 4 ;
   var items2 = document.getElementsByClassName("multicolumn_our_story");
 
    for (i = 0; i < items2.length; i++) {
