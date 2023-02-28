@@ -776,41 +776,41 @@ class VariantSelects extends HTMLElement {
   }
 
   filterThumbnails(variant){
-    // if(variant.featured_image != null && variant.featured_image.alt != null){
-    //   $('[data-thumbnail-color]').hide();
-    //   var selected_color = variant.featured_image.alt;
-    //   var thumbnail_selector = '[data-thumbnail-color="' + selected_color + '"]';
-    //   $(thumbnail_selector).show();
-    // } 
-    if (variant.option3) {
-      $('[data-featured-color]').hide();
+    if(variant.featured_image != null && variant.featured_image.alt != null){
       $('[data-thumbnail-color]').hide();
-      $('[data-thumbnail-featured-color]').hide();
-      $('[data-thumbnail-mobile-color]').hide();
-      var selected_color = variant.option3;
+      var selected_color = variant.featured_image.alt;
       var thumbnail_selector = '[data-thumbnail-color="' + selected_color + '"]';
-      var featured_selector = '[data-featured-color="' + selected_color + '"]';
-      var thumbnail_featured_selector = '[data-thumbnail-featured-color="' + selected_color + '"]';
-      var featured_mobile_selector = '[data-thumbnail-mobile-color="' + selected_color + '"]';
       $(thumbnail_selector).show();
-      $(featured_selector + ':first').show();
-      $(thumbnail_featured_selector + ':first').show();
-      console.log($(thumbnail_featured_selector + ':first'));
-      if ($(window).width() < 750) {
-        $(featured_mobile_selector).show();        
-      } else if ($(thumbnail_featured_selector + ':first').length <= 0) {
-        $(featured_mobile_selector + ':first').show();        
-      }
-    }
+    } 
+    // if (variant.option3) {
+    //   $('[data-featured-color]').hide();
+    //   $('[data-thumbnail-color]').hide();
+    //   $('[data-thumbnail-featured-color]').hide();
+    //   $('[data-thumbnail-mobile-color]').hide();
+    //   var selected_color = variant.option3;
+    //   var thumbnail_selector = '[data-thumbnail-color="' + selected_color + '"]';
+    //   var featured_selector = '[data-featured-color="' + selected_color + '"]';
+    //   var thumbnail_featured_selector = '[data-thumbnail-featured-color="' + selected_color + '"]';
+    //   var featured_mobile_selector = '[data-thumbnail-mobile-color="' + selected_color + '"]';
+    //   $(thumbnail_selector).show();
+    //   $(featured_selector + ':first').show();
+    //   $(thumbnail_featured_selector + ':first').show();
+    //   console.log($(thumbnail_featured_selector + ':first'));
+    //   if ($(window).width() < 750) {
+    //     $(featured_mobile_selector).show();        
+    //   } else if ($(thumbnail_featured_selector + ':first').length <= 0) {
+    //     $(featured_mobile_selector + ':first').show();        
+    //   }
+    // }
     else {
         $('[data-thumbnail-color]').show();
-        $('[data-featured-color]:first').show();
-        $('[data-thumbnail-featured-color]:first').show();
-        if ($(window).width() < 750) {
-          $('[data-thumbnail-mobile-color]').show();        
-        } else if ($(thumbnail_featured_selector + ':first') == null) {
-          $('[data-thumbnail-mobile-color]:first').show();        
-        }
+        // $('[data-featured-color]:first').show();
+        // $('[data-thumbnail-featured-color]:first').show();
+        // if ($(window).width() < 750) {
+        //   $('[data-thumbnail-mobile-color]').show();        
+        // } else if ($(thumbnail_featured_selector + ':first') == null) {
+        //   $('[data-thumbnail-mobile-color]:first').show();        
+        // }
     }
   }
 
