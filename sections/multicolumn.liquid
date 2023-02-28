@@ -607,7 +607,7 @@ function ourStoryRight() {
   var style2 = window.getComputedStyle(getvalue);
   var matrix2 = new WebKitCSSMatrix(style2.transform);
 
-  var newMatrix2 = matrix2.m41 - width2;
+  var calculatedValue = width2 * 4 + matrix2.m41;
 
   var items2 = document.getElementsByClassName("multicolumn_our_story");
 
@@ -617,7 +617,7 @@ function ourStoryRight() {
       // Smaller screens
       if(matrix2.m41 == "0")
       {
-         items2[i].style.transform = "translate3d(-700px, 0px, 0px)";
+         items2[i].style.transform = "translate3d(" + calculatedValue + "px, 0px, 0px)";
       }
       if(matrix2.m41 == "-700")
       {
