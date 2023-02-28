@@ -600,8 +600,6 @@
   var maxcalculatedValue = 0;
   
 function ourStoryRight() {
-
-  console.log("In function right");
   let width2 = getvalue.offsetWidth;
   var style2 = window.getComputedStyle(getvalue);
   var matrix2 = new WebKitCSSMatrix(style2.transform);
@@ -616,7 +614,6 @@ function ourStoryRight() {
       alreadyCalculated = true;
   }
 
-
     for (i = 0; i < items2.length; i++) {
       // Smaller screens
       if(matrix2.m41 <= maxcalculatedValue)
@@ -628,10 +625,7 @@ function ourStoryRight() {
     }
   }
 
-
-function ourStoryLeft() {
-   console.log("In function left");
-
+function ourStoryLeft() { 
   let width2 = getvalue.offsetWidth;
   var style2 = window.getComputedStyle(getvalue);
   var matrix2 = new WebKitCSSMatrix(style2.transform);

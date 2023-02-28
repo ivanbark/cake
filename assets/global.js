@@ -798,7 +798,7 @@ class VariantSelects extends HTMLElement {
       console.log($(thumbnail_featured_selector + ':first'));
       if ($(window).width() < 750) {
         $(featured_mobile_selector).show();        
-      } else if ($(thumbnail_featured_selector + ':first') == null) {
+      } else if ($(thumbnail_featured_selector + ':first').length <= 0) {
         $(featured_mobile_selector + ':first').show();        
       }
     }
