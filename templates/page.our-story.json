@@ -520,12 +520,6 @@
         "padding_bottom": 0,
         "column_size": "big"
       }
-    },
-    "25550e8a-14be-448c-ad3a-c42af31e0ba7": {
-      "type": "instagram-collection",
-      "disabled": true,
-      "settings": {
-      }
     }
   },
   "order": [
@@ -537,7 +531,6 @@
     "8a0ad626-bf0c-46ea-963e-deefb8d2cc2e",
     "a430c8f4-a485-481e-8972-6acc6fccd6fa",
     "6a1e1f90-8d8e-4b10-beff-d86ccebc2b12",
-    "4221f84b-d953-4ced-b66d-0b02e0474f25",
-    "25550e8a-14be-448c-ad3a-c42af31e0ba7"
+    "4221f84b-d953-4ced-b66d-0b02e0474f25"
   ]
 }
