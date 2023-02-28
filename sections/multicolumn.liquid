@@ -596,9 +596,6 @@
   var i;
   var getvalue = document.getElementById("multicolumn_our_story_id");
 
-  var items2 = document.getElementsByClassName("multicolumn_our_story");
-  var maxClicks2 = items2.length - 4;
-  var clicks2 = 0;
   var alreadyCalculated = false;
   var maxcalculatedValue = 0;
   
@@ -621,14 +618,12 @@ function ourStoryRight() {
 
 
     for (i = 0; i < items2.length; i++) {
-      console.log("For loop right" + items2[i]);
       // Smaller screens
       if(matrix2.m41 == maxcalculatedValue)
       {
         items2[i].style.transform = "translate3d(0px, 0px, 0px)";
       } else {
         items2[i].style.transform = "translate3d(" + calculatedValue + "px, 0px, 0px)";
-        console.log(calculatedValue + "<-- current value Max value -->" + maxcalculatedValue);
       } 
     }
   }
@@ -646,7 +641,6 @@ function ourStoryLeft() {
   var items2 = document.getElementsByClassName("multicolumn_our_story");
 
    for (i = 0; i < items2.length; i++) {
-      console.log("For loop left" + items2[i]);
       // Smaller screens
      if(matrix2.m41 != 0)
      {
