@@ -139,7 +139,7 @@
                 {% else %} 
                   <div class="media media--transparent media--{{ section.settings.image_ratio }}"
                     {% if section.settings.image_ratio == 'adapt' %}
-                      style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%; {% if block.settings.image.alt == "our_story" %} height: 90%;{% endif %}"
+                      style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%; {% if block.settings.image.alt == "our_story" %} width: 250px; margin: auto; margin-top: 20px;{% endif %}"
                     {% endif %}>
                     {%- capture sizes -%}(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %}, (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %}, calc(100vw - 30px){%- endcapture -%}
                     {{ block.settings.image | image_url: width: 1420 | image_tag:
