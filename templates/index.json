@@ -523,7 +523,7 @@
       ],
       "custom_css": [
         ".jdgm-carousel-item__inner-wrapper {border-radius: 15px !important; background: white; padding: 32px;}",
-        ".page-width {background: #f6cfc2; margin: 0; width: 100% !important; max-width: 100%; padding-top: 0px; padding-bottom: 0px;}"
+        ".page-width {background: #f6cfc2; margin: 0; width: 100% !important; max-width: 100%; padding-top: 20px; padding-bottom: 20px;}"
       ],
       "settings": {
         "include_margins": true
