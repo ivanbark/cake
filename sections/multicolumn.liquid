@@ -604,14 +604,14 @@ function ourStoryRight() {
 
   var items2 = document.getElementsByClassName("multicolumn_our_story");
 
-  //if(clicks2 < maxClicks2){
+  if(clicks2 < maxClicks2){
     console.log("if statement right");
     for (i = 0; i < items2.length; i++) {
       console.log("For loop right" + items2[i]);
       items2[i].style.transform = "translate3d(" + newMatrix2 + "px, 0px, 0px)";
     }
     clicks2++;
-  //}
+  }
 }
 
 function ourStoryLeft() {
@@ -625,13 +625,13 @@ function ourStoryLeft() {
 
   var items2 = document.getElementsByClassName("multicolumn_our_story");
 
-  //if(matrix2.m41 != 0 && clicks2 <= maxClicks2 && clicks2 != 0){
+  if(matrix2.m41 != 0 && clicks2 <= maxClicks2 && clicks2 != 0){
     console.log("if statement left");
     for (i = 0; i < items2.length; i++) {
       console.log("For loop left");
         items2[i].style.transform = "translate3d(" + newMatrix2 + "px, 0px, 0px)";
       }
      clicks2--;
-  //}
+  }
 }
 </script>
