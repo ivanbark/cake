@@ -627,22 +627,14 @@ function ourStoryLeft() {
   var style2 = window.getComputedStyle(getvalue);
   var matrix2 = new WebKitCSSMatrix(style2.transform);
 
-  var newMatrix2 = matrix2.m41 + width2;
+   var calculatedValue = matrix2.m41 + 15 + width2 * 4 ;
 
   var items2 = document.getElementsByClassName("multicolumn_our_story");
 
-  if(matrix2.m41 != 425 ){
-    console.log("if statement left");
-    for (i = 0; i < items2.length; i++) {
-      console.log("For loop left");
-      if(matrix2.m41 == "100" || matrix2.m41 == "-600") {
-          items2[i].style.transform = "translate3d(425px, 0px, 0px)";
-        }
-      if(matrix2.m41 == "-150" || matrix2.m41 == "-800") {
-          items2[i].style.transform = "translate3d(585px, 0px, 0px)";
-        }
-      }
-     clicks2--;
-  }
+   for (i = 0; i < items2.length; i++) {
+      console.log("For loop left" + items2[i]);
+      // Smaller screens
+         items2[i].style.transform = "translate3d(" + calculatedValue + "px, 0px, 0px)";
+    }
 }
 </script>
