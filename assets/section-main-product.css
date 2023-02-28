@@ -531,7 +531,7 @@ a.product__text {
     display: none;
   }
 
-  .is-active.product__media-item.ata-thumbnail-color {
+  .is-active.product__media-item.data-thumbnail-color {
     display: block !important;
   }
 
