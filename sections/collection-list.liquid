@@ -365,12 +365,10 @@ function plusDivs() {
 }
 
 function minDivs() {
- 
   let width = getTransformValue.offsetWidth;
   var style = window.getComputedStyle(getTransformValue);
   var matrix = new WebKitCSSMatrix(style.transform);
-
-  var newMatrix = matrix.m41 + width;
+  var calculatedValue = matrix.m41 + 25 + width;
 
   var items = document.getElementsByClassName("list-item-discover_our_ranges");
 

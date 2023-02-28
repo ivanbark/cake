@@ -531,10 +531,6 @@ a.product__text {
     display: none;
   }
 
-  .is-active.product__media-item.data-thumbnail-color {
-    display: block !important;
-  }
-
   .product-media-modal__content > .product__media-item--variant.product__media-item--variant {
     display: none;
   }
