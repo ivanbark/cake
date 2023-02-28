@@ -781,7 +781,7 @@ class VariantSelects extends HTMLElement {
     //   var selected_color = variant.featured_image.alt;
     //   var thumbnail_selector = '[data-thumbnail-color="' + selected_color + '"]';
     //   $(thumbnail_selector).show();
-    } 
+    // } 
     if (variant.option3) {
       $('[data-featured-color]').hide();
       $('[data-thumbnail-color]').hide();
