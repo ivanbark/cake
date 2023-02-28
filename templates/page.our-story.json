@@ -539,7 +539,8 @@
         "3e765193-2328-4361-9c8f-19130f526814"
       ],
       "settings": {
-        "section_title": "As seen on #realmamas"
+        "section_title": "As seen on #realmamas",
+        "title_size": 26
       }
     }
   },
