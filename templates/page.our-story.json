@@ -523,8 +523,23 @@
     },
     "23197daa-447e-4801-979c-4fd808243740": {
       "type": "instagram-collection",
+      "blocks": {
+        "3e765193-2328-4361-9c8f-19130f526814": {
+          "type": "Instagram_post",
+          "settings": {
+            "collection": "",
+            "collection_title": "",
+            "text_color": "#ffffff",
+            "collection_title_alignment": "left",
+            "font_size": 10
+          }
+        }
+      },
+      "block_order": [
+        "3e765193-2328-4361-9c8f-19130f526814"
+      ],
       "settings": {
-        "post_url": "https:\/\/www.instagram.com\/p\/Ch45Ry-sEAT\/"
+        "post_url": ""
       }
     }
   },
