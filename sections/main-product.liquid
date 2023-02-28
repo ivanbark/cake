@@ -488,7 +488,7 @@
                       {% if option.name == "Color" %}
                         <script>
                           $('[data-thumbnail-color]').hide();
-                          var selected_color = {{ option.value }};
+                          var selected_color = {{ option.values.first }};
                           var thumbnail_selector = '[data-thumbnail-color="' + selected_color + '"]';
                           $(thumbnail_selector).show();
                         </script>
