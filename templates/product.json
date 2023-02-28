@@ -123,7 +123,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/cake-maternity-croissant-nursing-bra.jpg",
             "padding_left": 0,
-            "title": "",
+            "title": "{{ product.metafields.custom.feature_1_title.value }}",
             "subtitle": "feature #1",
             "title_font_weight": "normal",
             "title_font_size": 24,
