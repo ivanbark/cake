@@ -137,7 +137,7 @@
                   
                 {%- if block.settings.title == "Encouraging breast health." or block.settings.title == "Mama-friendly returns." or block.settings.title == "Support for every mama." -%}
                 {% else %} 
-                  <div style="{% if block.settings.image.alt == "our_story" %} height: 90%;{% endif %} class="media media--transparent media--{{ section.settings.image_ratio }}"
+                  <div style="{% if block.settings.image.alt == "our_story" %} height: 90%;{% endif %}" class="media media--transparent media--{{ section.settings.image_ratio }}"
                     {% if section.settings.image_ratio == 'adapt' %}
                       style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
                     {% endif %}>
