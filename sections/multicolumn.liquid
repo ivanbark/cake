@@ -135,8 +135,6 @@
                 {% endif %}
                 <div style="{% if block.settings.image.alt == "our_story" %} width: 250px; margin: auto; margin-top: 20px;{% endif %}" class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
                 {% if block.settings.image.alt == "our_story" %}
-                {% endif %}  
-                {%- if block.settings.title == "Encouraging breast health." or block.settings.title == "Mama-friendly returns." or block.settings.title == "Support for every mama." -%}
                    <div class="media media--transparent media--{{ section.settings.image_ratio }}" style="{% if section.settings.image_ratio == 'adapt' %} padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%; {% endif %} {% if block.settings.image.alt == "our_story" %} height: 90%;{% endif %}">
                     {%- capture sizes -%}(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %}, (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %}, calc(100vw - 30px){%- endcapture -%}
                     {{ block.settings.image | image_url: width: 1420 | image_tag:
@@ -146,6 +144,8 @@
                       class: 'multicolumn-our_story'
                     }}                    
                   </div>
+                {% endif %}  
+                {%- if block.settings.title == "Encouraging breast health." or block.settings.title == "Mama-friendly returns." or block.settings.title == "Support for every mama." -%}
                 {% else %} 
                   <div class="media media--transparent media--{{ section.settings.image_ratio }}" style="{% if section.settings.image_ratio == 'adapt' %} padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%; {% endif %} {% if block.settings.image.alt == "our_story" %} height: 90%;{% endif %}">
                     {%- capture sizes -%}(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %}, (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %}, calc(100vw - 30px){%- endcapture -%}
