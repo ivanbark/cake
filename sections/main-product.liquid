@@ -485,6 +485,14 @@
                     {{ block.shopify_attributes }}
                   >
                     {%- for option in product.options_with_values -%}
+                      {% if option.name == "Color" %}
+                        <script>
+                          $('[data-thumbnail-color]').hide();
+                          var selected_color = {{ option.value }};
+                          var thumbnail_selector = '[data-thumbnail-color="' + selected_color + '"]';
+                          $(thumbnail_selector).show();
+                        </script
+                      {% endif %}
                       <fieldset class="js product-form__input">
                         <legend class="form__label">{{ option.name }}</legend>
                         {%- for value in option.values -%}
