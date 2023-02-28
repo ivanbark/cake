@@ -527,8 +527,8 @@
         "3e765193-2328-4361-9c8f-19130f526814": {
           "type": "Instagram_post",
           "settings": {
-            "collection": "",
-            "collection_title": "",
+            "post_image": "shopify:\/\/shop_images\/kaylapanagiotou-iced-tea.webp",
+            "post_title": "",
             "text_color": "#ffffff",
             "collection_title_alignment": "left",
             "font_size": 10
