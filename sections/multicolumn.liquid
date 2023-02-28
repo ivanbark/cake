@@ -606,11 +606,16 @@ function ourStoryRight() {
   let width2 = getvalue.offsetWidth;
   var style2 = window.getComputedStyle(getvalue);
   var matrix2 = new WebKitCSSMatrix(style2.transform);
+  const calculated = false;
 
   var calculatedValue = matrix2.m41 - 20 - width2 * 4 ;
-  var maxcalculatedValue = matrix2.m41 - 20 - width2 * 8 ;
+  var maxcalculatedValue = matrix2.m41 - 40 - width2 * 8 ;
 
-  var items2 = document.getElementsByClassName("multicolumn_our_story");
+  if(calculated = false)
+  {
+      var items2 = document.getElementsByClassName("multicolumn_our_story");
+      calculated = true;
+  }
 
 
     for (i = 0; i < items2.length; i++) {
