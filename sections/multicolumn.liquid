@@ -634,7 +634,10 @@ function ourStoryLeft() {
    for (i = 0; i < items2.length; i++) {
       console.log("For loop left" + items2[i]);
       // Smaller screens
-         items2[i].style.transform = "translate3d(" + calculatedValue + "px, 0px, 0px)";
+     if(matrix2.m41 != 0)
+     {
+       items2[i].style.transform = "translate3d(" + calculatedValue + "px, 0px, 0px)";
+     } 
     }
 }
 </script>
