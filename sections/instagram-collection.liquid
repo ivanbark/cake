@@ -1,10 +1,12 @@
 <div class="container">
- {{ block.settings.post_image | image_url: width: 1420 | image_tag:
-    loading: 'lazy',
-    sizes: sizes,
-    widths: '275, 550, 710, 1420',
-    class: 'instagram_post'
-  }}  
+  {% if block.settings.post_image != null %}
+   {{ block.settings.post_image | image_url: width: 1420 | image_tag:
+      loading: 'lazy',
+      sizes: sizes,
+      widths: '275, 550, 710, 1420',
+      class: 'instagram_post'
+    }}
+  {% endif %}
 </div>
 
 {% schema %}
