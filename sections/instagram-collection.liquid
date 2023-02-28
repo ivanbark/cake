@@ -10,20 +10,21 @@
     max-height: 400px;
   }
 {% endstyle %}
-
-<div class="instapost_container">
-  {% for block in section.blocks%}
-    {% if block.settings.post_image != null %}
-     {{ block.settings.post_image | image_url: width: 1420 | image_tag:
-        loading: 'lazy',
-        sizes: sizes,
-        widths: '275, 550, 710, 1420',
-        class: 'instagram_post'
-      }}
-    {% endif %}
-  {% endfor %}
+<div>
+  <h2>{{ section.settings.section_title }}</h2>
+  <div class="instapost_container">
+    {% for block in section.blocks%}
+      {% if block.settings.post_image != null %}
+       {{ block.settings.post_image | image_url: width: 1420 | image_tag:
+          loading: 'lazy',
+          sizes: sizes,
+          widths: '275, 550, 710, 1420',
+          class: 'instagram_post'
+        }}
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
-
 {% schema %}
 {
   "name": "Instagram",
