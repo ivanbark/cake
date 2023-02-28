@@ -14,6 +14,60 @@
       "label": "Post link"
     }
   ],
+   "blocks": [
+    {
+      "type": "Instagram_post",
+      "name": "Instagram post",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "t:sections.collection-list.blocks.featured_collection.settings.collection.label"
+        },
+        {
+          "type": "text",
+          "id": "collection_title",
+          "label": "Name of your collection | Leave empty for default collection name"
+        },
+        {
+           "type": "color",
+           "id": "text_color",
+           "label": "Text color",
+           "default": "#ffffff"
+        },
+        {
+          "type": "select",
+          "id": "collection_title_alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left",
+          "label": "Text alignment"
+        },
+        {
+          "type": "range",
+          "id": "font_size",
+          "min": 10,
+          "max": 60,
+          "step": 2,
+          "unit": "px",
+          "label": "text size",
+          "default": 10
+        }
+      ]
+    }
+  ],
   "presets": [
   {
     "name": "Instagram collection",
