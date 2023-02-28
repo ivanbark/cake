@@ -595,6 +595,7 @@
   
 function ourStoryRight() {
 
+  console.log("In function right");
   let width2 = getvalue.offsetWidth;
   var style2 = window.getComputedStyle(getvalue);
   var matrix2 = new WebKitCSSMatrix(style2.transform);
@@ -614,7 +615,8 @@ function ourStoryRight() {
 }
 
 function ourStoryLeft() {
- 
+   console.log("In function left");
+
   let width2 = getvalue.offsetWidth;
   var style2 = window.getComputedStyle(getvalue);
   var matrix2 = new WebKitCSSMatrix(style2.transform);
