@@ -486,13 +486,10 @@
                   >
                     {%- for option in product.options_with_values -%}
                       {% if option.name == "Color" %}
-                        {% for value in option.values %}
-                          {% if value != option.values.first %}
-                            <script>
-                              $('[data-thumbnail-color="' + {{ value }} + '"]').hide();
-                            </script>
-                          {% endif %}
-                        {% endfor %}
+                        <script>
+                          $('[data-thumbnail-color]').hide();
+                          $('[data-thumbnail-color="{{ option.values.first }}"]').show();
+                        </script>
                       {% endif %}
                       <fieldset class="js product-form__input">
                         <legend class="form__label">{{ option.name }}</legend>
