@@ -771,7 +771,7 @@ a.product__text {
 
   .product--thumbnail .is-active .deferred-media,
   .product--thumbnail_slider .is-active .deferred-media {
-    display: block;
+    display: block !important;
     width: 100%;
   }
 }
