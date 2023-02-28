@@ -195,6 +195,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Home-Page-Cotton-Candy-Banner-Desktop_1.webp",
+        "show_multiple_img": false,
         "height": "large",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -488,8 +489,7 @@
         "show_description": false,
         "description_style": "body",
         "collection": "bestsellers",
-        "image": "shopify:\/\/shop_images\/fittingroom.webp",
-        "products_to_show": 3,
+        "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
