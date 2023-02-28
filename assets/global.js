@@ -785,6 +785,8 @@ class VariantSelects extends HTMLElement {
     if (variant.option3) {
       $('[data-featured-color]').hide();
       $('[data-thumbnail-color]').hide();
+      $('[data-thumbnail-featured-color]').hide();
+      $('[data-featured-mobile-color]').hide();
       var selected_color = variant.option3;
       var thumbnail_selector = '[data-thumbnail-color="' + selected_color + '"]';
       var featured_selector = '[data-featured-color="' + selected_color + '"]';
