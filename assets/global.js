@@ -795,7 +795,7 @@ class VariantSelects extends HTMLElement {
       $(thumbnail_selector).show();
       $(featured_selector + ':first').show();
       $(thumbnail_featured_selector + ':first').show();
-      if ($( window ).width() < 750) {
+      if ($(window).width() < 750) {
         $(featured_mobile_selector).show();        
       }
     }
@@ -803,7 +803,7 @@ class VariantSelects extends HTMLElement {
         $('[data-thumbnail-color]').show();
         $('[data-featured-color]:first').show();
         $('[data-thumbnail-featured-color]:first').show();
-        if ($( window ).width() < 750) {
+        if ($(window).width() < 750) {
           $('[data-featured-mobile-color]').show();        
         }
     }
