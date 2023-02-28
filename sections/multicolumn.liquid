@@ -628,9 +628,23 @@ function ourStoryRight() {
 
     for (i = 0; i < items2.length; i++) {
       console.log("For loop right" + items2[i]);
+      // Smaller screens
       if(matrix2.m41 == "425")
       {
          items2[i].style.transform = "translate3d(100px, 0px, 0px)";
+      }
+      if(matrix2.m41 == "100")
+      {
+        items2[i].style.transform = "translate3d(-600px, 0px, 0px)";
+      }
+      if(matrix2.m41 == "-600")
+      {
+        items2[i].style.transform = "translate3d(425px, 0px, 0px)";
+      }
+      // Large screens
+      if(matrix2.m41 == "585")
+      {
+         items2[i].style.transform = "translate3d(1200px, 0px, 0px)";
       }
       if(matrix2.m41 == "100")
       {
