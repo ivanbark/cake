@@ -67,7 +67,7 @@
   
     <slider-component class="slider-mobile-gutter">
        <button style="float:left;top:calc(50% - 50px);width:35px;height:50px;cursor:pointer;z-index:9;border:none;background:rgba(255,255,255,.8);" class="button_switch switch_left" onclick="minDivs()">&#10094;</button>
-       <button style="float:right;top:calc(50% - 50px);margin-left: calc(100%-35px);width:35px;height:50px;cursor:pointer;z-index:9;border:none;background:rgba(255,255,255,.8);" class="button_switch switch_right" onclick="plusDivs()">&#10095;</button>
+       <button style="float:right;top:calc(50% - 50px);margin-left: calc(100% - 35px);width:35px;height:50px;cursor:pointer;z-index:9;border:none;background:rgba(255,255,255,.8);" class="button_switch switch_right" onclick="plusDivs()">&#10095;</button>
       <ul style="padding-bottom: 15px; overflow: overlay; flex-flow:nowrap; overflow-x:hidden; overflow-y:hidden;" class="collection-list-scrollbar collection-list contains-card contains-card--collection{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down{% if section.settings.swipe_on_mobile %} slider slider--tablet grid--peek{% endif %} collection-list--{{ section.blocks.size }}-items"
         id="Slider-{{ section.id }}"
         role="list"
