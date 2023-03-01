@@ -491,7 +491,7 @@
                           $('[data-thumbnail-color="{{ option.values.first }}"]').show();
                         </script>
                       {% endif %}
-                      <fieldset class="js product-form__input">
+                      <fieldset class="js product-form__input {% if option.name == "Color" %}colorFieldSet{% endif %}">
                         <legend class="form__label">{{ option.name }}</legend>
                         {%- for value in option.values -%}
                           <input
@@ -515,7 +515,7 @@
                                 {% if variantOption == value and variant.metafields.custom.hexcode != null %}
                                   {% assign showColorLabel = false %}
                                   <style>
-                                    .product-form__input input[type="radio"]:checked + label {
+                                    .colorFieldSet input[type="radio"]:checked + label {
                                       background: white !important;
                                       padding: 5px !important;
                                       border: 10px solid {{ variant.metafields.custom.hexcode }} !important;
