@@ -2,9 +2,12 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "custom_css": [
+
+      ],
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": false,
+        "show_collection_image": true,
         "color_scheme": "background-1"
       }
     },
@@ -13,7 +16,7 @@
       "custom_css": [
         ".small-hide {display: none !important;}",
         ".large-up-hide {display: block !important;}",
-        ".facets-container-drawer {display: grid;grid-template-columns: repeat(2,auto);grid-template-rows: repeat(2,auto);padding-top: 1rem;}"
+        ".facets-container-drawer {display: grid; grid-template-columns: repeat(2, auto); grid-template-rows: repeat(2, auto); padding-top: 1rem;}"
       ],
       "settings": {
         "products_per_page": 24,
