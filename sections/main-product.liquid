@@ -514,6 +514,13 @@
                               {% for variantOption in variant.options %}
                                 {% if variantOption == value and variant.metafields.custom.hexcode != null %}
                                   {% assign showColorLabel = false %}
+                                  <style>
+                                    #{{ section.id }}-{{ option.position }}-{{ forloopIndex }}:checked + label {
+/*                                       background: white !important;
+                                      padding: 5px !important; */
+                                      border: 10px solid {{ variant.metafields.custom.hexcode }} !important;
+                                    }
+                                  </style>
                                   <label for="{{ section.id }}-{{ option.position }}-{{ forloopIndex }}" style="background:{{ variant.metafields.custom.hexcode }};border-radius:100%;padding:15px;">
                                   </label>
                                   {% break %}
