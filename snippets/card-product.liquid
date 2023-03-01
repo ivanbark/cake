@@ -194,8 +194,6 @@
                 </span>
               </p>
             {%- endif -%}
-
-            {% render 'price', product: card_product, price_class: '' %}
 <!-- Code hier! (Color swatches) -->
       <div style="width:100%;height:fit-content;">
         {% for variant in card_product.variants %}
@@ -224,6 +222,8 @@
       {{ value }}
       </label>
       {% endif %} -->
+
+            {% render 'price', product: card_product, price_class: '' %}
 
           </div>
         </div>
