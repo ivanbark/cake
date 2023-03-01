@@ -508,8 +508,8 @@
                           {% assign showColorLabel = true %}
                           {% for variant in product.variants %}
                             {% for option in variant.options %}
-                            <p>{{ option }}</p>
                               {% if option.name == "Color" %}
+                                <p>{{ option.name }}</p>
                                 {% if option.value == value and variant.metafields.custom.hexcode != null %}
                                   {% assign showColorLabel = false %}
                                   <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" style="border:3px solid black;background:{{ variant.metafields.custom.hexcode }};height:25px;width:25px;border-radius:100%;display:inline-block;margin-right:8px;">
