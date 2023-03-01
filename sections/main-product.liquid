@@ -504,9 +504,25 @@
                               checked
                             {% endif %}
                           >
-                          <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                            {{ value }}
-                          </label>
+                          
+                          {% assign showColorLabel = true %}
+                          {% for variant in product.variants %}
+                            {% for option in variant.options %}
+                              {% if option.name == "Color" %}
+                                {% if option.value == value and variant.metafields.custom.hexcode != null %}
+                                  {% assign showColorLabel = false %}
+                                  <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" style="border:3px solid black;background:{{ variant.metafields.custom.hexcode }};height:25px;width:25px;border-radius:100%;display:inline-block;margin-right:8px;">
+                                  </label>
+                                {% endif %}
+                              {% endif %}
+                            {% endfor %}
+                          {% endfor %}
+
+                          {% if showColorLabel %}
+                            <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                              {{ value }}
+                            </label>
+                          {% endif %}
                         {%- endfor -%}
                       </fieldset>
                     {%- endfor -%}
