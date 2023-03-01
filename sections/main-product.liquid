@@ -515,7 +515,7 @@
                                 {% if variantOption == value and variant.metafields.custom.hexcode != null %}
                                   {% assign showColorLabel = false %}
                                   <style>
-                                    .colorFieldSet input[type="radio"]:checked + label {
+                                    #{{ section.id }}-{{ option.position }}-{{ forloopIndex }}:checked + label {
                                       background: white !important;
                                       padding: 5px !important;
                                       border: 10px solid {{ variant.metafields.custom.hexcode }} !important;
