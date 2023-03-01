@@ -510,17 +510,24 @@
                           {% assign forloopIndex = forloop.index0 %}
 
                           {% if option.name == "Color" %}
-<!--                             {% for variant in product.variants %}
+                            {% for variant in product.variants %}
                               {% for variantOption in variant.options %}
                                 {% if variantOption == value and variant.metafields.custom.hexcode != null %}
                                   {% assign showColorLabel = false %}
-                                  <label for="{{ section.id }}-{{ option.position }}-{{ forloopIndex }}" style="border:3px solid transparent;background:{{ variant.metafields.custom.hexcode }};border-radius:100%;padding:15px 15px;">
+                                  <style>
+                                    .product-form__input input[type="radio"]:checked + label {
+                                      background: white !important;
+                                      padding: 5px !important;
+                                      border: 10px solid {{ variant.metafields.custom.hexcode }} !important;
+                                    }
+                                  </style>
+                                  <label for="{{ section.id }}-{{ option.position }}-{{ forloopIndex }}" style="background:{{ variant.metafields.custom.hexcode }};border-radius:100%;padding:15px;">
                                   </label>
                                   {% break %}
                                 {% endif %}
                               {% endfor %}
                             {% endfor %}
-                          {% endif %} -->
+                          {% endif %}
 
                           {% if showColorLabel %}
                             <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
