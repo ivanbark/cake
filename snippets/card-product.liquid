@@ -198,12 +198,8 @@
             {% render 'price', product: card_product, price_class: '' %}
 <!-- Code hier! (Color swatches) -->
       <div style="width:100%;height:fit-content;">
-        {% for variant in product.variants %}
-          
-            <div style="background:{{ variant.metafields.custom.hexcode }};height:15px;width:15px;border-radius:100%;"></div>
+        {% for variant in card_product.variants %}
           {% if variant.metafields.custom.hexcode != null %}
-            <div style="background:{{ variant.metafields.custom.hexcode }};height:15px;width:15px;border-radius:100%;"></div>
-            {% else %}
             <div style="background:{{ variant.metafields.custom.hexcode }};height:15px;width:15px;border-radius:100%;"></div>
           {% endif %}
         {% endfor %}
