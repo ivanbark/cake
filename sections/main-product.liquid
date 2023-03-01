@@ -514,7 +514,7 @@
                               {% for variantOption in variant.options %}
                                 {% if variantOption == value and variant.metafields.custom.hexcode != null %}
                                   {% assign showColorLabel = false %}
-                                  <label for="{{ section.id }}-{{ option.position }}-{{ forloopIndex }}" style="border:3px solid black;background:{{ variant.metafields.custom.hexcode }};height:25px;width:25px;border-radius:100%;display:inline-block;margin-right:8px;">
+                                  <label for="{{ section.id }}-{{ option.position }}-{{ forloopIndex }}" style="border:3px solid transparent;background:{{ variant.metafields.custom.hexcode }};border-radius:100%;padding:15px 15px;">
                                   </label>
                                   {% break %}
                                 {% endif %}
