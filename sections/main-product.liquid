@@ -506,15 +506,18 @@
                           >
                           
                           {% assign showColorLabel = true %}
-                          {% for variant in product.variants %}
-                            {% for variantOption in variant.options %}
-                              {% if variantOption == value and variant.metafields.custom.hexcode != null %}
-                                {% assign showColorLabel = false %}
-                                <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" style="border:3px solid black;background:{{ variant.metafields.custom.hexcode }};height:25px;width:25px;border-radius:100%;display:inline-block;margin-right:8px;">
-                                </label>
-                              {% endif %}
+
+                          {% if option.name == "Color" %}
+                            {% for variant in product.variants %}
+                              {% for variantOption in variant.options %}
+                                {% if variantOption == value and variant.metafields.custom.hexcode != null %}
+                                  {% assign showColorLabel = false %}
+                                  <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" style="border:3px solid black;background:{{ variant.metafields.custom.hexcode }};height:25px;width:25px;border-radius:100%;display:inline-block;margin-right:8px;">
+                                  </label>
+                                {% endif %}
+                              {% endfor %}
                             {% endfor %}
-                          {% endfor %}
+                          {% endif %}
 
                           {% if showColorLabel %}
                             <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
