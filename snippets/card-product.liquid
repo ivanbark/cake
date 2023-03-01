@@ -200,16 +200,15 @@
   {% assign variant_needed = null %}
       {% for variant in product.variants %}
       {% if variant.options contains value %}
-      {% assign variant_needed = variant %}
       {% endif %}
       {% endfor %}
       {% if option.name == "Color" %}
-      <label class="color-swatch" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" data-option="{{ value }}" style="background-color: {{variant_needed.metafields.color.swatch}}">
+      <label class="color-swatch" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" data-option="{{ value }}" style="background-color:">
       &nbsp
         dsds
       </label>
       {% elsif option.name == "Color" %}
-      <label class="color-swatch" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" data-option="{{ value }}" style="background-size: cover; background-image: url('{{variant_needed.metafields.image.swatch}}')">
+      <label class="color-swatch" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" data-option="{{ value }}" style="background-size: cover; background-image: url('')">
       &nbsp
         dsds
       </label>
