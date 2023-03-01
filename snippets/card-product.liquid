@@ -49,7 +49,9 @@
         style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
       >
         {% for tag in card_product.tags %}
-          <p>{{ tag }}</p>
+          {% if tag == "bestseller" %}
+            <p style="position: absolute;">Bestseller</p>
+          {% endif %}
         {% endfor %}
   
         {%- if card_product.featured_media -%}
