@@ -514,6 +514,7 @@
                                   {% assign showColorLabel = false %}
                                   <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" style="border:3px solid black;background:{{ variant.metafields.custom.hexcode }};height:25px;width:25px;border-radius:100%;display:inline-block;margin-right:8px;">
                                   </label>
+                                  {% break %}
                                 {% endif %}
                               {% endfor %}
                             {% endfor %}
