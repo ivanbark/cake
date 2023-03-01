@@ -507,8 +507,8 @@
                           
                           {% assign showColorLabel = true %}
                           {% for variant in product.variants %}
-                            <p>test</p>
                             {% for option in variant.options %}
+                            <p>{{ option }}</p>
                               {% if option.name == "Color" %}
                                 {% if option.value == value and variant.metafields.custom.hexcode != null %}
                                   {% assign showColorLabel = false %}
