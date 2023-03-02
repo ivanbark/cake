@@ -498,9 +498,9 @@
                           $('[data-thumbnail-color="{{ option.values.first }}"]').show();
                         </script>
                       {% endif %}
-                      <fieldset class="js product-form__input {% if option.name == "Color" %}colorFieldSet{% endif %}">
-                        <legend class="form__label">{{ option.name }}</legend>
-                        <div>
+                      <fieldset style="border-bottom:1px solid #ccc;" class="js product-form__input {% if option.name == "Color" %}colorFieldSet{% endif %}">
+                        <legend style="float:left;" class="form__label">{{ option.name }}</legend>
+                        <div style="float:right;">
                         {%- for value in option.values -%}
                           <input
                             type="radio"
@@ -522,7 +522,7 @@
                               {% for variantOption in variant.options %}
                                 {% if variantOption == value and variant.metafields.custom.hexcode != null %}
                                   {% assign showColorLabel = false %}
-                                  <label for="{{ section.id }}-{{ option.position }}-{{ forloopIndex }}" style="background:{{ variant.metafields.custom.hexcode }};border-radius:100%;padding:15px;">
+                                  <label for="{{ section.id }}-{{ option.position }}-{{ forloopIndex }}" style="background:{{ variant.metafields.custom.hexcode }};border-radius:100%;padding:15px;margin-top:0;">
                                   </label>
                                   <style>
                                     #{{ section.id }}-{{ option.position }}-{{ forloopIndex }}:checked + label { 
@@ -538,7 +538,7 @@
                           {% endif %}
 
                           {% if showColorLabel %}
-                            <label style="font-weight:bold;padding:0;height:50px;width:50px;line-height:42px;" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                            <label style="margin-top:0;font-weight:bold;padding:0;height:50px;width:50px;line-height:42px;" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                               {{ value }}
                             </label>
                           {% endif %}
