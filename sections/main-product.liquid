@@ -344,7 +344,7 @@
               </div>
             {%- when 'price' -%}
               <div style="display:flex;" class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-                <b>EUR </b>{%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+                <b style="margin-rigth:10px">EUR</b>{%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
               </div>
               {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                 <div class="product__tax caption rte">
@@ -498,7 +498,7 @@
                           $('[data-thumbnail-color="{{ option.values.first }}"]').show();
                         </script>
                       {% endif %}
-                      <fieldset style="{% if forloop.index0 == 0 %}border-top:1px solid #ccc;padding-top:25px !important;{% endif %}border-bottom:1px solid #ccc;padding:10px 0 25px;{% if option.name == "Color" %}padding-bottom: 10px;{% endif %}" class="js product-form__input {% if option.name == "Color" %}colorFieldSet{% endif %}">
+                      <fieldset style="min-width:100%;{% if forloop.index0 == 0 %}border-top:1px solid #ccc;padding-top:25px !important;{% endif %}border-bottom:1px solid #ccc;padding:10px 0 25px;{% if option.name == "Color" %}padding-bottom: 10px;{% endif %}" class="js product-form__input {% if option.name == "Color" %}colorFieldSet{% endif %}">
                         <legend style="float:left;{% if option.name == "Color" %}line-height:31px;{% else %}line-height:50px;{% endif %}" class="form__label" id="{% if option.name == "Color" %}color-label{% endif %}"><b>{{ option.name }}:</b></legend>
                         <div style="float:right;">
                         {%- for value in option.values -%}
@@ -655,7 +655,7 @@
                       value="{{ product.selected_or_first_available_variant.id }}"
                       disabled
                     >
-                    <div class="product-form__buttons">
+                    <div class="product-form__buttons" style="min-width: 100%;">
                       <button
                         type="submit"
                         name="add"
