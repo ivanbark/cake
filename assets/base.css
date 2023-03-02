@@ -2999,6 +2999,6 @@ details-disclosure > details {
 }
 }
 
-.menu-drawer__menu-item {
+.menu-drawer__menu-item, header__menu-item {
   color:grey !important;
 }
