@@ -303,6 +303,35 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "custom-fonts": {
+        "type": "custom-fonts",
+        "blocks": {
+          "809d9983-00dd-4a9d-b36b-8480939baa72": {
+            "type": "image",
+            "settings": {
+              "name": "quincy-cf",
+              "custom_font_weight": "none",
+              "custom_font_style": "normal",
+              "custom_font_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0681\/9256\/7590\/files\/Quincy-CF.otf?v=1677763001",
+              "apply_h1": true,
+              "apply_h2": true,
+              "apply_h3": true,
+              "apply_h4": true,
+              "apply_h5": true,
+              "apply_h6": true,
+              "apply_span": false,
+              "apply_p": false,
+              "apply_custom": ""
+            }
+          }
+        },
+        "block_order": [
+          "809d9983-00dd-4a9d-b36b-8480939baa72"
+        ],
+        "settings": {
+          "enable": true
+        }
       }
     },
     "content_for_index": [
