@@ -786,7 +786,7 @@ class VariantSelects extends HTMLElement {
         $('[data-thumbnail-color]').show();
     }
     
-    document.getElementById('color-label').innerHTML = "<b>{{ option.name }}:</b> " + document.querySelector('input[name="Color"]:checked').value;
+    document.getElementById('color-label').innerHTML += "<b>Color:</b> " + document.querySelector('input[name="Color"]:checked').value;
   }
 
   updateOptions() {
