@@ -16,7 +16,7 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text": "by {{ product.vendor }}",
+            "text": "{{ product.vendor }}",
             "text_style": "body"
           }
         },
