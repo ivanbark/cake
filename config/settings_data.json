@@ -340,7 +340,7 @@
               "apply_h6": false,
               "apply_span": false,
               "apply_p": false,
-              "apply_custom": ".header__menu-item,\n.image_button_alignment,\n.button button--primary"
+              "apply_custom": ".header__menu-item,\n.image_button_alignment,\n.button--primary"
             }
           },
           "71876fe4-bd5c-4cd0-b5d3-2007aba2e78f": {
