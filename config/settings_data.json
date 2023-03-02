@@ -358,7 +358,7 @@
               "apply_h6": false,
               "apply_span": false,
               "apply_p": false,
-              "apply_custom": ".banner__text"
+              "apply_custom": ".banner__text,\nimage-with-text__text"
             }
           }
         },
