@@ -45,6 +45,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
+            "btn-text": "Add 1 to bag",
             "show_dynamic_checkout": false
           }
         },
