@@ -12,7 +12,7 @@
           "type": "text",
           "settings": {
             "text": "By {{ product.vendor }}",
-            "text_style": "uppercase"
+            "text_style": "body"
           }
         },
         "description": {
