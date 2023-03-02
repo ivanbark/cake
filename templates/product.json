@@ -144,13 +144,13 @@
         "template--17629011214630__8ca61d3a-dcaa-4633-9313-46c10ea993db-1677441678d4086f2f-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cake-maternity-zest-lemon-nursing-bra.jpg",
+            "image": "{{ product.metafields.custom.feature_2_img.value }}",
             "padding_left": 0,
-            "title": "Racerback design with 6 hook & eye options.",
+            "title": "{{ product.metafields.custom.feature_2_title.value }}",
             "subtitle": "feature #2",
             "title_font_weight": "normal",
             "title_font_size": 24,
-            "text": "<p>Providing support and security while offering room to grow, expanding or contracting up to half a size.<\/p>",
+            "text": "<p>{{ product.metafields.custom.feature_2_description | metafield_tag }}<\/p>",
             "description_font_weight": "normal",
             "description_font_size": 16,
             "link_label": "",
@@ -160,13 +160,13 @@
         "template--17629011214630__8ca61d3a-dcaa-4633-9313-46c10ea993db-1677441678d4086f2f-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/truffles-nursing-bra.jpg",
+            "image": "{{ product.metafields.custom.feature_3_img.value }}",
             "padding_left": 0,
-            "title": "Racerback design with 6 hook & eye options.",
+            "title": "{{ product.metafields.custom.feature_3_title.value }}",
             "subtitle": "Feature #3",
             "title_font_weight": "normal",
             "title_font_size": 24,
-            "text": "<p>Providing support and security while offering room to grow, expanding or contracting up to half a size.<\/p>",
+            "text": "<p>{{ product.metafields.custom.feature_3_description | metafield_tag }}<\/p>",
             "description_font_weight": "normal",
             "description_font_size": 16,
             "link_label": "",
