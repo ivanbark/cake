@@ -503,6 +503,7 @@
                         {% if option.name == "Color" %}
                           <script>
                             document.getElementById('color-label').innerHTML = "{{ option.name }}:" + document.querySelector('input[name="Color"]:checked').value;
+                            alert("test");
                           </script>
                         {% endif %}
                         <div style="float:right;">
