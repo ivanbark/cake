@@ -414,6 +414,24 @@
               "apply_p": false,
               "apply_custom": ".subtitles_which_bra"
             }
+          },
+          "2c660f58-04f3-4e56-81ef-216ff2ddd32f": {
+            "type": "image",
+            "settings": {
+              "name": "quincy-cf-italic",
+              "custom_font_weight": "none",
+              "custom_font_style": "none",
+              "custom_font_url": "",
+              "apply_h1": false,
+              "apply_h2": false,
+              "apply_h3": false,
+              "apply_h4": false,
+              "apply_h5": false,
+              "apply_h6": false,
+              "apply_span": false,
+              "apply_p": false,
+              "apply_custom": ".blog__title"
+            }
           }
         },
         "block_order": [
@@ -422,7 +440,8 @@
           "0bbdad78-54f2-4152-b229-20e9f7b5c635",
           "71876fe4-bd5c-4cd0-b5d3-2007aba2e78f",
           "d6357594-f513-447d-a747-9e20c970a861",
-          "3711f50a-94f8-41aa-b913-3cf8d5bf39f3"
+          "3711f50a-94f8-41aa-b913-3cf8d5bf39f3",
+          "2c660f58-04f3-4e56-81ef-216ff2ddd32f"
         ],
         "settings": {
           "enable": true
