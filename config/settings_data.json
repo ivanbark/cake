@@ -360,12 +360,31 @@
               "apply_p": false,
               "apply_custom": ".banner__text"
             }
+          },
+          "244f83bf-6da2-4929-b0b8-040993e50620": {
+            "type": "image",
+            "settings": {
+              "name": "groteskpro-semibold",
+              "custom_font_weight": "none",
+              "custom_font_style": "none",
+              "custom_font_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0681\/9256\/7590\/files\/HKGroteskPro-SemiBold.ttf?v=1677762987",
+              "apply_h1": false,
+              "apply_h2": false,
+              "apply_h3": false,
+              "apply_h4": false,
+              "apply_h5": false,
+              "apply_h6": false,
+              "apply_span": false,
+              "apply_p": false,
+              "apply_custom": ".image_button_alignment"
+            }
           }
         },
         "block_order": [
           "809d9983-00dd-4a9d-b36b-8480939baa72",
           "0bbdad78-54f2-4152-b229-20e9f7b5c635",
-          "71876fe4-bd5c-4cd0-b5d3-2007aba2e78f"
+          "71876fe4-bd5c-4cd0-b5d3-2007aba2e78f",
+          "244f83bf-6da2-4929-b0b8-040993e50620"
         ],
         "settings": {
           "enable": true
