@@ -667,7 +667,7 @@
                         <span>
                           {%- if product.selected_or_first_available_variant.available -%}
                             {% if block.settings.btn-text != null %}
-                              {{ block.settings.btn-text }}
+                              {{ block.settings.btn-text }} - EUR {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
                             {% else %}
                               {{ 'products.product.add_to_cart' | t }}
                             {% endif %}
