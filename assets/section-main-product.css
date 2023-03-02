@@ -1244,3 +1244,6 @@ a.product__text {
   margin-left: 1.2rem;
   flex-shrink: 0;
 }
+
+.product__media-toggle {display: none !important;}
+.product__modal-opener .product__media-icon {display: none !important;}
