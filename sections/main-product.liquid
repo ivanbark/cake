@@ -666,7 +666,6 @@
                       >
                         <span id="product-btn-span">
                           {%- if product.selected_or_first_available_variant.available -%}
-                            {% if block.settings.btn-text != null %}
                               <style>
                                 #product-btn-span .price {
                                   display: inline;
@@ -675,9 +674,6 @@
                                 }
                               </style>
                               {{ block.settings.btn-text }} - EUR {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
-                            {% else %}
-                              {{ 'products.product.add_to_cart' | t }}
-                            {% endif %}
                           {%- else -%}
                             {{ 'products.product.sold_out' | t }}
                           {%- endif -%}
