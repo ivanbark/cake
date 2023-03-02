@@ -340,7 +340,7 @@
               "apply_h6": false,
               "apply_span": false,
               "apply_p": false,
-              "apply_custom": ".header__menu-item,\n.image_button_alignment"
+              "apply_custom": ".header__menu-item,\n.image_button_alignment,\n.button button--primary"
             }
           },
           "71876fe4-bd5c-4cd0-b5d3-2007aba2e78f": {
@@ -357,8 +357,8 @@
               "apply_h5": false,
               "apply_h6": false,
               "apply_span": false,
-              "apply_p": true,
-              "apply_custom": ".banner__text,\nimage-with-text__text"
+              "apply_p": false,
+              "apply_custom": ".banner__text,\n.image-with-text__text"
             }
           }
         },
