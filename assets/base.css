@@ -3005,3 +3005,7 @@ details-disclosure > details {
 .header__menu-item {
   color:grey !important;
 }
+
+.header__active-menu-item {
+   color:grey !important;
+}
