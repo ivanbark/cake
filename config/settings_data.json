@@ -342,11 +342,30 @@
               "apply_p": false,
               "apply_custom": ".header__menu-item"
             }
+          },
+          "71876fe4-bd5c-4cd0-b5d3-2007aba2e78f": {
+            "type": "image",
+            "settings": {
+              "name": "groteskpro-medium",
+              "custom_font_weight": "normal",
+              "custom_font_style": "normal",
+              "custom_font_url": "",
+              "apply_h1": false,
+              "apply_h2": false,
+              "apply_h3": false,
+              "apply_h4": false,
+              "apply_h5": false,
+              "apply_h6": false,
+              "apply_span": false,
+              "apply_p": false,
+              "apply_custom": ".banner__text"
+            }
           }
         },
         "block_order": [
           "809d9983-00dd-4a9d-b36b-8480939baa72",
-          "0bbdad78-54f2-4152-b229-20e9f7b5c635"
+          "0bbdad78-54f2-4152-b229-20e9f7b5c635",
+          "71876fe4-bd5c-4cd0-b5d3-2007aba2e78f"
         ],
         "settings": {
           "enable": true
