@@ -358,7 +358,7 @@
               "apply_h6": false,
               "apply_span": false,
               "apply_p": false,
-              "apply_custom": ".banner__text,\n.image-with-text__text"
+              "apply_custom": ".banner__text,\n.subtitle--medium"
             }
           },
           "d6357594-f513-447d-a747-9e20c970a861": {
