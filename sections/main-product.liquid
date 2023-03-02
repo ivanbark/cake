@@ -499,7 +499,7 @@
                         </script>
                       {% endif %}
                       <fieldset style="border-bottom:1px solid #ccc;padding:10px 0 25px;{% if option.name == "Color" %}padding-bottom: 10px;{% endif %}" class="js product-form__input {% if option.name == "Color" %}colorFieldSet{% endif %}">
-                        <legend style="float:left;{% if option.name == "Color" %}line-height:31px;{% else %}line-height:50px;{% endif %}" class="form__label" id="{% if option.name == "Color" %}color-label{% endif %}">{{ option.name }}:</legend>
+                        <legend style="float:left;{% if option.name == "Color" %}line-height:31px;{% else %}line-height:50px;{% endif %}" class="form__label" id="{% if option.name == "Color" %}color-label{% endif %}"><b>{{ option.name }}:</b></legend>
                         <div style="float:right;">
                         {%- for value in option.values -%}
                           <input
@@ -546,7 +546,7 @@
                         </div>
                         {% if option.name == "Color" %}
                           <script>
-                            document.getElementById('color-label').innerHTML = "{{ option.name }}:" + document.querySelector('input[name="Color"]:checked').value;
+                            document.getElementById('color-label').innerHTML = "<b>{{ option.name }}:</b> " + document.querySelector('input[name="Color"]:checked').value;
                           </script>
                         {% endif %}
                       </fieldset>
