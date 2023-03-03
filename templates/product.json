@@ -147,7 +147,7 @@
           "settings": {
             "image": "{{ product.metafields.custom.feature_2_img.value }}",
             "padding_left": 0,
-            "title": "Racerback design with 6 hook & eye options.",
+            "title": "{{ product.metafields.custom.feature_2_title.value }}",
             "subtitle": "feature #2",
             "title_font_weight": "normal",
             "title_font_size": 24,
