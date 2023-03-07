@@ -248,6 +248,7 @@
           },
           "3487ea04-839d-49ff-9632-1fbbca539f57": {
             "type": "link_list",
+            "disabled": true,
             "settings": {
               "heading": "The fit",
               "menu": "the-fit",
