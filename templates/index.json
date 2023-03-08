@@ -234,6 +234,7 @@
         },
         "template--17629010854182__a4337f55-4915-4e4c-8527-5acd866d7535-1674747482a1b36ae5-2": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "gifting",
             "collection_title": "Wellbeing",
