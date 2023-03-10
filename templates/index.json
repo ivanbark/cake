@@ -655,22 +655,6 @@
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Logo-Well_Good.png",
-            "padding_left": 0,
-            "title": "",
-            "subtitle": "",
-            "title_font_weight": "normal",
-            "title_font_size": 10,
-            "text": "<p>“If you need a workhorse to keep your boobs in place and feed the BB, this is it.” (<a href=\"\/products\/zest-nursing-sports-bra-last-chance-grey\" title=\"Zest Nursing Sports Bra (Last Chance) - Grey\">Zest Sports Nursing Bra<\/a>).<\/p>",
-            "description_font_weight": "normal",
-            "description_font_size": 16,
-            "link_label": "",
-            "link": ""
-          }
-        },
         "column2": {
           "type": "column",
           "settings": {
@@ -681,38 +665,6 @@
             "title_font_weight": "normal",
             "title_font_size": 10,
             "text": "<p>\"We like that they're a size-inclusive brand... What's more, the bras don't look utilitarian!.\"<\/p>",
-            "description_font_weight": "normal",
-            "description_font_size": 16,
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Logo-Kidspot.png",
-            "padding_left": 0,
-            "title": "",
-            "subtitle": "",
-            "title_font_weight": "normal",
-            "title_font_size": 10,
-            "text": "<p>\"Cake Maternity will have you forgetting you're wearing maternity clothes at all.\"<\/p>",
-            "description_font_weight": "normal",
-            "description_font_size": 16,
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "3516bc41-3565-4acd-a32e-9095f893e285": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Logo-Motherly.png",
-            "padding_left": 0,
-            "title": "",
-            "subtitle": "",
-            "title_font_weight": "normal",
-            "title_font_size": 10,
-            "text": "<p>\"Cake <a href=\"https:\/\/cakematernity.eu\/products\/cotton-candy-nursing-bra?_pos=1&_sid=b4b201ce1&_ss=r\" title=\"https:\/\/cakematernity.eu\/products\/cotton-candy-nursing-bra?_pos=1&_sid=b4b201ce1&_ss=r\">Cotton Candy<\/a> bra is super supportive, sporty and comfortable.\"<\/p>",
             "description_font_weight": "normal",
             "description_font_size": 16,
             "link_label": "",
@@ -735,6 +687,22 @@
             "link": ""
           }
         },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Logo-Kidspot.png",
+            "padding_left": 0,
+            "title": "",
+            "subtitle": "",
+            "title_font_weight": "normal",
+            "title_font_size": 10,
+            "text": "<p>\"Cake Maternity will have you forgetting you're wearing maternity clothes at all.\"<\/p>",
+            "description_font_weight": "normal",
+            "description_font_size": 16,
+            "link_label": "",
+            "link": ""
+          }
+        },
         "729f0c78-39a9-4600-993e-7baf784a172d": {
           "type": "column",
           "settings": {
@@ -745,6 +713,22 @@
             "title_font_weight": "normal",
             "title_font_size": 10,
             "text": "<p>\"Of all of the seamless bras we tested, none felt as supportive and comfortable as the <a href=\"https:\/\/cakematernity.eu\/products\/cotton-candy-nursing-bra?_pos=1&_sid=b4b201ce1&_ss=r\" title=\"https:\/\/cakematernity.eu\/products\/cotton-candy-nursing-bra?_pos=1&_sid=b4b201ce1&_ss=r\">Cotton Candy<\/a>.\"<\/p>",
+            "description_font_weight": "normal",
+            "description_font_size": 16,
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Logo-Well_Good.png",
+            "padding_left": 0,
+            "title": "",
+            "subtitle": "",
+            "title_font_weight": "normal",
+            "title_font_size": 10,
+            "text": "<p>“If you need a workhorse to keep your boobs in place and feed the BB, this is it.” (<a href=\"\/products\/zest-nursing-sports-bra-last-chance-grey\" title=\"Zest Nursing Sports Bra (Last Chance) - Grey\">Zest Sports Nursing Bra<\/a>).<\/p>",
             "description_font_weight": "normal",
             "description_font_size": 16,
             "link_label": "",
@@ -767,8 +751,25 @@
             "link": ""
           }
         },
+        "3516bc41-3565-4acd-a32e-9095f893e285": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Logo-Motherly.png",
+            "padding_left": 0,
+            "title": "",
+            "subtitle": "",
+            "title_font_weight": "normal",
+            "title_font_size": 10,
+            "text": "<p>\"Cake <a href=\"https:\/\/cakematernity.eu\/products\/cotton-candy-nursing-bra?_pos=1&_sid=b4b201ce1&_ss=r\" title=\"https:\/\/cakematernity.eu\/products\/cotton-candy-nursing-bra?_pos=1&_sid=b4b201ce1&_ss=r\">Cotton Candy<\/a> bra is super supportive, sporty and comfortable.\"<\/p>",
+            "description_font_weight": "normal",
+            "description_font_size": 16,
+            "link_label": "",
+            "link": ""
+          }
+        },
         "cf6bd949-47e0-43e5-9be5-302512180cf9": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "padding_left": 0,
             "title": "",
@@ -784,13 +785,13 @@
         }
       },
       "block_order": [
-        "column1",
         "column2",
-        "column3",
-        "3516bc41-3565-4acd-a32e-9095f893e285",
         "05112c55-bf4c-4165-a9e3-b6bd54fb5432",
+        "column3",
         "729f0c78-39a9-4600-993e-7baf784a172d",
+        "column1",
         "84738ecf-0f9a-45e7-b36e-bf87a194a00f",
+        "3516bc41-3565-4acd-a32e-9095f893e285",
         "cf6bd949-47e0-43e5-9be5-302512180cf9"
       ],
       "settings": {
