@@ -344,7 +344,7 @@
               </div>
             {%- when 'price' -%}
               <div style="display:flex;" class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-                <b style="margin-right:10px">EUR</b>{%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+                {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
               </div>
               {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                 <div class="product__tax caption rte">
@@ -672,8 +672,12 @@
                                   color: white;
                                   font-size:unset;
                                 }
+
+                                #product-btn-span .price__badge-sale {
+                                  display: none;
+                                }
                               </style>
-                              {{ block.settings.btn-text }} - EUR {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+                              {{ block.settings.btn-text }} - {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
                           {%- else -%}
                             {{ 'products.product.sold_out' | t }}
                           {%- endif -%}
