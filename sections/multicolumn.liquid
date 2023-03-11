@@ -50,6 +50,11 @@
   {% if section.settings.column_size == "small" %}
     @media screen and (min-width: 800px) {
       .slider-list-item.multicolumn-list__item {
+        max-width: 250px !important;
+      }
+    }
+    @media screen and (min-width: 900px) {
+      .slider-list-item.multicolumn-list__item {
         max-width: 350px !important;
       }
     }
@@ -90,7 +95,7 @@
             justify-content: unset !important;
           }
         {% else %}
-          @media screen and (min-width: 990px) {
+          @media screen and (min-width: 800px) {
               .slider-mobile-gutter .multicolumn-list {
                 justify-content: {% if section.settings.column_size == "small" %}center{% else %}space-around{% endif %};
               }
