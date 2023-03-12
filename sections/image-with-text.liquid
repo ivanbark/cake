@@ -38,7 +38,7 @@
 </style>
 
   <script>
-    {% if section.settings.show_multiple_img %}
+    {% if section.settings.show_multiple_img %}    
       function imgScroll(direction) {
         var width = document.getElementById('imgScroll').clientWidth;
         var maxMargin = "-470px";
@@ -76,6 +76,7 @@
             sizes: sizes,
             widths: '165, 360, 535, 750, 1070, 1500'
           }}
+          <p>Dit is een text;</p>
         {% else %}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {% endif %}
@@ -86,6 +87,7 @@
             sizes: sizes,
             widths: '165, 360, 535, 750, 1070, 1500'
           }}
+          <p>Dit is een text;</p>
         {%- else -%}
           {% if section.settings.show_multiple_img %}
             {{ 'image2' | placeholder_svg_tag: 'placeholder-svg' }}
@@ -99,6 +101,7 @@
             sizes: sizes,
             widths: '165, 360, 535, 750, 1070, 1500'
           }}
+          <p>Dit is een text;</p>
         {%- else -%}
           {% if section.settings.show_multiple_img %}
             {{ 'image2' | placeholder_svg_tag: 'placeholder-svg' }}
@@ -110,6 +113,8 @@
           <div style="position:absolute;bottom:0;width:100%;height:100%;display:flex;justify-content:space-between;align-items:center;">
             <button style="width:35px;height:50px;cursor:pointer;z-index:9;border:none;background:rgba(255,255,255,.8);" onclick="imgScroll('l')" >❮</button>
             <button style="width:35px;height:50px;cursor:pointer;border:none;background:rgba(255,255,255,.8);" onclick="imgScroll('r')" >❯</button>
+          </div>
+          <div>
           </div>
         {% endif %}
     </div>
