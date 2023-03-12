@@ -113,6 +113,9 @@
       ],
       "settings": {
         "enable_sticky_info": true,
+        "lastChanceWarning": "<p>PLEASE NOTE THAT ALL LAST CHANCE STOCK CANNOT BE RETURNED FOR A REFUND. <a href=\"\/pages\/show-me-details-of-your-return-policy\" title=\"Show me details of your return policy:\">T + C's apply<\/a>.<\/p>",
+        "warning_bg_color": "#B58069",
+        "warning_text_color": "#fff",
         "media_position": "left",
         "gallery_layout": "thumbnail",
         "media_size": "large",
