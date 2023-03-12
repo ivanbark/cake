@@ -402,27 +402,27 @@
             "text": "<p>\"Experience driven innovation.\"<\/p>",
             "text_color": "#000000",
             "text_link": "",
-            "text_font_weight": "normal",
-            "text_font_size": 10,
+            "text_font_weight": "bold",
+            "text_font_size": 36,
             "block_spacing_top": 1.6
           }
         },
-        "template--18040513626406__80cef6c2-4795-4854-a57d-ffef44f777e7-167865299690833e56-2": {
-          "type": "button",
+        "177e2a6c-616e-4c63-8ed5-2d4678b8f8ee": {
+          "type": "text",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "<p>Katie is the mother of two beautiful young girls and has been the Head Designer and Fit Technician for Cake Maternity for 12 years now. Her practice combines her bra expertise, passion for breastfeeding and comfort, and her ecological stance on power and waste minimisation.<\/p><p>She set about being a bra designer after her fuller busted sister, who suffered from scoliosis, struggled to find a well-fitting bra that was both comfortable and pretty. She majored in lingerie at Fashion College and sought a 3-year internship at Triumph International to become a specialist bra designer. Since then, she has worked internationally designing for Marks and Spencer, Agent Provocateur, Berlei and Pleasure State.<\/p><p>Due to her firsthand experience becoming a mum, Katie realised that the changes your breasts undergo whilst pregnant and breastfeeding were not only size-related, but also weight, sensitivity and shape. That’s why she has made it her mission to empower women as they mindfully navigate the world of motherhood and help make breastfeeding easier, through experience driven innovation. She believes that if mamas have all these boxes ticked, then there’s no reason for them to give up breastfeeding, which will ultimately lead to them doing so for as long as possible.<\/p>",
+            "text_color": "#000000",
+            "text_link": "",
+            "text_font_weight": "normal",
+            "text_font_size": 22,
+            "block_spacing_top": 1.6
           }
         }
       },
       "block_order": [
         "template--18040513626406__80cef6c2-4795-4854-a57d-ffef44f777e7-167865299690833e56-0",
         "template--18040513626406__80cef6c2-4795-4854-a57d-ffef44f777e7-167865299690833e56-1",
-        "template--18040513626406__80cef6c2-4795-4854-a57d-ffef44f777e7-167865299690833e56-2"
+        "177e2a6c-616e-4c63-8ed5-2d4678b8f8ee"
       ],
       "settings": {
         "desktop_content_position": "center",
