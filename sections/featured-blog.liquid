@@ -105,6 +105,12 @@
       margin: 0 -10px !important;
     }
   }
+
+  @media screen and (min-width: 600px) {
+    .mobile-view-all {
+      display: none;
+    }
+  }
   
   @media screen and (min-width: 1000px) {
     li.blog__post {
@@ -125,7 +131,7 @@
 
 <script>
   var blogs = [];
-  var idvarients = ["blog-title-", "blog-view-all-", "blog-list-"];
+  var idvarients = ["blog-title-", "blog-view-all-", "blog-list-", "blog-view-all-mobile-"];
   
   function selectBlog(id) {
     blogs.forEach( function (id) {
@@ -208,6 +214,16 @@
             </a>
           </div>
         {%- endif -%}
+        {% if section.settings.show_view_all and title == "Raw Motherhood Blog" %}
+          <div class="mobile-view-all">
+            {% for block in section.blocks %}
+              {% assign title = section.settings.heading | strip_html %}
+              {% if section.settings.show_view_all and title == "Raw Motherhood Blog" %}
+                <a id="blog-view-all-mobile-{{ block.id }}" class="link underlined-link view-all {% if block == section.blocks.first %}active-blog{% endif %}" style="font-weight:bold;color: black;font-size: {{ section.settings.menu_size }}rem;" href="{{ block.settings.blog.url }}">VIEW ALL</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
       {%- else -%}
         <div class="blog-placeholder">
           <div class="placeholder media media--landscape">
