@@ -42,8 +42,11 @@
   font-size: 1.5rem;
   line-height: 1.5;
   position: fixed;
+  {% if section.settings.announcement == 1  %}
+    {% else %}
   --duration: 50s;
   --gap: 200%;
+    {% endif %}
 }
 
 .announcement_bar_text {
