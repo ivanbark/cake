@@ -207,7 +207,7 @@
         {% for variant in card_product.variants %}
           {% if variant.metafields.custom.hexcode != null %}
             {% if variant == card_product.variants.first %}
-              <div style="border:15px solid {{ variant.metafields.custom.hexcode }};background:white;height:10px;width:10px;border-radius:100%;display:inline-block;margin-right:8px;"></div>
+              <div style="padding:4.5px;border:8px solid {{ variant.metafields.custom.hexcode }};background:white;height:10px;width:10px;border-radius:100%;display:inline-block;margin-right:8px;"></div>
             {% else %}
               <div style="border:3px solid {{ variant.metafields.custom.hexcode }};background:{{ variant.metafields.custom.hexcode }};height:25px;width:25px;border-radius:100%;display:inline-block;margin-right:8px;"></div>
             {% endif %}
