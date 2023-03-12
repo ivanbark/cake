@@ -131,7 +131,7 @@
         "template--18040513626406__1fa5aada-4703-4171-936e-42b4ac7592b4-167744843129920def-0"
       ],
       "custom_css": [
-        "body {background-color: black;}"
+        "div {background-color: #faf3e5;}"
       ],
       "settings": {
         "border": false,
