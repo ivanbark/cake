@@ -110,6 +110,18 @@
     .mobile-view-all {
       display: none;
     }
+    .blogs__view-all .blog_title_list {
+      float: none !important;
+    }
+    .blogs__view-all {
+      text-align: left !important;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .view-all-desktop {
+      display: none !important;
+    }
   }
   
   @media screen and (min-width: 1000px) {
@@ -161,7 +173,7 @@
       {% for block in section.blocks %}
         {% assign title = section.settings.heading | strip_html %}
         {% if section.settings.show_view_all and title == "Raw Motherhood Blog" %}
-          <a id="blog-view-all-{{ block.id }}" class="link underlined-link view-all {% if block == section.blocks.first %}active-blog{% endif %}" style="font-weight:bold;color: black;font-size: {{ section.settings.menu_size }}rem;" href="{{ block.settings.blog.url }}">VIEW ALL</a>
+          <a id="blog-view-all-{{ block.id }}" class="link underlined-link view-all view-all-desktop {% if block == section.blocks.first %}active-blog{% endif %}" style="font-weight:bold;color: black;font-size: {{ section.settings.menu_size }}rem;" href="{{ block.settings.blog.url }}">VIEW ALL</a>
         {% endif %}
       {% endfor %}
     </div>
