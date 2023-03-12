@@ -130,6 +130,9 @@
       "block_order": [
         "template--18040513626406__1fa5aada-4703-4171-936e-42b4ac7592b4-167744843129920def-0"
       ],
+      "custom_css": [
+        "body {background-color: black;}"
+      ],
       "settings": {
         "border": false,
         "desktop_slider": false,
@@ -142,7 +145,7 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "accent-1",
+        "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 24,
