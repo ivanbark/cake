@@ -157,6 +157,7 @@
         ],
         "settings": {
           "text_color": "#ffffff",
+          "more_announcements": true,
           "background_color": "#e2b95b",
           "font_size": 15,
           "font_weight": "bold"
