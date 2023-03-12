@@ -427,7 +427,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "background_color": "#ffffff",
+        "background_color": "#dddaeb",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
