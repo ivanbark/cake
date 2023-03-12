@@ -278,6 +278,7 @@
         "281c3b9e-6943-49c2-b3d9-fa8f3b4f3ddb"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/our-philosophy-image.webp",
         "show_multiple_img": false,
         "height": "adapt",
         "desktop_image_width": "medium",
