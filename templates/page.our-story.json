@@ -196,11 +196,11 @@
         "template--18040513626406__4d9c271a-04f8-4aa3-9290-ed61aac666cb-167744609160a33e25-1": {
           "type": "text",
           "settings": {
-            "text": "<p><em>“I started Cake when I became a mum, but the landscape has changed so much since then. It’s time we share the tears and the challenges, not just the smiles and the triumphs. No matter what their story looks like, we want to remind mums that they are doing their best, which is incredible.”<\/em><\/p>",
+            "text": "<p><em><strong>“I started Cake when I became a mum, but the landscape has changed so much since then. It’s time we share the tears and the challenges, not just the smiles and the triumphs. No matter what their story looks like, we want to remind mums that they are doing their best, which is incredible.”<\/strong><\/em><\/p>",
             "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
-            "text_font_size": 18,
+            "text_font_size": 24,
             "block_spacing_top": 1.6
           }
         },
