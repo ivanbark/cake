@@ -673,6 +673,9 @@
         "feed303c-b97d-4943-a43e-c02fefb36fec",
         "1d90c05b-ba02-4950-b28c-e5cff079dd15"
       ],
+      "custom_css": [
+        ".slider-buttons {display: none;}"
+      ],
       "settings": {
         "border": false,
         "desktop_slider": false,
