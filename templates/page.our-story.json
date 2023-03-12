@@ -264,11 +264,11 @@
           "type": "button",
           "settings": {
             "button_label": "FIND OUT MORE",
-            "button_link": "",
+            "button_link": "shopify:\/\/blogs\/motherhood\/the-raw-motherhood-movement",
             "button_text_color": "#000000",
             "button_background_color": "#ffffff",
             "button_font_weight": "Bold",
-            "button_font_size": 10
+            "button_font_size": 12
           }
         }
       },
