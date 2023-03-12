@@ -27,7 +27,7 @@
       align-items: center;
       height: fit-content !important;
     }
-    .imgDivWithCaption, .image_container img {
+    .image_container img {
       width: 450px !important;
       position: relative !important;
       margin-right: 20px !important;
@@ -69,48 +69,42 @@
       <div id="imgScroll" style="border: none;" class="image_container image-with-text__media image-with-text__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} global-media-settings {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
         {% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
       >
-<!--         <div class="imgDivWithCaption"> -->
-          {%- if section.settings.image != blank -%}
-            {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2){%- endcapture -%}
-            {{ section.settings.image | image_url: width: 1500 | image_tag:
-              loading: 'lazy',
-              sizes: sizes,
-              widths: '165, 360, 535, 750, 1070, 1500'
-            }}
-          {% else %}
-            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- if section.settings.image != blank -%}
+          {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2){%- endcapture -%}
+          {{ section.settings.image | image_url: width: 1500 | image_tag:
+            loading: 'lazy',
+            sizes: sizes,
+            widths: '165, 360, 535, 750, 1070, 1500'
+          }}
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+        {%- if section.settings.image2 != blank and section.settings.show_multiple_img -%}
+          {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2){%- endcapture -%}
+          {{ section.settings.image2 | image_url: width: 1500 | image_tag:
+            loading: 'lazy',
+            sizes: sizes,
+            widths: '165, 360, 535, 750, 1070, 1500'
+          }}
+        {%- else -%}
+          {% if section.settings.show_multiple_img %}
+            {{ 'image2' | placeholder_svg_tag: 'placeholder-svg' }}
+            {{ 'image3' | placeholder_svg_tag: 'placeholder-svg' }}
           {% endif %}
-<!--         </div> -->
-<!--         <div class="imgDivWithCaption"> -->
-          {%- if section.settings.image2 != blank and section.settings.show_multiple_img -%}
-            {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2){%- endcapture -%}
-            {{ section.settings.image2 | image_url: width: 1500 | image_tag:
-              loading: 'lazy',
-              sizes: sizes,
-              widths: '165, 360, 535, 750, 1070, 1500'
-            }}
-          {%- else -%}
-            {% if section.settings.show_multiple_img %}
-              {{ 'image2' | placeholder_svg_tag: 'placeholder-svg' }}
-              {{ 'image3' | placeholder_svg_tag: 'placeholder-svg' }}
-            {% endif %}
-          {%- endif -%}
-<!--         </div> -->
-<!--         <div class="imgDivWithCaption"> -->
-          {%- if section.settings.image3 != blank and section.settings.show_multiple_img -%}
-            {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2){%- endcapture -%}
-            {{ section.settings.image3 | image_url: width: 1500 | image_tag:
-              loading: 'lazy',
-              sizes: sizes,
-              widths: '165, 360, 535, 750, 1070, 1500'
-            }}
-          {%- else -%}
-            {% if section.settings.show_multiple_img %}
-              {{ 'image2' | placeholder_svg_tag: 'placeholder-svg' }}
-              {{ 'image3' | placeholder_svg_tag: 'placeholder-svg' }}
-            {% endif %}
-          {%- endif -%}
-<!--         </div> -->
+        {%- endif -%}
+        {%- if section.settings.image3 != blank and section.settings.show_multiple_img -%}
+          {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2){%- endcapture -%}
+          {{ section.settings.image3 | image_url: width: 1500 | image_tag:
+            loading: 'lazy',
+            sizes: sizes,
+            widths: '165, 360, 535, 750, 1070, 1500'
+          }}
+        {%- else -%}
+          {% if section.settings.show_multiple_img %}
+            {{ 'image2' | placeholder_svg_tag: 'placeholder-svg' }}
+            {{ 'image3' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
+        {%- endif -%}
       </div>
         {% if section.settings.show_multiple_img %}
           <div style="position:absolute;bottom:0;width:100%;height:100%;display:flex;justify-content:space-between;align-items:center;">
