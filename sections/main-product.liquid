@@ -49,7 +49,14 @@
 
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     {% if product.compare_at_price > product.price and product.available %}
-      <div style="width:100%;margin-bottom:20px;text-transform:uppercase;padding:6px 0;border-radius:5px;background:{{ section.settings.warning_bg_color }};color:{{ section.settings.warning_text_color }} !important;">{{ section.settings.lastChanceWarning }}</div>
+      <style>
+        #lastChance p {
+          margin: 0;
+          text-align: center;
+          font-family: 'GroteskPro-Bold' !important;
+        }
+      </style>
+      <div id="lastChance" style="width:100%;margin-bottom:20px;text-transform:uppercase;padding:6px 0;border-radius:5px;background:{{ section.settings.warning_bg_color }};color:{{ section.settings.warning_text_color }} !important;">{{ section.settings.lastChanceWarning }}</div>
     {% endif %}
     
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
