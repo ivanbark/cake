@@ -1,4 +1,4 @@
-<div class="{% if section.settings.announcement.count < 1 %}marquee{% endif %}" style="display: flex; background-color: {{ section.settings.background_color }};">
+<div class="{% if section.settings.announcement.count < 1 %}marquee{% else %}announce_bar_marq{% endif %}" style="display: flex; background-color: {{ section.settings.background_color }};">
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     
@@ -34,7 +34,6 @@
 
 .marquee {
   --space: 2rem;
-
   display: grid;
   align-content: center;
   overflow: hidden;
@@ -45,6 +44,17 @@
   --duration: 50s;
   --gap: 200%;
 }
+
+  .announce_bar_marq {
+    --space: 2rem;
+  display: grid;
+  align-content: center;
+  overflow: hidden;
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  position: fixed;
+  }
 
 .announcement_bar_text {
   font-weight: {{ section.settings.font_weight }};
