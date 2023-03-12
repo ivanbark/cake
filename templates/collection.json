@@ -43,6 +43,7 @@
         "template--17629010985254__1660625f-b04d-48ca-b7f6-891c6c8b8e81-16786570161b68b36a-0": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "padding_left": 0,
             "title": "",
             "subtitle": "",
@@ -58,6 +59,7 @@
         "template--17629010985254__1660625f-b04d-48ca-b7f6-891c6c8b8e81-16786570161b68b36a-1": {
           "type": "column",
           "settings": {
+            "column_full_width": true,
             "padding_left": 0,
             "title": "",
             "subtitle": "",

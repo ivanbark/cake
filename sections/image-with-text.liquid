@@ -86,7 +86,7 @@
               sizes: sizes,
               widths: '165, 360, 535, 750, 1070, 1500'
             }}
-            <p>Dit is een test</p>
+            <p>{{ section.settings.caption1 }}</p>
           {% if section.settings.show_multiple_img %}
           </div>
           {% endif %}
@@ -101,7 +101,7 @@
               sizes: sizes,
               widths: '165, 360, 535, 750, 1070, 1500'
             }}
-            <p>Dit is een test</p>
+            <p>{{ section.settings.caption2 }}</p>
           </div>
         {%- else -%}
           {% if section.settings.show_multiple_img %}
@@ -117,7 +117,7 @@
               sizes: sizes,
               widths: '165, 360, 535, 750, 1070, 1500'
             }}
-            <p>Dit is een test</p>
+            <p>{{ section.settings.caption3 }}</p>
           </div>
         {%- else -%}
           {% if section.settings.show_multiple_img %}
@@ -186,6 +186,12 @@
       "label": "t:sections.image-with-text.settings.image.label"
     },
     {
+      "type": "text",
+      "id": "caption1",
+      "default": "Caption",
+      "label": "Caption 1"
+    },
+    {
       "type": "checkbox",
       "id": "show_multiple_img",
       "default": false,
@@ -197,9 +203,21 @@
       "label": "t:sections.image-with-text.settings.image.label"
     },
     {
+      "type": "text",
+      "id": "caption2",
+      "default": "Caption",
+      "label": "Caption 2"
+    },
+    {
       "type": "image_picker",
       "id": "image3",
       "label": "t:sections.image-with-text.settings.image.label"
+    },
+    {
+      "type": "text",
+      "id": "caption3",
+      "default": "Caption",
+      "label": "Caption 3"
     },
     {
       "type": "select",
