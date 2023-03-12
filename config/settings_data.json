@@ -141,23 +141,14 @@
               "text_alignment": "center",
               "link": ""
             }
-          },
-          "0ce941c9-9f57-4196-a8cf-35e555d555a1": {
-            "type": "announcement",
-            "settings": {
-              "text": "Welcome to our store",
-              "text_alignment": "center",
-              "link": ""
-            }
           }
         },
         "block_order": [
-          "5ab31d35-d28d-47dc-a668-e0698114259f",
-          "0ce941c9-9f57-4196-a8cf-35e555d555a1"
+          "5ab31d35-d28d-47dc-a668-e0698114259f"
         ],
         "settings": {
           "text_color": "#ffffff",
-          "more_announcements": true,
+          "more_announcements": false,
           "background_color": "#e2b95b",
           "font_size": 15,
           "font_weight": "bold"
