@@ -29,6 +29,11 @@
     max-width: 49%;
     height: 100%;
   }
+
+  .collection-grid_image_text {
+    max-width: 49%;
+    height: auto;
+  }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding">
@@ -122,7 +127,7 @@
               width="{{ section.settings.image.width }}"
               height="{{ section.settings.image.height }}"
             >
-              <p class="collection-grid_image">Our range of maternity clothes features something for every mama and mama-to-be. Whether you’re pregnant or breastfeeding, our tanks, tops, cardigans, jackets and dresses to skirts, pants, jeans and leggings have got all your maternity clothing needs covered.</p>
+              <p class="collection-grid_image_text">Our range of maternity clothes features something for every mama and mama-to-be. Whether you’re pregnant or breastfeeding, our tanks, tops, cardigans, jackets and dresses to skirts, pants, jeans and leggings have got all your maternity clothing needs covered.</p>
               </div>
               {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
