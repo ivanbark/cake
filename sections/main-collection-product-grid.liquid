@@ -106,7 +106,8 @@
             <ul id="product-grid" data-id="{{ section.id }}" class="
               grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
               grid--{{ section.settings.columns_desktop }}-col-desktop">
-                <img
+              <div>  
+              <img
               srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
                 {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
                 {%- if section.settings.image.width >= 535 -%}{{ section.settings.image | image_url: width: 535 }} 535w,{%- endif -%}
@@ -122,6 +123,7 @@
               height="{{ section.settings.image.height }}"
             >
               <p class="collection-grid_image">Our range of maternity clothes features something for every mama and mama-to-be. Whether you’re pregnant or breastfeeding, our tanks, tops, cardigans, jackets and dresses to skirts, pants, jeans and leggings have got all your maternity clothing needs covered.</p>
+              </div>
               {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
