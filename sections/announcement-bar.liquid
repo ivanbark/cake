@@ -42,11 +42,10 @@
   font-size: 1.5rem;
   line-height: 1.5;
   position: fixed;
-  {% if section.settings.announcement == 1  %}
-  --duration: 50s;
-  --gap: 200%;
+  {% if section.settings.announcement.size == 1  %}
     {% else %}
-  
+    --duration: 50s;
+    --gap: 200%;
     {% endif %}
 }
 
