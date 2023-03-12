@@ -134,8 +134,17 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
+          "5ab31d35-d28d-47dc-a668-e0698114259f": {
+            "type": "announcement",
+            "settings": {
+              "text": "15% OFF Popping Candy Nursing Bralette with code POP15 — T&Cs Apply",
+              "text_alignment": "center",
+              "link": ""
+            }
+          },
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Join the #RawMotherhoodMovement for your chance to WIN! — Learn More",
               "text_alignment": "center",
@@ -144,6 +153,7 @@
           },
           "b2a1383b-444e-467c-9720-7f2c41a28bd5": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Free gift with purchase valued at €19.90 — T&Cs Apply",
               "text_alignment": "center",
@@ -152,6 +162,7 @@
           },
           "6142db4d-1c73-4cc1-a8a3-8c37b3f6c9bd": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "THREE NEW SWIM SHADES AVAILABLE NOW — Check them out!",
               "text_alignment": "center",
@@ -160,6 +171,7 @@
           },
           "605dd587-f13b-4f7b-a316-2223512dd90e": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Join the #RawMotherhoodMovement for your chance to WIN! — Learn More",
               "text_alignment": "center",
@@ -168,6 +180,7 @@
           }
         },
         "block_order": [
+          "5ab31d35-d28d-47dc-a668-e0698114259f",
           "announcement-bar-0",
           "b2a1383b-444e-467c-9720-7f2c41a28bd5",
           "6142db4d-1c73-4cc1-a8a3-8c37b3f6c9bd",
