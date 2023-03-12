@@ -277,6 +277,9 @@
         "template--18040513626406__3ab3df1c-74b7-441b-bf90-a4a566a82657-167865448241aa5bdd-1",
         "281c3b9e-6943-49c2-b3d9-fa8f3b4f3ddb"
       ],
+      "custom_css": [
+        "h2 {color: white;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/our-philosophy-image.webp",
         "show_multiple_img": false,
