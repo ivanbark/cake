@@ -73,6 +73,7 @@
         "template--17629010854182__82a23ee6-c19a-4ea7-b39b-462089d3ee3a-1674728937f24d0bda-0": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "image": "shopify:\/\/shop_images\/Icon-banner-1-breast-health.webp",
             "padding_left": 60,
             "title": "Encouraging breast health.",
@@ -89,6 +90,7 @@
         "template--17629010854182__82a23ee6-c19a-4ea7-b39b-462089d3ee3a-1674728937f24d0bda-1": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "image": "shopify:\/\/shop_images\/Icon-banner-2-support.webp",
             "padding_left": 60,
             "title": "Support for every mama.",
@@ -105,6 +107,7 @@
         "template--17629010854182__82a23ee6-c19a-4ea7-b39b-462089d3ee3a-1674728937f24d0bda-2": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "image": "shopify:\/\/shop_images\/Icon-banner-3-returns.webp",
             "padding_left": 60,
             "title": "Mama-friendly returns.",
@@ -138,7 +141,7 @@
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36,
         "column_size": "big"
@@ -195,7 +198,10 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Home-Page-Cotton-Candy-Banner-Desktop_1.webp",
+        "caption1": "Caption",
         "show_multiple_img": false,
+        "caption2": "Caption",
+        "caption3": "Caption",
         "height": "large",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -310,6 +316,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Shop now<\/p>",
+            "change_font_style": false,
             "text_color": "#000000",
             "text_link": "shopify:\/\/collections\/last-chance-to-buy",
             "text_font_weight": "bold",
@@ -629,6 +636,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Discover our ranges<\/p>",
+            "change_font_style": false,
             "text_color": "#ffffff",
             "text_link": "shopify:\/\/collections\/last-chance-to-buy",
             "text_font_weight": "bold",
@@ -658,6 +666,7 @@
         "column2": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "image": "shopify:\/\/shop_images\/Logo-Healthline.png",
             "padding_left": 0,
             "title": "",
@@ -674,6 +683,7 @@
         "05112c55-bf4c-4165-a9e3-b6bd54fb5432": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "image": "shopify:\/\/shop_images\/Logo-NYMagazine.png",
             "padding_left": 0,
             "title": "",
@@ -690,6 +700,7 @@
         "column3": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "image": "shopify:\/\/shop_images\/Logo-Kidspot.png",
             "padding_left": 0,
             "title": "",
@@ -706,6 +717,7 @@
         "729f0c78-39a9-4600-993e-7baf784a172d": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "image": "shopify:\/\/shop_images\/Logo-NYTimes.png",
             "padding_left": 0,
             "title": "",
@@ -722,6 +734,7 @@
         "column1": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "image": "shopify:\/\/shop_images\/Logo-Well_Good.png",
             "padding_left": 0,
             "title": "",
@@ -738,6 +751,7 @@
         "84738ecf-0f9a-45e7-b36e-bf87a194a00f": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "image": "shopify:\/\/shop_images\/logo-refinery29-removebgs-preview.webp",
             "padding_left": 0,
             "title": "",
@@ -754,6 +768,7 @@
         "3516bc41-3565-4acd-a32e-9095f893e285": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "image": "shopify:\/\/shop_images\/Logo-Motherly.png",
             "padding_left": 0,
             "title": "",
@@ -771,6 +786,7 @@
           "type": "column",
           "disabled": true,
           "settings": {
+            "column_full_width": false,
             "padding_left": 0,
             "title": "",
             "subtitle": "",
