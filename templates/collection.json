@@ -35,10 +35,86 @@
         "show_collection_image": false,
         "color_scheme": "background-1"
       }
+    },
+    "6e0b2d09-8f57-40f0-a861-305bbdf476d9": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17629010985254__6e0b2d09-8f57-40f0-a861-305bbdf476d9-16786570161b68b36a-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/our-philosophy-image.webp",
+            "padding_left": 60,
+            "title": "Column",
+            "subtitle": "Column",
+            "title_font_weight": "normal",
+            "title_font_size": 10,
+            "text": "<p>Maternity Clothing<\/p>",
+            "description_font_weight": "normal",
+            "description_font_size": 10,
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17629010985254__6e0b2d09-8f57-40f0-a861-305bbdf476d9-16786570161b68b36a-1": {
+          "type": "column",
+          "settings": {
+            "padding_left": 60,
+            "title": "Column",
+            "subtitle": "Column",
+            "title_font_weight": "normal",
+            "title_font_size": 10,
+            "text": "<p>Cake crafts and curates one of the most comprehensive ranges of maternity clothing on the market. Each garment has the utmost love and attention put into it, to ensure you have the fit, support and comfort you deserve.<\/p><p> <\/p><p> From tanks, tops, cardigans, jackets and dresses to skirts, pants, jeans and leggings, our range of maternity clothes has you covered for every stage of motherhood and beyond.<\/p>",
+            "description_font_weight": "normal",
+            "description_font_size": 10,
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17629010985254__6e0b2d09-8f57-40f0-a861-305bbdf476d9-16786570161b68b36a-2": {
+          "type": "column",
+          "settings": {
+            "padding_left": 60,
+            "title": "Column",
+            "subtitle": "Column",
+            "title_font_weight": "normal",
+            "title_font_size": 10,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description_font_weight": "normal",
+            "description_font_size": 10,
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17629010985254__6e0b2d09-8f57-40f0-a861-305bbdf476d9-16786570161b68b36a-0",
+        "template--17629010985254__6e0b2d09-8f57-40f0-a861-305bbdf476d9-16786570161b68b36a-1",
+        "template--17629010985254__6e0b2d09-8f57-40f0-a861-305bbdf476d9-16786570161b68b36a-2"
+      ],
+      "settings": {
+        "border": false,
+        "desktop_slider": false,
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "column_size": "big"
+      }
     }
   },
   "order": [
     "product-grid",
-    "banner"
+    "banner",
+    "6e0b2d09-8f57-40f0-a861-305bbdf476d9"
   ]
 }
