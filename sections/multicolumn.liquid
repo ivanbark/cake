@@ -6,7 +6,6 @@
 
    .button_switch_ourstory {
     height: 25px;
-    background-color: #f0ede8;
     border: none;
     position: absolute;
     z-index: 1;
@@ -18,7 +17,7 @@
   }
   
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 1 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
@@ -37,7 +36,7 @@
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top | times: 1 | round: 0 }}px;
+      padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
