@@ -78,7 +78,7 @@
         "template--17629010985254__1660625f-b04d-48ca-b7f6-891c6c8b8e81-16786570161b68b36a-1"
       ],
       "settings": {
-        "border": false,
+        "border": true,
         "desktop_slider": false,
         "title": "",
         "heading_size": "h2",
@@ -92,7 +92,7 @@
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
+        "padding_top": 12,
         "padding_bottom": 36,
         "column_size": "small"
       }
