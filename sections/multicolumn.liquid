@@ -79,7 +79,7 @@
   endif
 -%}
 
-<div style="{% if section.blocks.first.settings.image == null and section.blocks.first.settings.heading == null %}display: none;{% endif %}" class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div style="{% if section.blocks.first.settings.image == null and section.blocks.first.settings.heading == null and section.blocks.first.settings.description == null %}display: none;{% endif %}" class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div class=" section-{{ section.id }}-padding isolate">
     {% if section.settings.border %}
       <hr style="height:1px;opacity:.3;margin-bottom: {{ section.settings.padding_top | times: 0.9 | round: 0 }}px;margin-top: 50px;">
