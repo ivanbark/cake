@@ -27,41 +27,36 @@
       align-items: center;
       height: fit-content !important;
     }
-    .image_container .imgScrollDiv {
-      min-width: 450px !important;
+    .image_container img {
+      width: 450px !important;
       position: relative !important;
       margin-right: 20px !important;
       height: 550px !important;
-      transition: all .5s;
-    }
-    .image_container .imgScrollDiv img {
-      width: 100% !important;
-      height: 100% !important;
       transition: all .5s;
     }
   {% endif %}
 </style>
 
   <script>
-    {% if section.settings.show_multiple_img %}    
+    {% if section.settings.show_multiple_img %}
       function imgScroll(direction) {
         var width = document.getElementById('imgScroll').clientWidth;
         var maxMargin = "-470px";
         if (width < 920) {maxMargin = "-940px";}
-        var margin = document.getElementById("imgScroll").firstElementChild.style.marginLeft;
+        var margin = document.getElementById("imgScroll").firstChild.style.marginLeft;
         if (direction == 'r') {
           if (margin == maxMargin) {
-            document.getElementById("imgScroll").firstElementChild.style.marginLeft = "0px";               
+            document.getElementById("imgScroll").firstChild.style.marginLeft = "0px";               
           } else if (margin == "-470px") {
-            document.getElementById("imgScroll").firstElementChild.style.marginLeft = "-940px";                 
+            document.getElementById("imgScroll").firstChild.style.marginLeft = "-940px";                 
           } else {
-            document.getElementById("imgScroll").firstElementChild.style.marginLeft = "-470px";               
+            document.getElementById("imgScroll").firstChild.style.marginLeft = "-470px";               
           }
         } else if (direction == 'l') {
           if (margin == "-940px") {
-            document.getElementById("imgScroll").firstElementChild.style.marginLeft = "-470px";                
+            document.getElementById("imgScroll").firstChild.style.marginLeft = "-470px";                
           } else {
-            document.getElementById("imgScroll").firstElementChild.style.marginLeft = "0px";      
+            document.getElementById("imgScroll").firstChild.style.marginLeft = "0px";      
           }
         }
       }
@@ -75,30 +70,22 @@
         {% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
       >
         {%- if section.settings.image != blank -%}
-          {% if section.settings.show_multiple_img %}
-          <div class="imgScrollDiv">
-          {% endif %}
-            {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2){%- endcapture -%}
-            {{ section.settings.image | image_url: width: 1500 | image_tag:
-              loading: 'lazy',
-              sizes: sizes,
-              widths: '165, 360, 535, 750, 1070, 1500'
-            }}
-          {% if section.settings.show_multiple_img %}
-          </div>
-          {% endif %}
+          {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2){%- endcapture -%}
+          {{ section.settings.image | image_url: width: 1500 | image_tag:
+            loading: 'lazy',
+            sizes: sizes,
+            widths: '165, 360, 535, 750, 1070, 1500'
+          }}
         {% else %}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {% endif %}
         {%- if section.settings.image2 != blank and section.settings.show_multiple_img -%}
-          <div class="imgScrollDiv">
-            {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2){%- endcapture -%}
-            {{ section.settings.image2 | image_url: width: 1500 | image_tag:
-              loading: 'lazy',
-              sizes: sizes,
-              widths: '165, 360, 535, 750, 1070, 1500'
-            }}
-          </div>
+          {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2){%- endcapture -%}
+          {{ section.settings.image2 | image_url: width: 1500 | image_tag:
+            loading: 'lazy',
+            sizes: sizes,
+            widths: '165, 360, 535, 750, 1070, 1500'
+          }}
         {%- else -%}
           {% if section.settings.show_multiple_img %}
             {{ 'image2' | placeholder_svg_tag: 'placeholder-svg' }}
@@ -106,14 +93,12 @@
           {% endif %}
         {%- endif -%}
         {%- if section.settings.image3 != blank and section.settings.show_multiple_img -%}
-          <div class="imgScrollDiv">
-            {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2){%- endcapture -%}
-            {{ section.settings.image3 | image_url: width: 1500 | image_tag:
-              loading: 'lazy',
-              sizes: sizes,
-              widths: '165, 360, 535, 750, 1070, 1500'
-            }}
-          </div>
+          {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2){%- endcapture -%}
+          {{ section.settings.image3 | image_url: width: 1500 | image_tag:
+            loading: 'lazy',
+            sizes: sizes,
+            widths: '165, 360, 535, 750, 1070, 1500'
+          }}
         {%- else -%}
           {% if section.settings.show_multiple_img %}
             {{ 'image2' | placeholder_svg_tag: 'placeholder-svg' }}
