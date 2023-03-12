@@ -1,4 +1,4 @@
-<div class="marquee" style="display: flex; background-color: {{ section.settings.background_color }};">
+<div class="{% if section.settings.announcement.count < 1 %}marquee{% endif %}" style="display: flex; background-color: {{ section.settings.background_color }};">
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     
@@ -42,12 +42,8 @@
   font-size: 1.5rem;
   line-height: 1.5;
   position: fixed;
-  {% if section.settings.blocks.announcement.count == 1  %}
-
-    {% else %}
-    --duration: 50s;
-    --gap: 200%;
-    {% endif %}
+  --duration: 50s;
+  --gap: 200%;
 }
 
 .announcement_bar_text {
