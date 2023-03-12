@@ -180,8 +180,8 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "background_color": "#ffffff",
-        "color_scheme": "accent-1",
+        "background_color": "#faf3e5",
+        "color_scheme": "accent-2",
         "full_width": true,
         "padding_top": 0,
         "padding_bottom": 24
