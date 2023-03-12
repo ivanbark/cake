@@ -51,12 +51,12 @@
         "template--17629010985254__8da801bd-5458-4053-99dc-08a483a4a52f-167865699921ff80b9-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>Cake crafts and curates one of the most comprehensive ranges of maternity clothing on the market. Each garment has the utmost love and attention put into it, to ensure you have the fit, support and comfort you deserve.<\/p><p> From tanks, tops, cardigans, jackets and dresses to skirts, pants, jeans and leggings, our range of maternity clothes has you covered for every stage of motherhood and beyond.<\/p>",
             "change_font_style": false,
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
-            "text_font_size": 10,
+            "text_font_size": 14,
             "block_spacing_top": 1.6
           }
         }
