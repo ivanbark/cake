@@ -25,6 +25,7 @@
           "type": "text",
           "settings": {
             "text": "<p><strong>Our purpose is to empower women as they mindfully navigate the world of motherhood, providing them with the products and information necessary to sustainably support their breastfeeding journey.<\/strong><\/p>",
+            "change_font_style": false,
             "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
@@ -36,6 +37,7 @@
           "type": "text",
           "settings": {
             "text": "<p><strong>PROUDLY BY MUMS, FOR MUMS.<\/strong><\/p>",
+            "change_font_style": false,
             "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
@@ -47,6 +49,7 @@
           "type": "text",
           "settings": {
             "text": "<p>At Cake Maternity we specialise in maternity and nursing bras designed to support women as they embark on this new and exciting chapter in their lives. We also offer an equally thoughtful assortment of maternity and nursing friendly garments and accessories, designed to grow with them.<\/p>",
+            "change_font_style": false,
             "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
@@ -58,6 +61,7 @@
           "type": "text",
           "settings": {
             "text": "<p>As nursing bra specialists, we’re passionate about breastfeeding and the many benefits it offers to mum, bub and the environment. Breastfeeding, whilst natural doesn’t always come naturally. We understand that every woman’s experience is different & while perseverance is often required, it’s not always possible. That’s why it’s our mission to support, nurture and provide women with the confidence to navigate this often tricky but rewarding phase.<\/p>",
+            "change_font_style": false,
             "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
@@ -69,6 +73,7 @@
           "type": "text",
           "settings": {
             "text": "<p>For this very reason, our bras are designed for mums, based on our own personal nursing experiences. Each bra is carefully crafted with comfort, functionality, durability and sustainability in mind, to ensure that while we are fit for mamas, we’re fit for Mother Earth too. From our soft fabrics, flattering cuts, easy single-handed nursing clips, each and every bra has been designed to make the breastfeeding experience as simple as possible.<\/p>",
+            "change_font_style": false,
             "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
@@ -80,6 +85,7 @@
           "type": "text",
           "settings": {
             "text": "<p>From humble beginnings in 2007, we are an award-winning maternity brand, proudly based in Sydney, Australia.<\/p>",
+            "change_font_style": false,
             "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
@@ -168,6 +174,7 @@
           "type": "text",
           "settings": {
             "text": "<p><strong>\"One mum's personal struggle.\"<\/strong><\/p><p>Cake was born out of our founder, Tracey Montford’s own personal struggle during her pregnancy journey. In her search for comfortable, functional and stylish maternity and nursing wear, it appeared hitting all three was the trifecta that didn’t exist. She was disheartened to find that in becoming a mother, she’d inadvertently have to give up her own sense of personal style. Suddenly in this new role, she was being forced into this one-size-fits-all mould of how a mother should look—and it wasn’t pretty. And who on earth said you couldn’t look gorgeous whilst breastfeeding, was that such a crime? In 2007, apparently, it was. She wanted more and realised that if she felt this way, so must many other women across the world.<\/p><p>This became her driving force to create beautiful, high quality, functional and comfortable pieces that help to support mothers on their breastfeeding journey. From our humble beginnings, operating out of a Sydney garage to being stocked around the globe, it’s safe to say she was right.<\/p><p>To this day, Tracey has that same passion and vision driving her, encouraging women to breastfeed for as long as possible in a supported & educated community.<\/p>",
+            "change_font_style": false,
             "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
@@ -197,6 +204,7 @@
           "type": "text",
           "settings": {
             "text": "<p><em><strong>“I started Cake when I became a mum, but the landscape has changed so much since then. It’s time we share the tears and the challenges, not just the smiles and the triumphs. No matter what their story looks like, we want to remind mums that they are doing their best, which is incredible.”<\/strong><\/em><\/p>",
+            "change_font_style": true,
             "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
@@ -208,6 +216,7 @@
           "type": "text",
           "settings": {
             "text": "<p><strong>TRACEY MONTFORD<\/strong> <em>• FOUNDER & MUM OF TWO<\/em><\/p>",
+            "change_font_style": false,
             "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
@@ -262,6 +271,7 @@
           "type": "text",
           "settings": {
             "text": "<p>We believe in mindfully made. From factory to front door, it’s our mission to make sure that we’re fit for mamas, and Mother Nature too<\/p>",
+            "change_font_style": false,
             "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
@@ -273,6 +283,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Find out more<\/p>",
+            "change_font_style": false,
             "text_color": "#000000",
             "text_link": "shopify:\/\/pages\/who-exactly-are-we",
             "text_font_weight": "normal",
@@ -311,6 +322,7 @@
           "type": "text",
           "settings": {
             "text": "<p><strong>Cake is an award-winning brand recognised widely as a key supplier of maternity and nursing bras.<\/strong><\/p>",
+            "change_font_style": false,
             "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
@@ -322,6 +334,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Recommended by lactation consultants, midwives and industry professionals across the world, we continue to drive innovation where mums need it most. As a recipient of numerous awards and accolades, we're committed to doing exactly what we set out to do—support mamas and make breastfeeding easier.<\/p>",
+            "change_font_style": false,
             "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
@@ -406,6 +419,7 @@
           "type": "text",
           "settings": {
             "text": "<p>\"Experience driven innovation.\"<\/p>",
+            "change_font_style": false,
             "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "bold",
@@ -417,6 +431,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Katie is the mother of two beautiful young girls and has been the Head Designer and Fit Technician for Cake Maternity for 12 years now. Her practice combines her bra expertise, passion for breastfeeding and comfort, and her ecological stance on power and waste minimisation.<\/p><p>She set about being a bra designer after her fuller busted sister, who suffered from scoliosis, struggled to find a well-fitting bra that was both comfortable and pretty. She majored in lingerie at Fashion College and sought a 3-year internship at Triumph International to become a specialist bra designer. Since then, she has worked internationally designing for Marks and Spencer, Agent Provocateur, Berlei and Pleasure State.<\/p><p>Due to her firsthand experience becoming a mum, Katie realised that the changes your breasts undergo whilst pregnant and breastfeeding were not only size-related, but also weight, sensitivity and shape. That’s why she has made it her mission to empower women as they mindfully navigate the world of motherhood and help make breastfeeding easier, through experience driven innovation. She believes that if mamas have all these boxes ticked, then there’s no reason for them to give up breastfeeding, which will ultimately lead to them doing so for as long as possible.<\/p>",
+            "change_font_style": false,
             "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
