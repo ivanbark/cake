@@ -96,6 +96,7 @@
           </div>
         {%- else -%}
           <div class="collection{% if section.settings.filter_type != 'vertical' %} {% endif %}">
+          <div class="collection-grid_image">
            <img
               srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
                 {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
@@ -110,6 +111,7 @@
               width="{{ section.settings.image.width }}"
               height="{{ section.settings.image.height }}"
             >
+          </div>
             <div class="loading-overlay gradient"></div>
     
             <ul id="product-grid" data-id="{{ section.id }}" class="
