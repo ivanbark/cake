@@ -219,22 +219,6 @@
         {%- endif -%}
         {%- if section.settings.show_social -%}
           <ul class="footer__list-social list-unstyled list-social mobile" role="list">
-            {%- if settings.social_facebook_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_facebook_link }}" class="link list-social__link" >
-                  <img src="https://cdn.shopify.com/s/files/1/0681/9256/7590/files/CakeMaternity-SocialIcons-Facebook-Negative.png?v=1678653338">
-                  <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
-                </a>
-              </li>
-            {%- endif -%}
-            {%- if settings.social_instagram_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_instagram_link }}" class="link list-social__link" >
-                  <img src="https://cdn.shopify.com/s/files/1/0681/9256/7590/files/CakeMaternity-SocialIcons-Instagram-Nagative.png?v=1678653337">
-                  <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
-                </a>
-              </li>
-            {%- endif -%}
             {%- if settings.social_youtube_link != blank -%}
               <li class="list-social__item">
                 <a href="{{ settings.social_youtube_link }}" class="link list-social__link" >
