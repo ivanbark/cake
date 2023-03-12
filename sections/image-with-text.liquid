@@ -76,7 +76,6 @@
             sizes: sizes,
             widths: '165, 360, 535, 750, 1070, 1500'
           }}
-          <p>Dit is een text;</p>
         {% else %}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {% endif %}
@@ -87,7 +86,6 @@
             sizes: sizes,
             widths: '165, 360, 535, 750, 1070, 1500'
           }}
-          <p>Dit is een text;</p>
         {%- else -%}
           {% if section.settings.show_multiple_img %}
             {{ 'image2' | placeholder_svg_tag: 'placeholder-svg' }}
@@ -101,7 +99,6 @@
             sizes: sizes,
             widths: '165, 360, 535, 750, 1070, 1500'
           }}
-          <p>Dit is een text;</p>
         {%- else -%}
           {% if section.settings.show_multiple_img %}
             {{ 'image2' | placeholder_svg_tag: 'placeholder-svg' }}
@@ -114,7 +111,14 @@
             <button style="width:35px;height:50px;cursor:pointer;z-index:9;border:none;background:rgba(255,255,255,.8);" onclick="imgScroll('l')" >❮</button>
             <button style="width:35px;height:50px;cursor:pointer;border:none;background:rgba(255,255,255,.8);" onclick="imgScroll('r')" >❯</button>
           </div>
-          <div>
+          <div style="
+                display: flex !important;
+                background: {{ section.settings.text_side_background_color }};
+                align-items: center;
+                height: fit-content !important;">
+            <p>Dit is een test.</p>
+            <p>Dit is een test.</p>
+            <p>Dit is een test.</p>
           </div>
         {% endif %}
     </div>
