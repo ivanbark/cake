@@ -144,7 +144,6 @@
           },
           "announcement-bar-0": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "Join the #RawMotherhoodMovement for your chance to WIN! — Learn More",
               "text_alignment": "center",
