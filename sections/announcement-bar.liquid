@@ -1,4 +1,4 @@
-<div class="{% if more_announcements %}marquee{% else %}announce_bar_marq{% endif %}" style="display: flex; background-color: {{ section.settings.background_color }};">
+<div class="{% if more_announcements == true %}marquee{% else %}announce_bar_marq{% endif %}" style="display: flex; background-color: {{ section.settings.background_color }};">
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     
