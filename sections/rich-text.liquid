@@ -50,7 +50,7 @@
                 {{ block.settings.caption | escape }}
               </p>
             {%- when 'text' -%}
-              <div class="rich-text__text rte block-link" {{ block.shopify_attributes }}>
+              <div class="{% if block.settings.change_font_style %}quote_inf{% endif %}rich-text__text rte block-link" {{ block.shopify_attributes }}>
                 {% if block.settings.text_link == null %}
                 <style>
                     .block-link {
