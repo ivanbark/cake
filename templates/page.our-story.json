@@ -365,6 +365,9 @@
       "block_order": [
         "template--18040513626406__9f486338-833c-40f2-aab0-9b4f171c56ff-1678652783bfabf492-0"
       ],
+      "custom_css": [
+        "body {background-color: #dddaeb;}"
+      ],
       "settings": {
         "border": false,
         "desktop_slider": false,
