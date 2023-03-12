@@ -246,7 +246,7 @@
           "type": "heading",
           "settings": {
             "heading": "OUR PHILOSOPHY",
-            "heading_color": "#000000",
+            "heading_color": "#ffffff",
             "heading_size": "h2",
             "caption_font_weight": "normal"
           }
@@ -256,7 +256,7 @@
           "settings": {
             "text": "<h2>We’re lifting the veil on what it means to be a mum by embracing the raw, unfiltered and imperfect moments, so you know you’re not alone.<\/h2>",
             "text_style": "body",
-            "text_color": "#000000",
+            "text_color": "#ffffff",
             "text_font_weight": "normal"
           }
         },
