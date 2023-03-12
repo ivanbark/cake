@@ -286,7 +286,7 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "text_side_background_color": "#ffffff",
+        "text_side_background_color": "#c7a387",
         "color_scheme": "background-1",
         "mobile_content_alignment": "left",
         "padding_top": 36,
