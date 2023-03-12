@@ -342,6 +342,49 @@
         "padding_bottom": 0
       }
     },
+    "9f486338-833c-40f2-aab0-9b4f171c56ff": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18040513626406__9f486338-833c-40f2-aab0-9b4f171c56ff-1678652783bfabf492-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg",
+            "padding_left": 60,
+            "title": "Column",
+            "subtitle": "Column",
+            "title_font_weight": "normal",
+            "title_font_size": 10,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description_font_weight": "normal",
+            "description_font_size": 10,
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18040513626406__9f486338-833c-40f2-aab0-9b4f171c56ff-1678652783bfabf492-0"
+      ],
+      "settings": {
+        "border": false,
+        "desktop_slider": false,
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "column_size": "big"
+      }
+    },
     "4221f84b-d953-4ced-b66d-0b02e0474f25": {
       "type": "multicolumn",
       "blocks": {
@@ -587,6 +630,7 @@
     "8a0ad626-bf0c-46ea-963e-deefb8d2cc2e",
     "a430c8f4-a485-481e-8972-6acc6fccd6fa",
     "6a1e1f90-8d8e-4b10-beff-d86ccebc2b12",
+    "9f486338-833c-40f2-aab0-9b4f171c56ff",
     "4221f84b-d953-4ced-b66d-0b02e0474f25",
     "23197daa-447e-4801-979c-4fd808243740"
   ]
