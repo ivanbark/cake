@@ -259,11 +259,23 @@
             "text_color": "#000000",
             "text_font_weight": "normal"
           }
+        },
+        "281c3b9e-6943-49c2-b3d9-fa8f3b4f3ddb": {
+          "type": "button",
+          "settings": {
+            "button_label": "FIND OUT MORE",
+            "button_link": "",
+            "button_text_color": "#000000",
+            "button_background_color": "#ffffff",
+            "button_font_weight": "Bold",
+            "button_font_size": 10
+          }
         }
       },
       "block_order": [
         "template--18040513626406__3ab3df1c-74b7-441b-bf90-a4a566a82657-167865448241aa5bdd-0",
-        "template--18040513626406__3ab3df1c-74b7-441b-bf90-a4a566a82657-167865448241aa5bdd-1"
+        "template--18040513626406__3ab3df1c-74b7-441b-bf90-a4a566a82657-167865448241aa5bdd-1",
+        "281c3b9e-6943-49c2-b3d9-fa8f3b4f3ddb"
       ],
       "settings": {
         "show_multiple_img": false,
