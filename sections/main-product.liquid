@@ -49,7 +49,7 @@
 
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     {% if product.compare_at_price > product.price and product.available %}
-      <div>test</div>
+      <div style="width:100%;margin-bottom:20px;text-transform:uppercase;padding:6px 0;border-radius:5px;"></div>
     {% endif %}
     
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
@@ -1235,6 +1235,12 @@
   "name": "t:sections.main-product.name",
   "tag": "section",
   "class": "section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "lasthancewarning"
+    }
+  ],
   "blocks": [
     {
       "type": "@app" 
