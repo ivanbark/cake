@@ -174,7 +174,7 @@
                 {% endif %}
                 </div>
               {%- endif -%}
-              <div class="multicolumn-card__info" style="{% if section.settings.column_size == "small" %}padding-left:0;padding-right:0;{% endif %}">
+              <div class="multicolumn-card__info" style="{% if section.settings.block.column_full_width %}max-width: 100% !important; {% endif %}{% if section.settings.column_size == "small" %}padding-left:0;padding-right:0;{% endif %}">
                 <p style="text-transform: uppercase; font-size: 14px; ">{{ block.settings.subtitle }}</p>
                 {%- if block.settings.title == "Encouraging breast health." or block.settings.title == "Mama-friendly returns." or block.settings.title == "Support for every mama." -%}
                     {{ block.settings.image | image_url: width: 50 | image_tag:
