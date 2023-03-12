@@ -35,11 +35,11 @@
         "bba04bd8-4be4-4811-8cdb-db81dbbfcfed": {
           "type": "text",
           "settings": {
-            "text": "<p><em><strong>PROUDLY BY MUMS, FOR MUMS.<\/strong><\/em><\/p>",
+            "text": "<p><strong>PROUDLY BY MUMS, FOR MUMS.<\/strong><\/p>",
             "text_color": "#000000",
             "text_link": "",
             "text_font_weight": "normal",
-            "text_font_size": 12,
+            "text_font_size": 14,
             "block_spacing_top": 1.6
           }
         },
