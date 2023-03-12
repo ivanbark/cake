@@ -76,7 +76,6 @@
         {% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
       >
         {%- if section.settings.image != blank -%}
-          
           {% if section.settings.show_multiple_img %}
           <div class="imgScrollDiv">
           {% endif %}
