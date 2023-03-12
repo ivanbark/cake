@@ -114,8 +114,8 @@
       "settings": {
         "enable_sticky_info": true,
         "lastChanceWarning": "<p>PLEASE NOTE THAT ALL LAST CHANCE STOCK CANNOT BE RETURNED FOR A REFUND. <a href=\"\/pages\/show-me-details-of-your-return-policy\" title=\"Show me details of your return policy:\">T + C's apply<\/a>.<\/p>",
-        "warning_bg_color": "#B58069",
-        "warning_text_color": "#fff",
+        "warning_bg_color": "#b58069",
+        "warning_text_color": "#ffffff",
         "media_position": "left",
         "gallery_layout": "thumbnail",
         "media_size": "large",
@@ -132,6 +132,7 @@
         "template--17629011214630__8ca61d3a-dcaa-4633-9313-46c10ea993db-1677441678d4086f2f-0": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "image": "{{ product.metafields.custom.feature_1_img.value }}",
             "padding_left": 0,
             "title": "{{ product.metafields.custom.feature_1_title.value }}",
@@ -148,6 +149,7 @@
         "template--17629011214630__8ca61d3a-dcaa-4633-9313-46c10ea993db-1677441678d4086f2f-1": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "image": "{{ product.metafields.custom.feature_2_img.value }}",
             "padding_left": 0,
             "title": "{{ product.metafields.custom.feature_2_title.value }}",
@@ -164,6 +166,7 @@
         "template--17629011214630__8ca61d3a-dcaa-4633-9313-46c10ea993db-1677441678d4086f2f-2": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "image": "{{ product.metafields.custom.feature_3_img.value }}",
             "padding_left": 0,
             "title": "{{ product.metafields.custom.feature_3_title.value }}",
@@ -234,9 +237,12 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/mother-with-baby-2.jpg",
+        "caption1": "Made to grow with you, from bump to breast & beyond.",
         "show_multiple_img": true,
         "image2": "shopify:\/\/shop_images\/about-banner.jpg",
+        "caption2": "Made to grow with you, from bump to breast & beyond.",
         "image3": "shopify:\/\/shop_images\/woman-holding-flowers.jpg",
+        "caption3": "Made to grow with you, from bump to breast & beyond.",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
