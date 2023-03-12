@@ -248,7 +248,7 @@
             {% for block in section.blocks %}
               {% assign title = section.settings.heading | strip_html %}
               {% if section.settings.show_view_all and title == "Raw Motherhood Blog" %}
-                <a id="blog-view-all-mobile-{{ block.id }}" class="link underlined-link view-all {% if block == section.blocks.first %}active-blog{% endif %}" style="font-weight:bold;color: black;font-size: {{ section.settings.menu_size }}rem;" href="{{ block.settings.blog.url }}">VIEW ALL</a>
+                <a id="blog-view-all-mobile-{{ block.id }}" class="link underlined-link view-all {% if block == section.blocks.first %}active-blog{% endif %}" style="text-align:center;margin-top:20px;font-weight:bold;color: black;font-size: {{ section.settings.menu_size }}rem;" href="{{ block.settings.blog.url }}">VIEW ALL</a>
               {% endif %}
             {% endfor %}
           </div>
