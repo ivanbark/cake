@@ -50,7 +50,7 @@
                 {{ block.settings.caption | escape }}
               </p>
             {%- when 'text' -%}
-              <div class="rich-text__text rte block-link" {{ block.shopify_attributes }}>
+              <div class="{% if block.settings.text == "“I started Cake when I became a mum, but the landscape has changed so much since then. It’s time we share the tears and the challenges, not just the smiles and the triumphs. No matter what their story looks like, we want to remind mums that they are doing their best, which is incredible.”" %}quote-text{% endif %} rich-text__text rte block-link" {{ block.shopify_attributes }}>
                 {% if block.settings.text_link == null %}
                 <style>
                     .block-link {
