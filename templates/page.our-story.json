@@ -523,6 +523,7 @@
     },
     "23197daa-447e-4801-979c-4fd808243740": {
       "type": "instagram-collection",
+      "disabled": true,
       "blocks": {
         "602d397c-28c4-46d7-852a-4803600e89a9": {
           "type": "Instagram_post",
