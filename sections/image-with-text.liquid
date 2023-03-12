@@ -48,21 +48,20 @@
         var width = document.getElementById('imgScroll').clientWidth;
         var maxMargin = "-470px";
         if (width < 920) {maxMargin = "-940px";}
-        console.log(document.getElementById("imgScroll").firstChild);
-        var margin = document.getElementById("imgScroll").firstChild.style.marginLeft;
+        var margin = document.getElementById("imgScroll").firstElementChild.style.marginLeft;
         if (direction == 'r') {
           if (margin == maxMargin) {
-            document.getElementById("imgScroll").firstChild.style.marginLeft = "0px";               
+            document.getElementById("imgScroll").firstElementChild.style.marginLeft = "0px";               
           } else if (margin == "-470px") {
-            document.getElementById("imgScroll").firstChild.style.marginLeft = "-940px";                 
+            document.getElementById("imgScroll").firstElementChild.style.marginLeft = "-940px";                 
           } else {
-            document.getElementById("imgScroll").firstChild.style.marginLeft = "-470px";               
+            document.getElementById("imgScroll").firstElementChild.style.marginLeft = "-470px";               
           }
         } else if (direction == 'l') {
           if (margin == "-940px") {
-            document.getElementById("imgScroll").firstChild.style.marginLeft = "-470px";                
+            document.getElementById("imgScroll").firstElementChild.style.marginLeft = "-470px";                
           } else {
-            document.getElementById("imgScroll").firstChild.style.marginLeft = "0px";      
+            document.getElementById("imgScroll").firstElementChild.style.marginLeft = "0px";      
           }
         }
       }
