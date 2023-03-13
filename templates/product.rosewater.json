@@ -72,8 +72,8 @@
           "settings": {
             "heading": "Eco",
             "icon": "none",
-            "content": "",
-            "page": "eco"
+            "content": "<p>Rosewater is committed to producing durable, long-waring garments that are a sustainable choice for mothers. With each item carefully crafted using environmentally conscious fabrics, lining and trims, it’s  better for you, Bub and Mother Nature.<\/p><p><\/p><p>Rosewater swimwear has the highest ultraviolet protection factor possible for fabric (UPF 50+).<\/p>",
+            "page": ""
           }
         },
         "collapsible-row-3": {
@@ -113,6 +113,9 @@
       ],
       "settings": {
         "enable_sticky_info": true,
+        "lastChanceWarning": "<p>Warning<\/p>",
+        "warning_bg_color": "#B58069",
+        "warning_text_color": "#fff",
         "media_position": "left",
         "gallery_layout": "thumbnail",
         "media_size": "large",
@@ -129,6 +132,7 @@
         "template--17629011214630__8ca61d3a-dcaa-4633-9313-46c10ea993db-1677441678d4086f2f-0": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "image": "{{ product.metafields.custom.feature_1_img.value }}",
             "padding_left": 0,
             "title": "{{ product.metafields.custom.feature_1_title.value }}",
@@ -145,6 +149,7 @@
         "template--17629011214630__8ca61d3a-dcaa-4633-9313-46c10ea993db-1677441678d4086f2f-1": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "image": "{{ product.metafields.custom.feature_2_img.value }}",
             "padding_left": 0,
             "title": "{{ product.metafields.custom.feature_2_title.value }}",
@@ -161,6 +166,7 @@
         "template--17629011214630__8ca61d3a-dcaa-4633-9313-46c10ea993db-1677441678d4086f2f-2": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "image": "{{ product.metafields.custom.feature_3_img.value }}",
             "padding_left": 0,
             "title": "{{ product.metafields.custom.feature_3_title.value }}",
@@ -231,9 +237,12 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/mother-with-baby-2.jpg",
+        "caption1": "Caption",
         "show_multiple_img": true,
         "image2": "shopify:\/\/shop_images\/about-banner.jpg",
+        "caption2": "Caption",
         "image3": "shopify:\/\/shop_images\/woman-holding-flowers.jpg",
+        "caption3": "Caption",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
