@@ -444,18 +444,8 @@
         "431ac56a-eef5-4324-901c-78b0227fb671": {
           "type": "featured_collection",
           "settings": {
-            "collection": "second-trimester",
-            "collection_title": "",
-            "text_color": "#ffffff",
-            "collection_title_alignment": "left",
-            "font_size": 10
-          }
-        },
-        "90206687-7ce8-4cf8-98d2-63c43fb21cff": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "third-trimester",
-            "collection_title": "",
+            "collection": "2nd-3rd-trimesters",
+            "collection_title": "Over 12 Weeks",
             "text_color": "#ffffff",
             "collection_title_alignment": "left",
             "font_size": 10
@@ -496,7 +486,6 @@
         "cc84c326-8abf-410b-928b-915a37faa99d",
         "fd1cc13e-afe5-4724-9b49-d255898a69ea",
         "431ac56a-eef5-4324-901c-78b0227fb671",
-        "90206687-7ce8-4cf8-98d2-63c43fb21cff",
         "9135fef4-52f9-452c-b735-bda0947861d8",
         "5ec90674-ed47-48f6-bf4b-d9873c2bae81",
         "0763c412-244a-4ab6-a758-a7ec4332706c"
