@@ -114,8 +114,8 @@
       "settings": {
         "enable_sticky_info": true,
         "lastChanceWarning": "<p>Warning<\/p>",
-        "warning_bg_color": "#B58069",
-        "warning_text_color": "#fff",
+        "warning_bg_color": "#b58069",
+        "warning_text_color": "#ffffff",
         "media_position": "left",
         "gallery_layout": "thumbnail",
         "media_size": "large",

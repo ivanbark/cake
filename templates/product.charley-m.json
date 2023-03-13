@@ -113,6 +113,9 @@
       ],
       "settings": {
         "enable_sticky_info": true,
+        "lastChanceWarning": "<p>Warning<\/p>",
+        "warning_bg_color": "#B58069",
+        "warning_text_color": "#fff",
         "media_position": "left",
         "gallery_layout": "thumbnail",
         "media_size": "large",
@@ -129,6 +132,7 @@
         "template--17629011214630__8ca61d3a-dcaa-4633-9313-46c10ea993db-1677441678d4086f2f-0": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "image": "{{ product.metafields.custom.feature_1_img.value }}",
             "padding_left": 0,
             "title": "{{ product.metafields.custom.feature_1_title.value }}",
@@ -145,6 +149,7 @@
         "template--17629011214630__8ca61d3a-dcaa-4633-9313-46c10ea993db-1677441678d4086f2f-1": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "image": "{{ product.metafields.custom.feature_2_img.value }}",
             "padding_left": 0,
             "title": "{{ product.metafields.custom.feature_2_title.value }}",
@@ -161,6 +166,7 @@
         "template--17629011214630__8ca61d3a-dcaa-4633-9313-46c10ea993db-1677441678d4086f2f-2": {
           "type": "column",
           "settings": {
+            "column_full_width": false,
             "image": "{{ product.metafields.custom.feature_3_img.value }}",
             "padding_left": 0,
             "title": "{{ product.metafields.custom.feature_3_title.value }}",
@@ -209,7 +215,7 @@
         "image-with-text-0": {
           "type": "heading",
           "settings": {
-            "heading": "The Cake Maternity Story",
+            "heading": "The Charley M Story",
             "heading_color": "#000000",
             "heading_size": "h1",
             "caption_font_weight": "normal"
@@ -218,7 +224,7 @@
         "image-with-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Cake was born out of our founder, Tracey Montford’s own personal struggle during her pregnancy journey. In her search for comfortable, functional and stylish maternity and nursing wear, it appeared hitting all three was the trifecta that didn’t exist. Suddenly in this new role, she was being forced into this one-size-fits-all mould of how a mother should look—and it wasn’t pretty. She wanted more and realised that if she felt this way, so must many other women across the world.<\/p><p>This became her driving force to create beautiful, high quality, functional and comfortable pieces inspired by her own experiences designed to support mamas on their breastfeeding journey. Bras that truly enhance the lives of women every day, allowing them to fully embrace motherhood & all that it brings to the table. <\/p><p>To this day, Tracey has that same passion and vision driving her, encouraging women to breastfeed for as long as possible in a supported & educated community.<\/p>",
+            "text": "<p>As a mother of two herself and the founder of Cake Maternity, Tracey Montford knew all too well the importance of comfort and support for any new mum. Charley M was founded on the belief that all mothers deserve support regardless of budget. Babies can be expensive and these days there’s so much to buy, think about and do that it’s easy as a mama-to-be (or mama in general) to forget about your own comfort.<\/p><p>But, it's important to prioritise you too. Charley offers a range of affordable and stylish nursing bras featuring seamless, pregnancy-safe flexi-wire, padded and sports options.<\/p><p>Charley M offers a range of stylish & affordable nursing bras, designed with lower cuts & lightweight fabrics for comfort & breathability. Made from a combination of soft fabrics, meshes & accessories to provide you with that lift you deserve, in assortment of colours for every palette.<\/p>",
             "text_style": "body",
             "text_color": "#000000",
             "text_font_weight": "normal"
@@ -230,10 +236,12 @@
         "image-with-text-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/mother-with-baby-2.jpg",
+        "image": "shopify:\/\/shop_images\/Category-Brand-Individual-CharleyM-StoryImage-1.jpg",
+        "caption1": "Each bra has been crafted to offer everyday comfort, because mothers deserve nothing less.",
         "show_multiple_img": true,
-        "image2": "shopify:\/\/shop_images\/about-banner.jpg",
-        "image3": "shopify:\/\/shop_images\/woman-holding-flowers.jpg",
+        "image2": "shopify:\/\/shop_images\/Category-Brand-Individual-CharleyM-StoryImage-2.jpg",
+        "caption2": "With plunge necklines, mesh detailing and fashion-forward colours, each bra makes a statement.",
+        "caption3": "",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -249,6 +257,7 @@
     },
     "167640207953c157e9": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "befc4699-e39c-40f3-a996-9dd2ec47464b": {
           "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
