@@ -31,7 +31,7 @@
           "type": "text",
           "settings": {
             "heading": "Still got questions?",
-            "subtext": "<p>Our support team is on hand<\/p><p>9am - 5pm AEST<\/p>",
+            "subtext": "<p>Our support team is on hand<\/p><p>9am - 5pm CET<\/p>",
             "sidebar-show-mail": true,
             "sidebar-mail": "support@cakematernity.eu",
             "font_size_heading": 1.8,
