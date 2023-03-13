@@ -128,6 +128,7 @@
     },
     "8ca61d3a-dcaa-4633-9313-46c10ea993db": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "template--17629011214630__8ca61d3a-dcaa-4633-9313-46c10ea993db-1677441678d4086f2f-0": {
           "type": "column",
@@ -215,7 +216,7 @@
         "image-with-text-0": {
           "type": "heading",
           "settings": {
-            "heading": "The Cake Maternity Story",
+            "heading": "The Rosewater Story",
             "heading_color": "#000000",
             "heading_size": "h1",
             "caption_font_weight": "normal"
@@ -224,7 +225,7 @@
         "image-with-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Cake was born out of our founder, Tracey Montford’s own personal struggle during her pregnancy journey. In her search for comfortable, functional and stylish maternity and nursing wear, it appeared hitting all three was the trifecta that didn’t exist. Suddenly in this new role, she was being forced into this one-size-fits-all mould of how a mother should look—and it wasn’t pretty. She wanted more and realised that if she felt this way, so must many other women across the world.<\/p><p>This became her driving force to create beautiful, high quality, functional and comfortable pieces inspired by her own experiences designed to support mamas on their breastfeeding journey. Bras that truly enhance the lives of women every day, allowing them to fully embrace motherhood & all that it brings to the table. <\/p><p>To this day, Tracey has that same passion and vision driving her, encouraging women to breastfeed for as long as possible in a supported & educated community.<\/p>",
+            "text": "<p>Rosewater specialises in maternity & nursing swimwear, offering flattering pieces that support through all stages of motherhood. Each swimsuit has been designed to comfortably fit a range of body shapes so that they can grow with you along your journey, with UPF50+ and chlorine-resistant fabrics. Designed in Australia, Rosewater swimwear is the ultimate summer must-have whether you’re at the beach, by the pool or just enjoying the sunshine.<\/p>",
             "text_style": "body",
             "text_color": "#000000",
             "text_font_weight": "normal"
@@ -236,11 +237,11 @@
         "image-with-text-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/mother-with-baby-2.jpg",
-        "caption1": "Caption",
+        "image": "shopify:\/\/shop_images\/Category-Brand-Individual-Rosewater-StoryImage-1.jpg",
+        "caption1": "Stylish amd modern designs perfect for chilled-out beach days, by the pool or even out exploring.",
         "show_multiple_img": true,
-        "image2": "shopify:\/\/shop_images\/about-banner.jpg",
-        "caption2": "Caption",
+        "image2": "shopify:\/\/shop_images\/Category-Brand-Individual-Rosewater-StoryImage-2.jpg",
+        "caption2": "Designed in Australia, all Rosewater pieces are chlorine-resistant and UPF50+, made for the summer sun.",
         "image3": "shopify:\/\/shop_images\/woman-holding-flowers.jpg",
         "caption3": "Caption",
         "height": "small",
