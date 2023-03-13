@@ -435,7 +435,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "first-trimester",
-            "collection_title": "",
+            "collection_title": "Under 12 Weeks",
             "text_color": "#ffffff",
             "collection_title_alignment": "left",
             "font_size": 10
