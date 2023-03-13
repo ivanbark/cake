@@ -52,9 +52,9 @@
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Details",
+            "heading": "Suitable for",
             "icon": "none",
-            "content": "<p>{{ product.metafields.custom.details | metafield_tag }}<\/p>",
+            "content": "<p>Suitable for changing bodies during the pregnancy and postpartum period.<br\/>Can be used to assist with pelvic pain, swelling, haemorrhoids, vulvar varicosities, prolapse, and PMS.<\/p>",
             "page": ""
           }
         },
@@ -70,18 +70,18 @@
         "collapsible-row-2": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Eco",
+            "heading": "Directions",
             "icon": "none",
-            "content": "",
-            "page": "eco"
+            "content": "<p>Designed to be worn with the Warm & Cool Insert.<br\/>Slide the insert into the brief’s front opening and place it over the site of a c-section or slide it down the widened gusset, over the perineal area.<\/p>",
+            "page": ""
           }
         },
         "collapsible-row-3": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Care",
+            "heading": "Fitting",
             "icon": "none",
-            "content": "<p>{{ product.metafields.custom.care | metafield_tag }}<\/p>",
+            "content": "<p>As a general rule, your postpartum measurements will resemble those in the second trimester. If you wear a Medium in your maternity pants or tops, we recommend you purchase a Medium. If you're between sizes, we recommend going with the smaller of the two sizes as these garments are very stretchy.<\/p>",
             "page": ""
           }
         },
@@ -114,8 +114,8 @@
       "settings": {
         "enable_sticky_info": true,
         "lastChanceWarning": "<p>Warning<\/p>",
-        "warning_bg_color": "#B58069",
-        "warning_text_color": "#fff",
+        "warning_bg_color": "#b58069",
+        "warning_text_color": "#ffffff",
         "media_position": "left",
         "gallery_layout": "thumbnail",
         "media_size": "large",
