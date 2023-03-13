@@ -262,6 +262,7 @@
       "blocks": {
         "befc4699-e39c-40f3-a996-9dd2ec47464b": {
           "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
           "settings": {
           }
         }
